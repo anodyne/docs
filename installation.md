@@ -1,4 +1,4 @@
-## Installation
+# Installation
 
 - [Installation](#installation)
     - [Server Requirements](#server-requirements)
