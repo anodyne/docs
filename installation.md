@@ -83,15 +83,17 @@ If your site is on a server running Apache, you'll need to check with your host 
 
 You can then create a file named `.htaccess` (the period at the beginning is important) and paste the following code in:
 
-    Options +FollowSymLinks -Indexes
-    RewriteEngine On
+~~~.language-bash
+Options +FollowSymLinks -Indexes
+RewriteEngine On
 
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+~~~
 
 #### Nginx
 
