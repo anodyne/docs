@@ -83,7 +83,7 @@ If your site is on a server running Apache, you'll need to check with your host 
 
 You can then create a file named `.htaccess` (the period at the beginning is important) and paste the following code in:
 
-~~~.language-bash
+```.language-bash
 Options +FollowSymLinks -Indexes
 RewriteEngine On
 
@@ -93,12 +93,14 @@ RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [L]
-~~~
+```
 
 #### Nginx
 
 If your site is on a server running Nginx, the following directive in your site configuration will direct all requests to the `index.php` front controller:
 
-    location / {
-        try_files $uri $uri/ /index.php?$query_string;
-    }
+```.language-bash
+location / {
+    try_files $uri $uri/ /index.php?$query_string;
+}
+```
