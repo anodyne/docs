@@ -1,0 +1,7 @@
+# Extensions
+
+## Introduction
+
+## Structure
+
+## Conventions
