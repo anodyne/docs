@@ -1,3 +1,23 @@
 - ## Getting Started
     - [Installation](/docs/{{version}}/installation)
     - [Upgrading](/docs/{{version}}/upgrade)
+    - [Configuring Nova]()
+    - [Configuring CodeIgniter]()
+- ## The Basics
+    - [URLs]()
+    - [File Structure]()
+    - [Genres]()
+- ## Customizing Nova
+    - [Seamless Substitution]()
+    - [Creating a Page]()
+    - [Changing an Icon]()
+    - [Adding an Image to a Page]()
+    - [Language Items](/docs/{{version}}/language-items)
+- ## Skinning
+    - [Anatomy of a Skin]()
+- ## Digging Deeper
+    - [Modding Overview]()
+    - [Changing the Index File]()
+    - [Changing the Application Folder]()
+    - [Extensions](/docs/{{version}}/extensions)
+    - [Events](/docs/{{version}}/events)

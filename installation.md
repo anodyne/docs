@@ -8,11 +8,9 @@
     - [File Permissions](#file-permissions)
     - [Pretty URLs](#pretty-urls)
 
-<a name="installation"></a>
-## Installation
+## Installation {#installation}
 
-<a name="server-requirements"></a>
-### Server Requirements
+### Server Requirements {#server-requirements}
 
 We've worked hard to make sure Nova's requirements are as broad as possible so as many people as possible can use it for their games. Still, there are a few requirements that you should verify before installing Nova 2. In the event the server you're going to be installing Nova on doesn't support some or all of these things, you should contact your hosting provider and ask them about the possibility of upgrading these items.
 
