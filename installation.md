@@ -73,7 +73,9 @@ At the end of the install process Nova will attempt to change several permission
 
 Before you begin, you'll need to update one of the config files in Nova to ensure that links created by Nova won't include `index.php`. Copy the code below and paste it into `application/config/config.php` below the `require_one` line.
 
-    $config['index_page'] = "";
+```.language-php
+$config['index_page'] = "";
+```
 
 Save the file and ensure it's been uploaded back up to your server.
 
