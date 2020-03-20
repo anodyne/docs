@@ -1,2 +1,3 @@
 - ## Getting Started
     - [Installation](/docs/{{version}}/installation)
+    - [Upgrading](/docs/{{version}}/upgrade)
