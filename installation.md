@@ -1,5 +1,6 @@
 # Installation
 
+<div class="toc">
 - [Installation](#installation)
     - [Server Requirements](#server-requirements)
     - [Installing Nova](#installing-nova)
@@ -7,6 +8,7 @@
 - [Web Server Configuration](#web-server-configuration)
     - [File Permissions](#file-permissions)
     - [Pretty URLs](#pretty-urls)
+</div>
 
 <a name="installation"></a>
 ## Installation
