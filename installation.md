@@ -64,7 +64,7 @@ At the end of the install process Nova will attempt to change several permission
 
 #### Update CodeIgniter
 
-Before you begin, you'll need to update one of the config files in Nova to ensure that links created by Nova won't include `index.php`. Copy the code below and paste it into `application/config/config.php` below the `require_one` line.
+To begin, you'll need to update Nova's config to ensure that any links won't include `index.php` in them. Copy the code below and paste it into `application/config/config.php` below the `require_once` line.
 
 ```.language-php
 $config['index_page'] = "";
@@ -80,25 +80,22 @@ You can then create a file named `.htaccess` (the period at the beginning is imp
 
 ```.language-apache
 <IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
-
     RewriteEngine On
-
-    # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-
-    # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
-
-    # Send Requests To Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # Leave 'RewriteBase /' if not installing into subfolder
+    RewriteBase /
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    # If we don't have mod_rewrite installed, all 404's
+    # can be sent to index.php, and everything works as normal.
+    # Submitted by: ElliotHaughin
+
+    ErrorDocument 404 /index.php
 </IfModule>
 ```
 
