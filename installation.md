@@ -85,7 +85,7 @@ If your site is on a server running Apache, you'll need to check with your host 
 
 You can then create a file named `.htaccess` (the period at the beginning is important) and paste the following code in:
 
-```.language-bash
+```.language-apache
 Options +FollowSymLinks -Indexes
 RewriteEngine On
 
@@ -101,7 +101,7 @@ RewriteRule ^ index.php [L]
 
 If your site is on a server running Nginx, the following directive in your site configuration will direct all requests to the `index.php` front controller:
 
-```.language-bash
+```.language-nginx
 location / {
     try_files $uri $uri/ /index.php?$query_string;
 }
