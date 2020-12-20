@@ -4,45 +4,49 @@ Learn how to get up and running with Nova 2.
 
 ---
 
+## What you'll need
+
+Before you start in earnest with the installation process, there are a few things you'll want to have handy:
+
+- The server connection information you received from your web host
+- The database connection information you received from your web host
+- A copy of Nova downloaded from the [Anodyne website](https://anodyne-productions.com)
+
 ## Upload Nova
 
-To begin the installation, you need to upload the Nova 2 files up to your server. If you're not sure how to upload the files to your server, contact your host for help with this step of the process or do a Google search.
+Remember when we mentioned grabbing an FTP client? Well here's where you'll put it to good use!
 
-## Configure Nova
+To get the installation process started we first need to make sure that all of Nova's files have been uploaded to the server. If you're not sure how to do that, you can either reference your FTP client's gude or reach out to your host for help with this step.
 
-Before beginning the installation, you can choose to change any of Nova's configuration options in the config files located in the `app/config` directory. This is completely optional and Nova 2 will install fine without any changes to any files in the `config` directory.
+## Fresh Install
 
-## Setting Up the Database Connection
+With your files uploaded to the server, all you need to do is navigate to your website address (let's call it `https://nova.space` for the sake of this guide). You should see the Install Center and an option to do a Fresh Install. If you click on that option, Nova will walk you through the installation process.
 
-This is the part where everyone panics and says it's too complicated and difficult to get started. This is also the part where we prove you wrong.
+### Database Connection
 
-Setting up your connection to the database is dead simple. All you need to do is open your browser and navigate to the location on your server where you uploaded the Nova files. If your server was __http://example.com__ and you uploaded Nova 2 to the root directory (often called `www` or `public_html`), then you'd navigate to __http://example.com__ and you'd be automatically redirected to the Config Setup page. From this page, you'll be able to tell Nova the information for connecting to your database and then Nova will 1) attempt to connect to the database and make sure it can, then 2) write that information to a connection file. Pretty easy, huh?
+The first step in the process is going to be setting up a connection to the database that will house all of the data you put into your site. You can simply enter the information that your host gave you about your database and move on to the next step. Nova will verify it can connect to the database and then create a file on the server that securely holds your database credentials so it can continue to connect.
 
-If for some reason your server doesn't support creating files from a web script, the setup process will show you the code to copy and paste into the database connection file.
+Every once in a while, a server won't have everything turned on that Nova needs to create the database credentials file. That's okay. If Nova can't create the file, you'll be shown a screen that will give you instructions on how to manually create the file and what to put in the file.
 
-### Explaining the Options
+### Installing Nova
 
-* __Database Name__ - The name of the database you're trying to connect to and install Nova to in to. If you don't know the name of your database, contact your host.
-* __Username__ - The username used to connect to your database. This may or may not be the same as your FTP username, so if you don't know, contact your host.
-* __Password__ - The password used to connect to your database. This may or may not be the same as your FTP password, so if you don't know, contact your host.
-* __Database Host__ - This is where the database lives. 99% of the time, this will be _localhost_ though if your host has a different setup, they may have sent you a different host name. If you aren't sure about this, contact your host.
-* __Table Prefix__ - This is the word or initials that will prefix all table names. This helps to keep Nova's tables together and allows you to install other things in to the database without causing conflicts. This is set to _nova\__ by default.
+Once Nova can connect to your database, it can go through the process of creating everything it needs in the database for Nova to run. First, it'll create the tables and insert some basic data to get your started, then it will insert any of the genre-specific information (which is based on which genre you selected when you downloaded Nova from the Anodyne website).
 
-## Install the System
+### Your Account
 
-Once you've stepped through creating the config file, you'll be sent over to the Install Center where you'll be given all your available options for installing Nova 2. Select Fresh Install from the list and follow the prompts to install Nova 2 in to your database. The steps of the install process are as follows:
+Now that Nova is installed, it's time to create your user account and the character that will be linked to your account. This is only the essential information needed to create your account and biography, you'll be able to add more details after the installation is complete.
 
-1. Create Nova database tables
-2. Insert basic data into the tables
-3. Create genre-specific tables and insert data into them
-4. Set up your player account and the character name, rank and position of your primary character
-5. Set up some basic system settings
+### System Settings
 
-## Post-Installation
+The final step in the installation process is to update a few key system settings. You'll be able to change any of these settings later on, so nothing is set in stone.
 
-At the end of the installation Nova will attempt to change several permissions in order to ensure all the backup and upload features work properly. It's possible that your host will have turned off the functions necessary to do this, so if you run in to any problems uploading to Nova, you'll need to change the file permissions on several directories to ensure they're writable (777). If you don't know how to change file permissions, contact your host. The following directories (and their sub-directories) need to be writable:
+## File Permissions
 
-* `application/assets/images`
-* `application/assets/backups`
-* `application/cache`
-* `application/logs`
+It's a little technical, but at the end of the installation process Nova will attempt to change some file permissions in order to ensure all of Nova's backup and upload features work properly. In some cases, the ability to do that may not be avaiable. If that happens and you notice strange errors or things not working the way you expect, you'll need to change the file permissions yourself. If you're not sure how to do this, your web host can help you change the permissions on several directories.
+
+In order for all the permissions to work as expected, you'll need to make sure the following directories (and their sub-directories) are writable (777... your host will know what that means):
+
+- `application/assets/images`
+- `application/assets/backups`
+- `application/cache`
+- `application/logs`

@@ -6,21 +6,36 @@
             "installation",
             "configuration",
             "upgrade-guide",
-            "compatability"
+            "compatability",
+            {
+                "name": "Pretty URLs",
+                "file": "pretty-urls"
+            }
         ]
     },
     {
         "title": "Using Nova",
         "pages": [
             {
-                "name": "Administrators",
-                "file": "using-nova-admins"
+                "name": "Forms",
+                "file": "using-forms"
             },
             {
-                "name": "Members",
-                "file": "using-nova-members"
+                "name": "Permissions",
+                "file": "using-permissions"
             },
-            "wiki"
+            {
+                "name": "Posts",
+                "file": "using-posts"
+            },
+            {
+                "name": "Ranks",
+                "file": "using-ranks"
+            },
+            {
+                "name": "Wiki",
+                "file": "using-wiki"
+            }
         ]
     },
     {
@@ -36,7 +51,11 @@
         "pages": [
             "extensions",
             "events",
-            "themeing"
+            "themeing",
+            {
+                "name": "Creating a page",
+                "file": "creating-pages"
+            }
         ]
     }
 ]

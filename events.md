@@ -1,8 +1,13 @@
 # Events
 
+Nova provides a robust events system for MODs to listen as actions happen throughout the system.
+
+---
+
 Nova provides an Events library that allows a sim or mod to define callbacks that are run when an event occurs. While accessible throughout Nova, Events are most useful in the context of building Extensions, as Events allow Extensions to hook into existing Nova functionality.
 
 ## Event Basics
+
 In order to define a listener, assuming $this is the CodeIgniter content, simply call:
 
 ```.language-php
@@ -13,8 +18,8 @@ The `$eventName` may be written as an array of segments or as a string with a `.
 
 For example, these two `$eventName` values are identical:
 
-* `['location', 'view', 'output', 'main', 'index']`
-* `"location.view.output.main.index"`
+- `['location', 'view', 'output', 'main', 'index']`
+- `"location.view.output.main.index"`
 
 The `$eventCallback`, meanwhile, should accept a single `$event` array parameter with data elements that will vary based on the event the listener is listening on.
 
@@ -88,12 +93,12 @@ This event allows a listener to manipulate the data that is to be sent to a view
 
 Input Segments:
 
-* `$SECTION` - The view section, such as main or admin.
-* `$VIEW` - The view name, such as personnel_character or characters_bio.
+- `$SECTION` - The view section, such as main or admin.
+- `$VIEW` - The view name, such as personnel_character or characters_bio.
 
 Callback Data:
 
-* `data` - The data object that will be sent to the view.
+- `data` - The data object that will be sent to the view.
 
 Example:
 
@@ -112,13 +117,13 @@ This event allows a listener to manipulate the output of a view once it has been
 
 Input Segments:
 
-* `$SECTION` - The view section, such as main or admin.
-* `$VIEW` - The view name, such as personnel_character or characters_bio.
+- `$SECTION` - The view section, such as main or admin.
+- `$VIEW` - The view name, such as personnel_character or characters_bio.
 
 Callback Data:
 
-* `data` - The data object that was sent to the view to get the output.
-* `output` - The string that was produced after data was sent to the view.
+- `data` - The data object that was sent to the view to get the output.
+- `output` - The string that was produced after data was sent to the view.
 
 Example:
 
@@ -136,12 +141,12 @@ This event allows a listener to manipulate the data that is to be sent to a temp
 
 Input Segments:
 
-* `$ROUTERCLASS` - The controller class as resolved by the router.
-* `$ROUTERMETHOD` - The controller method as resolved by the router.
+- `$ROUTERCLASS` - The controller class as resolved by the router.
+- `$ROUTERMETHOD` - The controller method as resolved by the router.
 
 Callback Data:
 
-* `data` - The data object that will be sent to the view.
+- `data` - The data object that will be sent to the view.
 
 Example:
 
@@ -161,13 +166,13 @@ This event allows a listener to manipulate the output of a template once it has 
 
 Input Segments:
 
-* `$ROUTERCLASS` - The controller class as resolved by the router.
-* `$ROUTERMETHOD` - The controller method as resolved by the router.
+- `$ROUTERCLASS` - The controller class as resolved by the router.
+- `$ROUTERMETHOD` - The controller method as resolved by the router.
 
 Callback Data:
 
-* `data` - The data object that was sent to the template to get the output.
-* `output` - The string that was produced after data was sent to the template.
+- `data` - The data object that was sent to the template to get the output.
+- `output` - The string that was produced after data was sent to the template.
 
 Example:
 
@@ -189,14 +194,14 @@ This event allows a listener to manipulate the data to be inserted into a databa
 
 Input Segments:
 
-* `$TABLE` - The name of the table into which the data will be written.
-* `$ROUTERCLASS` - The controller class as resolved by the router.
-* `$ROUTERMETHOD` - The controller method as resolved by the router.
+- `$TABLE` - The name of the table into which the data will be written.
+- `$ROUTERCLASS` - The controller class as resolved by the router.
+- `$ROUTERMETHOD` - The controller method as resolved by the router.
 
 Callback Data:
 
-* `data` - The data to be inserted into the table.
-* `table` - The name of the table.
+- `data` - The data to be inserted into the table.
+- `table` - The name of the table.
 
 Example:
 
@@ -213,16 +218,16 @@ This event allows a listener to manipulate the data to be updated for an existin
 
 Input Segments:
 
-* `$TABLE` - The name of the table into which the data will be written.
-* `$ROUTERCLASS` - The controller class as resolved by the router.
-* `$ROUTERMETHOD` - The controller method as resolved by the router.
+- `$TABLE` - The name of the table into which the data will be written.
+- `$ROUTERCLASS` - The controller class as resolved by the router.
+- `$ROUTERMETHOD` - The controller method as resolved by the router.
 
 Callback Data:
 
-* `data` - The data to be inserted into the table.
-* `table` - The name of the table.
-* `where` - The where constraint defined in the update call.
-* `limit` - The limit constraint defined in the update call.
+- `data` - The data to be inserted into the table.
+- `table` - The name of the table.
+- `where` - The where constraint defined in the update call.
+- `limit` - The limit constraint defined in the update call.
 
 Example:
 
@@ -241,17 +246,17 @@ This event allows a listener to manipulate the delete operation executed on a ta
 
 Input Segments:
 
-* `$TABLE` - The name of the table into which the data will be written.
-* `$ROUTERCLASS` - The controller class as resolved by the router.
-* `$ROUTERMETHOD` - The controller method as resolved by the router.
+- `$TABLE` - The name of the table into which the data will be written.
+- `$ROUTERCLASS` - The controller class as resolved by the router.
+- `$ROUTERMETHOD` - The controller method as resolved by the router.
 
 Callback Data:
 
-* `abort` - A boolean where, if set true, will prevent the delete operation from occuring.
-* `table` - The name of the table.
-* `where` - The where constraint defined in the delete call.
-* `limit` - The limit constraint defined in the delete call.
-* `resetData` - The reset_data parameter defined in the delete call.
+- `abort` - A boolean where, if set true, will prevent the delete operation from occuring.
+- `table` - The name of the table.
+- `where` - The where constraint defined in the delete call.
+- `limit` - The limit constraint defined in the delete call.
+- `resetData` - The reset_data parameter defined in the delete call.
 
 Example:
 
