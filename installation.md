@@ -1,110 +1,48 @@
 # Installation
 
-- [Installation](#installation)
-    - [Server Requirements](#server-requirements)
-    - [Installing Nova](#installing-nova)
-    - [Configuration](#configuration)
-- [Web Server Configuration](#web-server-configuration)
-    - [File Permissions](#file-permissions)
-    - [Pretty URLs](#pretty-urls)
+Learn how to get up and running with Nova 2.
 
-## Installation {#installation}
+---
 
-### Server Requirements {#server-requirements}
+## Upload Nova
 
-We've worked hard to make sure Nova's requirements are as broad as possible so as many people as possible can use it for their games. Still, there are a few requirements that you should verify before installing Nova 2. In the event the server you're going to be installing Nova on doesn't support some or all of these things, you should contact your hosting provider and ask them about the possibility of upgrading these items.
+To begin the installation, you need to upload the Nova 2 files up to your server. If you're not sure how to upload the files to your server, contact your host for help with this step of the process or do a Google search.
 
-<div class="content-list" markdown="1">
-- PHP >= 5.3.0
-- MySQL >= 4.1
-</div>
+## Configure Nova
 
-### Installing Nova {#installing-nova}
+Before beginning the installation, you can choose to change any of Nova's configuration options in the config files located in the `app/config` directory. This is completely optional and Nova 2 will install fine without any changes to any files in the `config` directory.
 
-#### Upload Nova
+## Setting Up the Database Connection
 
-To begin installing Nova 2, you'll need to upload Nova's files to your server. If you're not sure how to upload files to your server, contact your host for help with this step of the process.
+This is the part where everyone panics and says it's too complicated and difficult to get started. This is also the part where we prove you wrong.
 
-#### Setup the Database Connection
-
-Nova comes with a web-based tool to setup your database connection. You'll be prompted to enter some information you should have received from your host when setting up your account and Nova will create the necessary configuration file for you.
+Setting up your connection to the database is dead simple. All you need to do is open your browser and navigate to the location on your server where you uploaded the Nova files. If your server was __http://example.com__ and you uploaded Nova 2 to the root directory (often called `www` or `public_html`), then you'd navigate to __http://example.com__ and you'd be automatically redirected to the Config Setup page. From this page, you'll be able to tell Nova the information for connecting to your database and then Nova will 1) attempt to connect to the database and make sure it can, then 2) write that information to a connection file. Pretty easy, huh?
 
 If for some reason your server doesn't support creating files from a web script, the setup process will show you the code to copy and paste into the database connection file.
 
-##### Explaining the Options
+### Explaining the Options
 
-- __Database Name__ - The name of the database you're trying to connect to and install Nova into. If you don't know the name of your database, contact your host.
-- __Username__ - The username used to connect to your database. This may or may not be the same as your FTP username, so if you don't know, contact your host.
-- __Password__ - The password used to connect to your database. This may or may not be the same as your FTP password, so if you don't know, contact your host.
-- __Database Host__ - This is where the database lives. 99% of the time, this will be `localhost` though if your host has a different setup, they may have sent you a different host name. If you aren't sure about this, contact your host.
-- __Table Prefix__ - This is the word or initials that will prefix all table names. This helps to keep Nova's tables together and allows you to install other things in to the database without causing conflicts. This is set to `nova_` by default.
+* __Database Name__ - The name of the database you're trying to connect to and install Nova to in to. If you don't know the name of your database, contact your host.
+* __Username__ - The username used to connect to your database. This may or may not be the same as your FTP username, so if you don't know, contact your host.
+* __Password__ - The password used to connect to your database. This may or may not be the same as your FTP password, so if you don't know, contact your host.
+* __Database Host__ - This is where the database lives. 99% of the time, this will be _localhost_ though if your host has a different setup, they may have sent you a different host name. If you aren't sure about this, contact your host.
+* __Table Prefix__ - This is the word or initials that will prefix all table names. This helps to keep Nova's tables together and allows you to install other things in to the database without causing conflicts. This is set to _nova\__ by default.
 
-#### Install Nova
+## Install the System
 
-Once you've finished creating the database config file, you'll be sent over to the Install Center where you'll be given all your available options for installing Nova 2. Select __Fresh Install__ from the list and follow the prompts to install Nova 2.
+Once you've stepped through creating the config file, you'll be sent over to the Install Center where you'll be given all your available options for installing Nova 2. Select Fresh Install from the list and follow the prompts to install Nova 2 in to your database. The steps of the install process are as follows:
 
-### Configuration {#configuration}
+1. Create Nova database tables
+2. Insert basic data into the tables
+3. Create genre-specific tables and insert data into them
+4. Set up your player account and the character name, rank and position of your primary character
+5. Set up some basic system settings
 
-Either before beginning the installation or after finishing the installation, you can change any of Nova's configuration options in the config files located in the `application/config` directory.
+## Post-Installation
 
-## Web Server Configuration {#web-server-configuration}
+At the end of the installation Nova will attempt to change several permissions in order to ensure all the backup and upload features work properly. It's possible that your host will have turned off the functions necessary to do this, so if you run in to any problems uploading to Nova, you'll need to change the file permissions on several directories to ensure they're writable (777). If you don't know how to change file permissions, contact your host. The following directories (and their sub-directories) need to be writable:
 
-### File Permissions {#file-permissions}
-
-At the end of the install process Nova will attempt to change several permissions in order to ensure all the backup and upload features work properly. It's possible that your host will have turned off the functions necessary to do this, so if you run in to any problems uploading to Nova, you'll need to change the file permissions on several directories to ensure they're writable (777). If you don't know how to change file permissions, contact your host. The following directories (and their sub-directories) need to be writable:
-
-<div class="content-list" markdown="1">
-- application/assets/images
-- application/assets/backups
-- application/cache
-- application/logs
-</div>
-
-### Pretty URLs {#pretty-urls}
-
-#### Update CodeIgniter
-
-To begin, you'll need to update Nova's config to ensure that any links won't include `index.php` in them. Copy the code below and paste it into `application/config/config.php` below the `require_once` line.
-
-```.language-php
-$config['index_page'] = "";
-```
-
-Save the file and ensure it's been uploaded back up to your server.
-
-#### Apache
-
-If your site is on a server running Apache, you'll need to check with your host and ensure that the `mod_rewrite` module is enabled so the `.htaccess` file will be honored by the server.
-
-You can then create a file named `.htaccess` (the period at the beginning is important) and paste the following code in:
-
-```.language-apache
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-    # Leave 'RewriteBase /' if not installing into subfolder
-    RewriteBase /
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ index.php?/$1 [L]
-</IfModule>
-
-<IfModule !mod_rewrite.c>
-    # If we don't have mod_rewrite installed, all 404's
-    # can be sent to index.php, and everything works as normal.
-    # Submitted by: ElliotHaughin
-
-    ErrorDocument 404 /index.php
-</IfModule>
-```
-
-#### Nginx
-
-If your site is on a server running Nginx, the following directive in your site configuration will direct all requests to the `index.php` front controller:
-
-```.language-nginx
-location / {
-    try_files $uri $uri/ /index.php?$query_string;
-}
-```
+* `application/assets/images`
+* `application/assets/backups`
+* `application/cache`
+* `application/logs`

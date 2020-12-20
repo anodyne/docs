@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Getting Started",
+        "pages": [
+            "before-getting-started",
+            "installation",
+            "configuration",
+            "upgrade-guide",
+            "compatability"
+        ]
+    },
+    {
+        "title": "Using Nova",
+        "pages": [
+            {
+                "name": "Administrators",
+                "file": "using-nova-admins"
+            },
+            {
+                "name": "Members",
+                "file": "using-nova-members"
+            },
+            "wiki"
+        ]
+    },
+    {
+        "title": "Core Concepts",
+        "pages": [
+            "controllers",
+            "models",
+            "emails"
+        ]
+    },
+    {
+        "title": "Modifications",
+        "pages": [
+            "extensions",
+            "events",
+            "themeing"
+        ]
+    }
+]
