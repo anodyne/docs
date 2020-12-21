@@ -1,42 +1,32 @@
 # Installation
 
-- [Installation](#installation)
-    - [Requirements](#requirements)
-    - [Browser Support](#browser-support)
-    - [Installing Nova](#installing-nova)
-    - [Configuration](#configuration)
-- [Web Server Configuration](#web-server-configuration)
-    - [File Permissions](#file-permissions)
-    - [Pretty URLs](#pretty-urls)
+Learn how to get Nova 3 up and running.
 
-## Installation {#installation}
+---
 
-### Requirements {#requirements}
+## Requirements
 
 Nova 3 has a few requirements you should be aware of before installing:
 
-<div class="content-list" markdown="1">
-- PHP >= 7.2.5
-- MySQL >= 5.7
+- PHP 7.4 or higher
+- MySQL 5.7 or higher
 - Fileinfo PHP extension
 - JSON PHP Extension
 - PDO PHP Extension
-</div>
 
 If you aren't sure if your server can support these requirements, please contact your web host. If you are unable to install Nova 3, you'll still be able to run [Nova 2](https://anodyne-productions.com) on your server.
 
-### Browser Support {#browser-support}
+### Browser Support
 
 Nova supports reasonably recent versions of the following browsers:
 
-<div class="content-list" markdown="1">
 - Google Chrome
 - Apple Safari
 - Microsoft Edge
 - Mozilla Firefox
-</div>
+- Brave
 
-### Installing Nova {#installing-nova}
+### Installing Nova
 
 #### Upload Nova
 
@@ -60,28 +50,26 @@ If for some reason your server doesn't support creating files from a web script,
 
 Once you've finished creating the database config file, you'll be sent over to the Install Center where you'll be given all your available options for installing Nova 3. Select __Fresh Install__ from the list and follow the prompts to install Nova 3.
 
-### Configuration {#configuration}
+### Configuration
 
 Either before beginning the installation or after finishing the installation, you can change any of Nova's configuration options in the config files located in the `application/config` directory.
 
-## Web Server Configuration {#web-server-configuration}
+## Web Server Configuration
 
-### File Permissions {#file-permissions}
+### File Permissions
 
 At the end of the install process Nova will attempt to change several permissions in order to ensure all the backup and upload features work properly. It's possible that your host will have turned off the functions necessary to do this, so if you run in to any problems uploading to Nova, you'll need to change the file permissions on several directories to ensure they're writable (777). If you don't know how to change file permissions, contact your host. The following directories (and their sub-directories) need to be writable:
 
-<div class="content-list" markdown="1">
 - assets
 - storage
-</div>
 
-### Pretty URLs {#pretty-urls}
+### Pretty URLs
 
 #### Nginx
 
 If your site is on a server running Nginx, the following directive in your site configuration will direct all requests to the `index.php` front controller:
 
-```.language-nginx
+```nginx
 location / {
     try_files $uri $uri/ /index.php?$query_string;
 }
@@ -93,7 +81,7 @@ If your site is on a server running Apache, you'll need to check with your host 
 
 You can then create a file named `.htaccess` (the period at the beginning is important) and paste the following code in:
 
-```.language-apache
+```apache
 Options +FollowSymLinks -Indexes
 RewriteEngine On
 

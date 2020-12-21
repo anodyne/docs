@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Getting Started",
+        "pages": [
+            "installation",
+            {
+                "file": "release-notes",
+                "link": "https://github.com/anodyne/nova3/releases"
+            },
+            "browser-support",
+            "upgrade-guide",
+            "contribution-guide",
+            "configuration",
+            "directory-structure"
+        ]
+    },
+    {
+        "title": "Core Concepts",
+        "pages": [
+            "alert"
+        ]
+    },
+    {
+        "title": "Themes",
+        "pages": [
+            "form-button",
+            "logout"
+        ]
+    },
+    {
+        "title": "Extensions",
+        "pages": [
+            "form-button",
+            "logout"
+        ]
+    },
+    {
+        "title": "Guides",
+        "pages": [
+            "form-button",
+            "logout"
+        ]
+    }
+]
