@@ -64,7 +64,7 @@ If you are operating a game that does not wish to use ranks, or would have rank-
 
 To remove a Rank's name and/or abbreviation, follow the instructions above for Modifying existing Ranks. When you select the Rank you wish to edit, simply erase the name and/or the abbreviation, then select **Update** at the bottom of the page.
 
-![Blank rank](/images/docs/2.6/using-ranks/rank-blankrank.jpg)
+![Blank rank](/images/docs/2.6/using-ranks/rank-blankrank.png)
 
 ## Removing a rank and/or rank class
 
@@ -103,7 +103,7 @@ Open the new directory and ensure that you see image files, and not additional d
 
 To install your new rank set, access Nova's Control Panel, and locate **Rank Catalogue** under the *Site Management* subheader on the sidebar.
 
-![Accessing Rank Catalogue](/images/docs/2.6/using-ranks/controlpanel-installcatalogue.png)
+![Accessing Rank Catalogue](/images/docs/2.6/using-ranks/controlpanel-rankcatalogue.png)
 
 Some downloadable rank sets contain a `rank.yml` file. Nova will automatically detect this file and will provide a button at the top of the **Rank Catalogue** page to easily install the rank set.
 
