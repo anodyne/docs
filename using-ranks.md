@@ -91,7 +91,7 @@ Once you have downloaded (or created) your new rank set, you will need to access
 
 ### Uploading the rank set
 
-Access your Site's files, and navigate to the `application\assets\common\xyz\ranks` directory. The **XYZ** directory will have a different name for your Site, such as `ds9`, `tos`, `blk`, etc. This directory identifies which installer was used to first build your Site.
+Access your Site's files, and navigate to the `application\assets\common\{genre}\ranks` directory. The **{genre}** directory will have a different name for your Site, such as `ds9`, `tos`, `blk`, etc. This directory identifies which installer was used to first build your Site.
 
 You will notice that the `ranks` directory will already contain a `default` directory. That directory contains the pre-installed images for the base rank set.
 
@@ -117,7 +117,7 @@ The available options are:
 
 1. *Name*: the name of your rank set.
 2. *Genre*: the genre your set belongs to. For best results, this needs to match the genre which you used to install the Nova Software.
-3. *Server Directory*: the name of the directory containing the rank set. **Do not include** the full `application\assets\common\xyz\ranks` directory again, just the name of the new directory.
+3. *Server Directory*: the name of the directory containing the rank set. **Do not include** the full `application\assets\common\{genre}\ranks` directory again, just the name of the new directory.
 4. *Preview Image*: the filename of an image that can be used to preview the entire set.
 5. *Blank Image*: the filename of an image background that is representative of the set.
 6. *Image Extension*: the file extension of all rank images in the directory, such as `.png` or `.jpg`.
