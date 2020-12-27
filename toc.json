@@ -2,6 +2,10 @@
     {
         "title": "Getting Started",
         "pages": [
+            {
+                "name": "License Agreement",
+                "file": "license-agreement"
+            },
             "before-getting-started",
             "installation",
             "configuration",
