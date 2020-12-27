@@ -47,7 +47,12 @@
         "pages": [
             "controllers",
             "models",
-            "emails"
+            "emails",
+        {
+            "name": "File Structure",
+            "file": "file-structure"
+        }
+
         ]
     },
     {
