@@ -24,7 +24,7 @@ Additionally, to add rank sets you will need to have direct access to your site'
 
 From the Rank Management page, you will be able to view all ranks. In Nova's Control Panel, locate **Ranks** under the *Management* subheader in the sidebar.
 
-![Ranks Management](images/using-ranks/management-ranks.png)
+![Ranks Management](/images/docs/2.6/using-ranks/management-ranks.png)
 
 All available rank sets and rank classes will be displayed at the top of the page. Individual rank sets will be denoted by a single preview image and rank classes within a rank set will be displayed by a preview image of each color. You can click on the desired class image to display all ranks in that rank class.
 
