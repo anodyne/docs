@@ -28,7 +28,7 @@ From the Rank Management page, you will be able to view all ranks. In Nova's Con
 
 All available rank sets and rank classes will be displayed at the top of the page. Individual rank sets will be denoted by a single preview image and rank classes within a rank set will be displayed by a preview image of each color. You can click on the desired class image to display all ranks in that rank class.
 
-![Rank Sets and Classes](images/using-ranks/ranks-sets-classes.png)
+![Rank Sets and Classes](/images/docs/2.6/using-ranks/ranks-sets-classes.png)
 
 ## Adding a rank
 
@@ -38,7 +38,7 @@ Adding a rank is simple. Let's create a Lieutenant in a *Star Trek* Science Divi
 
 1. From the Control Panel, locate **Ranks** under the *Management* subheader in the sidebar.
 2. Click **Add A Rank**. A dialog box (also called a modal) will appear.
-    ![Add Rank](images/using-ranks/rank-addrank.png)
+    ![Add Rank](/images/docs/2.6/using-ranks/rank-addrank.png)
 3. Fill out the information in the dialog box:
   - *Name*: the name of the rank (e.g. *Lieutenant*).
   - *Short Name*: an abbreviation of the rank (e.g. *LT*).
@@ -54,7 +54,7 @@ Adding a rank is simple. Let's create a Lieutenant in a *Star Trek* Science Divi
 
 To modify any existing rank that is available in Nova, access Nova's Control Panel, and locate **Ranks** under the *Management* subheader on the sidebar.
 
-![Modifying a rank](images/using-ranks/rank-modify.png)
+![Modifying a rank](/images/docs/2.6/using-ranks/rank-modify.png)
 
 Select the appropriate **rank class**, and then scroll until you find the Rank you wish to edit. The Rank name and image are readily available, and more options are accessible via the `More` button. You can edit as many ranks as you need in the selected Class at a time, but you will lose your changes if you select a different Class. Be sure to hit the **Update** button at the bottom of the page before navigating to a new class.
 
@@ -64,7 +64,7 @@ If you are operating a game that does not wish to use ranks, or would have rank-
 
 To remove a Rank's name and/or abbreviation, follow the instructions above for Modifying existing Ranks. When you select the Rank you wish to edit, simply erase the name and/or the abbreviation, then select **Update** at the bottom of the page.
 
-![Blank rank](images/using-ranks/rank-blankrank.jpg)
+![Blank rank](/images/docs/2.6/using-ranks/rank-blankrank.jpg)
 
 ## Removing a rank and/or rank class
 
@@ -103,11 +103,11 @@ Open the new directory and ensure that you see image files, and not additional d
 
 To install your new rank set, access Nova's Control Panel, and locate **Rank Catalogue** under the *Site Management* subheader on the sidebar.
 
-![Accessing Rank Catalogue](images/using-ranks/controlpanel-installcatalogue.png)
+![Accessing Rank Catalogue](/images/docs/2.6/using-ranks/controlpanel-installcatalogue.png)
 
 Some downloadable rank sets contain a `rank.yml` file. Nova will automatically detect this file and will provide a button at the top of the **Rank Catalogue** page to easily install the rank set.
 
-![Install Rankset](images/using-ranks/rankcatalogue-install.png)
+![Install Rankset](/images/docs/2.6/using-ranks/rankcatalogue-install.png)
 
 If the rank set does contain the `rank.yml` file, but Nova does not detect it, please check your File Manager to ensure that the rank set was uploaded to the right location and that the files are visible.
 
@@ -133,20 +133,20 @@ Once you have more than one rank set installed, you can freely change between th
 
 To change the rank set that appears for all users, specifically for those who are logged out, access Nova's Control Panel, and locate **Settings** under the *Site Management* subheader on the sidebar.
 
-![Site Settings](images/using-ranks/sitemanagement-settings.png)
+![Site Settings](/images/docs/2.6/using-ranks/sitemanagement-settings.png)
 
 Select the **Appearance** tab, and locate rank set under Display Options. Once you have selected your rank set, scroll down and select the **Submit** button.
 
-![Display Options](images/using-ranks/sitesettings-displayoptions.png)
+![Display Options](/images/docs/2.6/using-ranks/sitesettings-displayoptions.png)
 
 Now that the rank set has been changed for most users, you will need to change your own account's display preferences in order to see the new set.
 
 1. At the top of the page, find the **Dashboard** icon.
-    ![Dashboard](images/using-ranks/dashboard.png)
+    ![Dashboard](/images/docs/2.6/using-ranks/dashboard.png)
 2. A popup (modal) will appear in the center of the screen. Select **Edit Site Preferences**.
-    ![Dashboard Modal](images/using-ranks/dashboard-sitepreferences.png)
+    ![Dashboard Modal](/images/docs/2.6/using-ranks/dashboard-sitepreferences.png)
 3. Select the **My Ranks** tab.
-    ![Select Your Rank](images/using-ranks/siteoptions-myranks.png)
+    ![Select Your Rank](/images/docs/2.6/using-ranks/siteoptions-myranks.png)
 4. Select your desired rankset, then click **Update**.
 
 You will now be able to see your preferred rankset no matter where you are on the site!
