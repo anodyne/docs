@@ -18,37 +18,43 @@ This is, most likely, one of your first forays into controllers. In the simplest
 
 To start, we're going to open `application/controllers/sim.php`. This is the controller that handles all of the pages in the sim section. When you open the file, you'll notice that it's almost empty. The core sim pages are stored in the base controller in the Nova module. Since we're not interested in modifying those, we're going to just add a new controller action to this file after the comment about adding your own methods after it.
 
-    public function sim_allawards()
-    {
-    $this->_regions['content'] = Location::view('sim_allawards', $this->skin, 'main', false);
-    $this->_regions['title'].= "Awards We've Won";
+```public function sim_allawards()
+{
+$this->_regions['content'] = Location::view('sim_allawards', $this->skin, 'main', false);
+$this->_regions['title'].= "Awards We've Won";
 
-    Template::assign($this->_regions);
+Template::assign($this->_regions);
 
-    Template::render();
-    }
+Template::render();
+}
+```
 
 Let's step through this piece-by-piece to see what's going on.
 
-    public function sim_allawards()
+```public function sim_allawards()
+```
 
 A controller action is nothing more than a class method. A class method is a function inside a class. Pretty simple. Nova will use the name of the controller action as part of the URL. (This actually is what tells the controller where it needs to go.) In this case, our URL would be `index.php/sim/sim_allawards`. You can name your controller action whatever you want provided it doesn't conflict with another method in that particular controller or that it isn't a reserved PHP word.
 
-    $this->_regions['content'] = Location::view('sim_allawards', $this->skin, 'main', false);
+```$this->_regions['content'] = Location::view('sim_allawards', $this->skin, 'main', false);
+```
 
 Nova templates are broken up into regions. The guts of a page are part of the content region. What we're doing here is assigning a view file to the content region to be rendered by the browser. Sounds complicated, but it really isn't. All you need to know is the second part: the location class.
 
 In order for seamless substitution to work, we created a location class (it used to be a helper in Nova 1) that does all the heavy lifting and figures out where to pull files from. In this case, we're looking for a view that's named `sim_allawards.php` (the .php part is assumed so you don't have to include it). After that, the class is simplying being told where to look and what section it's part of.
 
-    $this->_regions['title'].= "Awards We've Won";
+```$this->_regions['title'].= "Awards We've Won";
+```
 
 Now, we're simply setting the title of the page (what we see in the browser's title bar). You can see that to whatever you want provided it's a string.
 
-    Template::assign($this->_regions);
+```Template::assign($this->_regions);
+```
 
 This is required as it takes all the regions and assigns them to the template.
 
-    Template::render();
+```Template::render();
+```
 
 Pretty self-explanatory here, but we're telling the Template class to render the template to the browser window.
 
@@ -58,11 +64,10 @@ If you tried to go to your page above, you'd be greeted by a nasty error telling
 
 So what are we going to put in our view file?
 
-    <h1 class="page-head">Awards We've Won</h1>
-
-    <p>Below is a list of all the awards we've won!</p>
-
-    <p><img src="<?php echo base_url();?>app/assets/images/award_image.jpg" /></p>
+```<h1 class="page-head">Awards We've Won</h1>
+<p>Below is a list of all the awards we've won!</p>
+<p><img src="<?php echo base_url();?>app/assets/images/award_image.jpg" /></p>
+```
 
 When it's all done, it'll look something like this:
 ![Sim Awards Page](/images/docs/2.6/creating-pages/awardspage.png)
