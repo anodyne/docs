@@ -54,7 +54,7 @@ For example, a site running Nova version 2.3.2 would read:
 - `sys_version_minor`: 3
 - `sys_version_update`: 2
 
-### 2.6 from 2.5.x
+### v2.6 from v2.5.x
 
 Nova 2.6 introduced [Events](/docs/2.6/events) and [Extensions](/docs/2.6/extensions), two powerful features that unlock easier ways to modify a Nova site as well as several incredibly powerful ways to expand upon the base installation. In addition to following the normal update process, Nova 2.6 includes additional changes you’ll need to make for the new event and extension systems to work correctly.
 
@@ -72,7 +72,7 @@ Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/
 
 Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/libraries/Event.php) into a new file called `Event.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
 
-### 2.5 from 2.4.x
+### v2.5 from v2.4.x
 
 Nova 2.5 introduced easy ways to add privacy policies to your site, the ability for users to delete their own accounts and personal information, and some compatibility updates for PHP 7. In addition to following the normal update process, Nova 2.5 includes two additional changes that you’ll need to make.
 
@@ -91,7 +91,11 @@ Finally, if you haven’t made any changes to the `default` or `titan` skins, yo
 
 If you have made changes to those skins or have your own skins that need to be updated, you can add the following line anywhere in your template files to provide a link to the privacy policy pages:
 
-`&lt;?php echo anchor('main/policies', 'Privacy Policy'); ?>`
+```
+@verbatim
+<?php echo anchor('main/policies', 'Privacy Policy'); ?>
+@endverbatim
+```
 
 <x-docs.alert>You'll need to make this change in every skin and every template on your site.</x-docs.alert>
 
@@ -99,10 +103,10 @@ If you have made changes to those skins or have your own skins that need to be u
 
 If you have the ability to change the PHP version running on your server and decide to make the jump up to PHP 7, you’ll need to edit the `application/config/database.php` file to account for PHP’s removal of the `mysql` functions. You can do that by changing `$db['default']['dbdriver']` config item to be `mysqli`.
 
-### 2.4 from 2.3.x
+### v2.4 from v2.3.x
 
 Nova 2.4 introduced some major changes to how Nova sends email to all players. In addition to following the normal update process, there's one additional change you'll need to make. In the zip archive you downloaded, you'll need to copy the `Mail.php` file from `application/libraries` to the `application/libraries` directory on your server. This will allow the new email class to work as expected.
 
-### 2.3 from any previous version
+### v2.3 from v1.0+
 
 If you are upgrading from a version of Nova before 2.3.2, please reach out to our support team on [Discord](https://discord.gg/7WmKUks).
