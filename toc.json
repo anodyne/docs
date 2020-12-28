@@ -2,10 +2,6 @@
     {
         "title": "Getting Started",
         "pages": [
-            {
-                "name": "License Agreement",
-                "file": "license-agreement"
-            },
             "before-getting-started",
             "installation",
             "configuration",
@@ -66,5 +62,12 @@
                 "file": "creating-pages"
             }
         ]
+    },
+    {
+      "title": "Resources",
+      "pages": [
+        "license-agreement",
+        "helpful-links"
+      ]
     }
 ]
