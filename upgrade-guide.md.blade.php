@@ -26,9 +26,7 @@ Now that you have your complete backup, you should zip your backup up into a zip
 
 Once you've finished backing up all of your stuff, delete the `nova` directory in its entirety.
 
-<x-docs.alert color="amber">
-    When we say delete, we mean it. Delete the directory and then upload the new copy.
-</x-docs.alert>
+<x-docs.alert color="red">Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to delete the directory and upload a new copy.</x-docs.alert>
 
 ## Upload
 
