@@ -92,9 +92,7 @@ Finally, if you haven’t made any changes to the `default` or `titan` skins, yo
 If you have made changes to those skins or have your own skins that need to be updated, you can add the following line anywhere in your template files to provide a link to the privacy policy pages:
 
 ```
-@verbatim
-<?php echo anchor('main/policies', 'Privacy Policy'); ?>
-@endverbatim
+{{--*/ echo anchor('main/policies', 'Privacy Policy'); /*--}}
 ```
 
 <x-docs.alert>You'll need to make this change in every skin and every template on your site.</x-docs.alert>
