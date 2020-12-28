@@ -41,14 +41,10 @@
     {
         "title": "Core Concepts",
         "pages": [
+            "file-structure",
             "controllers",
             "models",
-            "emails",
-        {
-            "name": "File Structure",
-            "file": "file-structure"
-        }
-
+            "emails"
         ]
     },
     {
@@ -67,6 +63,7 @@
       "title": "Resources",
       "pages": [
         "helpful-links",
+        "backing-up-nova",
         "license-agreement"
       ]
     }

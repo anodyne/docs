@@ -4,49 +4,29 @@ Upgrading Nova to the latest version.
 
 ---
 
-<x-docs.alert title="Before you start">Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from.</x-docs.alert>
+<x-docs.alert title="Before you start">Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our <a href="/docs/2.6/backing-up-nova">guide</a> on backing up Nova.</x-docs.alert>
 
-## Backup your site
+## What you'll need
 
-We constantly harp on making sure to backup Nova before attempting to update it, but how exactly do you backup Nova? It's actually a pretty simple process that you should go through regularly to ensure you have a relatively recent backup in the event something goes wrong with your site. The last thing you want is to lose data and be unable to get your site back to a recent state it was in.
+Before you get started updating Nova, make sure you have the following things ready to go:
 
-### Backing up Nova's files
+- An FTP client for accessing your server
+- The latest copy of Nova downloaded from the [Anodyne site](https://anodyne-productions.com)
+- A solid, recent backup of your site
 
-The first step to creating a solid backup is to save the Nova files off your server onto your device.
+## Updating Nova
 
-1. Connect to your server through your FTP program or cPanel file manager.
-2. Create a folder on your device named `nova_backup_{date}`. We find that having the date in the name of your backup makes it quick and easy to restore the correct version if you need to.
-3. Copy all of the files from the server to the folder your created on your device.
+### Step 1: Remove Nova
 
-### Backing up the database
-
-The database is easily the most important part of your Nova site. In order to backup your database, you'll need to access phpMyAdmin from cPanel. (Some web hosts will give you a direct link to phpMyAdmin while others will have you access it through cPanel.)
-
-1. Log in to phpMyAdmin.
-2. Click on the Export tab across the top of the page.
-3. In the export box click on **Select All** and ensure the SQL option is selected.
-4. In the options panel to the right ensure both structure and data checkboxes are checked.
-5. Check the **Save as File** checkbox and then click Go.
-
-It may take a few minutes, but phpMyAdmin will offer you a download of the entire database with the file extension `.sql`. Save the file in the backup folder you created along with all of the Nova files.
-
-### Archive the backup
-
-Now that you have your complete backup, you can create a zip archive of your backup to save space on your device. Make sure to save the zip file in a safe place that you'll remember!
-
-<x-docs.alert>For additional piece of mind, consider copying the zip archive of your backup to the cloud or a backup hard drive to ensure that even if something happens to your device, you still have your site backups available.</x-docs.alert>
-
-## Remove Nova
-
-Once you've finished backing up your site, delete the `nova` directory in its entirety from your server.
+Once you've finished backing up your site (because you already did that, right?), delete the `nova` directory in its entirety from your server.
 
 <x-docs.alert color="red" title="When we say delete...">Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to delete the directory and upload a new copy.</x-docs.alert>
 
-## Upload Nova
+### Step 2: Upload Nova
 
 With the `nova` directory deleted, you can now upload the new `nova` directory from the zip archive you downloaded from the Anodyne site.
 
-## Run the update
+### Step 3: Run the update
 
 The first step will try to do an automatic backup for you, but you don't have to worry about that too much since you manually backed up everything before you started. (You did back up everything before you started, right?)
 
