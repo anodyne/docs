@@ -14,8 +14,8 @@ To make it easier to choose a web host, we've compiled a list of web hosts that 
 
 Nova is built on two core technologies: PHP and MySQL. That means that when picking a web host it's critical that your web host have PHP and MySQL available as part of the hosting plan. If you use the list linked above, all those hosts have the necessary requirements. If you've found a host not on that list, it's important to know that Nova 2 has a few server requirements:
 
-- PHP 5.3 or higher (_5.6 recommended_)
-- MySQL 5.0 or higher (_5.7 recommended_)
+- PHP 5.3 or higher <x-docs.badge>PHP 5.6 recommended</x-docs.badge>
+- MySQL 5.0 or higher <x-docs.badge>MySQL 5.7 recommended</x-docs.badge>
 
 #### What about PHP 7?
 
