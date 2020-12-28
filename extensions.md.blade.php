@@ -17,7 +17,7 @@ When you download an extension, the installation will always follow roughly the 
 For example, if you have extracted an extension named `my_extension` into `application/extensions/my_extension`, it could be enabled by adding the following to `application/config/extensions.php`:
 
 ```
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+&lt;?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 require_once MODPATH.'core/config/nova_extensions.php';
 
