@@ -16,7 +16,7 @@ When you download an extension, the installation will always follow roughly the 
 
 For example, if you have extracted an extension named `my_extension` into `application/extensions/my_extension`, it could be enabled by adding the following to `application/config/extensions.php`:
 
-```.language-php
+```
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 require_once MODPATH.'core/config/nova_extensions.php';
@@ -32,7 +32,7 @@ An extension is defined as a directory placed within the `application/extensions
 
 As long as the extension is enabled within `application/config/extensions.php` like this:
 
-```.language-php
+```
 $config['extensions']['enabled'][] = 'my_extension';
 ```
 
@@ -44,19 +44,19 @@ The `init.php` file has its own scope with a number of properties and methods av
 
 To get the name of the extension, such as `my_extension` for `application/extensions/my_extension/init.php`:
 
-```.language-php
+```
 $this->name
 ```
 
 To get the path of the extension directory, such as `application/extensions/my_extension` for `application/extensions/my_extension/init.php`:
 
-```.language-php
+```
 $this->path
 ```
 
 To set another extension that must be loaded first (so specified earlier in application/config/extensions.php), such as requiring the `jquery` extension in another extension:
 
-```.language-php
+```
 $this->require_extension('jquery');
 ```
 
@@ -67,13 +67,13 @@ The two main reasons for requiring an extension:
 
 For case (2), an extension can expose an object for use by other extensions as:
 
-```.language-php
+```
 $this->attach('generator', new jquery_generator());
 ```
 
 Supposing that the above statement was within a `jquery` extension, then this exposed object can be leveraged in any extension that requires it (as well as in a sim's application code):
 
-```.language-php
+```
 $this->extension['jquery']['generator']->select('.page-head')->html('Hello World!')
 ```
 
@@ -81,13 +81,13 @@ Besides exposing objects, the primary thing an extension does is hook into the C
 
 To interface with the CodeIgniter instance:
 
-```.language-php
+```
 $this->ci
 ```
 
 For example, an extension could attach an event listener such as:
 
-```.language-php
+```
 $this->ci->event->listen(['template', 'render', 'data'], function ($event) {
   $event['data']['javascript']
         .= '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">'
@@ -122,7 +122,7 @@ To avoid a class name collision, the controller class must also be named in a sp
 
 So for the above example, the class would be `__extensions__my_extension__my_controller`:
 
-```.language-php
+```
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 require_once MODPATH.'core/libraries/Nova_controller_main.php';
@@ -147,13 +147,13 @@ class __extensions__my_extension__my_controller extends Nova_controller_main
 
 To get the URL to my_method within the example above, one may simple call:
 
-```.language-php
+```
 $this->extension['chronological_mission_posts']->url('my_controller/my_method');
 ```
 
 The extension makes it possible to load a view from the views folder within the extension folder:
 
-```.language-php
+```
 $this->extension['my_extension']->view('my_method_view', $this->skin, 'main', $data);
 ```
 
@@ -161,7 +161,7 @@ This view would be located at `applications/extensions/my_extension/views/main/p
 
 The extension makes it possible to load CSS from the views folder within the extension folder:
 
-```.language-php
+```
 $this->extension['my_extension']->inline_css('my_method_styles', $this->skin, 'main', $data);
 ```
 
@@ -169,7 +169,7 @@ This view would be located at `applications/extensions/my_extension/views/main/c
 
 The extension makes it possible to load JavaScript from the views folder within the extension folder:
 
-```.language-php
+```
 $this->extension['my_extension']->inline_js('my_method_scripts', $this->skin, 'main', $data);
 ```
 
@@ -177,7 +177,7 @@ This view would be located at `applications/extensions/my_extension/views/main/j
 
 Putting it all together, one might end up with a controller like:
 
-```.language-php
+```
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 require_once MODPATH.'core/libraries/Nova_controller_main.php';
@@ -212,7 +212,7 @@ application/controllers/extensions/my_extension/my_controller.php
 
 In this file, define the controller with the same name as the extension controller has, except without the leading `__` (the difference in class names here allows you to inherit the one from the extension). For example:
 
-```.language-php
+```
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 require_once APPPATH.'extensions/my_extension/controllers/my_controller.php';
