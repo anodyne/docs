@@ -8,7 +8,7 @@ Nova's documentation follows specific styles that authors should adhere to.
 
 You can use badges to call out specific information in documentation pages. Badges should be on their own line and preferably come at the beginning of a section.
 
-To use a badge, you can write `<x-docs.badge>Content</x-docs.badge>` within your Markdown file. Nova's documentation site will parse and display the badge correctly.
+To use a badge, you can write `&lt;x-docs.badge>Content</x-docs.badge>` within your Markdown file. Nova's documentation site will parse and display the badge correctly.
 
 ### Default badges
 
