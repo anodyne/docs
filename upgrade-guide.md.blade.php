@@ -1,38 +1,52 @@
 # Upgrade Guide
 
+Upgrading Nova to the latest version.
+
 ---
 
 <x-docs.alert title="Before you start">Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from.</x-docs.alert>
 
-## Backup
+## Backup your site
 
-There's always a lot of talking about making sure to back up Nova before attempting to update it or upgrade from SMS. So how exactly do you backup Nova? Creating a backup is pretty straightforward. Before you attempt to update Nova, you should create a backup of your system in the event something goes wrong. The last thing you want is to lose data and be out of luck.
+We constantly harp on making sure to backup Nova before attempting to update it, but how exactly do you backup Nova? It's actually a pretty simple process that you should go through regularly to ensure you have a relatively recent backup in the event something goes wrong with your site. The last thing you want is to lose data and be unable to get your site back to a recent state it was in.
 
-### Files
+### Backing up Nova's files
 
-The first step to creating a solid backup is to save the Nova files off your server to your computer. To do that, you'll need to have an FTP program to connect to the server. Once you've connected to your account with the username, password and location your host gave to you when your account was created, you can download the files. The best way of going about this is to create a folder on your Desktop called `nova_backup` and to copy all the files directly over to that folder. Make sure you get all the files! Once you have all the files, you can disconnect from the server and close your FTP program.
+The first step to creating a solid backup is to save the Nova files off your server onto your device.
 
-### Database
+1. Connect to your server through your FTP program or cPanel file manager.
+2. Create a folder on your device named `nova_backup_{date}`. We find that having the date in the name of your backup makes it quick and easy to restore the correct version if you need to.
+3. Copy all of the files from the server to the folder your created on your device.
 
-The database is the most important part of the system. In order to backup your database, you'll need to access **phpMyAdmin**. On some hosts, you would've been given a direct link to phpMyAdmin and on others, you'll have access to it through software such as **cPanel** or **Plesk**. Once you've logged in to phpMyAdmin, make sure you've selected the database with your Nova tables. You'll know you're in the right place if you see a full list of all the Nova tables. Click on the Export tab across the top of the page.
+### Backing up the database
 
-In the export box, click Select All and make sure the SQL option is selected below. In the Options box to the right, make sure both Structure and Data checkboxes are checked. Finally, click the Save as File checkbox then Go. The system will offer you a download of the SQL database. Save the file to your `nova_backup` folder on your Desktop.
+The database is easily the most important part of your Nova site. In order to backup your database, you'll need to access phpMyAdmin from cPanel. (Some web hosts will give you a direct link to phpMyAdmin while others will have you access it through cPanel.)
 
-### Archive
+1. Log in to phpMyAdmin.
+2. Click on the Export tab across the top of the page.
+3. In the export box click on **Select All** and ensure the SQL option is selected.
+4. In the options panel to the right ensure both structure and data checkboxes are checked.
+5. Check the **Save as File** checkbox and then click Go.
 
-Now that you have your complete backup, you should zip your backup up into a zip archive and name it `nova_backup_{date}` where `{date}` is today's date. Make sure you save the zip file in a safe place in case you need to get at it.
+It may take a few minutes, but phpMyAdmin will offer you a download of the entire database with the file extension `.sql`. Save the file in the backup folder you created along with all of the Nova files.
 
-## Remove
+### Archive the backup
 
-Once you've finished backing up all of your stuff, delete the `nova` directory in its entirety.
+Now that you have your complete backup, you can create a zip archive of your backup to save space on your device. Make sure to save the zip file in a safe place that you'll remember!
+
+<x-docs.alert>For additional piece of mind, consider copying the zip archive of your backup to the cloud or a backup hard drive to ensure that even if something happens to your device, you still have your site backups available.</x-docs.alert>
+
+## Remove Nova
+
+Once you've finished backing up your site, delete the `nova` directory in its entirety from your server.
 
 <x-docs.alert color="red" title="When we say delete...">Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to delete the directory and upload a new copy.</x-docs.alert>
 
-## Upload
+## Upload Nova
 
-With the `nova` directory deleted, upload the new `nova` directory from the zip archive you downloaded from the Anodyne site to your site.
+With the `nova` directory deleted, you can now upload the new `nova` directory from the zip archive you downloaded from the Anodyne site.
 
-## Update
+## Run the update
 
 The first step will try to do an automatic backup for you, but you don't have to worry about that too much since you manually backed up everything before you started. (You did back up everything before you started, right?)
 
