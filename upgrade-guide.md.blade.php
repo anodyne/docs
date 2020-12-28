@@ -2,7 +2,7 @@
 
 ---
 
-<x-docs.alert title="Before you start">Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a solid backup of your site to restore from.</x-docs.alert>
+<x-docs.alert title="Before you start">Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from.</x-docs.alert>
 
 ## Backup
 
