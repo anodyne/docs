@@ -2,60 +2,7 @@
     {
         "title": "Getting Started",
         "pages": [
-            "before-getting-started",
-            "installation",
-            "configuration",
-            "upgrade-guide",
-            "compatability",
-            {
-                "name": "Pretty URLs",
-                "file": "pretty-urls"
-            }
-        ]
-    },
-    {
-        "title": "Using Nova",
-        "pages": [
-            {
-                "name": "Forms",
-                "file": "using-forms"
-            },
-            {
-                "name": "Permissions",
-                "file": "using-permissions"
-            },
-            {
-                "name": "Posts",
-                "file": "using-posts"
-            },
-            {
-                "name": "Ranks",
-                "file": "using-ranks"
-            },
-            {
-                "name": "Wiki",
-                "file": "using-wiki"
-            }
-        ]
-    },
-    {
-        "title": "Core Concepts",
-        "pages": [
-            "controllers",
-            "models",
-            "emails"
-        ]
-    },
-    {
-        "title": "Modifications",
-        "pages": [
-            "extensions",
-            "events",
-            "themeing",
-            {
-                "name": "Creating a page",
-                "file": "creating-pages"
-            }
+            "style-guide"
         ]
     }
 ]
