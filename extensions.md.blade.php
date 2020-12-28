@@ -2,6 +2,8 @@
 
 ---
 
+<x-docs.badge color="amber">Experimental feature</x-docs.badge>
+
 Extensions are a type of Nova mod that are placed within the `application/extensions` folder and enabled in `application/config/extensions.php`. As opposed to other types of Nova mods, extensions do not require modifying any Nova code files. This simplifies installation and maintenance.
 
 ## Installing an Extension
