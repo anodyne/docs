@@ -8,8 +8,22 @@ Nova's documentation follows specific styles that authors should adhere to.
 
 You can use badges to call out specific information in documentation pages. Badges should be on their own line and preferably come at the beginning of a section.
 
-<x-docs.badge>Default badge</x-docs.badge>
+To use a badge, you can write `<x-docs.badge>Content</x-docs.badge>` within your Markdown file. Nova's documentation site will parse and display the badge correctly.
 
-- The default badge is purple and should be the one used most often
-- Passing `red` in the `color` attribute signifies an error or destructive behavior
-- Passing `amber` in the `color` attribute signifies a warning
+### Default badges
+
+<x-docs.badge>Default</x-docs.badge>
+
+The default badge is purple and should be the one used most often.
+
+### Danger badges
+
+<x-docs.badge color="red">Danger</x-docs.badge>
+
+You can pass `red` in  the `color` attribute to signify errors and destructive warnings.
+
+### Warning badges
+
+<x-docs.badge color="amber">Warning</x-docs.badge>
+
+You can pass `amber` in  the `color` attribute to signify warnings.
