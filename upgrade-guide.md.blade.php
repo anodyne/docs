@@ -11,7 +11,7 @@ Upgrading Nova to the latest version.
 Before you get started updating Nova, make sure you have the following things ready to go:
 
 - An FTP client for accessing your server
-- The latest copy of Nova downloaded from the [Anodyne site](https://anodyne-productions.com)
+- The latest copy of Nova downloaded from the [Anodyne site](https://anodyne-productions.com) and unzipped
 - A solid, recent backup of your site
 
 ## Updating Nova
@@ -20,23 +20,21 @@ Before you get started updating Nova, make sure you have the following things re
 
 Once you've finished backing up your site (because you already did that, right?), delete the `nova` directory in its entirety from your server.
 
-<x-docs.alert color="red" title="When we say delete...">Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to delete the directory and upload a new copy.</x-docs.alert>
+<x-docs.alert color="red">Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to delete the directory and upload a new copy.</x-docs.alert>
 
 ### Step 2: Upload Nova
 
-With the `nova` directory deleted, you can now upload the new `nova` directory from the zip archive you downloaded from the Anodyne site.
+With the `nova` directory deleted from your server, you can now upload the `nova` directory from the zip archive you downloaded from the Anodyne site. (This will give you the code for the latest version.)
 
 ### Step 3: Run the update
 
-The first step will try to do an automatic backup for you, but you don't have to worry about that too much since you manually backed up everything before you started. (You did back up everything before you started, right?)
-
-Let the update process do its thing and when you're done, you'll be back on the front Nova page and ready to use Nova again.
+Navigate to `{your-site}/index.php/update` in your browser and you'll be guided through the update process. Once the update process is complete, you'll be directed  back to your site and will be ready to use Nova again.
 
 ## Updating from previous versions
 
-Nova currently offers two stable releases for download, version 2.6.1 (the latest) and 2.3.2 (legacy). If you are updating from version 2.3.2 to any version above, please follow the version-specific guide below. If you are upgrading from a version of Nova that is before 2.3.2, please reach out to our support team on [Discord](https://discord.gg/7WmKUks).
+Nova currently offers two stable releases for download, the latest current version and v2.3.2 for legacy systems. If you are updating from version 2.3.2 to any version above, please follow the version-specific guide below. If you are upgrading from a version of Nova that is before 2.3.2, please reach out to our support team on [Discord](https://discord.gg/7WmKUks).
 
-If you are upgrading from 2.3.2 to 2.6.1, please follow all steps in each of the below upgrade guides. All files are provided for you in the 2.6.1 installer package, but you will still need to walk through each version one at a time.
+If you are upgrading from 2.3.2 to 2.6.1, please follow all steps in **each** of the below upgrade guides. All files are provided for you in the 2.6.1 download, but you will still need to walk through each version one at a time.
 
 ### Common issue with updating
 
