@@ -26,7 +26,9 @@ Now that you have your complete backup, you should zip your backup up into a zip
 
 Once you've finished backing up all of your stuff, delete the `nova` directory in its entirety.
 
-When we say delete, we mean it. Delete the directory and then upload the new copy.
+<x-docs.alert color="amber">
+    When we say delete, we mean it. Delete the directory and then upload the new copy.
+</x-docs.alert>
 
 ## Upload
 
@@ -97,7 +99,7 @@ Finally, if you haven’t made any changes to the **default** or **titan** skins
 
 If you have made changes to those skins or have your own skins that need, you can add the following line anywhere in your template files to provide a link to the privacy policy pages:
 
-`<?php echo anchor('main/policies', 'Privacy Policy'); ?>`
+`&lt;?php echo anchor('main/policies', 'Privacy Policy'); ?>`
 
 You will need to make this change in every skin and every template on your site!
 
@@ -105,7 +107,7 @@ You will need to make this change in every skin and every template on your site!
 
 If you have the ability to change the PHP version running on your server and decide to make the jump up to PHP 7, you’ll need to edit the `application/config/database.php` file to account for PHP’s removal of the `mysql` functions. You can do that by changing `$db['default']['dbdriver']` config item to be **mysqli**.
 
-### 2.3.2 to 2.4.x
+### 2.3.x to 2.4.x
 
 Nova 2.4.0 introduced some very major fixes to how Nova sends email to all players on a game. In addition to following the routine steps for updating Nova, with the changes to Nova 2.4, there's one additional change that will need to be made. In the zip archive you download, you'll need to copy the `Mail.php` file from `application/libraries` to the `application/libraries` directory on your server. This will allow the new email class to work as expected.
 
