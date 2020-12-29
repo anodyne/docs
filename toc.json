@@ -4,5 +4,13 @@
         "pages": [
             "style-guide"
         ]
+    },
+    {
+        "title": "Components",
+        "pages": [
+            "alert",
+            "badge",
+            "code-block"
+        ]
     }
 ]
