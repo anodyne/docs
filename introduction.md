@@ -1,9 +1,3 @@
-# Getting started with Nova
+# Contributing to Nova's Documentation
 
-Learn Nova the way that best matches your learning style.
-
-## What's new in Nova
-
-## Latest updates
-
-## Get involved
+---

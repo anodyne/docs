@@ -1,11 +1,5 @@
 [
     {
-        "title": "Getting Started",
-        "pages": [
-            "style-guide"
-        ]
-    },
-    {
         "title": "Components",
         "pages": [
             "alert",
