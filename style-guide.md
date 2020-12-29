@@ -18,8 +18,9 @@ The default badge is purple and should be the one used most often.
 !!Default!!
 ```
 
-```php
+```php{1}
 $foo = 'bar';
+$bar = 'foo';
 ```
 
 ### Danger badges
