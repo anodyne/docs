@@ -18,18 +18,13 @@ The default badge is purple and should be the one used most often.
 !!Default!!
 ```
 
-```php{1}
-$foo = 'bar';
-$bar = 'foo';
-```
-
 ### Danger badges
 
 !!Danger!!{: class="badge-danger"}
 
 You can pass a `class` attribute of `badge-danger` to signify errors and destructive warnings.
 
-```
+```markdown
 !!Danger!!{: class="badge-danger"}
 ```
 
@@ -39,6 +34,6 @@ You can pass a `class` attribute of `badge-danger` to signify errors and destruc
 
 You can pass a `class` attribute of `badge-warning` to signify warnings.
 
-```
+```markdown
 !!Warning!!{: class="badge-warning"}
 ```
