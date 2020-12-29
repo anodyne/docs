@@ -14,6 +14,7 @@ You can use badges to call out specific information in documentation pages. Badg
 
 The default badge is purple and should be the one used most often.
 
+{: class="language-md"}
 ```
 !!Default!!
 ```
