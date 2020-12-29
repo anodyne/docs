@@ -27,3 +27,6 @@ You can pass `red` in  the `color` attribute to signify errors and destructive w
 <x-docs.badge color="amber">Warning</x-docs.badge>
 
 You can pass `amber` in  the `color` attribute to signify warnings.
+
+> Blockquote
+{: class="text-red-500"}
