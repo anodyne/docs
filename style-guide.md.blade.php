@@ -31,4 +31,8 @@ You can pass `amber` in  the `color` attribute to signify warnings.
 > Blockquote
 {: class="text-red-500"}
 
-!!My Badge!!{: class="badge-primary"}
+!!Default Badge!!
+
+!!Danger Badge!!{: class="badge-danger"}
+
+!!Warning Badge!!{: class="badge-warning"}
