@@ -12,27 +12,30 @@ To use a badge, you can write `&lt;x-docs.badge>Content&lt;/x-docs.badge>` withi
 
 ### Default badges
 
-<x-docs.badge>Default</x-docs.badge>
+!!Default!!
 
 The default badge is purple and should be the one used most often.
 
+```
+!!Default!!
+```
+
 ### Danger badges
 
-<x-docs.badge color="red">Danger</x-docs.badge>
+!!Danger!!{: class="badge-danger"}
 
-You can pass `red` in  the `color` attribute to signify errors and destructive warnings.
+You can pass a `class` attribute of `badge-danger` to signify errors and destructive warnings.
+
+```
+!!Danger!!{: class="badge-danger"}
+```
 
 ### Warning badges
 
-<x-docs.badge color="amber">Warning</x-docs.badge>
+!!Warning!!{: class="badge-warning"}
 
-You can pass `amber` in  the `color` attribute to signify warnings.
+You can pass a `class` attribute of `badge-warning` to signify warnings.
 
-> Blockquote
-{: class="text-red-500"}
-
-!!Default Badge!!
-
-!!Danger Badge!!{: class="badge-danger"}
-
-!!Warning Badge!!{: class="badge-warning"}
+```
+!!Warning!!{: class="badge-warning"}
+```
