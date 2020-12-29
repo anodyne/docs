@@ -32,3 +32,4 @@ You can pass `amber` in  the `color` attribute to signify warnings.
 {: class="text-red-500"}
 
 !!My Badge!!
+{: class="badge-primary"}
