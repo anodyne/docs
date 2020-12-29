@@ -4,7 +4,7 @@ Nova provides a robust events system for MODs to listen as actions happen throug
 
 ---
 
-<x-docs.badge color="amber">Experimental feature</x-docs.badge>
+!!Experimental feature!!{: class="badge-warning"}
 
 Nova provides an Events library that allows a sim or mod to define callbacks that are run when an event occurs. While accessible throughout Nova, Events are most useful in the context of building Extensions, as Events allow Extensions to hook into existing Nova functionality.
 
@@ -12,7 +12,7 @@ Nova provides an Events library that allows a sim or mod to define callbacks tha
 
 In order to define a listener, assuming $this is the CodeIgniter content, simply call:
 
-```.language-php
+```php
 $this->event->listen($eventName, $eventCallback);
 ```
 
@@ -27,7 +27,7 @@ The `$eventCallback`, meanwhile, should accept a single `$event` array parameter
 
 Putting this all together, one could, for example, append "Hello World!" to the end of the `main/index` view as follows:
 
-```.language-php
+```php
 $this->event->listen(['location', 'view', 'output', 'main', 'index'], function ($event) {
     $event['output'] .= 'Hello World!';
 });
@@ -35,7 +35,7 @@ $this->event->listen(['location', 'view', 'output', 'main', 'index'], function (
 
 Or:
 
-```.language-php
+```php
 $this->event->listen("location.view.output.main.index", function ($event) {
     $event['output'] .= 'Hello World!';
 });
@@ -45,7 +45,7 @@ Further, one can define an event that will occur over an entire namespace of eve
 
 For example, one could add controller class and method info to the body tag of the template of all pages as follows:
 
-```.language-php
+```php
 $this->event->listen(['template', 'render', 'output'], function ($event) {
   $seg1 = !empty($this->uri->segment(1)) ? $this->uri->segment(1) : 'main';
   $seg2 = !empty($this->uri->segment(2)) ? $this->uri->segment(2) : 'index';
@@ -61,7 +61,7 @@ In the event that multiple listeners are defined, they will be executed in order
 
 For example, given these callbacks:
 
-```.language-php
+```php
 $this->event->listen(['location', 'view', 'output'], function ($event) {
     $event['output'] .= 'c';
 });
@@ -104,7 +104,7 @@ Callback Data:
 
 Example:
 
-```.language-php
+```php
 $this->event->listen(['location', 'view', 'data', 'main', 'personnel_character'], function ($event) {
   $id = $this->uri->segment(3);
   $char = $this->char->get_character($id);
@@ -129,7 +129,7 @@ Callback Data:
 
 Example:
 
-```.language-php
+```php
 $this->event->listen(['location', 'view', 'output', 'main', 'personnel_character'], function ($event) {
   $event['output'] .= $this->extension['jquery']['generator']
                   ->select('#tabs')
@@ -152,7 +152,7 @@ Callback Data:
 
 Example:
 
-```.language-php
+```php
 $this->event->listen(['template', 'render', 'data'], function ($event) {
   $seg1 = !empty($this->uri->segment(1)) ? $this->uri->segment(1) : 'main';
   $seg2 = !empty($this->uri->segment(2)) ? $this->uri->segment(2) : 'index';
@@ -178,7 +178,7 @@ Callback Data:
 
 Example:
 
-```.language-php
+```php
 $this->event->listen(['template', 'render', 'output'], function ($event) {
   $seg1 = !empty($this->uri->segment(1)) ? $this->uri->segment(1) : 'main';
   $seg2 = !empty($this->uri->segment(2)) ? $this->uri->segment(2) : 'index';
@@ -207,7 +207,7 @@ Callback Data:
 
 Example:
 
-```.language-php
+```php
 $this->event->listen(['db', 'insert', 'prepare', 'characters', 'main', 'join'], function ($event) {
   if(empty($event['data']['fms_character_url']) && $this->input->post('fms_character_url', true))
     $event['data']['fms_character_url'] = $this->input->post('fms_character_url', true);
@@ -233,7 +233,7 @@ Callback Data:
 
 Example:
 
-```.language-php
+```php
 $this->event->listen(['db', 'update', 'prepare', 'missions'], function ($event) {
   if(empty($event['data']['mission_start']))
     $event['data']['mission_start'] = null;
@@ -262,7 +262,7 @@ Callback Data:
 
 Example:
 
-```.language-php
+```php
 $this->event->listen(['db', 'delete', 'prepare', 'users'], function ($event) {
   if(!my_custom_auth_check()){
     $event['abort'] = true;
