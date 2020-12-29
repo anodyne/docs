@@ -30,3 +30,5 @@ You can pass `amber` in  the `color` attribute to signify warnings.
 
 > Blockquote
 {: class="text-red-500"}
+
+!!My Badge!!
