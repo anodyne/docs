@@ -44,7 +44,8 @@
             "file-structure",
             "controllers",
             "models",
-            "emails"
+            "emails",
+            "genres"
         ]
     },
     {
@@ -56,6 +57,10 @@
             {
                 "name": "Creating a page",
                 "file": "creating-pages"
+            },
+            {
+                "name": "Language items",
+                "file": "changing-language"
             }
         ]
     },
@@ -64,7 +69,8 @@
       "pages": [
         "helpful-links",
         "backing-up-nova",
-        "license-agreement"
+        "license-agreement",
+        "version-guide"
       ]
     }
 ]
