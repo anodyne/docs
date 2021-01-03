@@ -29,6 +29,10 @@
                 "file": "using-posts"
             },
             {
+                "name": "Characters",
+                "file": "using-characters"
+            },
+            {
                 "name": "Ranks",
                 "file": "using-ranks"
             },
