@@ -24,7 +24,11 @@ Asset files are the integral components of a genre and include images and ranks.
 
 #### Images
 
-If you have genre specific images, such as emblems for the manifest, those can be stored in the genre's images folder and used by Nova in various places throughout the system. Manifest emblem locations can be found by using the `cb_location` helper.
+If you have genre specific images, such as the emblems for the manifest (known by those in the Star Trek genre as *combadges*), those can be stored in the genre's images folder and used by Nova in various places throughout the system.
+
+For example, if you wanted to replace the default combadge image for a character that is on a leave of abence (or LOA) for a DS9 genre game, you would place your custom `combadge_loa.png` image in `application/assets/common/ds9/images`.
+
+Exact bio emblem locations can be found by using the `cb` helper located in the `Nova_location.php` file found in `nova/modules/core/libraries` directory.
 
 #### Ranks
 
