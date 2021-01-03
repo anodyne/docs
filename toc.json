@@ -33,12 +33,20 @@
                 "file": "using-characters"
             },
             {
+                "name": "Manifests",
+                "file": "using-manifests"
+            },
+            {
                 "name": "Ranks",
                 "file": "using-ranks"
             },
             {
                 "name": "Wiki",
                 "file": "using-wiki"
+            },
+            {
+                "name": "Menus",
+                "file": "using-menus"
             }
         ]
     },
@@ -65,6 +73,14 @@
             {
                 "name": "Language items",
                 "file": "changing-language"
+            },
+            {
+                "name": "Access Roles",
+                "file": "access-roles"
+            },
+            {
+                "name": "Site Messages",
+                "file": "site-messages"
             }
         ]
     },
