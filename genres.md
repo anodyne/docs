@@ -6,9 +6,13 @@ Learn more about genres, the foundational element of Nova's character management
 
 One of Nova's defining features is the ability to craft any game according to any genre, including ones that we don't naturally provide installer packages for. So what goes in to a genre? There are a lot of pieces, but once you understand those pieces, you'll be well on your way to using genres to their full potential and maybe even creating your own genre installations!
 
+## Genre code
+
+Genre codes can only have 3 characters. For example, the Deep Space Nine genre code is **ds9**. We recommend that all genre codes contain only lowercase characters and numbers for maximum compatibility throughout Nova.
+
 ## Can I have more than one Genre installed?
 
-Generally, no. While the database structure can allow for a nearly infinite number of genres, only one genre can be active at a time on a Nova instance.
+While the database structure can allow for a nearly infinite number of genres to be installed, only one genre can be active at a time on a Nova instance. To change the active genre, you will need to locate `nova.php` in the `application/config` directory. On Line 15, change the existing 3-letter genre code to the desired code. For instance, if you wish to switch from *Deep Space Nine* to *The Original Series*, you would change from `ds9` to `tos`.
 
 ## Files
 
@@ -16,7 +20,7 @@ There are multiple locations for the files associated with each genre, including
 
 ### Asset Files
 
-Asset files are the integral components of a genre and include images and ranks. Nova stores all genre assets in `application/assets/common`. Each genre is assigned its own directory that lines up with its genre code. For instance, the Deep Space Nine genre code is **DS9** and its genre asset folder is `ds9`.
+Asset files are the integral components of a genre and include images and ranks. Nova stores all genre assets in `application/assets/common`. Each genre is assigned its own directory that lines up with its genre code.
 
 #### Images
 
