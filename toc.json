@@ -89,8 +89,8 @@
       "pages": [
         "helpful-links",
         "backing-up-nova",
-        "license-agreement",
-        "version-guide"
+        "versioning",
+        "license-agreement"
       ]
     }
 ]
