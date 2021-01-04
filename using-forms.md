@@ -47,8 +47,8 @@ Whenever you wish to add or edit a field, the following options will always be a
   - *Class*: a specific class to be rendered according to functions added to the theme's CSS.
   - *Textarea Rows*: determine how many rows should be available to the user using the form.
 
-:::note
-**For Dropdown Menus Only**: For dropdown menus, please provide the values to be used by the menu. Each item should be on a separate line and have a comma-separated set of values, like: `male,Male`. In that example, the menu item's value would be male and the label seen in the menu would be Male. Your final output should look like:
+:::note For dropdown menus only
+For dropdown menus, please provide the values to be used by the menu. Each item should be on a separate line and have a comma-separated set of values, like: `male,Male`. In that example, the menu item's value would be male and the label seen in the menu would be Male. Your final output should look like:
 
 ```php
 male,Male

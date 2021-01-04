@@ -97,7 +97,7 @@ All secondary characters are created without being attached to an owner. Some of
 ## Assigning secondary character(s) to a player
 
 :::note
-To assign a seconadary character to a user, you must have at least the *Basic Administration* access role, or your access role needs to have *NPC Management Level 2* or *3* feature(s) enabled. Typically, this feature is reserved for those who are managing the game.
+To assign a secondary character to a user, you must have at least the *Basic Administration* access role, or your access role needs to have *NPC Management Level 2* or *3* feature(s) enabled. Typically, this feature is reserved for those who are managing the game.
 
 If you do not have this access, you will have to contact a member of the game's management to have the secondary character assigned to you.
 :::
