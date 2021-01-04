@@ -2,7 +2,27 @@
 
 ---
 
-## Default note
+Notes are an easy way to call out information in a visually distinct way. You can use normal *inline* Markdown like bold, italics, links, images etc. within the body of the note.
+
+## Basic note
+
+Notes are a custom CommonMark extension that we've written for the documentation site. They're considered a "fenced" block which means they have both an opening and closing "tags". Other implementations of notes use three colons and we've adopted the same syntax.
+
+```markdown
+:::
+This is a note.
+:::
+```
+
+:::
+This is a note.
+:::
+
+## Different note types
+
+Notes can have a wide variety of types, but they generally fall into 3 categories: default, warning, and success.
+
+### Default note
 
 :::note
 This is a normal alert with some **extra** Markdown.
@@ -14,14 +34,12 @@ This is a normal note with some **extra** Markdown.
 :::
 ```
 
-### Available types
-
 - note (info icon)
 - info (info icon)
 - callout (star icon)
 - question (question mark icon)
 
-## Warning note
+### Warning note
 
 :::warning
 This is a warning note.
@@ -32,8 +50,6 @@ This is a warning note.
 This is a warning note.
 :::
 ```
-
-### Available types
 
 - warning
 - danger
@@ -42,9 +58,9 @@ This is a warning note.
 - caution
 - attention
 
-*Note:* All of these types use the same triangular warning icon.
+*Note:* All of these note types use the same triangular warning icon.
 
-## Success note
+### Success note
 
 :::success
 This is a success note.
@@ -56,10 +72,22 @@ This is a success note.
 :::
 ```
 
-### Available types
-
 - success (checkmark icon)
 - done (checkmark icon)
 - check (checkmark icon)
 - tip (lightning icon)
 - hint (lightning icon)
+
+## Custom note title
+
+By default, notes use their type as the title of the note, but sometimes you may want to use a custom title for the note. To specify a custom title, simply write what you would like the title to be after the note type.
+
+:::note Before you begin
+This is a note with a custom title.
+:::
+
+```markdown
+:::note Before you begin
+This is a note with a custom title.
+:::
+```
