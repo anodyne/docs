@@ -34,6 +34,8 @@ This is a normal note with some **extra** Markdown.
 :::
 ```
 
+You can specify three different types of default notes:
+
 - note (info icon)
 - callout (star icon)
 - question (question mark icon)
@@ -61,6 +63,8 @@ This is a success note.
 This is a success note.
 :::
 ```
+
+You can specify two different types of success notes:
 
 - success (checkmark icon)
 - tip (lightning icon)
