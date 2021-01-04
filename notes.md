@@ -20,7 +20,7 @@ This is a note.
 
 ## Different note types
 
-Notes can have a wide variety of types, but they generally fall into 3 categories: default, warning, and success.
+Notes can have a wide variety of types, but they generally fall into 3 categories: default, warning, and success. When you specify a type, it will also create a title with an icon for the note.
 
 ### Default note
 
