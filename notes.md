@@ -8,7 +8,7 @@
 This is a normal alert with some **extra** Markdown.
 :::
 
-```
+```markdown
 :::note
 This is a normal note with some **extra** Markdown.
 :::
@@ -17,6 +17,7 @@ This is a normal note with some **extra** Markdown.
 ### Available types
 
 - note
+- info
 - callout
 - question
 
@@ -26,7 +27,7 @@ This is a normal note with some **extra** Markdown.
 This is a warning note.
 :::
 
-```
+```markdown
 :::warning
 This is a warning note.
 :::
@@ -47,7 +48,7 @@ This is a warning note.
 This is a success note.
 :::
 
-```
+```markdown
 :::success
 This is a success note.
 :::
@@ -60,19 +61,3 @@ This is a success note.
 - check
 - tip
 - hint
-
-## Info note
-
-:::info
-This is a info note.
-:::
-
-```
-:::info
-This is a info note.
-:::
-```
-
-### Available types
-
-- info
