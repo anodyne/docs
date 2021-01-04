@@ -35,7 +35,6 @@ This is a normal note with some **extra** Markdown.
 ```
 
 - note (info icon)
-- info (info icon)
 - callout (star icon)
 - question (question mark icon)
 
@@ -51,15 +50,6 @@ This is a warning note.
 :::
 ```
 
-- warning
-- danger
-- error
-- failure
-- caution
-- attention
-
-*Note:* All of these note types use the same triangular warning icon.
-
 ### Success note
 
 :::success
@@ -73,10 +63,7 @@ This is a success note.
 ```
 
 - success (checkmark icon)
-- done (checkmark icon)
-- check (checkmark icon)
 - tip (lightning icon)
-- hint (lightning icon)
 
 ## Custom note title
 
