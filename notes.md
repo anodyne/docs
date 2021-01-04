@@ -17,7 +17,6 @@ This is a normal note with some **extra** Markdown.
 ### Available types
 
 - note
-- info
 - callout
 - question
 
@@ -59,20 +58,21 @@ This is a success note.
 - success
 - done
 - check
+- tip
+- hint
 
 ## Info note
 
-:::tip
-This is a tip note.
+:::info
+This is a info note.
 :::
 
 ```
-:::tip
-This is a tip note.
+:::info
+This is a info note.
 :::
 ```
 
 ### Available types
 
-- tip
-- hint
+- info
