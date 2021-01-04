@@ -16,10 +16,10 @@ This is a normal note with some **extra** Markdown.
 
 ### Available types
 
-- note
-- info
-- callout
-- question
+- note (info icon)
+- info (info icon)
+- callout (star icon)
+- question (question mark icon)
 
 ## Warning note
 
@@ -42,6 +42,8 @@ This is a warning note.
 - caution
 - attention
 
+*Note:* All of these types use the same triangular warning icon.
+
 ## Success note
 
 :::success
@@ -56,8 +58,8 @@ This is a success note.
 
 ### Available types
 
-- success
-- done
-- check
-- tip
-- hint
+- success (checkmark icon)
+- done (checkmark icon)
+- check (checkmark icon)
+- tip (lightning icon)
+- hint (lightning icon)
