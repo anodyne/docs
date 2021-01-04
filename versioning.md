@@ -31,3 +31,11 @@ As with all our updates, we aim to include scripts to migrate data to the new ve
 A patch version indicates bug fixes or other minor changes that only impact the site's functionality in very minor ways.
 
 Patch versions are the most common type of release. As with all of our updates, we aim to include scripts to migrate data to the new version. In most cases, patch versions will not require any data migration since that's beyond the scope of this type of release.
+
+## What version of Nova am I running?
+
+If you're curious what version of Nova your site is running, you can find out by navigating to the **System & Versions** page which can be found at the bottom of the admin control panel navigation sidebar.
+
+In that page, you'll be shown what version of Nova your files are running, what version your database is running, and what version of CodeIgniter is being used.
+
+![System versions](/images/docs/2.6/upgrade-guide/versions.png)
