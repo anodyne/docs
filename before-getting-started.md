@@ -17,11 +17,15 @@ Nova is built on two core technologies: PHP and MySQL. That means that when pick
 - PHP 5.3 or higher (*PHP 5.6 recommended*)
 - MySQL 5.0 or higher (*MySQL 5.7 recommended*)
 
-#### What about PHP 7?
-
+:::question What about PHP 7?
 While PHP 7 has been available for several years now, Nova 2 is built on a legacy framework that was created long before PHP 7. That means that while Nova 2 will work on PHP 7, there are many errors that could potentially pop up that you would have to work through. Depending on your level of comfort with these kinds of things, it may be better to select a web host that allows you to use PHP 5.6 for your game's site.
+:::
 
 ## Custom domain name
+
+One avenue that some games choose to go down is purchasing a custom domain name. This can be a great way to give your game even more personality instead of using a domain name or subdomain given to you by your web host.
+
+Out of the box, Nova supports custom domain names and there's nothing you'll need to do to get it working. You'll just need to purchase the domain name from your registrar of choice and work with your web host to get everything wired up properly.
 
 ## Tools you might want
 
