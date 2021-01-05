@@ -4,7 +4,7 @@ Nova provides a robust events system for MODs to listen as actions happen throug
 
 ---
 
-!!Experimental feature!!{: class="badge-warning"}
+{Experimental feature}(warning)
 
 Nova provides an Events library that allows a sim or mod to define callbacks that are run when an event occurs. While accessible throughout Nova, Events are most useful in the context of building Extensions, as Events allow Extensions to hook into existing Nova functionality.
 
