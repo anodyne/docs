@@ -2,9 +2,9 @@
     {
         "title": "Components",
         "pages": [
-            "notes",
             "badges",
-            "code-blocks"
+            "code-blocks",
+            "notes"
         ]
     }
 ]

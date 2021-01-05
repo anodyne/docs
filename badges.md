@@ -2,34 +2,46 @@
 
 ---
 
-You can use badges to call out specific information in documentation pages. Badges should be on their own line and preferably come at the beginning of a section.
+Badges are an easy way to call out short information in a visually distinct way. These should be on their own line and preferably come at the beginning of a section.
 
-## Default badges
+## Basic badge
 
-!!Default!!
+Notes are a custom CommonMark extension that we've written for the documentation site. They're considered a "fenced" block which means they have both an opening and closing "tags". Other implementations of notes use three colons and we've adopted the same syntax.
 
-The default badge is purple and should be the one used most often.
+{Badge}()
 
-```md
-!!Default!!
+```markdown
+{Badge}()
 ```
 
-## Danger badges
+## Different badge types
 
-!!Danger!!{: class="badge-danger"}
+### Default badges
 
-You can pass a `class` attribute of `badge-danger` to signify errors and destructive warnings.
+This badge should be the one used most often unless there are specific reasons to use another type of badge. Default badges **must** still have the parentheses at the end or they won't be parsed correctly.
 
-```md
-!!Danger!!{: class="badge-danger"}
+{Badge}()
+
+```markdown
+{Badge}()
 ```
 
-## Warning badges
+### Danger badges
 
-!!Warning!!{: class="badge-warning"}
+This type of badge is used to signify errors or destructive warnings.
 
-You can pass a `class` attribute of `badge-warning` to signify warnings.
+{Danger}(danger)
 
-```md
-!!Warning!!{: class="badge-warning"}
+```markdown
+{Danger}(danger)
+```
+
+### Warning badges
+
+This type of badge is used to signify warnings or provide cautionary information to users.
+
+{Warning}(warning)
+
+```markdown
+{Warning}(warning)
 ```

@@ -8,15 +8,15 @@ Notes are an easy way to call out information in a visually distinct way. You ca
 
 Notes are a custom CommonMark extension that we've written for the documentation site. They're considered a "fenced" block which means they have both an opening and closing "tags". Other implementations of notes use three colons and we've adopted the same syntax.
 
+:::
+This is a note.
+:::
+
 ```markdown
 :::
 This is a note.
 :::
 ```
-
-:::
-This is a note.
-:::
 
 ## Different note types
 
