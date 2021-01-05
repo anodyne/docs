@@ -6,7 +6,7 @@ Badges are an easy way to call out short information in a visually distinct way.
 
 ## Basic badge
 
-Notes are a custom CommonMark extension that we've written for the documentation site. They're considered a "fenced" block which means they have both an opening and closing "tags". Other implementations of notes use three colons and we've adopted the same syntax.
+Badges are a custom CommonMark extension that we've written for the documentation site.
 
 {Badge}()
 
