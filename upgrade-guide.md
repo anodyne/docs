@@ -4,7 +4,9 @@ Upgrading Nova to the latest version.
 
 ---
 
-<x-docs.alert title="Before you start">Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our <a href="/docs/2.6/backing-up-nova">guide</a> on backing up Nova.</x-docs.alert>
+:::note Before you start
+Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/2.6/backing-up-nova) on backing up Nova.
+:::
 
 ## What you'll need
 
@@ -20,7 +22,9 @@ Before you get started updating Nova, make sure you have the following things re
 
 Once you've finished backing up your site (because you already did that, right?), delete the `nova` directory in its entirety from your server.
 
-<x-docs.alert color="red">Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to delete the directory and upload a new copy.</x-docs.alert>
+:::warning
+Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to delete the directory and upload a new copy.
+:::
 
 ### Step 2: Upload Nova
 
@@ -95,7 +99,9 @@ If you have made changes to those skins or have your own skins that need to be u
 {{--*/ echo anchor('main/policies', 'Privacy Policy'); /*--}}
 ```
 
-<x-docs.alert>You'll need to make this change in every skin and every template on your site.</x-docs.alert>
+:::note
+You'll need to make this change in every skin and every template on your site.
+:::
 
 #### PHP 7 Update
 
