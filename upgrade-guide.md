@@ -95,8 +95,8 @@ Finally, if you haven’t made any changes to the `default` or `titan` skins, yo
 
 If you have made changes to those skins or have your own skins that need to be updated, you can add the following line anywhere in your template files to provide a link to the privacy policy pages:
 
-```
-{{--*/ echo anchor('main/policies', 'Privacy Policy'); /*--}}
+```php
+<?php echo anchor('main/policies', 'Privacy Policy')?>
 ```
 
 :::note
