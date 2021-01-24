@@ -13,8 +13,8 @@ Since Nova is web-based software, you'll need a browser in order to use it. Thes
 - Safari 4 or higher
 - Internet Explorer 7 or higher
 
-:::note
-Due to Internet Explorer's shortcomings, there are known visual issues with Nova in IE 7. We've decided not to address these presentation issues and encourage you to use a standards-compliant browser such as Firefox, Google Chrome or Safari. These visual issues do not affect IE 8 and higher.
+:::note A Note About Internet Explorer
+There are known visual issues with Nova in IE 7. We've decided not to address these presentation issues and encourage you to use a standards-compliant browser such as Firefox, Google Chrome, or Safari. These visual issues do not affect IE 8 and higher.
 :::
 
 ## Server

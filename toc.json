@@ -54,6 +54,7 @@
         "title": "Core Concepts",
         "pages": [
             "file-structure",
+            "seamless-substitution",
             "controllers",
             "models",
             "emails",
