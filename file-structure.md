@@ -33,7 +33,7 @@ A quick look at each of Nova's directories and root files for better understandi
 ## Nova Directory
 
 :::warning
-Be **very** careful when modifying core files. We've provided tools to prevent you from having to edit core files, but if a situation comes up where it's unavoidable, you should be **very** careful when modifying core files. Errant changes to these files can result in major problems and in some cases cause your site to stop working altogether!
+We've provided tools to prevent you from having to edit core files, but if a situation comes up where it's unavoidable, you should be **very** careful when modifying core files. Errant changes to these files can result in major problems and in some cases cause your site to stop working altogether!
 :::
 
 - `ci`
