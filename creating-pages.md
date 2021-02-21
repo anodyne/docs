@@ -30,7 +30,29 @@ public function sim_allawards()
 }
 ```
 
-Let's step through this piece-by-piece to see what's going on.
+## Set up the View
+
+If you tried to go to your page above, you'd be greeted by a nasty error telling you something is missing. What we're missing is the guts of the page, or the view file. The second part of this is to create your view file. To do that, we're going to create a file called `sim_allawards.php` in `application/views/_base_override/main/pages`.
+
+So what are we going to put in our view file?
+
+```html
+<h1 class="page-head">Awards We've Won</h1>
+<p>Below is a list of all the awards we've won!</p>
+<p><img src="<?php echo base_url();?>app/assets/images/award_image.jpg" /></p>
+```
+
+When it's all done, it'll look something like this:
+
+![Sim Awards Page](/images/docs/2.6/creating-pages/awardspage.png)
+
+As you can see, it's **really** straightforward. The only thing we're doing is using CodeIgniter's built-in `base_url` function to get the base URL of our site. (If we don't use the base URL, CI will try to append index.php to our image path and it won't be able to find the image.)
+
+From here, you can make whatever changes you want to the view file and continue to add awards. Because we've done all this work in the `application` directory, we don't have to worry about losing our changes when we make an update either!
+
+## Understanding the controller code 
+
+Let's step through the code you inserted into the sim controller file piece-by-piece to see what's going on.
 
 ```php
 public function sim_allawards()
@@ -63,23 +85,3 @@ Template::render();
 ```
 
 Pretty self-explanatory here, but we're telling the Template class to render the template to the browser window.
-
-## Set up the View
-
-If you tried to go to your page above, you'd be greeted by a nasty error telling you something is missing. What we're missing is the guts of the page, or the view file. The second part of this is to create your view file. To do that, we're going to create a file called `sim_allawards.php` in `application/views/_base_override/main/pages`.
-
-So what are we going to put in our view file?
-
-```html
-<h1 class="page-head">Awards We've Won</h1>
-<p>Below is a list of all the awards we've won!</p>
-<p><img src="<?php echo base_url();?>app/assets/images/award_image.jpg" /></p>
-```
-
-When it's all done, it'll look something like this:
-
-![Sim Awards Page](/images/docs/2.6/creating-pages/awardspage.png)
-
-As you can see, it's **really** straightforward. The only thing we're doing is using CodeIgniter's built-in `base_url` function to get the base URL of our site. (If we don't use the base URL, CI will try to append index.php to our image path and it won't be able to find the image.)
-
-From here, you can make whatever changes you want to the view file and continue to add awards. Because we've done all this work in the `application` directory, we don't have to worry about losing our changes when we make an update either!
