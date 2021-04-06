@@ -17,8 +17,20 @@
         "title": "Using Nova",
         "pages": [
             {
+                "name": "Characters",
+                "file": "using-characters"
+            },
+            {
                 "name": "Forms",
                 "file": "using-forms"
+            },
+            {
+                "name": "Manifests",
+                "file": "using-manifests"
+            },
+            {
+                "name": "Menus",
+                "file": "using-menus"
             },
             {
                 "name": "Permissions",
@@ -29,24 +41,16 @@
                 "file": "using-posts"
             },
             {
-                "name": "Characters",
-                "file": "using-characters"
-            },
-            {
-                "name": "Manifests",
-                "file": "using-manifests"
-            },
-            {
                 "name": "Ranks",
                 "file": "using-ranks"
             },
             {
-                "name": "Wiki",
-                "file": "using-wiki"
+                "name": "Site Settings",
+                "file": "using-site-settings"
             },
             {
-                "name": "Menus",
-                "file": "using-menus"
+                "name": "Wiki",
+                "file": "using-wiki"
             }
         ]
     },
@@ -54,6 +58,7 @@
         "title": "Core Concepts",
         "pages": [
             "file-structure",
+            "seamless-substitution",
             "controllers",
             "models",
             "emails",
@@ -73,14 +78,6 @@
             {
                 "name": "Language items",
                 "file": "changing-language"
-            },
-            {
-                "name": "Access Roles",
-                "file": "access-roles"
-            },
-            {
-                "name": "Site Messages",
-                "file": "site-messages"
             }
         ]
     },
