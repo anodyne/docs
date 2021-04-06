@@ -36,7 +36,7 @@ Navigate to `{your-site}/index.php/update` in your browser and you'll be guided 
 
 ## Updating from previous versions
 
-Nova currently offers two stable releases for download, the latest current version and v2.3.2 for legacy systems. If you are updating from version 2.3.2 to any version above, please follow the version-specific guide below. If you are upgrading from a version of Nova that is before 2.3.2, please reach out to our support team on [Discord](https://discord.gg/7WmKUks).
+Nova currently offers two stable releases for download, the latest current version and v2.3.2 for legacy systems. If you are updating from version 2.3.2 to any version above, please follow the version-specific guide(s) below. If you are upgrading from a version of Nova prior to 2.3.2, please reach out to our support team on [Discord](https://discord.gg/7WmKUks).
 
 If you are upgrading from 2.3.2 to 2.6.1, please follow all steps in **each** of the below upgrade guides. All files are provided for you in the 2.6.1 download, but you will still need to walk through each version one at a time.
 
