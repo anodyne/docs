@@ -5,16 +5,24 @@
             {
                 "name": "Before Getting Started",
                 "file": "before-getting-started",
-                "icon": "fluent-checkmark-circle"
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Installation",
                 "file": "installation",
-                "icon": "fluent-checkmark-circle"
+                "icon": "fluent-question-circle"
             },
-            "configuration",
+            {
+                "name": "Configuration",
+                "file": "configuration",
+                "icon": "fluent-question-circle"
+            },
             "upgrade-guide",
-            "compatability",
+            {
+                "name": "Compatability",
+                "file": "compatability",
+                "icon": "fluent-question-circle"
+            },
             {
                 "name": "Pretty URLs",
                 "file": "pretty-urls"
