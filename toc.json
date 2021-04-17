@@ -170,7 +170,7 @@
         {
             "name": "License Agreement",
             "file": "license-agreement",
-            "icon": "fluent-question-circle"
+            "icon": "fluent-checkmark-circle"
         }
       ]
     }
