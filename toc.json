@@ -5,9 +5,13 @@
             {
                 "name": "Before Getting Started",
                 "file": "before-getting-started",
-                "icon": "fluent-checkmark"
+                "icon": "fluent-checkmark-circle"
             },
-            "installation",
+            {
+                "name": "Installation",
+                "file": "installation",
+                "icon": "fluent-checkmark-circle"
+            },
             "configuration",
             "upgrade-guide",
             "compatability",
