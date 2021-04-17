@@ -87,37 +87,91 @@
     {
         "title": "Core Concepts",
         "pages": [
-            "file-structure",
-            "seamless-substitution",
-            "controllers",
-            "models",
-            "emails",
-            "genres"
+            {
+                "name": "File Structure",
+                "file": "file-structure",
+                "icon": "fluent-question-circle"
+            },
+            {
+                "name": "Seamless Substitution",
+                "file": "seamless-substitution",
+                "icon": "fluent-edit"
+            },
+            {
+                "name": "Controllers",
+                "file": "controllers",
+                "icon": "fluent-edit"
+            },
+            {
+                "name": "Models",
+                "file": "models",
+                "icon": "fluent-edit"
+            },
+            {
+                "name": "Emails",
+                "file": "emails",
+                "icon": "fluent-edit"
+            },
+            {
+                "name": "Genres",
+                "file": "genres",
+                "icon": "fluent-question-circle"
+            }
         ]
     },
     {
         "title": "Modifications",
         "pages": [
-            "extensions",
-            "events",
-            "themeing",
+            {
+                "name": "Extensions",
+                "file": "extensions",
+                "icon": "fluent-question-circle"
+            },
+            {
+                "name": "Events",
+                "file": "events",
+                "icon": "fluent-question-circle"
+            },
+            {
+                "name": "Themeing",
+                "file": "themeing",
+                "icon": "fluent-edit"
+            },
             {
                 "name": "Creating a page",
-                "file": "creating-pages"
+                "file": "creating-pages",
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Language items",
-                "file": "changing-language"
+                "file": "changing-language",
+                "icon": "fluent-question-circle"
             }
         ]
     },
     {
       "title": "Resources",
       "pages": [
-        "helpful-links",
-        "backing-up-nova",
-        "versioning",
-        "license-agreement"
+        {
+            "name": "Helpful Links",
+            "file": "helpful-links",
+            "icon": "fluent-question-circle"
+        },
+        {
+            "name": "Backing Up Nova",
+            "file": "backing-up-nova",
+            "icon": "fluent-question-circle"
+        },
+        {
+            "name": "Versioning",
+            "file": "versioning",
+            "icon": "fluent-question-circle"
+        },
+        {
+            "name": "License Agreement",
+            "file": "license-agreement",
+            "icon": "fluent-question-circle"
+        }
       ]
     }
 ]
