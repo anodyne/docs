@@ -17,7 +17,11 @@
                 "file": "configuration",
                 "icon": "fluent-question-circle"
             },
-            "upgrade-guide",
+            {
+                "name": "Upgrade Guide",
+                "file": "upgrade-guide",
+                "icon": "fluent-question-circle"
+            },
             {
                 "name": "Compatability",
                 "file": "compatability",
@@ -25,7 +29,8 @@
             },
             {
                 "name": "Pretty URLs",
-                "file": "pretty-urls"
+                "file": "pretty-urls",
+                "icon": "fluent-edit"
             }
         ]
     },
@@ -34,39 +39,48 @@
         "pages": [
             {
                 "name": "Characters",
-                "file": "using-characters"
+                "file": "using-characters",
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Forms",
-                "file": "using-forms"
+                "file": "using-forms",
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Manifests",
-                "file": "using-manifests"
+                "file": "using-manifests",
+                "icon": "fluent-edit"
             },
             {
                 "name": "Menus",
-                "file": "using-menus"
+                "file": "using-menus",
+                "icon": "fluent-edit"
             },
             {
                 "name": "Permissions",
-                "file": "using-permissions"
+                "file": "using-permissions",
+                "icon": "fluent-edit"
             },
             {
                 "name": "Posts",
-                "file": "using-posts"
+                "file": "using-posts",
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Ranks",
-                "file": "using-ranks"
+                "file": "using-ranks",
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Site Settings",
-                "file": "using-site-settings"
+                "file": "using-site-settings",
+                "icon": "fluent-edit"
             },
             {
                 "name": "Wiki",
-                "file": "using-wiki"
+                "file": "using-wiki",
+                "icon": "fluent-edit"
             }
         ]
     },
