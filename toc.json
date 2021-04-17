@@ -2,7 +2,11 @@
     {
         "title": "Getting Started",
         "pages": [
-            "before-getting-started",
+            {
+                "name": "Before Getting Started",
+                "file": "before-getting-started",
+                "icon": "fluent-checkmark"
+            },
             "installation",
             "configuration",
             "upgrade-guide",
