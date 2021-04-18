@@ -5,7 +5,12 @@
             {
                 "name": "Before Getting Started",
                 "file": "before-getting-started",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
+            },
+            {
+                "name": "Compatability",
+                "file": "compatability",
+                "icon": "fluent-checkmark-circle"
             },
             {
                 "name": "Installation",
@@ -15,22 +20,17 @@
             {
                 "name": "Configuration",
                 "file": "configuration",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             },
             {
                 "name": "Upgrade Guide",
                 "file": "upgrade-guide",
-                "icon": "fluent-question-circle"
-            },
-            {
-                "name": "Compatability",
-                "file": "compatability",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             },
             {
                 "name": "Pretty URLs",
                 "file": "pretty-urls",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             }
         ]
     },
