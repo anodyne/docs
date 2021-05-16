@@ -18,10 +18,28 @@ In order to provide the flexibility to change core pages and create new pages, t
 
 ### `$data`
 
-Any data that will be sent to the view is stored inside of a variable in the controller method called `$data`.
+Any data that will be sent to the view is stored inside of an array in the controller method called `$data`. This array stores things like language items, form fields and controls, raw information out of the database, and much more. The odds are that anything you want to do or change is stored in the `$data` array.
 
 :::tip
-If you're trying to debug and see what data Nova is sending to the browser, before the `Template::render()` call, you can write `die($data);` to stop executing the code and see what's in the `$data` variable.
+If you're trying to debug and see what data Nova is sending to the browser, before the `Template::render()` call, you can write `die(var_dump($data));` to stop executing the code and see what's in the `$data` variable.
+:::
+
+Since `$data` is sent to the view in its entirety, this also means that if you want to add _additional_ data to a view, you can simply assign it to a key on the `$data` array and you'll have access to it in the view files using the key name as the variable.
+
+```php
+// In the controller...
+$data['foo'] = 'bar';
+
+// In the view file...
+echo $foo; // will print out "bar"
+```
+
+### `$js_data`
+
+Nova takes a similar approach to passing data from PHP to Javascript as well, but with an aptly named `$js_data` array. Everything mentioned above applies to Javascript data.
+
+:::warning
+Passing data from PHP to Javascript can lead to some unexpected results if you're not careful. You should reference how Nova handles passing data to Javascript before attempting to do so yourself.
 :::
 
 ### Templates
