@@ -20,7 +20,7 @@ In the above example, the `main` controller will be loaded and the `contact` met
 
 In this example, the `characters` controller will be loaded and the `bio` method will be called. Additionally, you'll be able to add an argument to your controller method to access the `77` in the URI. (This is what allows Nova to have access to the necessary data to show a specific character bio without having to hard-code everything.)
 
-:::info A Deeper Dive
+:::info Deep Dive
 You can read more about how CodeIgniter's controllers work in their [documentation](https://codeigniter.com/userguide2/general/controllers.html).
 :::
 
@@ -61,7 +61,7 @@ Nova starts by pulling in the core controller. This allows us to use the PHP cla
 Because of PHP's inheritance and how CodeIgniter treats controller, this means you can add any new methods you want to this class and you'll be able to access those controller method as pages of the same name (i.e. a method named `foo` will map to a page with the URI of `/main/foo`). This also means is that you can _override_ any existing method with one of your own by adding a method of the same name in your application controller.
 
 :::tip
-When it comes to overriding a controller method, the recommended way of doing that is to copy the method from the core controller and paste it into the application controller. You then have a working copy of the page from which to modify whatever you want to.
+When it comes to overriding a controller method, the recommended way of doing that is to copy the method from the core controller and paste it into the application controller. You then have a working copy of the page from which to modify whatever you want.
 :::
 
 ## Understanding controllers
@@ -98,7 +98,7 @@ Passing data from PHP to Javascript can lead to some unexpected results if you'r
 
 Nova uses a simple template library to render the entire page to the user's browser. Each individual piece of the template is called a region. As Nova is executing its code, it will assign data to specific regions. The library will take all of the regions and render them to the screen.
 
-:::note A Deeper Dive
+:::note Deep Dive
 Interested in learning more about the template library Nova uses? Dig in to the `nova/modules/core/libraries/Nova_template.php` file in your Nova installation to learn more.
 :::
 
@@ -135,66 +135,5 @@ Next, Nova assigns all of the regions to the template.
 
 And finally, Nova tells the template library to render everything it has and push it to the browser.
 
-### Interacting with models
-
-Models are PHP classes designed to be the primary way of interacting with Nova's database. Each model has its own set of methods for different things it can pull out of the database, so if you're working with a model, it's important to look at what methods that model provides.
-
-:::info A Deeper Dive
-You can read more about how Nova uses models in their [documentation](/docs/2.6/models).
-:::
-
-By default, Nova does not autoload any models at a the global level (meaning from the `autoload.php` config file). In some rare instances, Nova will pre-load models in the controller's constructor simply to reduce the amount of boilerplate code that needs to be written, but in most cases, models aren't loaded ahead of time. This means that before interacting with a model, you will need to load it:
-
-```php
-// Load the model
-$this->load->model('characters_model');
-
-// Now use it
-$this->characters_model->get_all_characters();
-```
-
-The above code will load the model and you'll be able to access any methods of the model by referencing the name of the model. This is obviously pretty verbose, so CodeIgniter provides a way to assign the model to an alias:
-
-```php
-// Load the model
-$this->load->model('characters_model', 'char');
-
-// Now use it
-$this->char->get_all_characters();
-```
-
-:::note
-All of Nova's available models can be found in the `nova/modules/core/models` directory.
-:::
-
-### Interacting with libraries
-
-Libraries are simply PHP classes that can be used for whatever you need them to be used for.
-
-:::info A Deeper Dive
-You can read more about how Nova uses libraries in their [documentation](/docs/2.6/libraries).
-:::
-
-By default, Nova autoloads several libraries that are used extensively throughout the core. Because of that, you'll always have access to the following libraries without having to load them:
-
-- template
-- menu
-- auth
-- event
-- user_panel
-- location
-- util
-
-Any other libraries you want to use will have to be loaded before you can use them:
-
-```php
-// Load the library
-$this->load->library('mail');
-
-// Now use it
-$this->mail->send();
-```
-
-:::note
-All of Nova's available libraries can be found in the `nova/modules/core/libraries` directory.
-:::
+- [Learn how to interact with Nova models](/docs/2.6/models)
+- [Learn how to interact with Nova libraries](/docs/2.6/libraries)

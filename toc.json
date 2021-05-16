@@ -113,6 +113,11 @@
                 "icon": "fluent-edit"
             },
             {
+                "name": "Libraries",
+                "file": "libraries",
+                "icon": "fluent-edit"
+            },
+            {
                 "name": "Emails",
                 "file": "emails",
                 "icon": "fluent-edit"
