@@ -20,7 +20,7 @@ In the above example, the `main` controller will be loaded and the `contact` met
 
 In this example, the `characters` controller will be loaded and the `bio` method will be called. Additionally, you'll be able to add an argument to your controller method to access the `77` in the URI. (This is what allows Nova to have access to the necessary data to show a specific character bio without having to hard-code everything.)
 
-## App vs core
+## Application vs core
 
 In order to provide the flexibility to change core pages and create new pages, there are two different kinds of controller files: core files and application files.
 
