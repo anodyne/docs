@@ -43,6 +43,11 @@
                 "icon": "fluent-question-circle"
             },
             {
+                "name": "Dashboard",
+                "file": "using-dashboard",
+                "icon": "fluent-edit"
+            },
+            {
                 "name": "Forms",
                 "file": "using-forms",
                 "icon": "fluent-question-circle"
