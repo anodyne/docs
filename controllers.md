@@ -20,6 +20,10 @@ In order to provide the flexibility to change core pages and create new pages, t
 
 Any data that will be sent to the view is stored inside of a variable in the controller method called `$data`.
 
+:::tip
+If you're trying to debug and see what data Nova is sending to the browser, before the `Template::render()` call, you can write `die($data);` to stop executing the code and see what's in the `$data` variable.
+:::
+
 ### Templates
 
 Nova uses a simple template library to render the entire page to the user's browser. Each individual piece of the template is called a region. As Nova is executing its code, it will assign data to specific regions. The library will take all of the regions and render them to the screen.
@@ -42,6 +46,24 @@ Nova defines the following regions for templates:
 :::note
 In most cases, the regions that most Nova pages deal with are `content`, `javascript`, and `title`.
 :::
+
+Nova's controllers are responsible for assigning the regions to the template and then instructing the template to render itself to the browser. In most controllers, you'll see code like this near the bottom of each method:
+
+```php
+$this->_regions['content'] = ...
+$this->_regions['javascript'] = ...
+$this->_regions['title'].= ...
+
+Template::assign($this->_regions);
+
+Template::render();
+```
+
+The first set of lines are telling Nova what to put into specific regions. These are most often view files or strings of text that Nova will add to the template library.
+
+Next, Nova assigns all of the regions to the template.
+
+And finally, Nova tells the template library to render everything it has and push it to the browser.
 
 ### Interacting with models
 
