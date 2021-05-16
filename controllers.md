@@ -20,11 +20,28 @@ In order to provide the flexibility to change core pages and create new pages, t
 
 Any data that will be sent to the view is stored inside of a variable in the controller method called `$data`.
 
-### Regions and templates
+### Templates
 
-Nova uses a template library to build up all of the needed pieces to render the entire page to the user's browser. Each piece of the layout is defined as a region.
+Nova uses a simple template library to render the entire page to the user's browser. Each individual piece of the template is called a region. As Nova is executing its code, it will assign data to specific regions. The library will take all of the regions and render them to the screen.
 
-The regions that most Nova pages deal with are `content`, `javascript`, and `title`.
+:::note A Deeper Dive
+Interested in learning more about the template library Nova uses? Dig in to the `nova/modules/core/libraries/Nova_template.php` file in your Nova installation to learn more.
+:::
+
+Nova defines the following regions for templates:
+
+- `title` - The title of the page used in the `head` of the HTML page
+- `_redirect`
+- `javascript` - The Javascript for the page
+- `nav_main` - The main navigation for the page
+- `nav_sub` - The secondary navigation for the page
+- `flash_message` - Flash messages for indicating success/failure after a create, edit, or delete action
+- `content` - The content of the page
+- `ajax` - Secondary content for the page in the way of modal pop-ups
+
+:::note
+In most cases, the regions that most Nova pages deal with are `content`, `javascript`, and `title`.
+:::
 
 ### Interacting with models
 
