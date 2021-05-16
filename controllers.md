@@ -135,5 +135,7 @@ Next, Nova assigns all of the regions to the template.
 
 And finally, Nova tells the template library to render everything it has and push it to the browser.
 
+### Interacting with other resources
+
 - [Learn how to interact with Nova models](/docs/2.6/models)
 - [Learn how to interact with Nova libraries](/docs/2.6/libraries)
