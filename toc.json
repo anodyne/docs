@@ -150,12 +150,12 @@
             {
                 "name": "Creating a page",
                 "file": "creating-pages",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             },
             {
                 "name": "Language items",
                 "file": "changing-language",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             }
         ]
     },
@@ -170,12 +170,12 @@
         {
             "name": "Backing Up Nova",
             "file": "backing-up-nova",
-            "icon": "fluent-question-circle"
+            "icon": "fluent-checkmark-circle"
         },
         {
             "name": "Versioning",
             "file": "versioning",
-            "icon": "fluent-question-circle"
+            "icon": "fluent-checkmark-circle"
         },
         {
             "name": "License Agreement",
