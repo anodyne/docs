@@ -40,13 +40,13 @@ All of Nova's available libraries can be found in the `nova/modules/core/librari
 
 In order to provide as much flexibility as possible, Nova is split up into two distinct layers: the core and the application. Any work Anodyne does on Nova lives inside "the core". Any work that you do on your game's site is "the application". This is done to ensure that any update to Nova doesn't reset the changes you've made to your installation of Nova.
 
-### Core models
+### Core libraries
 
 The "core" layer of Nova is considered anything that lives __inside__ the `nova` directory. (As an aside, this is what allows for the simplicity of just replacing the `nova` directory when updating to the latest version.)
 
-When it comes to libraries, you'll find that all of Nova's core libraries are located in the `nova/modules/core/libraries` directory. To avoid naming conflicts, all of Nova's core models are prefixed with `nova_`.
+When it comes to libraries, you'll find that all of Nova's core libraries are located in the `nova/modules/core/libraries` directory. To avoid naming conflicts, all of Nova's core libraries are prefixed with `nova_`.
 
-### Application models
+### Application libraries
 
 The "application" layer of Nova is considered anything that lives __outside__ of the `nova` directory.
 
