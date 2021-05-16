@@ -6,9 +6,23 @@ Get to know the heart and soul of Nova: controllers.
 
 ## What is a controller?
 
-## URL structure
+Controllers are the heart of your application as they determine how requests from the browser are handled by Nova. A controller is simply a PHP class that is named in a way that can be associated with a URI. In fact, Nova's URI can provide some insightful information about what controller and method are being used for the page being viewed:
 
-Nova's URLs provide some insightful information about what controller and method are being used for the page.
+- When a controller’s name matches the first segment of a URI, it will be loaded.
+- The second segment of the URI determines which method in the controller gets called.
+- If your URI contains more than two segments they will be passed to your method as parameters.
+
+```
+https://example.com/index.php/main/contact
+```
+
+In the above example, the `main` controller will be loaded and the `contact` method will be called.
+
+```
+https://example.com/index.php/characters/bio/77
+```
+
+In this example, the `characters` controller will be loaded and the `bio` method will be called. Additionally, you'll be able to add an argument to your controller method to access the `77` in the URI. (This is what allows Nova to have access to the necessary data to show a specific character bio without having to hard-code everything.)
 
 ## App vs core
 
