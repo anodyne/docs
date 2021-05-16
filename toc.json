@@ -95,7 +95,7 @@
             {
                 "name": "File Structure",
                 "file": "file-structure",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             },
             {
                 "name": "Seamless Substitution",
@@ -125,7 +125,7 @@
             {
                 "name": "Genres",
                 "file": "genres",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             }
         ]
     },
@@ -135,12 +135,12 @@
             {
                 "name": "Extensions",
                 "file": "extensions",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             },
             {
                 "name": "Events",
                 "file": "events",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             },
             {
                 "name": "Themeing",
