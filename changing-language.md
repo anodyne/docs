@@ -1,6 +1,6 @@
 # Changing Language Items
 
-Learn how to change the default language items, such as **Mission** to something more suited to your preferred genre.
+Learn how to change the default language items.
 
 ---
 
