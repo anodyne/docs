@@ -19,11 +19,11 @@ To edit any setting in Nova, you must have at least the *System Administration* 
 In this section, we will focus on establishing the basic parameters for your game's functionality, including your game's name, email settings, timezone, and appearance.
 
 To access your site's settings, access Nova's control panel and locate *Settings* under the subheading *Site Management*.
-![Settings location](/images/docs/settings-location.png)
+![Settings location](/images/docs/using-settings/settings-location.png)
 
 From this screen you will have access to:
 
-![Settings options](/images/docs/settings-options.png)
+![Settings options](/images/docs/using-settings/settings-options.png)
 
 - **Manage User Created Settings**: an advanced feature that enables you to create settings for various extensions and alterations to Nova's structure.
 - **General**: basic settings for your game such as its name.
@@ -114,10 +114,10 @@ When all edits are complete, select **Submit**.
 Nova gives administrators the ability to create their own settings to be used throughout the system. Once a setting is created, it can be added to user-created pages or extended core pages and changed through the Site Settings page. At this time, user-created settings can only be edited through a simple text field and you will not have the ability to create a setting that uses a radio button, textarea, or dropdown menu.
 
 To add a setting, click first on *Manage User-Created Settings* from the Site Settings page.
-![Manage user settings location](/images/docs/usersettings-managelocation.png)
+![Manage user settings location](/images/docs/using-settings/usersettings-managelocation.png)
 
 Then select *Add User-Created Setting*.
-![Add setting location](/images/docs/usersettings-addlocation.png)
+![Add setting location](/images/docs/using-settings/usersettings-addlocation.png)
 
 Enter the following information:
 - *Label*: enter a label that will be easy for you to recognize what it is.
@@ -127,10 +127,10 @@ Enter the following information:
 When all edits are complete, select **Submit.**
 
 To edit an existing User-Created Setting, navigate to Site Settings and a 4th tab will be available.
-![Four tabs](/images/docs/settings-4tabs.png)
+![Four tabs](/images/docs/using-settings/settings-4tabs.png)
 
 Select the **User-created Settings** tab to view all available user-created settings and edit any existing values.
-![All user-created settings](/images/docs/usersettings-viewall.png)
+![All user-created settings](/images/docs/using-settings/usersettings-viewall.png)
 
 When all edits are complete, select **Submit.**
 
@@ -139,11 +139,11 @@ When all edits are complete, select **Submit.**
 Nova's basic installation provides each game with common and easily editable pages to help the management team convey to current and potential players important information about the game and story. These features are all contained within Nova's powerful *Messages and Titles* system.
 
 To access your site's Messages and Titles, access Nova's control panel and locate *Messages & Titles* under the subheading *Site Management*.
-![Messages location](/images/docs/messages-location.png)
+![Messages location](/images/docs/using-settings/messages-location.png)
 
 From this screen you will have access to:
 
-![Messages options](/images/docs/messages-options.png)
+![Messages options](/images/docs/using-settings/messages-options.png)
 
 - **Add New Message**: an advanced feature that enables you to create messages for various pages, extensions and alterations to Nova's structure.
 - **Page Tiles**: titles for key pages throughout Nova.
@@ -195,7 +195,7 @@ Under the **Other** tab, the following options are available:
 Nova gives administrators the ability to create their own messages to be used throughout the system, especially when creating their own pages and extensions. Once a message or title is created, it can be edited through the selected tab on the Messages & Titles page.
 
 To add a setting, click first on *Add New Message* from the Site Settings page.
-![Add new message](/images/docs/messages-addnew.png)
+![Add new message](/images/docs/using-settings/messages-addnew.png)
 
 Enter the following information:
 - *Message Label*: enter a label that will be easy for you to recognize what it is.
