@@ -38,7 +38,7 @@ When it comes to controllers, you'll find that all of Nova's core controllers ar
 
 The "application" layer of Nova is considered anything that lives __outside__ of the `nova` directory.
 
-When it comes to controllers, all of Nova's application controllers are located in the `application/controllers` directory.
+When it comes to controllers, all of Nova's application controllers are located in the `application/controllers` directory. Nova comes with all of the needed controllers out of the box, but if you want to create new sections with new pages, you can add your own controllers here.
 
 ### Customizations
 
@@ -56,9 +56,13 @@ class Main extends Nova_main {
 }
 ```
 
-Nova starts by pulling in the core controller. This allows us to use the PHP class that we defined in the core. Once that file is loaded, we can extend the application controller with the core controller. Because of PHP's inheritance and how CodeIgniter treats controller, this means you can add any new methods you want to this class and you'll be able to access those controller method as pages of the same name (i.e. a method named `foo` will map to a page with the URI of `/main/foo`). What this also means is that you can _override_ any existing method with one of your own by adding a method of the same name in your application controller.
+Nova starts by pulling in the core controller. This allows us to use the PHP class that we defined in the core. Once that file is loaded, we can extend the application controller with the core controller.
 
+Because of PHP's inheritance and how CodeIgniter treats controller, this means you can add any new methods you want to this class and you'll be able to access those controller method as pages of the same name (i.e. a method named `foo` will map to a page with the URI of `/main/foo`). This also means is that you can _override_ any existing method with one of your own by adding a method of the same name in your application controller.
+
+:::tip
 When it comes to overriding a controller method, the recommended way of doing that is to copy the method from the core controller and paste it into the application controller. You then have a working copy of the page from which to modify whatever you want to.
+:::
 
 ## Understanding controllers
 
