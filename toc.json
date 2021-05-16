@@ -105,7 +105,7 @@
             {
                 "name": "Controllers",
                 "file": "controllers",
-                "icon": "fluent-edit"
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Models",
