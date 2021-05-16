@@ -15,7 +15,7 @@ There are four major forms currently provided in Nova:
 
 ## Permissions
 
-To edit any form in Nova, you must have at least the *Basic Administration* access role, or your access role needs to have the appropriate form management (such as *Bio/Join Form*, *Specs Form*, etc.) feature(s) enabled. Typically, this feature is reserved for those who are managing the game.
+To edit any form in Nova, you must have at least the *System Administration* access role, or your access role needs to have the appropriate form management (such as *Bio/Join Form*, *Specs Form*, etc.) feature(s) enabled. Typically, this feature is reserved for those who are managing the game.
 
 If you wish to learn how to submit a new character to a game, please review [Using Characters](/using-characters.md) in the Using Nova section.
 
