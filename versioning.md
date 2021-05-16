@@ -28,7 +28,7 @@ As with all our updates, we aim to include scripts to migrate data to the new ve
 
 ## Patch version
 
-A patch version indicates bug fixes or other minor changes that only impact the site's functionality in very minor ways.
+A patch version, also known as incremental version, indicates bug fixes or other minor changes that only impact the site's functionality in very minor ways.
 
 Patch versions are the most common type of release. As with all of our updates, we aim to include scripts to migrate data to the new version. In most cases, patch versions will not require any data migration since that's beyond the scope of this type of release.
 
