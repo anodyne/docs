@@ -12,13 +12,13 @@ Controllers are the heart of your application as they determine how requests fro
 - The second segment of the URI determines which method in the controller gets called.
 - If your URI contains more than two segments they will be passed to your method as parameters.
 
-```
+```html
 https://example.com/index.php/main/contact
 ```
 
 In the above example, the `main` controller will be loaded and the `contact` method will be called.
 
-```
+```html
 https://example.com/index.php/characters/bio/77
 ```
 
