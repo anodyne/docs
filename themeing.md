@@ -6,7 +6,7 @@ Learn how to theme Nova to match the style and spirit of your game.
 
 ## What is a theme?
 
-A theme (also known as a skin) is the HTML, CSS, and Javascript behind every Nova page. It provides the site with a basic structure, style, and even a certain level of functionality. Themes can be found in the `/application/views` directory.
+A theme (also known as a skin) is the HTML, CSS, and Javascript behind every Nova page. It provides the site with a basic structure, style, and even a certain level of functionality. Themes can be found in the `application/views` directory.
 
 ## [WIP] Uploading a theme
 
@@ -15,22 +15,22 @@ A theme (also known as a skin) is the HTML, CSS, and Javascript behind every Nov
 
 ## Anatomy of a theme
 
-Theme authors are free to structure their themes in whatever manner they see fit. In general though we recommend a structure like this:
+As a theme author, you're free to structure your theme however you see fit. Through much trial and error, we've found a structure like this to be the most flexible way to approach building a Nova theme:
 
-- `_global` - files used across different sections of the theme including CSS, Javascript, and images
-- `admin` – files specific to the admin section of Nova
-- `login` – files specific to the login section of Nova
-- `main` – files specific to the main section of Nova
-- `wiki` – files specific to Nova's wiki
-- `preview-admin.jpg` – a preview image of the admin section (this is only used when selecting a theme from the theme catalogue)
-- `preview-login.jpg` – a preview image of the login section (this is only used when selecting a theme from the theme catalogue)
-- `preview-main.jpg` – a preview image of the main section (this is only used when selecting a theme from the theme catalogue)
-- `preview-wiki.jpg` – a preview image of the wiki section (this is only used when selecting a theme from the theme catalogue)
-- `skin.yml` – the QuickInstall file Nova uses to install the theme (see below for more information)
-- `template_admin.php` – the base HTML structure of the admin section
-- `template_login.php` – the base HTML structure of the login section
-- `template_main.php` – the base HTML structure of the main section
-- `template_wiki.php` – the base HTML structure of the wiki section
+- `_global` - files used across multiple sections of the theme; you can name this directory whatever you want, but we've found `_global` to be the best option
+- `admin` – files specific to the admin section of Nova; this directory cannot be renamed
+- `login` – files specific to the login section of Nova; this directory cannot be renamed
+- `main` – files specific to the main section of Nova; this directory cannot be renamed
+- `wiki` – files specific to Nova's wiki; this directory cannot be renamed
+- `preview-admin.jpg` – a preview image of the admin section (only used when selecting a theme); this image must be in the root directory of your theme and cannot be renamed or Nova will not be able to show a preview of the theme section to users
+- `preview-login.jpg` – a preview image of the login section (only used when selecting a theme); this image must be in the root directory of your theme and cannot be renamed or Nova will not be able to show a preview of the theme section to users
+- `preview-main.jpg` – a preview image of the main section (only used when selecting a theme); this image must be in the root directory of your theme and cannot be renamed or Nova will not be able to show a preview of the theme section to users
+- `preview-wiki.jpg` – a preview image of the wiki section (only used when selecting a theme); this image must be in the root directory of your theme and cannot be renamed or Nova will not be able to show a preview of the theme section to users
+- `skin.yml` – the QuickInstall file used by Nova to install the theme (see below for more information)
+- `template_admin.php` – the base HTML structure of the admin section; this file must be in the root directory of your theme and cannot be renamed or your theme will not work
+- `template_login.php` – the base HTML structure of the login section; this file must be in the root directory of your theme and cannot be renamed or your theme will not work
+- `template_main.php` – the base HTML structure of the main section; this file must be in the root directory of your theme and cannot be renamed or your theme will not work
+- `template_wiki.php` – the base HTML structure of the wiki section; this file must be in the root directory of your theme and cannot be renamed or your theme will not work
 
 :::note Overriding pages from a theme
 While the best way to override a specific page is using the `_base_override` folder, you can also override pages from your theme as well. This is helpful if you want your theme to make specific changes to a page that are only unique to your theme. See the [seamless substitution documentation](/docs/2.6/seamless-substitution) for more information about this process.
@@ -84,13 +84,13 @@ Images can take up a lot of space on your web host's server, using up resources 
 CSS is at the heart of making a theme look the way you want. Not sure what CSS is or how to write it? Don't worry, we have some [helpful links](/docs/2.6/helpful-links) with resources for learning CSS to master customizing your themes in no time.
 :::
 
-Stylesheets within themes also vary between theme authors, but they can usually be found in a global folder or within one of the specific section folders. Each theme usually comes with five CSS files:
+Stylesheets within themes can vary greatly between theme authors, but they can usually be found in a global folder or within one of the specific section folders. Each theme generally comes with five CSS files:
 
-- `main.css` – the file that each template page calls, containing links to the other files within the CSS folder.
-- `skin.css` – the primary stylesheet of a theme
-- `structure.css` – a stylesheet that contains structural elements of a theme, including buttons, tables, form inputs, and more
-- `jquery.ui.tabs.css` – a stylesheet that contains styles for the theme's tabs, commonly seen on character pages, the join form, and the admin dashboard
-- `jquery.ui.theme.css` – a stylesheet that provides support for certain jQuery functions
+- `main.css` – the file that each template page calls; for simplicity, this contains links to the other CSS files in the directory
+- `skin.css` – a stylesheet responsible for the visual elements of the theme such as color, fonts, and more
+- `structure.css` – a stylesheet responsible for more of the low level structural elements of a theme such as margins, paddings, and more
+- `jquery.ui.tabs.css` – a stylesheet that contains styles for the theme's tabs
+- `jquery.ui.theme.css` – a stylesheet that provides support for jQuery UI themes
 
 :::note
 Unless the theme's CSS files are located in a global folder, you'll need to update each CSS file within each section for your changes to appear across the site. Keep in mind that each section may have specific styling that does not exist in another section's CSS files, so copy/pasting entire CSS files is not recommended.
@@ -138,15 +138,13 @@ Most browsers come with a tool called Inspect Element. This allows you to previe
 
 Since the backbone of Nova is PHP, knowing what each variable contains can be incredibly helpful in the theming process. PHP has a function called `var_dump()` that you can use to preview the raw content of any variable you see in a template or page file.
 
-For example, if you wanted to inspect the contents of the `$panel` variable you'd be able to put this code anywhere in your tempate file:
+For example, if you wanted to inspect the contents of the `$panel` variable you could do something like this:
 
 ```php
+// Putting this code anywhere in your template file...
 var_dump($panel);
-```
 
-And you'd be returned with the following raw data:
-
-```php
+// Will print the raw data to the screen...
 array(3) {
 	["inbox"]=> array(1) {
 		["src"]=> string(50) "application/views/titan/main/images/panel-mail.png"
@@ -161,3 +159,7 @@ array(3) {
 ```
 
 In this case, the `var_dump` function revealed that the variable `$panel` contains an array with three items: inbox, writing, and dashboard. Further, each of those items contains another array with a link to the image attached to each panel item. This can help you determine how to use a given variable. For example, if you wanted get the image for the private messages inbox, you now know it's located within `$panel['inbox']['src']`.
+
+:::warning
+Make sure that you've removed all debugging code before submitting your theme to AnodyneXtras. The last thing you want to do is have your masterpiece ruined with a bunch of PHP debugging code!
+:::
