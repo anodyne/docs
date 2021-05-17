@@ -74,6 +74,6 @@ Nova starts by pulling in the core model. This allows us to use the PHP class th
 When it comes to overriding a model method, the recommended way of doing that is to copy the method from the core model and paste it into the application model. You then have a working copy of the method from which to modify whatever you want.
 :::
 
-## Understanding models
+## Further reading
 
-Now that you understand _how_ to extend one of Nova's models, let's dig deeper into the various pieces involved in a Nova model.
+- [Learn about CodeIgniter's Database library](https://codeigniter.com/userguide2/database/index.html)

@@ -110,12 +110,12 @@
             {
                 "name": "Models",
                 "file": "models",
-                "icon": "fluent-edit"
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Libraries",
                 "file": "libraries",
-                "icon": "fluent-edit"
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Emails",

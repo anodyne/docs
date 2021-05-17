@@ -68,6 +68,6 @@ Nova starts by pulling in the core library. This allows us to use the PHP class 
 When it comes to overriding a library method, the recommended way of doing that is to copy the method from the core library and paste it into the application library. You then have a working copy of the method from which to modify whatever you want.
 :::
 
-## Understanding libraries
+## Further reading
 
-Now that you understand _how_ to extend one of Nova's libraries, let's dig deeper into the various pieces involved in a Nova library.
+- [Creating your own libraries](https://codeigniter.com/userguide2/general/creating_libraries.html)
