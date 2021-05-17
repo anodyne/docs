@@ -8,15 +8,20 @@ Learn how to theme Nova to match the style and spirit of your game.
 
 A theme (also known as a skin) is the HTML, CSS, and Javascript behind every Nova page. It provides the site with a basic structure, style, and even a certain level of functionality. Themes can be found in the `/application/views` directory.
 
+## [WIP] Uploading a theme
+
+- Where to get themes
+- Uploading a theme
+
 ## Anatomy of a theme
 
 Theme authors are free to structure their themes in whatever manner they see fit. In general though we recommend a structure like this:
 
-- `_global` - this should contain files used across different sections of the theme including CSS, Javascript, and images
-- `admin` – contains any files specific to the admin section of Nova
-- `login` – contains any files specific to the login section of Nova
-- `main` – contains any files specific to the main section of Nova
-- `wiki` – contains any files specific to Nova's wiki
+- `_global` - files used across different sections of the theme including CSS, Javascript, and images
+- `admin` – files specific to the admin section of Nova
+- `login` – files specific to the login section of Nova
+- `main` – files specific to the main section of Nova
+- `wiki` – files specific to Nova's wiki
 - `preview-admin.jpg` – a preview image of the admin section (this is only used when selecting a theme from the theme catalogue)
 - `preview-login.jpg` – a preview image of the login section (this is only used when selecting a theme from the theme catalogue)
 - `preview-main.jpg` – a preview image of the main section (this is only used when selecting a theme from the theme catalogue)
@@ -63,13 +68,21 @@ sections:
 
 ### Images
 
-The best practice to follow when adding images to your theme will depend on how you plan to use a given image. If the image needs to be accessed globally (by each theme section), place the file in the global folder. This can include a theme's a header image, a logo, or any other image asset you'll use throughout the user interface. If you only need an image on a specific theme section, place it in the relevant section's image folder. For example, on the Titan theme the wiki section uses a different header image that can be found in `/titan/wiki/images/header-bg.jpg`.
+The best practice to follow when adding images to your theme will depend on how you plan to use the image.
+
+Generally speaking, if the image is going to be accessed by each section of the theme, you should use the `_global` directory. This can include a theme's header image, a logo, or any other asset you'll use throughout the user interface.
+
+If you'll only use the image in a specific theme section, it's probably best to place it in the relevant section's `images` directory.
 
 :::tip
-Images can take up a lot of space on your web host's server, using resources and slowing down a page's load time. To provide a better experience for your users and to save resources on your hosting plan, consider resizing images to fit your theme.
+Images can take up a lot of space on your web host's server, using up resources and slowing down a page's load time. To provide a better experience for your users and to save resources on your hosting plan, consider resizing images to fit your theme.
 :::
 
 ## CSS
+
+:::tip Learning CSS
+CSS is at the heart of making a theme look the way you want. Not sure what CSS is or how to write it? Don't worry, we have some [helpful links](/docs/2.6/helpful-links) with resources for learning CSS to master customizing your themes in no time.
+:::
 
 Stylesheets within themes also vary between theme authors, but they can usually be found in a global folder or within one of the specific section folders. Each theme usually comes with five CSS files:
 
@@ -80,7 +93,7 @@ Stylesheets within themes also vary between theme authors, but they can usually 
 - `jquery.ui.theme.css` – a stylesheet that provides support for certain jQuery functions
 
 :::note
-Unless the theme's CSS files are located in a global folder, you must update each CSS file within each section folder for your changes to appear across the website. Keep in mind that each section may have specific styling that does not exist in another section's CSS files, so copy/pasting entire CSS files is not recommended.
+Unless the theme's CSS files are located in a global folder, you'll need to update each CSS file within each section for your changes to appear across the site. Keep in mind that each section may have specific styling that does not exist in another section's CSS files, so copy/pasting entire CSS files is not recommended.
 :::
 
 :::tip
@@ -91,23 +104,27 @@ If you updated a CSS file and do not see your changes on the site, make sure you
 
 Template files provide the basic HTML structure of a theme, and thus what every user sees when they visit a Nova-based website. Templates generally have roughly 40 lines of PHP code preceding HTML that specify things like the locations of CSS and JavaScript files while also defining some crucial variables, like the Nova helper panel, that are used on a page. Content and code used within template files appear throughout a given Nova section, and are not specific to any one page.
 
-### Navigation Elements
+### [WIP] Included files
 
-Nova uses two navigation elements in any given template file. The main navigation, using the variable `$main_nav`, and the sub navigation, using the variable `$nav_sub`. The main navigation is the consistent throughout the website, but the sub navigation changes depending on the section. For example, within the `template_main.php` file, the variable `$sub_nav` will refer to the distinct sub navigation elements assigned to the main, sim, and personnel sections.
+- Information about the include files that are used to pull in some basic Javascript for each template
 
-Navigation elements are rendered as an unordered list (`<ul>`), with each navigation element being a list item (`<li>`) containing an anchor (`<a>`) tag. Both navigations are contained within divs that can be used to style each list, they appear under `.nav-main` and `.nav-sub` respectively.
+### Navigation
 
-:::tip
-Certain sub navigation elements may have a space between each "section" and can provide challenges if improperly formatted.
+Nova uses two different navigation menus: the main navigation (`$main_nav`) and the secondary navigation (`$nav_sub`). The main navigation is consistent throughout the entire site, but the secondary navigation changes depending on the section the user is currently viewing. From a themeing perspective, you won't need to know _what_ section is showing, just _where_ you want the secondary navigation to be shown on the page.
+
+Navigation elements are rendered as an unordered list (`<ul>`) with each navigation element being a list item (`<li>`) containing an anchor (`<a>`) tag. Both navigations are contained within `div`s that can be targeted to style each list individually (`.nav-main` and `.nav-sub` respectively).
+
+:::tip Heads up
+Certain secondary navigation elements may have a space between sections. This can  provide additional challenges if improperly formatted.
 :::
 
 ### Page Content
 
-Each template file contains a section for the page's primary content, which varies depending on the page accessed. The page's content generally appears in a div with the class `.content` and contains three PHP elements: flash messages, the content itself, and Ajax.
+Each template file contains a section for the page's primary content. The page's content generally appears in a `div` with the class `.content` and contains three PHP elements: flash messages, the page content, and Ajax elements.
 
-- The flash messages appear if Nova needs to generate an error or success message, which can be seen when you update a post or submit an application. They are styled as a div element with the class `.flash_message`, with an additinal class of either `.flash-success`, `.flash_error`, or `.flash_info` that give color styles.
+- The flash messages appear if Nova needs to generate an error or success message, which can be seen when you update a post or submit an application. They are styled as a div element with the class `.flash_message`, with an additional class of either `.flash-success`, `.flash_error`, or `.flash_info` that give color styles.
 - The `$content` variable displays the page's content, whether it's text defined in a Nova's Site Messages, a custom/static generated through a separate view file, or one of Nova's pre-formatted content pages.
-- Ajax can help update a page without a user having to reload, it can receive data after a page has loaded, and it can send data to your server.
+- Ajax can help update a page without a user having to reload, it can receive data after a page has loaded, and it can send data to your server. In general, you won't need to worry about this more than ensuring the `$ajax` variable is in your template.
 
 ## Tips and tricks
 
