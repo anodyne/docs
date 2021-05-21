@@ -9,7 +9,7 @@
                 "file": "release-notes",
                 "link": "https://github.com/anodyne/nova3/releases"
             },
-            "browser-support",
+            "compatability",
             "upgrade-guide",
             "contribution-guide",
             "configuration",
