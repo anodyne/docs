@@ -128,23 +128,19 @@
         "pages": [
             {
                 "name": "Creating a Page",
-                "file": "creating-pages",
-                "icon": "fluent-checkmark-circle"
+                "file": "creating-pages"
             },
             {
                 "name": "Language Items",
-                "file": "changing-language",
-                "icon": "fluent-checkmark-circle"
+                "file": "changing-language"
             },
             {
                 "name": "Extensions",
-                "file": "extensions",
-                "icon": "fluent-checkmark-circle"
+                "file": "extensions"
             },
             {
                 "name": "Events",
-                "file": "events",
-                "icon": "fluent-checkmark-circle"
+                "file": "events"
             }
         ]
     },
