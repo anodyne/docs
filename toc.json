@@ -1,6 +1,7 @@
 [
     {
         "title": "Getting Started",
+        "index": 1,
         "pages": [
             "installation",
             {
@@ -16,12 +17,14 @@
     },
     {
         "title": "Core Concepts",
+        "index": 2,
         "pages": [
             "alert"
         ]
     },
     {
         "title": "Themes",
+        "index": 3,
         "pages": [
             "form-button",
             "logout"
@@ -29,6 +32,7 @@
     },
     {
         "title": "Extensions",
+        "index": 4,
         "pages": [
             "form-button",
             "logout"
@@ -36,6 +40,7 @@
     },
     {
         "title": "Guides",
+        "index": 5,
         "pages": [
             "form-button",
             "logout"
