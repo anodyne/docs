@@ -4,33 +4,27 @@
         "pages": [
             {
                 "name": "Before Getting Started",
-                "file": "before-getting-started",
-                "icon": "fluent-checkmark-circle"
+                "file": "before-getting-started"
             },
             {
                 "name": "Compatability",
-                "file": "compatability",
-                "icon": "fluent-checkmark-circle"
+                "file": "compatability"
             },
             {
                 "name": "Installation",
-                "file": "installation",
-                "icon": "fluent-question-circle"
+                "file": "installation"
             },
             {
                 "name": "Configuration",
-                "file": "configuration",
-                "icon": "fluent-checkmark-circle"
+                "file": "configuration"
             },
             {
                 "name": "Upgrade Guide",
-                "file": "upgrade-guide",
-                "icon": "fluent-checkmark-circle"
+                "file": "upgrade-guide"
             },
             {
                 "name": "Pretty URLs",
-                "file": "pretty-urls",
-                "icon": "fluent-checkmark-circle"
+                "file": "pretty-urls"
             }
         ]
     },
@@ -133,12 +127,12 @@
         "title": "Modifications",
         "pages": [
             {
-                "name": "Creating a page",
+                "name": "Creating a Page",
                 "file": "creating-pages",
                 "icon": "fluent-checkmark-circle"
             },
             {
-                "name": "Language items",
+                "name": "Language Items",
                 "file": "changing-language",
                 "icon": "fluent-checkmark-circle"
             },
@@ -163,7 +157,7 @@
                 "icon": "fluent-edit"
             },
             {
-                "name": "Anatomy of a theme",
+                "name": "Anatomy of a Theme",
                 "file": "themeing-anatomy",
                 "icon": "fluent-edit"
             },

@@ -18,6 +18,10 @@ Remember when [we mentioned](/docs/2.6/before-getting-started#ftp-client) grabbi
 
 To get the installation process started you'll first need to make sure all of Nova's files have been uploaded to the server. If you're not sure how to do that, you can either reference your FTP client's documentation or reach out to your web host for help with this step.
 
+:::tip
+We recommend unzipping the Nova archive on your computer and then uploading the contents to the root of your site. This prevents situations where you have something like `nova-2.6.1` in the URL of your site.
+:::
+
 ## Fresh Install
 
 With Nova's files uploaded to the server, all you need to do now is fire up your [favorite browser](/docs/2.6/compatability#browser) and navigate to your website (let's call it `https://nova.space` for the sake of this guide). You should see the Install Center and an option to do a Fresh Install. If you click on that option, Nova will walk you through the installation process.
