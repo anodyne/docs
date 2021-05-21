@@ -124,27 +124,6 @@
         ]
     },
     {
-        "title": "Modifications",
-        "pages": [
-            {
-                "name": "Creating a Page",
-                "file": "creating-pages"
-            },
-            {
-                "name": "Language Items",
-                "file": "changing-language"
-            },
-            {
-                "name": "Extensions",
-                "file": "extensions"
-            },
-            {
-                "name": "Events",
-                "file": "events"
-            }
-        ]
-    },
-    {
         "title": "Themeing",
         "pages": [
             {
@@ -176,6 +155,27 @@
                 "name": "Tips & Tricks",
                 "file": "themeing-tips",
                 "icon": "fluent-edit"
+            }
+        ]
+    },
+    {
+        "title": "Modifications",
+        "pages": [
+            {
+                "name": "Creating a Page",
+                "file": "creating-pages"
+            },
+            {
+                "name": "Language Items",
+                "file": "changing-language"
+            },
+            {
+                "name": "Extensions",
+                "file": "extensions"
+            },
+            {
+                "name": "Events",
+                "file": "events"
             }
         ]
     },
