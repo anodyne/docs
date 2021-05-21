@@ -188,23 +188,23 @@
       "pages": [
         {
             "name": "Helpful Links",
-            "file": "helpful-links",
-            "icon": "fluent-checkmark-circle"
+            "file": "helpful-links"
         },
         {
             "name": "Backing Up Nova",
-            "file": "backing-up-nova",
-            "icon": "fluent-checkmark-circle"
+            "file": "backing-up-nova"
         },
         {
             "name": "Versioning",
-            "file": "versioning",
-            "icon": "fluent-checkmark-circle"
+            "file": "versioning"
         },
         {
             "name": "License Agreement",
-            "file": "license-agreement",
-            "icon": "fluent-checkmark-circle"
+            "file": "license-agreement"
+        },
+        {
+            "name": "Contributors",
+            "file": "contributors"
         }
       ]
     }
