@@ -164,28 +164,28 @@
             },
             {
                 "name": "Anatomy of a theme",
-                "file": "creating-pages",
-                "icon": "fluent-checkmark-circle"
+                "file": "themeing-anatomy",
+                "icon": "fluent-edit"
             },
             {
                 "name": "QuickInstall",
-                "file": "changing-language",
-                "icon": "fluent-checkmark-circle"
+                "file": "themeing-quickinstall",
+                "icon": "fluent-edit"
             },
             {
                 "name": "Templates",
-                "file": "extensions",
-                "icon": "fluent-checkmark-circle"
+                "file": "themeing-templates",
+                "icon": "fluent-edit"
             },
             {
                 "name": "CSS",
-                "file": "events",
-                "icon": "fluent-checkmark-circle"
+                "file": "themeing-css",
+                "icon": "fluent-edit"
             },
             {
                 "name": "Tips & Tricks",
-                "file": "events",
-                "icon": "fluent-checkmark-circle"
+                "file": "themeing-tips",
+                "icon": "fluent-edit"
             }
         ]
     },
