@@ -3,6 +3,7 @@
         "title": "Getting Started",
         "index": 1,
         "pages": [
+            "before-getting-started",
             "installation",
             {
                 "file": "release-notes",
