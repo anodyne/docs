@@ -133,6 +133,16 @@
         "title": "Modifications",
         "pages": [
             {
+                "name": "Creating a page",
+                "file": "creating-pages",
+                "icon": "fluent-checkmark-circle"
+            },
+            {
+                "name": "Language items",
+                "file": "changing-language",
+                "icon": "fluent-checkmark-circle"
+            },
+            {
                 "name": "Extensions",
                 "file": "extensions",
                 "icon": "fluent-checkmark-circle"
@@ -141,20 +151,40 @@
                 "name": "Events",
                 "file": "events",
                 "icon": "fluent-checkmark-circle"
-            },
+            }
+        ]
+    },
+    {
+        "title": "Themeing",
+        "pages": [
             {
-                "name": "Themeing",
-                "file": "themeing",
+                "name": "Overview",
+                "file": "themeing-overview",
                 "icon": "fluent-edit"
             },
             {
-                "name": "Creating a page",
+                "name": "Anatomy of a theme",
                 "file": "creating-pages",
                 "icon": "fluent-checkmark-circle"
             },
             {
-                "name": "Language items",
+                "name": "QuickInstall",
                 "file": "changing-language",
+                "icon": "fluent-checkmark-circle"
+            },
+            {
+                "name": "Templates",
+                "file": "extensions",
+                "icon": "fluent-checkmark-circle"
+            },
+            {
+                "name": "CSS",
+                "file": "events",
+                "icon": "fluent-checkmark-circle"
+            },
+            {
+                "name": "Tips & Tricks",
+                "file": "events",
                 "icon": "fluent-checkmark-circle"
             }
         ]
@@ -165,7 +195,7 @@
         {
             "name": "Helpful Links",
             "file": "helpful-links",
-            "icon": "fluent-question-circle"
+            "icon": "fluent-checkmark-circle"
         },
         {
             "name": "Backing Up Nova",
