@@ -10,10 +10,10 @@ We don't take breaking changes lightly and have worked hard to make sure the upg
 
 ## Themes
 
-At a global level, we've renamed skins to be called themes in v3. Realistically, this should only be a nomenclature change that will take some getting used to.
+At a global level, we've renamed skins to be called __themes__ in v3. Realistically, this should only be a nomenclature change that will take some getting used to.
 
 On top of just changing what we call them, we've completely overhauled how themes actually work. That means that any v2 skin will have to be completely re-written.
 
 ## Extensions
 
-Likewise, at a global level, we've renamed MODs to be called extensions in v3. Realistically, this should only be a nomenclature change that will take some getting used to.
+Likewise, at a global level, we've renamed MODs to be called __extensions__ in v3. Realistically, this should only be a nomenclature change that will take some getting used to.

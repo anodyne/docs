@@ -8,8 +8,8 @@ Learn how to get Nova 3 up and running.
 
 Nova 3 has a few requirements you should be aware of before installing:
 
-- PHP 7.4 or higher
-- MySQL 5.7 or higher
+- PHP 8.0 or higher
+- MySQL 8.0 or higher
 - Fileinfo PHP extension
 - JSON PHP Extension
 - PDO PHP Extension

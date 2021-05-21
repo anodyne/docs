@@ -8,7 +8,7 @@ Here are a few things you should know before using Nova 3.
 
 Nova is web-based software which means that you'll need to have a server to store your files on so players can access your game's site. There are lots of web hosts available that range everywhere from free to a few bucks a month to very expensive (these will generally be overkill, but do cover any possible need you could have with Nova or anything else). Generally free web hosts will work fine, but if you have the budget to spend a few bucks a month, you'll get far better support and stability.
 
-To make it easier to choose a web host for your site, we've compiled a list of web hosts that play nice with Nova 2 out of the box (and warnings about some that don't) that you can see [here](https://github.com/anodyne/hosts).
+To make it easier to choose a web host for your site, we've compiled a list of web hosts that play nice with Nova 3 out of the box (and warnings about some that don't) that you can see [here](https://github.com/anodyne/hosts).
 
 ### Prerequisites
 
