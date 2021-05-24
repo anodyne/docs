@@ -12,11 +12,11 @@ Controllers are the heart of your application as they determine how requests fro
 - The second segment of the URI determines which method in the controller gets called.
 - If your URI contains more than two segments they will be passed to your method as parameters.
 
-`https://example.com/index.php/main/contact`
+`/main/contact`
 
 In the above example, the `main` controller will be loaded and the `contact` method will be called.
 
-`https://example.com/index.php/characters/bio/77`
+`/characters/bio/77`
 
 In this example, the `characters` controller will be loaded and the `bio` method will be called. Additionally, you'll be able to add an argument to your controller method to access the `77` in the URI. (This is what allows Nova to have access to the necessary data to show a specific character bio without having to hard-code everything.)
 
