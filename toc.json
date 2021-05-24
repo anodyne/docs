@@ -41,7 +41,7 @@
             {
                 "name": "Dashboard",
                 "file": "guide-dashboard",
-                "icon": "fluent-edit"
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Forms",
@@ -56,7 +56,7 @@
             {
                 "name": "Menus",
                 "file": "guide-menus",
-                "icon": "fluent-edit"
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Permissions",
@@ -76,7 +76,7 @@
             {
                 "name": "Site Settings",
                 "file": "guide-site-settings",
-                "icon": "fluent-edit"
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Wiki",
