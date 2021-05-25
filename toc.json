@@ -90,8 +90,8 @@
         "index": 3,
         "pages": [
             {
-                "name": "File Structure",
-                "file": "file-structure",
+                "name": "Directory Structure",
+                "file": "directory-structure",
                 "icon": "fluent-checkmark-circle"
             },
             {
