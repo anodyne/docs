@@ -9,7 +9,7 @@ Understand how Nova handles email.
 ## When Nova sends emails
 
 |Area|Situation|Recipient|
-|-|-|
+|-|-|-|
 |Application|Application accepted|The joining user|
 |Application|Application rejected|The joining user|
 |Application|Application rejected|All game masters|
