@@ -8,10 +8,18 @@ Understand how Nova handles email.
 
 ## When Nova sends emails
 
+|Situation|Recipient|
+|---|---|
+|A player submits the join form|Themselves|
+|A player submits the join form|All game masters|
+|Application accepted|The joining user|
+|Application rejected|The joining user|
+
 - When a prospective player submits the join form, an email is sent to them with the details of their application
 - When a prospective player submits the join form, an email is sent to all users marked as game masters with the details of the application
 - When a prospective player's application has been accepted, an email is sent to the player
 - When a prospective player's application has been rejected, an email is sent to the player
+- When a prospective player's application is rejected or accepted, all users marked as game masters also receive copies of the accepted/rejection notice
 - When a user resets their password, the user receives an email
 - When the contact form is submitted, any users marked as game masters are sent an email
 - When a new comment is added to a news item, the author of the news item receives an email
