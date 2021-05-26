@@ -8,12 +8,13 @@ Understand how Nova handles email.
 
 ## When Nova sends emails
 
-|Situation|Recipient|
-|---|---|
-|A player submits the join form|Themselves|
-|A player submits the join form|All game masters|
-|Application accepted|The joining user|
-|Application rejected|The joining user|
+|Area|Situation|Recipient|
+|-|-|
+|Application|Application accepted|The joining user|
+|Application|Application rejected|The joining user|
+|Application|Application rejected|All game masters|
+|Join form|Player applies to join|The submitting user|
+|Join form|Player applies to join|All game masters|
 
 - When a prospective player submits the join form, an email is sent to them with the details of their application
 - When a prospective player submits the join form, an email is sent to all users marked as game masters with the details of the application
