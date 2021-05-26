@@ -13,18 +13,14 @@ Understand how Nova handles email.
 |Application|Application accepted|The joining user|
 |Application|Application rejected|The joining user|
 |Application|Application rejected|All game masters|
+|Contact form|Contact form is submitted|All game masters|
 |Join form|Player applies to join|The submitting user|
 |Join form|Player applies to join|All game masters|
+|Login page|Player resets their password|The submitting user|
+|News item|Comment added|The author of the news item|
+|News item|Approval required for new comment|All users with `manage/comments` permissions|
 
-- When a prospective player submits the join form, an email is sent to them with the details of their application
-- When a prospective player submits the join form, an email is sent to all users marked as game masters with the details of the application
-- When a prospective player's application has been accepted, an email is sent to the player
-- When a prospective player's application has been rejected, an email is sent to the player
-- When a prospective player's application is rejected or accepted, all users marked as game masters also receive copies of the accepted/rejection notice
-- When a user resets their password, the user receives an email
-- When the contact form is submitted, any users marked as game masters are sent an email
-- When a new comment is added to a news item, the author of the news item receives an email
-- When a new comment is added to a news item that requires approval, any users with the `manage/comments` permission are sent an email
+
 - When a news item, personal log, mission post, or comment in a pending state is approved, the appropriate user(s) are sent an email
 - When a prospective game submits the docking form, an email is sent to them with the details of their application
 - When a prospective game submits the docking form, an email is sent to all users marked as game masters with the details of the application
