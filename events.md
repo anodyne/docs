@@ -8,7 +8,7 @@ Nova provides a robust events system for MODs to listen as actions happen throug
 
 Nova provides an Events library that allows a sim or mod to define callbacks that are run when an event occurs. While accessible throughout Nova, Events are most useful in the context of building Extensions, as Events allow Extensions to hook into existing Nova functionality.
 
-## Event Basics
+## Event basics
 
 In order to define a listener, assuming $this is the CodeIgniter content, simply call:
 
@@ -87,7 +87,7 @@ abcd
 
 Nova provides a number of listeners listed in this article. All of these listeners support the resolution paradigm above. Each of these listeners expose different elements in their callback data, such as the data sent to a view or template, the output rendered for a view or template, the data sent to a database insert or update operation, and a flag to abort a database deletion operation.
 
-## Available Events
+## Available events
 
 ### location.view.data.$SECTION.$VIEW
 

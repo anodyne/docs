@@ -61,13 +61,13 @@ Under your link options, click on the dropdown for *My Link #2* and locate **Dec
 When all changes are complete, select **Update.** To see the new link in your dashboard, navigate to a new page and access the dashboard.
 ![Custom links](/images/docs/2.6/using-dashboard/dashboard-mylinks.png)
 
-## Requesting a LOA
+## Requesting a leave of absence (LOA)
 
 To request a leave of absence from the game, access the Dashboard and click on the **Request LOA** link.
 
-The following options are availble on the request form:
+The following options are available on the request form:
 
-- *Status*: select from Active, Leave of Absense, or Extended Leave of Absence.
+- *Status*: select from Active, Leave of Absence, or Extended Leave of Absence.
 - *Duration*: enter how long you expect to be on LOA.
 - *Reason:* inform the game's management staff as to why your leave is needed.
 

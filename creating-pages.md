@@ -30,7 +30,7 @@ public function sim_allawards()
 }
 ```
 
-## Set up the View
+## Set up the view
 
 If you tried to go to your page above, you'd be greeted by a nasty error telling you something is missing. What we're missing is the guts of the page, or the view file. The second part of this is to create your view file. To do that, we're going to create a file called `sim_allawards.php` in `application/views/_base_override/main/pages`.
 
@@ -50,7 +50,7 @@ As you can see, it's **really** straightforward. The only thing we're doing is u
 
 From here, you can make whatever changes you want to the view file and continue to add awards. Because we've done all this work in the `application` directory, we don't have to worry about losing our changes when we make an update either!
 
-## Understanding the controller code 
+## Understanding the controller code
 
 Let's step through the code you inserted into the sim controller file piece-by-piece to see what's going on.
 

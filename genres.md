@@ -10,7 +10,7 @@ One of Nova's defining features is the ability to craft any game according to an
 
 Genre codes can only have 3 characters. For example, the Deep Space Nine genre code is **ds9**. We recommend that all genre codes contain only lowercase characters and numbers for maximum compatibility throughout Nova.
 
-## Can I have more than one Genre installed?
+## Can I have more than one genre installed?
 
 While the database structure can allow for a nearly infinite number of genres to be installed, only one genre can be active at a time on a Nova instance. To change the active genre, you will need to locate `nova.php` in the `application/config` directory. On Line 15, change the existing 3-letter genre code to the desired code. For instance, if you wish to switch from *Deep Space Nine* to *The Original Series*, you would change from `ds9` to `tos`.
 
@@ -18,7 +18,7 @@ While the database structure can allow for a nearly infinite number of genres to
 
 There are multiple locations for the files associated with each genre, including Asset Files, Images, and Ranks.
 
-### Asset Files
+### Asset files
 
 Asset files are the integral components of a genre and include images and ranks. Nova stores all genre assets in `application/assets/common`. Each genre is assigned its own directory that lines up with its genre code.
 
@@ -38,11 +38,11 @@ Ranks are arguably one of the biggest asset pieces that change from genre to gen
 
 All the genre-specific elements are contained in three tables in the database: **departments**, **positions** and **ranks**. This allows multiple genres to be installed side-by-side in the database. Any genre you install into the database will have suffixed tables with the genre code. For example, the three tables used by the DS9 genre are named `nova_departments_ds9`, `nova_positions_ds9` and `nova_ranks_ds9`.
 
-### The Install File
+### The install file
 
 Nova stores the genre install files in `nova/modules/assets/install/genres`. There is one file for each genre that's stored in the format `{genre}_data.php`. Essentially, genre files are nothing more than several large PHP arrays with all the information about departments, positions and ranks. That data is fed into the install script and uses the arrays along with CodeIgniter's Database Forge feature to create tables and insert data into them.
 
-## Creating a Genre Install
+## Creating a genre install
 
 If you're interested in creating a genre file, we recommend that you duplicate one of the existing genre data files and start from there. In order to create a genre file, you have to have departments, positions and ranks. If one of those components is missing, parts of the system will break without major modifications.
 

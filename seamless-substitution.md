@@ -8,7 +8,7 @@ The term "seamless substitution" sounds scarier than it actually is. In a nutshe
 
 A system like this is integral to allowing games to modify Nova's core behavior and presentation. This is especially important since editing core Nova files runs the risk of having customizations wiped out when a Nova update is applied.
 
-## Where Nova Will Look
+## Where Nova will look
 
 For each type of file below, Nova will try to find that type of file in the specified locations and in the specified order.
 
@@ -18,7 +18,7 @@ For each type of file below, Nova will try to find that type of file in the spec
 - `application/views/_base_override/{section}/ajax`
 - `nova/modules/core/views/_base/{section}/ajax`
 
-### Asset Images
+### Asset images
 
 - `application/assets`
 
@@ -49,7 +49,7 @@ Emails are available in both `html` and `text` form. If you are modifying an ema
 - `application/views/_base_override/{section}/js`
 - `nova/modules/core/views/_base/{section}/js`
 
-### Rank Images
+### Rank images
 
 - `application/assets/common/{genre}/ranks/{set}`
 
@@ -59,7 +59,7 @@ Emails are available in both `html` and `text` form. If you are modifying an ema
 - `application/views/_base_override/{section}/pages`
 - `nova/modules/core/views/_base/{section}/pages`
 
-## How to Use a Different File
+## How to use a different file
 
 Leveraging seamless substitution is simple: add the file you want to use (with the same name as Nova uses in the core) at a location higher in the corresponding list above than the Nova core location.
 
@@ -69,7 +69,7 @@ For example, if you wanted to replace the clock icon used in the admin section, 
 
 When you refresh a page with that image, you'll see your new image instead of what Nova uses in the core.
 
-### Base Override vs Skin
+### Base override vs skin
 
 The `_base_override` directory should be used if you want to replace a file across the entire system, regardless of skin. This is the simplest and quickest way to replace an image or file with your own version.
 

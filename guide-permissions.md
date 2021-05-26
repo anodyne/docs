@@ -4,7 +4,7 @@ Learn how to control what users can do in Nova 2.
 
 ---
 
-## Access Roles
+## Access roles
 
 ### Overview
 

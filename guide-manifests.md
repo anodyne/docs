@@ -13,6 +13,7 @@ Learn more about Nova's powerful manifest structure, including how its structure
 ## Departments
 
 ### Creating and editing
+
 ### Disabling
 
 ## Positions

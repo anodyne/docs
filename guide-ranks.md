@@ -58,7 +58,7 @@ To modify any existing rank that is available in Nova, access Nova's Control Pan
 
 Select the appropriate **rank class**, and then scroll until you find the Rank you wish to edit. The Rank name and image are readily available, and more options are accessible via the `More` button. You can edit as many ranks as you need in the selected Class at a time, but you will lose your changes if you select a different Class. Be sure to hit the **Update** button at the bottom of the page before navigating to a new class.
 
-## Remove a Rank's name and/or abbreviation
+## Remove a rank's name and/or abbreviation
 
 If you are operating a game that does not wish to use ranks, or would have rank-less characters mixed in with characters with ranks, you may want to have a blank rank for that character.
 

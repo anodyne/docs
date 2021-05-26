@@ -20,7 +20,7 @@ Navigation elements are rendered as an unordered list (`<ul>`) with each navigat
 Certain secondary navigation elements may have a space between sections. This can  provide additional challenges if improperly formatted.
 :::
 
-### Page Content
+### Page content
 
 Each template file contains a section for the page's primary content. The page's content generally appears in a `div` with the class `.content` and contains three PHP elements: flash messages, the page content, and Ajax elements.
 

@@ -62,7 +62,7 @@ For example, a site running Nova version 2.3.2 would read:
 
 Nova 2.6 introduced [Events](/docs/2.6/events) and [Extensions](/docs/2.6/extensions), two powerful features that unlock easier ways to modify a Nova site as well as several incredibly powerful ways to expand upon the base installation. In addition to following the normal update process, Nova 2.6 includes additional changes you’ll need to make for the new event and extension systems to work correctly.
 
-#### Config File
+#### Config file
 
 Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/config/extensions.php) into a new file called `extensions.php` and place it in the `application/config` directory on your server.
 
@@ -80,7 +80,7 @@ Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/
 
 Nova 2.5 introduced easy ways to add privacy policies to your site, the ability for users to delete their own accounts and personal information, and some compatibility updates for PHP 7. In addition to following the normal update process, Nova 2.5 includes two additional changes that you’ll need to make.
 
-#### Privacy Policies
+#### Privacy policies
 
 Nova 2.5 includes default privacy, cookie, do not track, and California privacy rights policies. Those policies are stored in Site Messages under the Messages tab. You can edit those as you see fit.
 

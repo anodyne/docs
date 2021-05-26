@@ -6,7 +6,7 @@
 
 Extensions are a type of Nova mod that are placed within the `application/extensions` folder and enabled in `application/config/extensions.php`. As opposed to other types of Nova mods, extensions do not require modifying any Nova code files. This simplifies installation and maintenance.
 
-## Installing an Extension
+## Installing an extension
 
 When you download an extension, the installation will always follow roughly the same process:
 
@@ -26,7 +26,7 @@ $config['extensions']['enabled'][] = 'my_extension';
 
 Some extensions may specify that they require another extension. If this is the case, you should ensure that all required extensions come before the extension that requires them within the `application/config/extensions.php` file.
 
-## Building an Extension
+## Building an extension
 
 An extension is defined as a directory placed within the `application/extensions` directory that, at minimum, has a single file `init.php`. The `init.php` file serves to bootstrap the file, attaching event listeners, defining other required extensions, etc., as necessary to achieve the extension's purpose.
 
@@ -98,7 +98,7 @@ $this->ci->event->listen(['template', 'render', 'data'], function ($event) {
 
 For shorthand, calls directly to `$this` are call-forwarded to `$this->ci`.
 
-## Extension Controllers and Views
+## Extension controllers and views
 
 An extension can define controllers within a controllers folder inside the extension folder. In order to avoid URL collisions between the extension and other routes in the Nova app, extensions will have a URL like:
 
@@ -202,7 +202,7 @@ class __extensions__my_extension__my_controller extends Nova_controller_main
 }
 ```
 
-## Overriding Extension Controllers and Views
+## Overriding extension controllers and views
 
 An application can seamlessly override the behavior of an extension-defined controller without modifying the extension. To do this, suppose the goal is to override `my_controller` within `my_extension` (defined as above in `application/extensions/my_extension/controllers/my_controller.php`). To do this, define the file:
 

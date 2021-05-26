@@ -78,7 +78,7 @@ When all edits are complete, select **Submit**.
 
 ### Defining appearance parameters
 
-Under the **Apperance** tab, the following options are available:
+Under the **Appearance** tab, the following options are available:
 
 - **Skins**: select the skin you wish to be default for all visitors to your site, as well as newcomers to the game. To preview any skin, select the magnifying glass next to each section option. Here you can adjust the options for:
   - The *Main Site*, such as the front page, character manifest, and reading posts.

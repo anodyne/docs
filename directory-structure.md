@@ -1,17 +1,17 @@
-# Nova's File Structure
+# Directory Structure
 
-A quick look at each of Nova's directories and root files for better understanding of the system.
+A quick look at each of Nova's directories and root files.
 
 ---
 
-## Root Directory
+## Root directory
 
 - `application`: This folder contains all of the configuration and customization files that Nova uses. If you want to make changes to Nova, this is where you'll end up doing most of your work to avoid situations with your changes being wiped out during an update.
 - `nova`: This is the heart and soul of Nova. Included in this directory is the CodeIgniter framework (which should never be edited or updated ... always let Anodyne test and release any changes to CI), the CodeIgniter and Nova licenses, and the Nova core itself.
 - `index.php`: This is Nova's bootstrap file and starts up the framework and everything Nova needs.
 - `message.php`: The message file is used by Nova to display informational messages to users in the event a major error has occurred. If a user's browser doesn't meet the requirements, the server doesn't meet the requirements, or a user has been issued a level 2 ban, this page will display the appropriate information to the user.
 
-## Application Directory
+## Application directory
 
 - `assets`: The assets folder mainly contains genre files and images. You'll also find any backups Nova does for you in this folder.
 - `cache`: CodeIgniter comes with the ability to cache view files to help speed up the loading of pages. CI will store its cache files in this directory. (Because of the dynamic nature of Nova, there's little we can cache.)
@@ -30,7 +30,7 @@ A quick look at each of Nova's directories and root files for better understandi
 - `third_party`: New to CodeIgniter 2 are application packages which are a way to set extra directories that contain libraries, models, helpers, etc. Currently, Nova 2 does not use CI 2 packages.
 - `views`: A view is simply a PHP page that contains the HTML markup that creates the presentation of the page you're viewing. Views are never called directly, they must be loaded by a controller. Typical contents of this folder include the site's various skins and customized pages.
 
-## Nova Directory
+## Nova directory
 
 :::warning
 We've provided tools to prevent you from having to edit core files, but if a situation comes up where it's unavoidable, you should be **very** careful when modifying core files. Errant changes to these files can result in major problems and in some cases cause your site to stop working altogether!
