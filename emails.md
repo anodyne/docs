@@ -13,25 +13,35 @@ Understand how Nova handles email.
 |Application|Application accepted|The joining user|
 |Application|Application rejected|The joining user|
 |Application|Application rejected|All game masters|
+|Awards|Award nomination is submitted|All users with level 2 `user/nominate` permissions|
 |Contact form|Contact form is submitted|All game masters|
+|Docking form|Docking form is submitted|The submitting user|
+|Docking form|Docking form is submitted|All game masters|
+|Docking form|Docking application is accepted|The submitting user|
+|Docking form|Docking application is rejected|The submitting user|
 |Join form|Player applies to join|The submitting user|
 |Join form|Player applies to join|All game masters|
 |Login page|Player resets their password|The submitting user|
+|Mission post|Joint mission post saved|All participating users on the post|
+|Mission post|Mission post published|All users|
+|Mission post|Approval required for new mission post|All users with level 2 `manage/posts` permissions|
+|Mission post|Comment added|The author(s) of the mission post|
+|Mission post|Approval required for new comment|All users with `manage/comments` permissions|
+|Moderation|Approval of pending comment|The entity's author(s)|
+|Moderation|Approval of pending mission post|All users|
+|Moderation|Approval of pending news item|All users|
+|Moderation|Approval of pending personal log|All users|
+|News item|News item published|All users|
+|News item|Approval required for new news item|All users with level 2 `manage/news` permissions|
 |News item|Comment added|The author of the news item|
 |News item|Approval required for new comment|All users with `manage/comments` permissions|
-
-
-- When a news item, personal log, mission post, or comment in a pending state is approved, the appropriate user(s) are sent an email
-- When a prospective game submits the docking form, an email is sent to them with the details of their application
-- When a prospective game submits the docking form, an email is sent to all users marked as game masters with the details of the application
-- When a prospective game's application to dock with your game has been accepted, an email is sent to the submitter
-- When a prospective game's application to dock with your game has been rejected, an email is sent to the submitter
-- When a new private message is sent, the recipient is sent an email
-- When a user nominates another user/character for an award, any users with level 2 `user/nominate` permission are sent an email
-- When a user's password is reset for them, an email is sent to them with the details
-- When a user's status is changed, an email is sent to all users marked as game masters
-- When a mission post with multiple authors is saved, all participants receive a notification
-- When a news item, personal log, or mission post is posted, all users who have opted in to receive those particular notifications receive an email
+|Personal log|Personal log published|All users|
+|Personal log|Approval required for new personal log|All users with level 2 `manage/logs` permissions|
+|Personal log|Comment added|The author of the personal log|
+|Personal log|Approval required for new comment|All users with `manage/comments` permissions|
+|Private message|A new private message is received|The recipient|
+|User profile|Password is changed by an admin|The user|
+|User profile|Status is changed|All game masters|
 
 ## Configuring emails from Nova
 
