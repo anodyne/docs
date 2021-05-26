@@ -108,7 +108,7 @@ Example:
 $this->event->listen(['location', 'view', 'data', 'main', 'personnel_character'], function ($event) {
   $id = $this->uri->segment(3);
   $char = $this->char->get_character($id);
-  $content = fms_character__api__get_character($char);
+  $content = fms_character**api**get_character($char);
   $event['data']['fms_character'] = json_decode($content, true);
 });
 ```

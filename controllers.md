@@ -30,13 +30,13 @@ In order to provide as much flexibility as possible, Nova is split up into two d
 
 ### Core controllers
 
-The "core" layer of Nova is considered anything that lives __inside__ the `nova` directory. (As an aside, this is what allows for the simplicity of just replacing the `nova` directory when updating to the latest version.)
+The "core" layer of Nova is considered anything that lives **inside** the `nova` directory. (As an aside, this is what allows for the simplicity of just replacing the `nova` directory when updating to the latest version.)
 
 When it comes to controllers, you'll find that all of Nova's core controllers are located in the `nova/modules/core/controllers` directory. To avoid naming conflicts, all of Nova's core controllers are prefixed with `nova_`.
 
 ### Application controllers
 
-The "application" layer of Nova is considered anything that lives __outside__ of the `nova` directory.
+The "application" layer of Nova is considered anything that lives **outside** of the `nova` directory.
 
 When it comes to controllers, all of Nova's application controllers are located in the `application/controllers` directory. Nova comes with all of the needed controllers out of the box, but if you want to create new sections with new pages, you can add your own controllers here.
 
@@ -49,16 +49,16 @@ require_once MODPATH.'core/controllers/nova_main.php';
 
 class Main extends Nova_main {
 
-	public function __construct()
+	public function **construct()
 	{
-		parent::__construct();
+		parent::**construct();
 	}
 }
 ```
 
 Nova starts by pulling in the core controller. This allows us to use the PHP class that we defined in the core. Once that file is loaded, we can extend the application controller with the core controller.
 
-Because of PHP's inheritance and how CodeIgniter treats controller, this means you can add any new methods you want to this class and you'll be able to access those controller method as pages of the same name (i.e. a method named `foo` will map to a page with the URI of `/main/foo`). This also means is that you can _override_ any existing method with one of your own by adding a method of the same name in your application controller.
+Because of PHP's inheritance and how CodeIgniter treats controller, this means you can add any new methods you want to this class and you'll be able to access those controller method as pages of the same name (i.e. a method named `foo` will map to a page with the URI of `/main/foo`). This also means is that you can *override* any existing method with one of your own by adding a method of the same name in your application controller.
 
 :::tip
 When it comes to overriding a controller method, the recommended way of doing that is to copy the method from the core controller and paste it into the application controller. You then have a working copy of the page from which to modify whatever you want.
@@ -66,7 +66,7 @@ When it comes to overriding a controller method, the recommended way of doing th
 
 ## Understanding controllers
 
-Now that you understand _how_ to extend one of Nova's controllers, let's dig deeper into the various pieces involved in a Nova controller.
+Now that you understand *how* to extend one of Nova's controllers, let's dig deeper into the various pieces involved in a Nova controller.
 
 ### `$data`
 
@@ -76,7 +76,7 @@ Any data that will be sent to the view is stored inside of an array in the contr
 If you're trying to debug and see what data Nova is sending to the browser, before the `Template::render()` call, you can write `die(var_dump($data));` to stop executing the code and see what's in the `$data` variable.
 :::
 
-Since `$data` is sent to the view in its entirety, this also means that if you want to add _additional_ data to a view, you can simply assign it to a key on the `$data` array and you'll have access to it in the view files using the key name as the variable.
+Since `$data` is sent to the view in its entirety, this also means that if you want to add *additional* data to a view, you can simply assign it to a key on the `$data` array and you'll have access to it in the view files using the key name as the variable.
 
 ```php
 // In the controller...

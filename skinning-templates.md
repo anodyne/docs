@@ -12,7 +12,7 @@ Template files provide the basic HTML structure of a skin, and thus what every u
 
 ### Navigation
 
-Nova uses two different navigation menus: the main navigation (`$main_nav`) and the secondary navigation (`$nav_sub`). The main navigation is consistent throughout the entire site, but the secondary navigation changes depending on the section the user is currently viewing. From a skinning perspective, you won't need to know _what_ section is showing, just _where_ you want the secondary navigation to be shown on the page.
+Nova uses two different navigation menus: the main navigation (`$main_nav`) and the secondary navigation (`$nav_sub`). The main navigation is consistent throughout the entire site, but the secondary navigation changes depending on the section the user is currently viewing. From a skinning perspective, you won't need to know *what* section is showing, just *where* you want the secondary navigation to be shown on the page.
 
 Navigation elements are rendered as an unordered list (`<ul>`) with each navigation element being a list item (`<li>`) containing an anchor (`<a>`) tag. Both navigations are contained within `div`s that can be targeted to style each list individually (`.nav-main` and `.nav-sub` respectively).
 

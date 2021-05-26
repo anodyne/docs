@@ -20,5 +20,5 @@ There are known visual issues with Nova in IE 7. We've decided not to address th
 
 ## Server
 
-- PHP 5.3 or higher (_5.6 recommended_)
-- MySQL 5.0 or higher (_5.7 recommended_)
+- PHP 5.3 or higher (*5.6 recommended*)
+- MySQL 5.0 or higher (*5.7 recommended*)

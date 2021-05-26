@@ -114,24 +114,24 @@ application/extensions/my_extension/controllers/my_controller
 
 To avoid a class name collision, the controller class must also be named in a special way:
 
-- Start the class name with `__extensions`
-- Next, place two more underscores `__`
+- Start the class name with `**extensions`
+- Next, place two more underscores `**`
 - Next, place the extension name, such as `my_extension`
-- Next, place two more underscores `__`
+- Next, place two more underscores `**`
 - Next, place the controller name
 
-So for the above example, the class would be `__extensions__my_extension__my_controller`:
+So for the above example, the class would be `**extensions**my_extension**my_controller`:
 
 ```php
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 require_once MODPATH.'core/libraries/Nova_controller_main.php';
 
-class __extensions__my_extension__my_controller extends Nova_controller_main
+class **extensions**my_extension**my_controller extends Nova_controller_main
 {
-	public function __construct()
+	public function **construct()
 	{
-		parent::__construct();
+		parent::**construct();
 		$this->_regions['nav_sub'] = Menu::build('sub', 'sim');
 	}
 
@@ -182,11 +182,11 @@ Putting it all together, one might end up with a controller like:
 
 require_once MODPATH.'core/libraries/Nova_controller_main.php';
 
-class __extensions__my_extension__my_controller extends Nova_controller_main
+class **extensions**my_extension**my_controller extends Nova_controller_main
 {
-	public function __construct()
+	public function **construct()
 	{
-		parent::__construct();
+		parent::**construct();
 		$this->_regions['nav_sub'] = Menu::build('sub', 'sim');
 	}
 
@@ -210,14 +210,14 @@ An application can seamlessly override the behavior of an extension-defined cont
 application/controllers/extensions/my_extension/my_controller.php
 ```
 
-In this file, define the controller with the same name as the extension controller has, except without the leading `__` (the difference in class names here allows you to inherit the one from the extension). For example:
+In this file, define the controller with the same name as the extension controller has, except without the leading `**` (the difference in class names here allows you to inherit the one from the extension). For example:
 
 ```php
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 require_once APPPATH.'extensions/my_extension/controllers/my_controller.php';
 
-class extensions__my_extension__my_controller extends __extensions__my_extension__my_controller
+class extensions**my_extension**my_controller extends **extensions**my_extension**my_controller
 {
     public function my_method()
     {

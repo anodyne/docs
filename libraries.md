@@ -42,13 +42,13 @@ In order to provide as much flexibility as possible, Nova is split up into two d
 
 ### Core libraries
 
-The "core" layer of Nova is considered anything that lives __inside__ the `nova` directory. (As an aside, this is what allows for the simplicity of just replacing the `nova` directory when updating to the latest version.)
+The "core" layer of Nova is considered anything that lives **inside** the `nova` directory. (As an aside, this is what allows for the simplicity of just replacing the `nova` directory when updating to the latest version.)
 
 When it comes to libraries, you'll find that all of Nova's core libraries are located in the `nova/modules/core/libraries` directory. To avoid naming conflicts, all of Nova's core libraries are prefixed with `nova_`.
 
 ### Application libraries
 
-The "application" layer of Nova is considered anything that lives __outside__ of the `nova` directory.
+The "application" layer of Nova is considered anything that lives **outside** of the `nova` directory.
 
 When it comes to libraries, all of Nova's application libraries are located in the `application/libraries` directory. Nova comes with all of the needed libraries out of the box, but if you want to create new libraries, you can add your own libraries here.
 
@@ -62,7 +62,7 @@ require_once MODPATH.'core/libraries/Nova_auth.php';
 class Auth extends Nova_auth {}
 ```
 
-Nova starts by pulling in the core library. This allows us to use the PHP class that we defined in the core. Once that file is loaded, we can extend the application library with the core library. Because of PHP's inheritance, this means you can add any new methods you want to this class and you'll be able to use those library methods in Nova. This also means is that you can _override_ any existing method with one of your own by adding a method of the same name in your application library.
+Nova starts by pulling in the core library. This allows us to use the PHP class that we defined in the core. Once that file is loaded, we can extend the application library with the core library. Because of PHP's inheritance, this means you can add any new methods you want to this class and you'll be able to use those library methods in Nova. This also means is that you can *override* any existing method with one of your own by adding a method of the same name in your application library.
 
 :::tip
 When it comes to overriding a library method, the recommended way of doing that is to copy the method from the core library and paste it into the application library. You then have a working copy of the method from which to modify whatever you want.

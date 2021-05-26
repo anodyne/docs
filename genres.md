@@ -8,7 +8,7 @@ One of Nova's defining features is the ability to craft any game according to an
 
 ## Genre code
 
-Genre codes can only have 3 characters. For example, the Deep Space Nine genre code is **ds9**. We recommend that all genre codes contain only lowercase characters and numbers for maximum compatibility throughout Nova.
+Genre codes can only have 3 characters. For example, the Deep Space Nine genre code is `ds9`. We recommend that all genre codes contain only lowercase characters and numbers for maximum compatibility throughout Nova.
 
 ## Can I have more than one genre installed?
 

@@ -66,7 +66,7 @@ $this->_regions['content'] = Location::view('sim_allawards', $this->skin, 'main'
 
 Nova templates are broken up into regions. The guts of a page are part of the content region. What we're doing here is assigning a view file to the content region to be rendered by the browser. Sounds complicated, but it really isn't. All you need to know is the second part: the location class.
 
-In order for seamless substitution to work, we created a location class (it used to be a helper in Nova 1) that does all the heavy lifting and figures out where to pull files from. In this case, we're looking for a view that's named `sim_allawards.php` (the .php part is assumed so you don't have to include it). After that, the class is simplying being told where to look and what section it's part of.
+In order for seamless substitution to work, we created a location class (it used to be a helper in Nova 1) that does all the heavy lifting and figures out where to pull files from. In this case, we're looking for a view that's named `sim_allawards.php` (the .php part is assumed so you don't have to include it). After that, the class is simply being told where to look and what section it's part of.
 
 ```php
 $this->_regions['title'].= "Awards We've Won";

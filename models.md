@@ -42,13 +42,13 @@ In order to provide as much flexibility as possible, Nova is split up into two d
 
 ### Core models
 
-The "core" layer of Nova is considered anything that lives __inside__ the `nova` directory. (As an aside, this is what allows for the simplicity of just replacing the `nova` directory when updating to the latest version.)
+The "core" layer of Nova is considered anything that lives **inside** the `nova` directory. (As an aside, this is what allows for the simplicity of just replacing the `nova` directory when updating to the latest version.)
 
 When it comes to models, you'll find that all of Nova's core models are located in the `nova/modules/core/models` directory. To avoid naming conflicts, all of Nova's core models are prefixed with `nova_`.
 
 ### Application models
 
-The "application" layer of Nova is considered anything that lives __outside__ of the `nova` directory.
+The "application" layer of Nova is considered anything that lives **outside** of the `nova` directory.
 
 When it comes to models, all of Nova's application models are located in the `application/models` directory. Nova comes with all of the needed models out of the box, but if you want to create new models for interacting with new database tables you've created, you can add your own models here.
 
@@ -61,14 +61,14 @@ require_once MODPATH.'core/models/nova_characters_model.php';
 
 class Characters_model extends Nova_characters_model {
 
-	public function __construct()
+	public function **construct()
 	{
-		parent::__construct();
+		parent::**construct();
 	}
 }
 ```
 
-Nova starts by pulling in the core model. This allows us to use the PHP class that we defined in the core. Once that file is loaded, we can extend the application model with the core model. Because of PHP's inheritance, this means you can add any new methods you want to this class and you'll be able to use those model methods in Nova. This also means is that you can _override_ any existing method with one of your own by adding a method of the same name in your application model.
+Nova starts by pulling in the core model. This allows us to use the PHP class that we defined in the core. Once that file is loaded, we can extend the application model with the core model. Because of PHP's inheritance, this means you can add any new methods you want to this class and you'll be able to use those model methods in Nova. This also means is that you can *override* any existing method with one of your own by adding a method of the same name in your application model.
 
 :::tip
 When it comes to overriding a model method, the recommended way of doing that is to copy the method from the core model and paste it into the application model. You then have a working copy of the method from which to modify whatever you want.
