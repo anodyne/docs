@@ -80,20 +80,20 @@ When all edits are complete, select **Submit**.
 
 Under the **Apperance** tab, the following options are available:
 
-- **Skins**: select the skin/theme you wish to be default for all visitors to your site, as well as newcomers to the game. To preview any skin, select the magnifying glass next to each section option. Here you can adjust the options for:
+- **Skins**: select the skin you wish to be default for all visitors to your site, as well as newcomers to the game. To preview any skin, select the magnifying glass next to each section option. Here you can adjust the options for:
   - The *Main Site*, such as the front page, character manifest, and reading posts.
   - The *Log In Page*, where all players will log in and out.
   - The *Wiki*, where information critical to gameplay is stored.
 
-:::Note
-To install new Skins/Themes, please review [Modifications: Themeing](/themeing.md).
+:::note
+To install new skins, please review the [skinning documentation](/docs/2.6/skinning-overview).
 :::
 
 - **Display Options**:
-  - *Rank Set*: Select what you want the default rank set to be by using the dropdown menu. A preview image of the selected rankset will appear under the dropdown.
+  - *Rank Set*: Select what you want the default rank set to be by using the dropdown menu. A preview image of the selected rank set will appear under the dropdown.
 
-:::Note
-To install new Skins/Themes, please review [Using Ranks](/using-ranks.md).
+:::note
+To install new rank sets, please review [Using Ranks](/using-ranks.md).
 :::
 
 - **Display Options (continued)**:

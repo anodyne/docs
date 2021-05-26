@@ -127,37 +127,37 @@
         ]
     },
     {
-        "title": "Themeing",
+        "title": "Skins",
         "index": 4,
         "pages": [
             {
                 "name": "Overview",
-                "file": "themeing-overview",
+                "file": "skinning-overview",
                 "icon": "fluent-edit"
             },
             {
-                "name": "Anatomy of a Theme",
-                "file": "themeing-anatomy",
+                "name": "Anatomy of a Skin",
+                "file": "skinning-anatomy",
                 "icon": "fluent-edit"
             },
             {
                 "name": "QuickInstall",
-                "file": "themeing-quickinstall",
+                "file": "skinning-quickinstall",
                 "icon": "fluent-edit"
             },
             {
                 "name": "Templates",
-                "file": "themeing-templates",
+                "file": "skinning-templates",
                 "icon": "fluent-edit"
             },
             {
                 "name": "CSS",
-                "file": "themeing-css",
+                "file": "skinning-css",
                 "icon": "fluent-edit"
             },
             {
                 "name": "Tips & Tricks",
-                "file": "themeing-tips",
+                "file": "skinning-tips",
                 "icon": "fluent-edit"
             }
         ]

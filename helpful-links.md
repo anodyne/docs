@@ -14,7 +14,7 @@ Nova is built in PHP, a widely used server-side programming language that’s be
 
 ## Learning CSS
 
-All of Nova's themes rely on a heavy dose of Cascading Style Sheets (CSS) to do all of the styling. If you want to change styling for a theme or create your own theme, learning how to write CSS is crucial. These resources will get you on your way.
+All of Nova's skins rely on a heavy dose of Cascading Style Sheets (CSS) to do all of the styling. If you want to change styling for a skin or create your own skin, learning how to write CSS is crucial. These resources will get you on your way.
 
 - [Codecademy - Learn CSS](https://www.codecademy.com/learn/learn-css)
 - [How to learn CSS](https://www.smashingmagazine.com/2019/01/how-to-learn-css/)

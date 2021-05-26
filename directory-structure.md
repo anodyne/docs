@@ -28,7 +28,7 @@ A quick look at each of Nova's directories and root files for better understandi
 - `models`: Models are PHP classes designed to work with information in your database. They provide a quick and easy way to pull information that doesn't require admins to write lots of database queries. Even better, models in Nova use CodeIgniter's Active Record class meaning they're easy to build and understand.
 - `modules`: Modules are a way to store related code that makes it easy to distribute. Module support is new in Nova 2 and requires a healthy understanding of how Nova and CodeIgniter work.
 - `third_party`: New to CodeIgniter 2 are application packages which are a way to set extra directories that contain libraries, models, helpers, etc. Currently, Nova 2 does not use CI 2 packages.
-- `views`: A view is simply a PHP page that contains the HTML markup that creates the presentation of the page you're viewing. Views are never called directly, they must be loaded by a controller. Typical contents of this folder include the site's various Themes and customized pages.
+- `views`: A view is simply a PHP page that contains the HTML markup that creates the presentation of the page you're viewing. Views are never called directly, they must be loaded by a controller. Typical contents of this folder include the site's various skins and customized pages.
 
 ## Nova Directory
 

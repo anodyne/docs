@@ -1,10 +1,10 @@
-# Themeing - Templates
+# Skin Templates
 
-Learn how to theme Nova to match the style and spirit of your game.
+Learn how to skin Nova to match the style and spirit of your game.
 
 ---
 
-Template files provide the basic HTML structure of a theme, and thus what every user sees when they visit a Nova-based website. Templates generally have roughly 40 lines of PHP code preceding HTML that specify things like the locations of CSS and JavaScript files while also defining some crucial variables, like the Nova helper panel, that are used on a page. Content and code used within template files appear throughout a given Nova section, and are not specific to any one page.
+Template files provide the basic HTML structure of a skin, and thus what every user sees when they visit a Nova-based website. Templates generally have roughly 40 lines of PHP code preceding HTML that specify things like the locations of CSS and JavaScript files while also defining some crucial variables, like the Nova helper panel, that are used on a page. Content and code used within template files appear throughout a given Nova section, and are not specific to any one page.
 
 ### [WIP] Included files
 
@@ -12,7 +12,7 @@ Template files provide the basic HTML structure of a theme, and thus what every 
 
 ### Navigation
 
-Nova uses two different navigation menus: the main navigation (`$main_nav`) and the secondary navigation (`$nav_sub`). The main navigation is consistent throughout the entire site, but the secondary navigation changes depending on the section the user is currently viewing. From a themeing perspective, you won't need to know _what_ section is showing, just _where_ you want the secondary navigation to be shown on the page.
+Nova uses two different navigation menus: the main navigation (`$main_nav`) and the secondary navigation (`$nav_sub`). The main navigation is consistent throughout the entire site, but the secondary navigation changes depending on the section the user is currently viewing. From a skinning perspective, you won't need to know _what_ section is showing, just _where_ you want the secondary navigation to be shown on the page.
 
 Navigation elements are rendered as an unordered list (`<ul>`) with each navigation element being a list item (`<li>`) containing an anchor (`<a>`) tag. Both navigations are contained within `div`s that can be targeted to style each list individually (`.nav-main` and `.nav-sub` respectively).
 

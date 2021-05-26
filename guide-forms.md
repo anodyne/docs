@@ -44,7 +44,7 @@ Whenever you wish to add or edit a field, the following options will always be a
 - **HTML Attributes**:
   - *Name*: the name of the attribute to be listed within the page's rendered code. This name must be a unique name, not used elsewhere in the entire form.
   - *ID*: a selectable anchor for the field contained within the page's rendered code. This name must be a unique name, not used elsewhere in the entire form.
-  - *Class*: a specific class to be rendered according to functions added to the theme's CSS.
+  - *Class*: a specific class to be rendered according to functions added to the skin's CSS.
   - *Textarea Rows*: determine how many rows should be available to the user using the form.
 
 :::note For dropdown menus only

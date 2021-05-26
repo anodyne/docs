@@ -37,7 +37,7 @@ The available tabs will include:
 
 ### Selecting your favorite skin
 
-You will be able to select what skins/themes you will be able to see throughout the site when you are logged in. All users will be restricted to the skins/themes that are installed and activated by site administrators. You can customize these preferences under the **My Skins** tab.
+You will be able to select what skins you will be able to see throughout the site when you are logged in. All users will be restricted to the skins that are installed and activated by site administrators. You can customize these preferences under the **My Skins** tab.
 
 The sections of the site that the user can customize the view of are:
 - *Main Site*
