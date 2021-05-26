@@ -4,6 +4,30 @@ Understand how Nova handles email.
 
 ---
 
+## How Nova sends emails
+
+## When Nova sends emails
+
+- When a prospective player submits the join form, an email is sent to them with the details of their application
+- When a prospective player submits the join form, an email is sent to all users marked as game masters with the details of the application
+- When a prospective player's application has been accepted, an email is sent to the player
+- When a prospective player's application has been rejected, an email is sent to the player
+- When a user resets their password, the user receives an email
+- When the contact form is submitted, any users marked as game masters are sent an email
+- When a new comment is added to a news item, the author of the news item receives an email
+- When a new comment is added to a news item that requires approval, any users with the `manage/comments` permission are sent an email
+- When a news item, personal log, mission post, or comment in a pending state is approved, the appropriate user(s) are sent an email
+- When a prospective game submits the docking form, an email is sent to them with the details of their application
+- When a prospective game submits the docking form, an email is sent to all users marked as game masters with the details of the application
+- When a prospective game's application to dock with your game has been accepted, an email is sent to the submitter
+- When a prospective game's application to dock with your game has been rejected, an email is sent to the submitter
+- When a new private message is sent, the recipient is sent an email
+- When a user nominates another user/character for an award, any users with level 2 `user/nominate` permission are sent an email
+- When a user's password is reset for them, an email is sent to them with the details
+- When a user's status is changed, an email is sent to all users marked as game masters
+- When a mission post with multiple authors is saved, all participants receive a notification
+- When a news item, personal log, or mission post is posted, all users who have opted in to receive those particular notifications receive an email
+
 ## Configuring emails from Nova
 
 ## Changing the files used for emails
@@ -52,7 +76,7 @@ It can be a little daunting to step into the world of third-party email service 
 It's important to understand that there may be additional work that has to be done for some of these services. For example, Mailgun requires domain verification before you can send emails. While it's a technical process, Mailgun has documentation that will walk you through updating the DNS records. In other cases, these are relatively new services that we don't have much information on. We encourage people to look at the different options and make decisions based on what they think their needs will be.
 :::
 
-Any of the above SMTP services will work in Nova 2. If you're having issues today with emails not being delivered, you can get up and running in short order by signing up for one of the above services and plugging in the details in your email config file in Nova.
+Any of the above SMTP services will work in Nova. If you're having issues today with emails not being delivered, you can get up and running in short order by signing up for one of the above services and plugging in the details in your email config file in Nova.
 
 In order to get Nova working with your SMTP service of choice, you simply need to update the `application/config/email.php` config file with the information you got from the service when you signed up:
 
