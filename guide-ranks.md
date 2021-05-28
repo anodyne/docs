@@ -109,6 +109,18 @@ Some downloadable rank sets contain a `rank.yml` file. Nova will automatically d
 
 ![Install Rankset](/images/docs/2.6/using-ranks/rankcatalogue-install.png)
 
+If you are installing a customized rank set, especially one of your own unique design, you can create a `rank.yml` file to upload with the set to streamline installation. A typical file, such as one for [Kuro-RPG's DS9 Dress Uniform](http://kuro-rpg.net/?direct=kuro_ranks_viewer&id=218) set, looks like this: 
+
+```html
+rank: Dress Ranks
+location: dress
+credits: The rank sets used in Nova were created by Kuro-chan of Kuro-RPG. The ranksets can be found at <a href='http://www.kuro-rpg.net' target='_blank'>Kuro-RPG</a>. Please do not copy or modify the images.
+preview: preview.png
+blank: blank.png
+extension: .png
+url: http://www.kuro-rpg.net/
+```
+
 If the rank set does contain the `rank.yml` file, but Nova does not detect it, please check your File Manager to ensure that the rank set was uploaded to the right location and that the files are visible.
 
 If your rank set does not contain a `rank.yml` file, and is uploaded to the correct location, you will have to manually install your rank set. You can do this by clicking the **Add rank set** option at the top of the Rank Catalogue page.
