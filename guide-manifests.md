@@ -27,7 +27,7 @@ When a manifest is viewed, the user will only see the characters that are attach
 ### Creating and editing
 
 To access any of the manifests available on Nova, access Nova's control panel and locate *Site Manifests* under the subheading *Site Management*.
-![Site manifests location](/images/docs/using-manifests/manifests-location.png)
+![Site manifests location](/images/docs/2.6/using-manifests/manifests-location.png)
 
 To create a manifest, select the *Add Manifest* option.
 
@@ -55,7 +55,7 @@ Whenever you select the Add or Edit Manifest, the following options will appear:
 When you have finished entering your information, click on the **Submit** button.
 
 If a manifest has metadata enabled, such as species and gender, the metadata will appear under the character names listed in the manifest.
-![Metadata location](/images/docs/using-manifests/metadata-location.png)
+![Metadata location](/images/docs/2.6/using-manifests/metadata-location.png)
 
 ## Departments
 
@@ -68,14 +68,14 @@ In order to display properly, each manifest must have at least one department en
 ### Creating and editing
 
 To access any of the departments available on Nova, access Nova's control panel and locate *Departments* under the subheading *Management*.
-![Departments location](/images/docs/using-manifests/departments-location.png)
+![Departments location](/images/docs/2.6/using-manifests/departments-location.png)
 
 When the page is accessed, you will be able to see all departments stored within Nova's database. These departments are organized by whether or not they are assigned to a certain manifest. Within the Assigned tab, you can see all departments organized by which manifest they are attached to.
 
-![Departments page](/images/docs/using-manifests/departments-page.png)
+![Departments page](/images/docs/2.6/using-manifests/departments-page.png)
 
 To add a department, select the *Add Department* option.
-![Add department](/images/docs/using-manifests/departments-add.png)
+![Add department](/images/docs/2.6/using-manifests/departments-add.png)
 
 To edit a department, click on the Edit icon to the far right of the department you wish to edit. To delete a department, select the appropriate delete icon.
 
@@ -105,13 +105,13 @@ When you have finished entering your information, click on the **Submit** button
 Departments must be attached to a manifest in order for them to be displayed on the Personnel page, or for their positions to appear as options in the join form. Departments can be assigned to a manifest either by directly editing the department by using the department management page.
 
 To access the *Assign Departments* page, access Nova's control panel and locate *Site Manifests* under the subheading *Site Management*.
-![Site manifests location](/images/docs/using-manifests/manifests-location.png)
+![Site manifests location](/images/docs/2.6/using-manifests/manifests-location.png)
 
 Then select the *Assign Departments* option.
-![Assign departments](/images/docs/using-manifests/departments-assign.png)
+![Assign departments](/images/docs/2.6/using-manifests/departments-assign.png)
 
 From here you can assign departments to a specific manifest. To do so, simply drag the department to the desired manifest. All changes will be immediately saved within Nova, so there will be no need to update. The user interface, however, will not automatically clean itself up, or properly arrange the departments within a manifest. To clean up the presentation of the page, click on the *Refresh Page* at any time.
-![Arrange departments](/images/docs/using-manifests/departments-arrange.png)
+![Arrange departments](/images/docs/2.6/using-manifests/departments-arrange.png)
 
 ## Positions
 
@@ -122,7 +122,7 @@ Many games can only support a certain amount of a character type. For example, a
 ### Creating and editing
 
 To access any of the positions available on Nova, access Nova's control panel and locate *Positions* under the subheading *Management*.
-![Departments location](/images/docs/using-manifests/positions-location.png)
+![Departments location](/images/docs/2.6/using-manifests/positions-location.png)
 
 :::Warning
 Deleting and updating positions could negatively affect characters. Proceed with caution.
