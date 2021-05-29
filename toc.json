@@ -51,7 +51,7 @@
             {
                 "name": "Manifests",
                 "file": "guide-manifests",
-                "icon": "fluent-edit"
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Menus",
