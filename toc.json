@@ -61,7 +61,7 @@
             {
                 "name": "Permissions",
                 "file": "guide-permissions",
-                "icon": "fluent-edit"
+                "icon": "fluent-question-circle"
             },
             {
                 "name": "Posts",
