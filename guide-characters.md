@@ -20,7 +20,7 @@ To apply to the game, access the Join Application by navigating to the game's ho
 ![Joining from main page](/images/docs/2.6/using-characters/join-main.png)
 
 Alternatively, you can also access the Join Application by navigating to the game's personnel page, and then selecting "Join" from the sidebar.
-![Joining from manifest](/images/docs/2.6/using-characters/join-personnel.png)
+![Joining from manifest](/images/docs/2.6/using-characters/join-manifest.png)
 
 You will be taken to a preliminary screen, containing information and disclaimers that you will need to read and accept prior to joining. Nova's default disclaimer contains generic rules, regulations, and a COPPA disclaimer to comply with United States law. In order to apply to the game, you will need to accept the conditions by clicking the **Agree** button.
 
