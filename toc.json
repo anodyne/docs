@@ -81,7 +81,7 @@
             {
                 "name": "Wiki",
                 "file": "guide-wiki",
-                "icon": "fluent-edit"
+                "icon": "fluent-question-circle"
             }
         ]
     },
