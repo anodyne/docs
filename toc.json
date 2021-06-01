@@ -46,5 +46,12 @@
             "form-button",
             "logout"
         ]
+    },
+    {
+        "title": "Helpful Links",
+        "index": 6,
+        "pages": [
+            "where-is-it"
+        ]
     }
 ]
