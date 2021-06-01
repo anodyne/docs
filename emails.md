@@ -6,6 +6,10 @@ Understand how Nova handles email.
 
 ## How Nova sends emails
 
+Unlike many areas in Nova were we leverage built-in CodeIgniter libraries, for email we use a custom library implementing [SwiftMailer](https://swiftmailer.symfony.com/docs/introduction.html) for sending all emails from Nova. We've built this in such a way that it should nearly mirror the way that CodeIgniter handles email.
+
+When Nova needs to send an email, the controller where that page lives will have a method called `_email` that handles all of the email situations for that controller.
+
 ## When Nova sends emails
 
 |Area|Situation|Recipient|
@@ -41,7 +45,7 @@ Understand how Nova handles email.
 |Personal log|Approval required for new comment|All users with `manage/comments` permissions|
 |Private message|A new private message is received|The recipient|
 |User profile|Password is changed by an admin|The user|
-|User profile|Status is changed|All game masters|
+|User profile|Leave of absence status is changed|All game masters|
 
 ## Configuring emails from Nova
 

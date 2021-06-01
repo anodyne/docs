@@ -97,22 +97,22 @@
             {
                 "name": "Seamless Substitution",
                 "file": "seamless-substitution",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             },
             {
                 "name": "Controllers",
                 "file": "controllers",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             },
             {
                 "name": "Models",
                 "file": "models",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             },
             {
                 "name": "Libraries",
                 "file": "libraries",
-                "icon": "fluent-question-circle"
+                "icon": "fluent-checkmark-circle"
             },
             {
                 "name": "Emails",
