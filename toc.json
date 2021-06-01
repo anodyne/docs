@@ -50,7 +50,10 @@
         "title": "Helpful Links",
         "index": 6,
         "pages": [
-            "whats-new",
+            {
+              "title": "What's new?",
+              "file": "whats-new"
+            },
             "where-is-it",
             "contribution-guide"
         ]
