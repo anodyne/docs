@@ -1,4 +1,6 @@
-# Where Is It?
+# Where The $#@! Is It?
+
+Find out where everything moved to in Nova 3.
 
 ---
 
