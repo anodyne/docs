@@ -51,8 +51,8 @@
         "index": 6,
         "pages": [
             {
-              "title": "What's new?",
-              "file": "whats-new"
+                "name": "What's new?",
+                "file": "whats-new"
             },
             "where-is-it",
             "contribution-guide"
