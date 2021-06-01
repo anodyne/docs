@@ -4,7 +4,9 @@ Find out where everything moved to in Nova 3.
 
 ---
 
-With the rollout of Nova 3 and people starting to use it, one of the first questions that likely pops up "where the hell is X?".
+We know you're incredibly excited to get started using Nova 3, but once you get in to the code you'll inevitably find yourself repeatedly asking: "where the hell did X go?!?!"
+
+Never fear, below is your handy guide for where to find all of the _things_ in Nova that you've gotten accustomed to where they live in Nova 2.
 
 |Component|Nova 3|Nova 2|
 |-|-|-|
