@@ -2,11 +2,7 @@
 
 ---
 
-Laravel is a web application framework with expressive, elegant syntax. A web framework provides a structure and starting point for creating your application, allowing you to focus on creating something amazing while we sweat the details.
-
-Laravel strives to provide an amazing developer experience, while providing powerful features such as thorough dependency injection, an expressive database abstraction layer, queues and scheduled jobs, unit and integration testing, and more.
-
-Whether you are new to PHP or web frameworks or have years of experience, Laravel is a framework that can grow with you. We'll help you take your first steps as a web developer or give you a boost as you take your expertise to the next level. We can't wait to see what you build.
+[wip]
 
 ## Why Nova?
 
@@ -14,8 +10,23 @@ There are a variety of options out there when building a website for your game. 
 
 ### All the tools you need
 
-Nova comes with all of the things you need to manage and play your online RPG: writing tools, character management, world building  reporting
+Out of the box Nova comes with all of the tools you need to manage and play your game:
+
+- stories and story posts
+- helpful collaborative writing tools like post locking
+- extensive character and user management
+- valuable insights and statistics
+- powerful developer tools
+- ability for your players to manage their own accounts and characters
+- highly dynamic forms that you can change however you'd like
+- public-facing website about your game
+
+Other options for creating your site will require either foregoing some of Nova's feature or building them yourself.
+
+### More than 15 years of experience
+
+[wip]
 
 ### Extensive community familiarity
 
-Laravel combines the best packages in the PHP ecosystem to offer the most robust and developer friendly framework available. In addition, thousands of talented developers from around the world have contributed to the framework. Who knows, maybe you'll even become a Laravel contributor.
+[wip]
