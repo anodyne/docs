@@ -23,7 +23,7 @@ Out of the box Nova comes with all of the tools you need to manage and play your
 
 Other options for creating your site will require either foregoing some of Nova's feature or building them yourself.
 
-### More than 15 years of experience
+### Trusted games for more than 15 years
 
 [wip]
 
