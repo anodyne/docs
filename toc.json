@@ -11,7 +11,6 @@
             },
             "compatability",
             "upgrade-guide",
-            "contribution-guide",
             "configuration",
             "directory-structure"
         ]
@@ -52,7 +51,8 @@
         "index": 6,
         "pages": [
             "whats-new",
-            "where-is-it"
+            "where-is-it",
+            "contribution-guide"
         ]
     }
 ]
