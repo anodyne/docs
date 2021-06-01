@@ -1,19 +1,39 @@
 # Upgrade Guide
 
-Upgrading from Nova v2.x to v3.0.
+Upgrading Nova to the latest version.
 
 ---
 
-Nova v3.0 is the first new major version of Nova since 2012, and as such it includes a wide array of breaking changes.
+:::note Before you start
+Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/3.0/backing-up-nova) on backing up Nova.
+:::
 
-We don't take breaking changes lightly and have worked hard to make sure the upgrade path is as simple as possible. For most sites, upgrading should take less than 30 minutes.
+## What you'll need
 
-## Themes
+Before you get started updating Nova, make sure you have the following things ready to go:
 
-At a global level, we've renamed skins to be called __themes__ in v3. Realistically, this should only be a nomenclature change that will take some getting used to.
+- An FTP client for accessing your server
+- The latest copy of Nova downloaded from the [Anodyne site](https://anodyne-productions.com) and unzipped
+- A solid, recent backup of your site
 
-On top of just changing what we call them, we've completely overhauled how themes actually work. That means that any v2 skin will have to be completely re-written.
+## Updating Nova
 
-## Extensions
+### Step 1: Remove Nova
 
-Likewise, at a global level, we've renamed MODs to be called __extensions__ in v3. Realistically, this should only be a nomenclature change that will take some getting used to.
+Once you've finished backing up your site (because you already did that, right?), delete the `nova` directory in its entirety from your server.
+
+:::warning
+Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to delete the directory and upload a new copy.
+:::
+
+### Step 2: Upload Nova
+
+With the `nova` directory deleted from your server, you can now upload the `nova` directory from the zip archive you downloaded from the Anodyne site. (This will give you the code for the latest version.)
+
+### Step 3: Run the update
+
+Navigate to `{your-site}/update` in your browser and you'll be guided through the update process. Once the update process is complete, you'll be directed  back to your site and will be ready to use Nova again.
+
+## Updating from previous versions
+
+[wip]

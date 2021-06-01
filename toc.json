@@ -11,15 +11,15 @@
             },
             "compatability",
             "upgrade-guide",
-            "configuration",
-            "directory-structure"
+            "migration-guide",
+            "configuration"
         ]
     },
     {
         "title": "Core Concepts",
         "index": 2,
         "pages": [
-            "alert"
+            "directory-structure"
         ]
     },
     {

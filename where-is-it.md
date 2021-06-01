@@ -12,6 +12,9 @@ Never fear, below is your handy guide for where to find all of the _things_ in N
 |-|-|-|
 |Themes|`themes`|`application/views`|
 |Ranks|`ranks`|`application/assets/common/{genre}/ranks`|
+|Extensions|`extensions`|`application/extensions`|
+|App config|`config`|`application/config`|
+|Nova config|`config`|`nova/modules/core/config`|
 |Nova core|`nova/src`|`nova/modules/core`|
 |Nova views|`nova/resources/views`|`nova/modules/core/views`|
 |Error logs|`storage/logs`|`application/logs`|
