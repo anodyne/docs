@@ -1,8 +1,18 @@
-# Skin QuickInstall
+# Uploading & Installing Skins
 
-Learn how to theme Nova to match the style and spirit of your game.
+Learn how to upload and install Nova skins.
 
 ---
+
+## Uploading
+
+{WIP}(warning)
+
+## Installing
+
+{WIP}(warning)
+
+## QuickInstall
 
 Nova themes can include a `skin.yml` file which contains basic information about the skin that Nova can use to install the skin for a user.
 

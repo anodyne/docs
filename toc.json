@@ -136,13 +136,13 @@
                 "icon": "fluent-edit"
             },
             {
-                "name": "Anatomy of a Skin",
-                "file": "skinning-anatomy",
+                "name": "Installation",
+                "file": "skinning-install",
                 "icon": "fluent-edit"
             },
             {
-                "name": "QuickInstall",
-                "file": "skinning-quickinstall",
+                "name": "Anatomy of a Skin",
+                "file": "skinning-anatomy",
                 "icon": "fluent-edit"
             },
             {
