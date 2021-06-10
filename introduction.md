@@ -31,7 +31,7 @@ These things can certainly be built with other options, but they'll require a lo
 
 ## Trusted for more than 15 years
 
-2004. It was a dark time for online RPGs. Game Masters bore the brunt of the work and tedium for managing their games. On top of that, playing the game was a completely disconnected experience for players done through forums and email usergroups that (usually) lived on a totally different site.
+\2004. It was a dark time for online RPGs. Game Masters bore the brunt of the work and tedium for managing their games. On top of that, playing the game was a completely disconnected experience for players done through forums and email usergroups that (usually) lived on a totally different site.
 
 2005. Enter the Simm Management System (SMS).
 
