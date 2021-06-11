@@ -6,25 +6,25 @@ Understand how Nova handles email.
 
 ## How Nova sends emails
 
-Unlike many areas in Nova were we leverage built-in CodeIgniter libraries, for email we use a custom library implementing [SwiftMailer](https://swiftmailer.symfony.com/docs/introduction.html) for sending all emails from Nova. We've built this in such a way that it should nearly mirror the way that CodeIgniter handles email.
+Unlike many areas in Nova where we leverage built-in CodeIgniter libraries, for email we use a custom library implementing [SwiftMailer](https://swiftmailer.symfony.com/docs/introduction.html) for sending all emails from Nova. We've built this in such a way that it should mirror the way that CodeIgniter handles email.
 
 When Nova needs to send an email, the controller where that page lives will have a method called `_email` that handles all of the email situations for that controller.
 
 ## When Nova sends emails
 
-|Area|Situation|Recipient|
-|-|-|-|
-|Application|Application accepted|The joining user|
-|Application|Application rejected|The joining user|
-|Application|Application rejected|All game masters|
-|Awards|Award nomination is submitted|All users with level 2 `user/nominate` permissions|
-|Contact form|Contact form is submitted|All game masters|
-|Docking form|Docking form is submitted|The submitting user|
-|Docking form|Docking form is submitted|All game masters|
+|Area        |Situation                      |Recipient       |
+|------------|-------------------------------|----------------|
+|Application |Application accepted           |The joining user|
+|Application |Application rejected           |The joining user|
+|Application |Application rejected           |All game masters|
+|Awards      |Award nomination is submitted  |All users with level 2 `user/nominate` permissions|
+|Contact form|Contact form is submitted      |All game masters|
+|Docking form|Docking form is submitted      |The submitting user|
+|Docking form|Docking form is submitted      |All game masters|
 |Docking form|Docking application is accepted|The submitting user|
 |Docking form|Docking application is rejected|The submitting user|
-|Join form|Player applies to join|The submitting user|
-|Join form|Player applies to join|All game masters|
+|Join form   |Player applies to join         |The submitting user|
+|Join form   |Player applies to join         |All game masters|
 |Login page|Player resets their password|The submitting user|
 |Mission post|Joint mission post saved|All participating users on the post|
 |Mission post|Mission post published|All users|
