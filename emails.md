@@ -12,44 +12,52 @@ When Nova needs to send an email, the controller where that page lives will have
 
 ## When Nova sends emails
 
-|Area        |Situation                      |Recipient       |
-|------------|-------------------------------|----------------|
-|Application |Application accepted           |The joining user|
-|Application |Application rejected           |The joining user|
-|Application |Application rejected           |All game masters|
-|Awards      |Award nomination is submitted  |All users with level 2 `user/nominate` permissions|
-|Contact form|Contact form is submitted      |All game masters|
-|Docking form|Docking form is submitted      |The submitting user|
-|Docking form|Docking form is submitted      |All game masters|
-|Docking form|Docking application is accepted|The submitting user|
-|Docking form|Docking application is rejected|The submitting user|
-|Join form   |Player applies to join         |The submitting user|
-|Join form   |Player applies to join         |All game masters|
-|Login page|Player resets their password|The submitting user|
-|Mission post|Joint mission post saved|All participating users on the post|
-|Mission post|Mission post published|All users|
-|Mission post|Approval required for new mission post|All users with level 2 `manage/posts` permissions|
-|Mission post|Comment added|The author(s) of the mission post|
-|Mission post|Approval required for new comment|All users with `manage/comments` permissions|
-|Moderation|Approval of pending comment|The entity's author(s)|
-|Moderation|Approval of pending mission post|All users|
-|Moderation|Approval of pending news item|All users|
-|Moderation|Approval of pending personal log|All users|
-|News item|News item published|All users|
-|News item|Approval required for new news item|All users with level 2 `manage/news` permissions|
-|News item|Comment added|The author of the news item|
-|News item|Approval required for new comment|All users with `manage/comments` permissions|
-|Personal log|Personal log published|All users|
-|Personal log|Approval required for new personal log|All users with level 2 `manage/logs` permissions|
-|Personal log|Comment added|The author of the personal log|
-|Personal log|Approval required for new comment|All users with `manage/comments` permissions|
-|Private message|A new private message is received|The recipient|
-|User profile|Password is changed by an admin|The user|
-|User profile|Leave of absence status is changed|All game masters|
+|Area           |Situation                             |Recipient       |
+|---------------|--------------------------------------|----------------|
+|Application    |Application accepted                  |The joining user|
+|Application    |Application rejected                  |The joining user|
+|Application    |Application rejected                  |All game masters|
+|Awards         |Award nomination is submitted         |All users with level 2 `user/nominate` permissions|
+|Contact form   |Contact form is submitted             |All game masters|
+|Docking form   |Docking form is submitted             |The submitting user|
+|Docking form   |Docking form is submitted             |All game masters|
+|Docking form   |Docking application is accepted       |The submitting user|
+|Docking form   |Docking application is rejected       |The submitting user|
+|Join form      |Player applies to join                |The submitting user|
+|Join form      |Player applies to join                |All game masters|
+|Login page     |Player resets their password          |The submitting user|
+|Mission post   |Joint mission post saved              |All participating users on the post|
+|Mission post   |Mission post published                |All users|
+|Mission post   |Approval required for new mission post|All users with level 2 `manage/posts` permissions|
+|Mission post   |Comment added                         |The author(s) of the mission post|
+|Mission post   |Approval required for new comment     |All users with `manage/comments` permissions|
+|Moderation     |Approval of pending comment           |The entity's author(s)|
+|Moderation     |Approval of pending mission post      |All users|
+|Moderation     |Approval of pending news item         |All users|
+|Moderation     |Approval of pending personal log      |All users|
+|News item      |News item published                   |All users|
+|News item      |Approval required for new news item   |All users with level 2 `manage/news` permissions|
+|News item      |Comment added                         |The author of the news item|
+|News item      |Approval required for new comment     |All users with `manage/comments` permissions|
+|Personal log   |Personal log published                |All users|
+|Personal log   |Approval required for new personal log|All users with level 2 `manage/logs` permissions|
+|Personal log   |Comment added                         |The author of the personal log|
+|Personal log   |Approval required for new comment     |All users with `manage/comments` permissions|
+|Private message|A new private message is received     |The recipient|
+|User profile   |Password is changed by an admin       |The user|
+|User profile   |Leave of absence status is changed    |All game masters|
 
 ## Configuring emails from Nova
 
-{WIP}(warning)
+Nova and CodeIgniter provide a wealth of configuration options for how email is handled. You'll find all of the available configuration options in either Nova's *System/Email* tab of Site Settings or in the email config file found in the `application/config` directory. We've provided sensible defaults for emails, but your specific server and situation may dictate changes.
+
+:::note
+After making any changes to configuration, you should send a test email through Nova to ensure that all your players are properly receiving email with the changes.
+:::
+
+:::info Deep Dive
+You can read more about CodeIgniter's email configuration options in their [documentation](https://codeigniter.com/userguide2/libraries/email.html).
+:::
 
 ## Changing the files used for emails
 
@@ -68,7 +76,7 @@ Over the last couple of years, email has become a *significant* pain point for m
 - "Some emails from Nova take hours to arrive"
 - "I get an error when Nova tries to send emails"
 
-Nova's default email system uses your server to send emails. The problem with this is that every server has a different configuration and it might not like having emails sent from an application like Nova. That is why using the default server email is not recommended. So how do we fix this issue?
+By default, Nova uses PHP's `mail()` function for sending all mail. When the system was originally built, this was a reliable way of handling email. Over time and with the drastic rise in spam, more and more email service providers are cracking down on the ways that email has been sent from PHP applications. As a result, people have started to see situations where email isn't being properly delivered. So how do we fix these issues?
 
 ### Third-party email service providers
 
@@ -98,6 +106,8 @@ It's important to understand that there may be additional work that has to be do
 :::
 
 Any of the above SMTP services will work in Nova. If you're having issues today with emails not being delivered, you can get up and running in short order by signing up for one of the above services and plugging in the details in your email config file in Nova.
+
+### Using SMTP in Nova
 
 In order to get Nova working with your SMTP service of choice, you simply need to update the `application/config/email.php` config file with the information you got from the service when you signed up:
 
