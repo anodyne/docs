@@ -8,7 +8,7 @@ Learn Nova's language of talking to the database.
 
 Models are PHP classes designed to be the primary way of interacting with Nova's database. Each model has its own set of methods for different things it can pull out of the database, so if you're working with a model, it's important to look at what methods that model provides.
 
-:::info Deep Dive
+:::tip Deep Dive
 You can read more about CodeIgniter's models in their [documentation](https://codeigniter.com/userguide2/general/models.html).
 :::
 

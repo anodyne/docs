@@ -55,7 +55,7 @@ Nova and CodeIgniter provide a wealth of configuration options for how email is 
 After making any changes to configuration, you should send a test email through Nova to ensure that all your players are properly receiving email with the changes.
 :::
 
-:::info Deep Dive
+:::tip Deep Dive
 You can read more about CodeIgniter's email configuration options in their [documentation](https://codeigniter.com/userguide2/libraries/email.html).
 :::
 

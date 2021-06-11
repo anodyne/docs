@@ -8,7 +8,7 @@ Learn about Nova's most powerful tools: libraries.
 
 Libraries are simply PHP classes that can be used for whatever you need them to be used for.
 
-:::info Deep Dive
+:::tip Deep Dive
 You can read more about CodeIgniter's libraries in their [documentation](https://codeigniter.com/userguide2/general/libraries.html).
 :::
 

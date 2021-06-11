@@ -20,7 +20,7 @@ In the above example, the `main` controller will be loaded and the `contact` met
 
 In this example, the `characters` controller will be loaded and the `bio` method will be called. Additionally, you'll be able to add an argument to your controller method to access the `77` in the URI. (This is what allows Nova to have access to the necessary data to show a specific character bio without having to hard-code everything.)
 
-:::info Deep Dive
+:::tip Deep Dive
 You can read more about how CodeIgniter's controllers work in their [documentation](https://codeigniter.com/userguide2/general/controllers.html).
 :::
 
@@ -98,7 +98,7 @@ Passing data from PHP to Javascript can lead to some unexpected results if you'r
 
 Nova uses a simple template library to render the entire page to the user's browser. Each individual piece of the template is called a region. As Nova is executing its code, it will assign data to specific regions. The library will take all of the regions and render them to the screen.
 
-:::note Deep Dive
+:::tip Deep Dive
 Interested in learning more about the template library Nova uses? Dig in to the `nova/modules/core/libraries/Nova_template.php` file in your Nova installation to learn more.
 :::
 
