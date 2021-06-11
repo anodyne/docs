@@ -56,8 +56,8 @@ On top of that, Nova is open-source software and built on top of CodeIgniter, a 
 
 This documentation is a labor of love. At the start of 2021 [we](/docs/2.6/contributors) embarked on a mission to vastly improve Nova's documentation. Instead of trying to fix what existed already, we've started over and re-written it from scratch. In the process, we've focused on making sure there's something here for people of all experience and skill levels.
 
-- **Writers** - basic users are at the core of any game and will find the *Guides* a fantastic resource for understanding how to use Nova's various features.
-- **Game Masters** - players who are managing a game for the first time (or the 10th time) will find the *Getting Started* section invaluable. This provides a lot of information about installing, configuring, and updating Nova and will get you off on the right foot. Additionaly, some of the guides include valuable administration information as well about many of Nova's features.
+- **Writers** - basic users are at the core of any game and will find the *Guides* a fantastic resource for understanding how to use many of Nova's features.
+- **Game Masters** - players who are managing a game for the first time (or the 10th time) will find the *Getting Started* section invaluable. This provides a wealth of information about installing, configuring, and updating Nova. Additionally, some of the guides include valuable administration information as well about many of Nova's features.
 - **Skin Developers** - there's never a shortage of people wanting to skin Nova and the *Skinning* section provides a ton of great information about how to get started and how the different pieces of Nova's skinning system works.
 - **MOD Developers** - those more technically minded that want to tinker with how Nova works should study the *Core Concepts* section to understand the ins and outs of Nova's developer features.
 
