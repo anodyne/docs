@@ -31,15 +31,15 @@ These things can certainly be built with other options, but they'll require a lo
 
 ## Trusted for more than 15 years
 
-2004. It was a dark time for online RPGs. Game Masters bore the brunt of the work and tedium for managing their games. On top of that, playing the game was a completely disconnected experience for players done through forums and email usergroups that (usually) lived on a totally different site.
+2004... It was a dark time for online RPGs. Game Masters bore the brunt of the work and tedium for managing their games. On top of that, playing the game was a completely disconnected experience for players done through forums and email usergroups that (usually) lived on a totally different site.
 
-d2005. Enter the Simm Management System (SMS).
+2005... Enter the Simm Management System (SMS).
 
 - No longer were GMs required to write their own HTML and CSS to build their sites from scratch. Instead, SMS provided a pre-built website with a variety of skins to choose from.
 - No longer were GMs required to play a neverending game of whack-a-mole with players to keep character bios updated. Instead, SMS put the responsibility for updating a character's bio with their assigned user.
 - No longer were players required to jump between a website and a forum or email usergroup. Instead, SMS provided a unified interface for viewing, managing, and playing the game.
 
-2010. With everyone comfortable with how SMS did things, we shook everything up with the release of Nova, a revolutionary update that brought more games into the fold and gave GMs even more features for managing their game.
+2010... With everyone comfortable with how SMS did things, we shook everything up with the release of Nova, a revolutionary update that brought more games into the fold and gave GMs even more features for managing their game.
 
 - No longer were GMs limited to just Star Trek genres. Instead, Nova provided games with the ability to use a wide range of genres for their games.
 - No longer were users limited to only playing a single character. Instead, Nova allowed users to have multiple characters and to post as any of their characters.
