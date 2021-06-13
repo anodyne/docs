@@ -120,13 +120,11 @@
             },
             {
                 "name": "Installation",
-                "file": "skinning-install",
-                "icon": "fluent-edit"
+                "file": "skinning-install"
             },
             {
                 "name": "Anatomy of a Skin",
-                "file": "skinning-anatomy",
-                "icon": "fluent-edit"
+                "file": "skinning-anatomy"
             },
             {
                 "name": "Templates",
@@ -140,8 +138,7 @@
             },
             {
                 "name": "Tips & Tricks",
-                "file": "skinning-tips",
-                "icon": "fluent-edit"
+                "file": "skinning-tips"
             }
         ]
     },
