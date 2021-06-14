@@ -22,10 +22,6 @@
             {
                 "name": "Upgrade Guide",
                 "file": "upgrade-guide"
-            },
-            {
-                "name": "Pretty URLs",
-                "file": "pretty-urls"
             }
         ]
     },
@@ -159,6 +155,10 @@
             {
                 "name": "Events",
                 "file": "events"
+            },
+            {
+                "name": "Pretty URLs",
+                "file": "pretty-urls"
             }
         ]
     },
