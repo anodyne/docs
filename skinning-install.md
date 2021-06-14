@@ -1,4 +1,4 @@
-# Uploading & Installing Skins
+# Skinning Nova - Uploading & Installing
 
 Learn how to upload and install Nova skins.
 

@@ -115,8 +115,7 @@
         "pages": [
             {
                 "name": "Overview",
-                "file": "skinning-overview",
-                "icon": "fluent-edit"
+                "file": "skinning-overview"
             },
             {
                 "name": "Installation",
@@ -133,8 +132,7 @@
             },
             {
                 "name": "CSS",
-                "file": "skinning-css",
-                "icon": "fluent-edit"
+                "file": "skinning-css"
             },
             {
                 "name": "Tips & Tricks",

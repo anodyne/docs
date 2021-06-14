@@ -1,4 +1,4 @@
-# Skin Templates
+# Skinning Nova - Templates
 
 Learn how to skin Nova to match the style and spirit of your game.
 

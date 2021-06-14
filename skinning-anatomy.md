@@ -1,4 +1,4 @@
-# Anatomy of a Skin
+# Anatomy of a Nova Skin
 
 Learn about all of the files included in a Nova skin.
 

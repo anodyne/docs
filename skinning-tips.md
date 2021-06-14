@@ -1,4 +1,4 @@
-# Skinning Tips & Tricks
+# Skinning Nova - Tips & Tricks
 
 These tips and tricks will help you skin Nova faster and easier.
 
@@ -9,6 +9,10 @@ With a basic understanding of how a Nova skin works, you can now jump into creat
 ## Inspect Element
 
 Most browsers come with a tool called Inspect Element. This allows you to see the rendered HTML structure and accompanying CSS on any page. This is especially helpful when you use it to select a specific element on the page and customize its styles right in the browser. This allows you to test out some changes and see them in realtime before adding them to your stylesheet. While it may not seem like a lot of time, it can help speed up the process of tweaking to your skin to your liking.
+
+## Text editors are your friend
+
+[Text editors](/docs/2.6/before-getting-started#text-editors) can be one of the most powerful tools at your fingertips when skinning Nova. We recommend using one a text editor that will allow you to open the entire skin's folder as a project. By doing this, you'll be able to leverage text editor features like search, find and replace, and other tools that will make the development process much simpler. This will also make it much easier to create folders and files as necessary and modify template files with proper syntax highlighting.
 
 ## PHP's `var_dump`
 
