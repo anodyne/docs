@@ -16,4 +16,14 @@ Community contributed skins found on AnodyneXtras are not officially supported b
 
 ## The skinning guide
 
-We've compiled several pages that go into more depth about
+We've compiled a handful of pages that go into more depth about different aspects of Nova skins that should provide a good primer for someone getting into building / modifying Nova skins.
+
+- [Anatomy of a Nova Skin](/docs/2.6/skinning-anatomy)
+- [CSS Files](/docs/2.6/skinning-css)
+- [Template Files](/docs/2.6/skinning-templates)
+- [Uploading & Installing](/docs/2.6/skinning-install)
+- [Tips & Tricks](/docs/2.6/skinning-tips)
+
+:::tip Learning from others
+Another helpful asset when learning how to skin Nova is looking at how other skin authors have built their own skins. Feel free to use the `#xtras` channel in the [Discord server](https://discord.gg/7WmKUks) to get help or find good examples to use for learning.
+:::
