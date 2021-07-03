@@ -4,7 +4,7 @@ Learn more about Nova's powerful manifest structure, including how its structure
 
 ---
 
-Young or old, every game will feature a wide variety of characters. Just as in table-top scenarios, each character brings a unique flavor and skill-set to that environment. Nova's manifest structure provides a way to list those characters in an easy-to-organize manner to allow for any player or user to freely locate and access information for any of the characters used in a Nova game.
+Young or old, every game will feature a wide variety of characters. Each character brings a unique flavor and skill-set to that environment. Nova's manifest structure provides a way to list those characters in an easy-to-organize manner to allow for any player or user to freely locate and access information for any of the characters used in a Nova game.
 
 The organizational structure is comprised of three elements:
 
@@ -18,7 +18,7 @@ To edit any manifest, department, and position in Nova, you must have at least t
 
 ## Manifests
 
-Site manifests are an easy and the most basic way to organize characters within your game. Manifests can be created for just about anything, and can be as broad or as granular as you wish. Manifests are viewable by anyone on your site, from active players to prospective members. This is done by accessing the Personnel page from Nova's main menu, located on all pages of the site.
+Site manifests are an easy and the most basic way to organize characters within your game. Manifests can be created for almost anything and can be as broad or as granular as you wish. Manifests are viewable by anyone on your site, from active players to prospective members. This is done by accessing the Personnel page from Nova's main menu, located on all pages of the site.
 
 Nova ships with only the **Primary Manifest** created and enabled. Common customizations among many games include a manifest for *Guest Characters*, characters that may be used only during a particular story. In *Star Trek* games, for example, a sim based on a starbase may have manifests for attached starships, such as *Deep Space Nine* would have the *USS Defiant*.
 
@@ -156,5 +156,5 @@ Whether you are adding or editing a position, the following options are always a
 :::Question
 **Display or Delete?** Many games change over time, and so do the available position options. If you think there is a possibility you may use a department or position in the future, your best option may be to set the Display option to off. This way, you can reenable the option later on in the game to make the position(s) available to your players and retain the information. The space these positions utilize in Nova's database is minimal at best, so you will not feel a performance impact by removing this information.
 
-If you are certain you will never use a position or department in the future, then it may be best to proceed with deleting that option entirely. Just remember that these actions cannot be undone or recovered, so proceed with caution!
+If you are certain you will never use a position or department in the future, then it may be best to proceed with deleting that option entirely. Remember that these actions cannot be undone or recovered, so proceed with caution!
 :::

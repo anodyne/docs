@@ -40,7 +40,7 @@ Nova relies on using "regions" to know where to place different user interface e
 
 ### Navigation
 
-Nova uses two different navigation menus: the main navigation (`$main_nav`) and the secondary navigation (`$nav_sub`). The main navigation is consistent throughout the entire site, but the secondary navigation changes depending on the section the user is currently viewing. From a skinning perspective, you won't need to know *what* section is showing, just *where* you want the secondary navigation to be shown on the page.
+Nova uses two different navigation menus: the main navigation (`$main_nav`) and the secondary navigation (`$nav_sub`). The main navigation is consistent throughout the entire site, but the secondary navigation changes depending on the section the user is currently viewing. From a skinning perspective, you won't need to know *what* section is showing, only *where* you want the secondary navigation to be shown on the page.
 
 Navigation elements are rendered as an unordered list (`<ul>`) with each navigation element being a list item (`<li>`) containing an anchor (`<a>`) tag. Both navigations are contained within `div`s that can be targeted to style each list individually (`.nav-main` and `.nav-sub` respectively).
 
@@ -58,7 +58,7 @@ Each template file contains a section for the page's primary content. The page's
 
 ### User panel
 
-Nova includes a handy user panel that contains quick access to links that users may want to get to quickly. In general most skin developers choose to simply copy the panel from their favorite skin and just change the look, but Nova does provide you with all of the tools and data to re-structure the user panel however you would like.
+Nova includes a handy user panel that contains quick access to links that users may want to get to quickly. In general most skin developers choose to simply copy the panel from their favorite skin and simply change the look, but Nova does provide you with all of the tools and data to re-structure the user panel however you would like.
 
 There are 3 panes included in the user panel that are represented by 3 different variables: `$panel_1`, `$panel_2`, and `$panel_3`. You can put these in any order you want or anywhere on the page.
 

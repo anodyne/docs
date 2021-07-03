@@ -29,7 +29,7 @@ PHP 8 has only recently been released and introduces a significant number of cha
 
 One avenue that some games choose to go down is purchasing a custom domain name. This can be a great way to give your game even more personality instead of using a domain name or subdomain given to you by your web host.
 
-Out of the box, Nova supports custom domain names and there's nothing you'll need to do to get it working. You'll just need to purchase the domain name from your registrar of choice and work with your web host to get everything wired up correctly.
+Out of the box, Nova supports custom domain names and there's nothing you'll need to do to get it working. You can purchase a domain name from your registrar of choice and work with your web host to get everything wired up correctly.
 
 ## Tools you might want
 

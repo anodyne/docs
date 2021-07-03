@@ -4,7 +4,7 @@ Learn how to get a good backup of your site.
 
 ---
 
-You'll constantly hear us harp on making sure to backup Nova before attempting to do just about anything with it, but how exactly *do* you backup Nova? It's actually a pretty simple process that you should go through regularly to ensure you have a recent backup in the event something goes wrong with your site. The last thing you want is to lose data and be unable to get your site back to a recent state it was in.
+You'll constantly hear us harp on making sure to backup Nova before attempting to do anything with it, but how exactly *do* you backup Nova? It's actually a pretty simple process that you should go through regularly to ensure you have a recent backup in the event something goes wrong with your site. The last thing you want is to lose data and be unable to get your site back to a recent state it was in.
 
 ## Backing up the files
 

@@ -34,14 +34,14 @@ $lang['global_missions'] = "saga";
 Make sure you're only changing the **value** of the array item (what's on the right side of the equal side). If you change the key, your changes won't work.
 
 :::question
-**Why do I need to copy these into another file? Why not just change them in the first file?**
+**Why do I need to copy these into another file? Why not change them in the first file?**
 
 We recommend that files in the `nova` directory and all of its subdirectory are never altered because of the mechanics of Nova's update process. When updating Nova, every item in the `nova` directory is wiped out and reset, If you make your changes within this directory, you would have to recreate these changes every single time you update the system. Placing your updates in the designated folder within the `application` directory will future-proof your changes when this needs to occur.
 :::
 
 ## Upload
 
-Now that you've made your changes, make sure the `app_lang.php` file is saved and then upload it to your server (or if you're editing it on the server, just save it). Head over to your Nova site and you should see that things should be changed.
+Now that you've made your changes, make sure the `app_lang.php` file is saved and then upload it to your server (or if you're editing it on the server, save the file). Head over to your Nova site and you should see that things should be changed.
 
 ## Menu items
 

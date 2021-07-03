@@ -59,7 +59,7 @@ As your time on the game progresses, you may desire to edit your character's bio
 Alternatively, you can access any of your character bios from the Dashboard. Simply click the Dashboard icon at the top of the page.
 ![Dashboard](/images/docs/2.6/using-characters/dashboard.png)
 
-Make any adjustments to your bio, and then hit submit at the bottom of the page.
+Make any adjustments to your bio and click submit at the bottom of the page.
 
 You can also add image(s) to your character, such as an avatar to give the other players a better idea of what your character looks like.
 

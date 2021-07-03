@@ -41,7 +41,7 @@ These things can certainly be built with other options, but they'll require a lo
 
 2010... With everyone comfortable with how SMS did things, we shook everything up with the release of Nova, a revolutionary update that brought more games into the fold and gave GMs even more features for managing their game.
 
-- No longer were GMs limited to just Star Trek genres. Instead, Nova provided games with the ability to use a wide range of genres for their games.
+- No longer were GMs limited to only Star Trek genres. Instead, Nova provided games with the ability to use a wide range of genres for their games.
 - No longer were users limited to only playing a single character. Instead, Nova allowed users to have multiple characters and to post as any of their characters.
 - No longer were GMs limited to only the fields that we said they had to use. Instead, Nova introduced dynamic forms that gave precise control to GMs for the information they wanted to collect for character bios, specifications, and tour pages.
 - No longer did GMs have to install a separate wiki for their game. Instead, Nova included a lightweight wiki to allow GMs and players to create a database of information specific to their game.
@@ -50,7 +50,7 @@ These things can certainly be built with other options, but they'll require a lo
 
 Today Nova is trusted by hundreds of games across the simming community. Players from around the world are familiar with how Nova works. No matter what modifications have been made on an individual game site, Nova is universal. This has created an environment where players can quickly get into a game and start contributing with little to no training or help.
 
-On top of that, Nova is open-source software and built on top of CodeIgniter, a trusted framework for building dynamic websites.Due to its open-source nature developers have been able to create custom MODs, skins, and other features that many in the community rely on just as much as the core system. Further, [AnodyneXtras](https://xtras.anodyne-productions.com) has provided a streamlined avenue for discovering and downloading MODs and skins to customize sites to match the spirit and style of the game.
+On top of that, Nova is open-source software and built on top of CodeIgniter, a trusted framework for building dynamic websites. Due to its open-source nature developers have been able to create custom MODs, skins, and other features that many in the community rely on as much as the core system. Further, [AnodyneXtras](https://xtras.anodyne-productions.com) has provided a streamlined avenue for discovering and downloading MODs and skins to customize sites to match the spirit and style of the game.
 
 ## Who is this documentation for?
 

@@ -30,7 +30,7 @@ In order to provide as much flexibility as possible, Nova is split up into two d
 
 ### Core controllers
 
-The "core" layer of Nova is considered anything that lives **inside** the `nova` directory. (As an aside, this is what allows for the simplicity of just replacing the `nova` directory when updating to the latest version.)
+The "core" layer of Nova is considered anything that lives **inside** the `nova` directory. (As an aside, this is what allows for the simplicity of only needing to replace the `nova` directory when updating to the latest version.)
 
 When it comes to controllers, you'll find that all of Nova's core controllers are located in the `nova/modules/core/controllers` directory. To avoid naming conflicts, all of Nova's core controllers are prefixed with `nova_`.
 

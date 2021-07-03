@@ -39,7 +39,7 @@ The *Wiki Categories* page provides quick access to all of the categories availa
 From this page, you will also be able to edit any of the categories in the system, or add new categories of your own.
 
 :::Tip
-Pages can have more than one category assigned to them. If you have multiple options available, don't be pressured to just choose one category. Add all categories that may apply so that your fellow players can find the page more quickly in the future.
+Pages can have more than one category assigned to them. If you have multiple options available, don't be pressured to choose only one category. Add all categories that may apply so that your fellow players can find the page more quickly in the future.
 :::
 
 ### Manage pages

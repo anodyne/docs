@@ -1,6 +1,6 @@
 # Creating a Page
 
-Oftentimes, the built-in pages in Nova just won't be enough and you need to create a new page for you sim to hold new information.
+Sometimes, the built-in pages in Nova won't be enough and you need to create a new page for you sim to hold new information.
 
 ---
 
@@ -16,7 +16,7 @@ That's all well and good, but what if you don't want the page stored in the wiki
 
 This is, most likely, one of your first forays into controllers. In the simplest terms, a controller is like a traffic cop. The web browser navigates to a URL at which point the traffic cop (the controller), tells you where to go from there. A controller is simply a PHP class that directs a request to the appropriate place. In order to build our page, we need some simple code in our controller.
 
-To start, we're going to open `application/controllers/sim.php`. This is the controller that handles all of the pages in the sim section. When you open the file, you'll notice that it's almost empty. The core sim pages are stored in the base controller in the Nova module. Since we're not interested in modifying those, we're going to just add a new controller action to this file after the comment about adding your own methods after it.
+To start, we're going to open `application/controllers/sim.php`. This is the controller that handles all of the pages in the sim section. When you open the file, you'll notice that it's almost empty. The core sim pages are stored in the base controller in the Nova module. Since we're not interested in modifying those, we're going to add a new controller action to this file after the comment about adding your own methods after it.
 
 ```php
 public function sim_allawards()

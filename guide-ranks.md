@@ -109,7 +109,7 @@ Some downloadable rank sets contain a `rank.yml` file. Nova will automatically d
 
 ![Install Rankset](/images/docs/2.6/using-ranks/rankcatalogue-install.png)
 
-If you are installing a customized rank set, especially one of your own unique design, you can create a `rank.yml` file to upload with the set to streamline installation. A typical file, such as one for [Kuro-RPG's DS9 Dress Uniform](http://kuro-rpg.net/?direct=kuro_ranks_viewer&id=218) set, looks like this: 
+If you are installing a customized rank set, especially one of your own unique design, you can create a `rank.yml` file to upload with the set to streamline installation. A typical file, such as one for [Kuro-RPG's DS9 Dress Uniform](http://kuro-rpg.net/?direct=kuro_ranks_viewer&id=218) set, looks like this:
 
 ```html
 rank: Dress Ranks
@@ -129,7 +129,7 @@ The available options are:
 
 1. *Name*: the name of your rank set.
 2. *Genre*: the genre your set belongs to. For best results, this needs to match the genre which you used to install the Nova Software.
-3. *Server Directory*: the name of the directory containing the rank set. **Do not include** the full `application\assets\common\{genre}\ranks` directory again, just the name of the new directory.
+3. *Server Directory*: the name of the directory containing the rank set. **Do not include** the full `application\assets\common\{genre}\ranks` directory again, only the name of the new directory.
 4. *Preview Image*: the filename of an image that can be used to preview the entire set.
 5. *Blank Image*: the filename of an image background that is representative of the set.
 6. *Image Extension*: the file extension of all rank images in the directory, such as `.png` or `.jpg`.

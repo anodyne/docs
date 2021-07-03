@@ -146,7 +146,7 @@ To add a new group, select the **Add Role Page Group** option. Assign a name for
 
 ## Bans
 
-On occasion, you may encounter a pesky user who causes trouble or strife within your game, or just otherwise is a sore point for the management team. Nova provides system administrators with the ability to keep these users from applying to the game, or even accessing their old accounts.
+On rare occasions, you may encounter a user who causes trouble or strife within your game or is a sore point for the management team. Nova provides system administrators with the ability to keep these users from applying to the game, or even accessing their old accounts.
 
 To access the *Site Bans* management system, access Nova's control panel and locate *Ban Controls* under the subheading *Site Management*.
 ![Ban Controls location](/images/docs/2.6/using-permissions/bans-location.png)

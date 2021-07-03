@@ -25,11 +25,11 @@ As a skin author, you're free to structure your skin however you see fit. Throug
 
 ## Section folders
 
-- `ajax` - files that should be used to replace system Ajax files just for your skin; this is part of the [seamless substitution](/docs/2.6/seamless-substitution) system
+- `ajax` - files that should be used to replace system Ajax files for your skin only; this is part of the [seamless substitution](/docs/2.6/seamless-substitution) system
 - `css` - CSS files used for the changing the look of the skin section
 - `images` - any images used for the skin section
-- `js` - files that should be used to replace system JavaScript files just for your skin; this is part of the [seamless substitution](/docs/2.6/seamless-substitution) system
-- `pages` - files that should be used to replace system view files just for your skin; this is part of the [seamless substitution](/docs/2.6/seamless-substitution) system
+- `js` - files that should be used to replace system JavaScript files for your skin only; this is part of the [seamless substitution](/docs/2.6/seamless-substitution) system
+- `pages` - files that should be used to replace system view files for your skin only; this is part of the [seamless substitution](/docs/2.6/seamless-substitution) system
 
 :::note Overriding pages from a skin
 While the best way to override a specific page is using the `_base_override` folder, you can also override pages from your skin as well. This is helpful if you want your skin to make specific changes to a page that are only unique to your skin. See the [seamless substitution documentation](/docs/2.6/seamless-substitution) for more information about this process.
