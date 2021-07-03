@@ -123,8 +123,7 @@
             },
             {
                 "name": "Templates",
-                "file": "skinning-templates",
-                "icon": "fluent-edit"
+                "file": "skinning-templates"
             },
             {
                 "name": "CSS",
