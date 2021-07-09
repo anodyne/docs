@@ -18,12 +18,12 @@ Before you get started updating Nova, make sure you have the following things re
 
 ## Updating Nova
 
-### Step 1: Remove Nova
+### Step 1: Rename the Nova directory
 
-Once you've finished backing up your site (because you already did that, right?), delete the `nova` directory in its entirety from your server.
+Once you've finished backing up your site (because you already did that, right?), rename the `nova` directory to something like `nova_old` on your server. (This ensures that if the update goes awry you still have a copy of the working Nova core from before you attempted the update.)
 
 :::warning
-Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to delete the directory and upload a new copy.
+Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to rename the directory and upload a new copy.
 :::
 
 ### Step 2: Upload Nova
@@ -33,6 +33,10 @@ With the `nova` directory deleted from your server, you can now upload the `nova
 ### Step 3: Run the update
 
 Navigate to `{your-site}/index.php/update` in your browser and you'll be guided through the update process. Once the update process is complete, you'll be directed  back to your site and will be ready to use Nova again.
+
+### Step 4: Remove the backup Nova directory
+
+With the update complete and your site back up and running, you can now delete the `nova_old` directory from your server.
 
 ## Updating from previous versions
 
