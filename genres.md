@@ -6,6 +6,14 @@ Learn more about genres, the foundational element of Nova's character management
 
 One of Nova's defining features is the ability to craft any game according to any genre, including ones that we don't naturally provide installer packages for. So what goes in to a genre? There are a lot of pieces, but once you understand those pieces, you'll be well on your way to using genres to their full potential and maybe even creating your own genre installations!
 
+## What genre is my site is using?
+
+There are several ways to see what genre your site is installed with:
+
+- Open the `application/config/nova.php` file to find the genre code listed near the top of the file
+- Look in `application/assets/common` to see the name of the folder that will correspond with your genre
+- Open your database and look at the departments, ranks, or positions tables to find the genre code as a suffix of the database table name
+
 ## Genre code
 
 Genre codes can only have 3 characters. For example, the Deep Space Nine genre code is `ds9`. We recommend that all genre codes contain only lowercase characters and numbers for maximum compatibility throughout Nova.
