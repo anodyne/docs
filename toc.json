@@ -174,6 +174,10 @@
             "file": "backing-up-nova"
         },
         {
+            "name": "Moving Your Site",
+            "file": "moving-servers"
+        },
+        {
             "name": "Versioning",
             "file": "versioning"
         },
