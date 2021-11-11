@@ -4,8 +4,8 @@
         "index": 1,
         "pages": [
             {
-                "file": "features-post-types",
-                "link": "https://github.com/anodyne/nova3/releases"
+                "name": "Post Types",
+                "file": "features-post-types"
             }
         ]
     },

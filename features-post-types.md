@@ -1,5 +1,9 @@
 # Post Types
 
+Control the content users post into stories.
+
+---
+
 Up until now, Nova has hard-coded the different kinds of posts users can make. For many years that's been mission posts, personal logs, and news items. GMs and users have wanted to have more control over these things and Nova 3 delivers that with a powerful new feature: post types.
 
 For GMs, post types represent a brand-new way to control the different types of content that can be added to a story. On top that, post types allow for configuring that content in ways that work best for their game; everything from choosing what fields are displayed (and whether those fields require a value or not) to customizing whether specific types of post should be included in post tracking to restricting certain post types only to users with a specific role.
