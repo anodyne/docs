@@ -1,7 +1,17 @@
 [
     {
-        "title": "Getting Started",
+        "title": "Features",
         "index": 1,
+        "pages": [
+            {
+                "file": "features-post-types",
+                "link": "https://github.com/anodyne/nova3/releases"
+            }
+        ]
+    },
+    {
+        "title": "Getting Started",
+        "index": 2,
         "pages": [
             "before-getting-started",
             "installation",
@@ -17,21 +27,13 @@
     },
     {
         "title": "Core Concepts",
-        "index": 2,
+        "index": 3,
         "pages": [
             "directory-structure"
         ]
     },
     {
         "title": "Themes",
-        "index": 3,
-        "pages": [
-            "form-button",
-            "logout"
-        ]
-    },
-    {
-        "title": "Extensions",
         "index": 4,
         "pages": [
             "form-button",
@@ -39,7 +41,7 @@
         ]
     },
     {
-        "title": "Guides",
+        "title": "Extensions",
         "index": 5,
         "pages": [
             "form-button",
@@ -47,8 +49,16 @@
         ]
     },
     {
-        "title": "Helpful Links",
+        "title": "Guides",
         "index": 6,
+        "pages": [
+            "form-button",
+            "logout"
+        ]
+    },
+    {
+        "title": "Helpful Links",
+        "index": 7,
         "pages": [
             {
                 "name": "What's new?",
