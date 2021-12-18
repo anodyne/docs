@@ -38,7 +38,9 @@ So what are we going to put in our view file?
 
 ```html
 <h1 class="page-head">Awards We've Won</h1>
+
 <p>Below is a list of all the awards we've won!</p>
+
 <p><img src="<?php echo base_url();?>app/assets/images/award_image.jpg" /></p>
 ```
 

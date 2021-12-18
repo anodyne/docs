@@ -111,7 +111,7 @@ Some downloadable rank sets contain a `rank.yml` file. Nova will automatically d
 
 If you are installing a customized rank set, especially one of your own unique design, you can create a `rank.yml` file to upload with the set to streamline installation. A typical file, such as one for [Kuro-RPG's DS9 Dress Uniform](http://kuro-rpg.net/?direct=kuro_ranks_viewer&id=218) set, looks like this:
 
-```html
+```yaml
 rank: Dress Ranks
 location: dress
 credits: The rank sets used in Nova were created by Kuro-chan of Kuro-RPG. The ranksets can be found at <a href='http://www.kuro-rpg.net' target='_blank'>Kuro-RPG</a>. Please do not copy or modify the images.
