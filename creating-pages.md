@@ -55,13 +55,29 @@ From here, you can make whatever changes you want to the view file and continue 
 Let's step through the code you inserted into the sim controller file piece-by-piece to see what's going on.
 
 ```php
-public function sim_allawards()
+public function sim_allawards() // [tl! focus]
+{
+  $this->_regions['content'] = Location::view('sim_allawards', $this->skin, 'main', false);
+  $this->_regions['title'].= "Awards We've Won";
+
+  Template::assign($this->_regions);
+
+  Template::render();
+}
 ```
 
 A controller action is nothing more than a class method. A class method is a function inside a class. Pretty simple. Nova will use the name of the controller action as part of the URL. (This actually is what tells the controller where it needs to go.) In this case, our URL would be `index.php/sim/sim_allawards`. You can name your controller action whatever you want provided it doesn't conflict with another method in that particular controller or that it isn't a reserved PHP word.
 
 ```php
-$this->_regions['content'] = Location::view('sim_allawards', $this->skin, 'main', false);
+public function sim_allawards()
+{
+  $this->_regions['content'] = Location::view('sim_allawards', $this->skin, 'main', false); // [tl! focus]
+  $this->_regions['title'].= "Awards We've Won";
+
+  Template::assign($this->_regions);
+
+  Template::render();
+}
 ```
 
 Nova templates are broken up into regions. The guts of a page are part of the content region. What we're doing here is assigning a view file to the content region to be rendered by the browser. Sounds complicated, but it really isn't. All you need to know is the second part: the location class.
@@ -69,19 +85,43 @@ Nova templates are broken up into regions. The guts of a page are part of the co
 In order for seamless substitution to work, we created a location class (it used to be a helper in Nova 1) that does all the heavy lifting and figures out where to pull files from. In this case, we're looking for a view that's named `sim_allawards.php` (the .php part is assumed so you don't have to include it). After that, the class is simply being told where to look and what section it's part of.
 
 ```php
-$this->_regions['title'].= "Awards We've Won";
+public function sim_allawards()
+{
+  $this->_regions['content'] = Location::view('sim_allawards', $this->skin, 'main', false);
+  $this->_regions['title'].= "Awards We've Won"; // [tl! focus]
+
+  Template::assign($this->_regions);
+
+  Template::render();
+}
 ```
 
 Now, we're simply setting the title of the page (what we see in the browser's title bar). You can see that to whatever you want provided it's a string.
 
 ```php
-Template::assign($this->_regions);
+public function sim_allawards()
+{
+  $this->_regions['content'] = Location::view('sim_allawards', $this->skin, 'main', false);
+  $this->_regions['title'].= "Awards We've Won";
+
+  Template::assign($this->_regions); // [tl! focus]
+
+  Template::render();
+}
 ```
 
 This is required as it takes all the regions and assigns them to the template.
 
 ```php
-Template::render();
+public function sim_allawards()
+{
+  $this->_regions['content'] = Location::view('sim_allawards', $this->skin, 'main', false);
+  $this->_regions['title'].= "Awards We've Won";
+
+  Template::assign($this->_regions);
+
+  Template::render(); // [tl! focus]
+}
 ```
 
 Pretty self-explanatory here, but we're telling the Template class to render the template to the browser window.
