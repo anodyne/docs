@@ -20,7 +20,7 @@ Before you get started updating Nova, make sure you have the following things re
 
 ### Step 1: Rename the Nova directory
 
-Once you've finished backing up your site (because you already did that, right?), rename the `nova` directory to something like `nova_old` on your server. (This ensures that if the update goes awry you still have a copy of the working Nova core from before you attempted the update.)
+Once you've finished backing up your site (because you already did that, right?), rename the `nova` directory to `nova_old` on your server. (This ensures that if the update goes awry you still have a copy of the working Nova core from before you attempted the update.)
 
 :::warning
 Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to rename the directory and upload a new copy.
@@ -28,7 +28,7 @@ Over the years we've seen countless problems with simply trying to overwrite the
 
 ### Step 2: Upload Nova
 
-With the `nova` directory deleted from your server, you can now upload the `nova` directory from the zip archive you downloaded from the Anodyne site. (This will give you the code for the latest version.)
+With the `nova` directory renamed to `nova_old`, you can now upload the `nova` directory from the zip archive you downloaded from the Anodyne site. (This will give you the code for the latest version.)
 
 ### Step 3: Run the update
 
