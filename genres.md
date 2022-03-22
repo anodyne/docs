@@ -22,6 +22,10 @@ Genre codes can only have 3 characters. For example, the Deep Space Nine genre c
 
 While the database structure can allow for a nearly infinite number of genres to be installed, only one genre can be active at a time on a Nova instance. To change the active genre, you will need to locate `nova.php` in the `application/config` directory. On Line 15, change the existing 3-letter genre code to the desired code. For instance, if you wish to switch from *Deep Space Nine* to *The Original Series*, you would change from `ds9` to `tos`.
 
+:::warning
+Nova 2.7 removes the ability to install additional genres into an existing site. If you want to change the genres of your site, you will need to backup your database, do a fresh install, and manually migrate your data into the new database.
+:::
+
 ## Files
 
 There are multiple locations for the files associated with each genre, including Asset Files, Images, and Ranks.

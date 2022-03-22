@@ -14,7 +14,7 @@ Be **very** careful when modifying config files. Errant changes to these files c
 
 ### Genre
 
-Nova supports multiple genres for games and stores the genre the game is using in the `nova.php` config file. More information about genres and how to change your site's genre after you've installed the system can be found [here](/docs/2.6/genres).
+Nova supports multiple genres for games and stores the genre the game is using in the `nova.php` config file. More information about genres and how to change your site's genre after you've installed the system can be found [here](/docs/2.7/genres).
 
 ### Metadata
 
@@ -48,7 +48,7 @@ Nova ships with the following defaults for all RSS feeds:
 
 ### Thresher settings
 
-Nova's integrated mini-wiki, [Thresher](/docs/2.6/using-wiki), has its own config file that allows admins to change the way content is stored and parsed. By default, Thresher will store and parse wiki page content as HTML, but you can also use BBCode and Textile for storing and parsing. You can change the parse type in the Thresher config file found at `application/config/thresher.php`.
+Nova's integrated mini-wiki, [Thresher](/docs/2.7/using-wiki), has its own config file that allows admins to change the way content is stored and parsed. By default, Thresher will store and parse wiki page content as HTML, but you can also use BBCode and Textile for storing and parsing. You can change the parse type in the Thresher config file found at `application/config/thresher.php`.
 
 :::warning
 Once you have selected a parse type, you shouldn't change it. If you change the parse type, your wiki pages will not display correctly.

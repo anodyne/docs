@@ -4,7 +4,7 @@
 
 This license is a legal agreement between you and the Anodyne Productions for the use of Nova (the "Software"). By obtaining the Software you agree to comply with the terms and conditions of this license.
 
-Copyright (c) 2010-2021, Anodyne Productions
+Copyright (c) 2010-2022, Anodyne Productions
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:

@@ -11,14 +11,14 @@ Nova's robust structure is strategically divided throughout multiple sections of
 To edit any menu item in Nova, you must have at least the *System Administration* access role, or your access role needs to have the appropriate setting management (such as *Menus*, etc.) feature(s) enabled. Typically, this feature is reserved for those who are managing the game.
 
 To access your site's menu items, access Nova's control panel and locate *Menu Items* under the subheading *Site Management*.
-![Settings location](/images/docs/2.6/using-menus/menu-location.png)
+![Settings location](/images/docs/2.7/using-menus/menu-location.png)
 
 ## Menu categories
 
 All menu items are sorted into categories for organizational and operational purposes. These categories are represented as sub-menu navigation areas placed throughout Nova.
 
 To access all categories within Nova, access the Menu Items page, and select *Manage Menu Categories*.
-![Categories location](/images/docs/2.6/using-menus/menu-categorylocation.png)
+![Categories location](/images/docs/2.7/using-menus/menu-categorylocation.png)
 
 Nova ships with the following categories:
 
@@ -38,7 +38,7 @@ Nova ships with the following categories:
 ### Editing menu categories
 
 To edit any existing menu category, select *Manage Menu Categories* from the Menu Items page.
-![Categories location](/images/docs/2.6/using-menus/menu-categorylocation.png)
+![Categories location](/images/docs/2.7/using-menus/menu-categorylocation.png)
 
 Locate the category you wish to edit and click on the pencil "edit" icon.
 
@@ -56,7 +56,7 @@ When all edits are complete, select **Submit.**
 ### Adding menu categories
 
 To add a new category, select *Add Menu Category*.
-![Add new category](/images/docs/2.6/using-menus/menu-newcategory.png)
+![Add new category](/images/docs/2.7/using-menus/menu-newcategory.png)
 
 A modal will appear in the center of the page, allowing you to enter all appropriate information. The options available here are the same as what is available when editing a category.
 
@@ -69,10 +69,10 @@ When a new category is added, it is not added to the available category dropdown
 ## Menu items
 
 To access your site's menu items, access Nova's control panel and locate *Menu Items* under the subheading *Site Management*.
-![Settings location](/images/docs/2.6/using-menus/menu-location.png)
+![Settings location](/images/docs/2.7/using-menus/menu-location.png)
 
 All menu items are organized into three groups.
-![Settings location](/images/docs/2.6/using-menus/menu-tabs.png)
+![Settings location](/images/docs/2.7/using-menus/menu-tabs.png)
 
 - *Main Navigation*: these are top-level links to sections or specific pages. This is rendered as the main navigation bar that will be displayed throughout Nova.
 - *Sub Navigation*: these sub-navigation items will vary based on what section of Nova you are currently in. For example, if you are on the *Personnel* page, you will only be able to see menu items in the Personnel category within that page's subnavigation.
@@ -104,7 +104,7 @@ When all edits are complete, select **Submit.**
 ### Adding menu items
 
 To add a new menu item, select *Add Menu Item*.
-![Add new item](/images/docs/2.6/using-menus/menuitems-newitem.png)
+![Add new item](/images/docs/2.7/using-menus/menuitems-newitem.png)
 
 A modal will appear in the center of the page, allowing you to enter all appropriate information. The options available here are the same as what is available when editing a menu item.
 

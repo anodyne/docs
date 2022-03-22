@@ -5,7 +5,7 @@ Upgrading Nova to the latest version.
 ---
 
 :::note Before you start
-Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/2.6/backing-up-nova) on backing up Nova.
+Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/2.7/backing-up-nova) on backing up Nova.
 :::
 
 ## What you'll need
@@ -20,7 +20,7 @@ Before you get started updating Nova, make sure you have the following things re
 
 ### Step 1: Rename the Nova directory
 
-Once you've finished backing up your site (because you already did that, right?), rename the `nova` directory to `nova_old` on your server. (This ensures that if the update goes awry you still have a copy of the working Nova core from before you attempted the update.)
+Once you've finished backing up your site (because you already did that, right?), rename the `nova` directory to `nova_backup` on your server. (This ensures that if the update goes awry you still have a copy of the working Nova core from before you attempted the update.)
 
 :::warning
 Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to rename the directory and upload a new copy.
@@ -36,7 +36,7 @@ Navigate to `{your-site}/index.php/update` in your browser and you'll be guided 
 
 ### Step 4: Remove the backup Nova directory
 
-With the update complete and your site back up and running, you can now delete the `nova_old` directory from your server.
+With the update complete and your site back up and running, you can now delete the `nova_backup` directory from your server.
 
 ## Updating from previous versions
 
@@ -48,7 +48,7 @@ If you are upgrading from a version of Nova prior to 2.3.2, please reach out to 
 
 If, when starting to update, your installer won't work, this may be because your database is not registering the correct version of your Nova install (or any version whatsoever). You can verify your version by logging into your Nova site, accessing Nova's control panel, and selecting **System & Versions** from the bottom of the page.
 
-![System Versions](/images/docs/2.6/upgrade-guide/versions.png)
+![System Versions](/images/docs/2.7/upgrade-guide/versions.png)
 
 If your database version is `0.0.0` or otherwise doesn't match your Files Version, you may need to update your database to match the version of Nova you are upgrading from. In order to update that, you’ll need to login to your database with phpMyAdmin (via your web host's control panel).
 
@@ -62,23 +62,57 @@ For example, a site running Nova version 2.3.2 would read:
 - `sys_version_minor`: 3
 - `sys_version_update`: 2
 
+### v2.7 from v2.6.x
+
+Nova 2.7 adds much improved PHP 7 and PHP 8 compatibility, but in order to do so, we've had to upgrade the underlying CodeIgniter framework from version 2 to version 3. This leads to an upgrade process with a couple of additional steps.
+
+:::note
+While Nova 2.7 is an optional update, we do recommend doing the upgrade. This release includes several database changes that will be required for any future migrations to Nova 3. Additionally, if your host is running PHP 7 or is planning to force upgrades to PHP 8, you will need to upgrade to Nova 2.7 for your site to continue working.
+:::
+
+#### Update application files
+
+Under normal circumstances, we don't ask Game Masters to update any files in the `application` directory. However, the update to CodeIgniter 3 required that many of the files in the the `application` directory be updated.
+
+To start, rename the following directories:
+
+- `controllers` to `controllers_backup`
+- `core` to `core_backup`
+- `libraries` to `libraries_backup`
+- `models` to `models_backup`
+
+With the directories renamed, you can upload the new copies of the following directories from the `application` directory in the Nova zip archive:
+
+- `controllers`
+- `core`
+- `libraries`
+- `models`
+
+:::note
+If you have made any modifications to any of the files inside these directories, you will need to re-apply the changes to the new versions of the files. **Do not** simply copy the old file back into the new directory as it could break things.
+:::
+
+#### Update default skins (optional)
+
+We've given both the Pulsar and Titan skins a much needed visual refresh. If you're using either skin and are happy with them, you don't need to do this step. If you'd like to use the updated versions, you can simply delete the `default` and `titan` directories from `application/views` and replace them with the versions in the Nova zip archive.
+
 ### v2.6 from v2.5.x
 
-Nova 2.6 introduced [Events](/docs/2.6/events) and [Extensions](/docs/2.6/extensions), two powerful features that unlock easier ways to modify a Nova site as well as several incredibly powerful ways to expand upon the base installation. In addition to following the normal update process, Nova 2.6 includes additional changes you’ll need to make for the new event and extension systems to work correctly.
+Nova 2.6 introduced [Events](/docs/2.7/events) and [Extensions](/docs/2.7/extensions), two powerful features that unlock easier ways to modify a Nova site as well as several incredibly powerful ways to expand upon the base installation. In addition to following the normal update process, Nova 2.6 includes additional changes you’ll need to make for the new event and extension systems to work correctly.
 
 #### Config file
 
-Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/config/extensions.php) into a new file called `extensions.php` and place it in the `application/config` directory on your server.
+Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.7/master/application/config/extensions.php) into a new file called `extensions.php` and place it in the `application/config` directory on your server.
 
 #### Helper
 
-Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/helpers/extension_helper.php) into a new file called `extension_helper.php` and place it in the `application/helpers` directory on your server.
+Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.7/master/application/helpers/extension_helper.php) into a new file called `extension_helper.php` and place it in the `application/helpers` directory on your server.
 
 #### Libraries
 
-Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/libraries/Extension.php) into a new file called `Extension.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
+Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.7/master/application/libraries/Extension.php) into a new file called `Extension.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
 
-Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/libraries/Event.php) into a new file called `Event.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
+Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.7/master/application/libraries/Event.php) into a new file called `Event.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
 
 ### v2.5 from v2.4.x
 

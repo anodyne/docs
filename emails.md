@@ -56,7 +56,7 @@ After making any changes to configuration, you should send a test email through 
 :::
 
 :::tip Deep Dive
-You can read more about CodeIgniter's email configuration options in their [documentation](https://codeigniter.com/userguide2/libraries/email.html).
+You can read more about CodeIgniter's email configuration options in their [documentation](https://codeigniter.com/userguide3/libraries/email.html).
 :::
 
 ## Changing the files used for emails
@@ -64,7 +64,7 @@ You can read more about CodeIgniter's email configuration options in their [docu
 You might be surprised to find out that Nova treats emails almost identically to how it treats pages in the system. That means there's a view file that's used to structure and lay out the emails that are sent to players. This also means you can use seamless substitution to change the structure and layout of the emails.
 
 :::note
-For a complete explanation of seamless substitution, please refer to its [documentation](/docs/2.6/seamless-substitution).
+For a complete explanation of seamless substitution, please refer to its [documentation](/docs/2.7/seamless-substitution).
 :::
 
 ## Email issues

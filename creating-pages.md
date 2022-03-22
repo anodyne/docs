@@ -46,7 +46,7 @@ So what are we going to put in our view file?
 
 When it's all done, it'll look something like this:
 
-![Sim Awards Page](/images/docs/2.6/creating-pages/awardspage.png)
+![Sim Awards Page](/images/docs/2.7/creating-pages/awardspage.png)
 
 As you can see, it's **really** straightforward. The only thing we're doing is using CodeIgniter's built-in `base_url` function to get the base URL of our site. (If we don't use the base URL, CI will try to append index.php to our image path and it won't be able to find the image.)
 
