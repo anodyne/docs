@@ -56,11 +56,11 @@ If your database version is `0.0.0` or otherwise doesn't match your Files Versio
 2. Click **Edit** on the only row in the table.
 3. Update `sys_version_major`, `sys_version_minor`, and `sys_version_update` to your Nova’s current version numbers.
 
-For example, a site running Nova version 2.3.2 would read:
+For example, a site running Nova version 2.7.0 would read:
 
 - `sys_version_major`: 2
-- `sys_version_minor`: 3
-- `sys_version_update`: 2
+- `sys_version_minor`: 7
+- `sys_version_update`: 0
 
 ### v2.7 from v2.6.x
 
