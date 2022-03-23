@@ -28,7 +28,7 @@ Over the years we've seen countless problems with simply trying to overwrite the
 
 ### Step 2: Upload Nova
 
-With the `nova` directory renamed to `nova_old`, you can now upload the `nova` directory from the zip archive you downloaded from the Anodyne site. (This will give you the code for the latest version.)
+With the `nova` directory renamed to `nova_backup`, you can now upload the `nova` directory from the zip archive you downloaded from the Anodyne site. (This will give you the code for the latest version.)
 
 ### Step 3: Run the update
 
