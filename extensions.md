@@ -129,9 +129,9 @@ require_once MODPATH.'core/libraries/Nova_controller_main.php';
 
 class **extensions**my_extension**my_controller extends Nova_controller_main
 {
-	public function **construct()
+	public function __construct()
 	{
-		parent::**construct();
+		parent::__construct();
 		$this->_regions['nav_sub'] = Menu::build('sub', 'sim');
 	}
 
@@ -184,9 +184,9 @@ require_once MODPATH.'core/libraries/Nova_controller_main.php';
 
 class **extensions**my_extension**my_controller extends Nova_controller_main
 {
-	public function **construct()
+	public function __construct()
 	{
-		parent::**construct();
+		parent::__construct();
 		$this->_regions['nav_sub'] = Menu::build('sub', 'sim');
 	}
 
