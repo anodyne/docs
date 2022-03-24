@@ -70,12 +70,43 @@ Nova 2.7 adds much improved PHP 7 and PHP 8 compatibility, but in order to do so
 While Nova 2.7 is an optional update, we do recommend doing the upgrade. This release includes several database changes that will be required for any future migrations to Nova 3. Additionally, if your host is running PHP 7 or is planning to force upgrades to PHP 8, you will need to upgrade to Nova 2.7 for your site to continue working.
 :::
 
+#### Update the database config file
+
+```php
+$active_record = true; // [tl! --]
+$query_builder = true; // [tl! ++]
+
+$db['default']['dsn'] = ''; // [tl! ++]
+$db['default']['hostname'] = 'localhost'; // [tl! collapse:start]
+$db['default']['username'] = 'novauser';
+$db['default']['password'] = 'novapass';
+$db['default']['database'] = 'novadb';
+$db['default']['dbdriver'] = 'mysqli';
+$db['default']['dbprefix'] = 'nova_'; // [tl! collapse:end]
+$db['default']['pconnect'] = true; // [tl! --]
+$db['default']['pconnect'] = false; // [tl! ++]
+$db['default']['db_debug'] = NOVA_DB_DEBUG; // [tl! --]
+$db['default']['db_debug'] = (ENVIRONMENT !== 'production'); // [tl! ++]
+$db['default']['cache_on'] = false; // [tl! collapse:start]
+$db['default']['cachedir'] = '';
+$db['default']['char_set'] = 'utf8';
+$db['default']['dbcollat'] = 'utf8_general_ci';
+$db['default']['swap_pre'] = ''; // [tl! collapse:end]
+$db['default']['autoinit'] = true; // [tl! --]
+$db['default']['encrypt'] = false; // [tl! ++]
+$db['default']['compress'] = false; // [tl! ++]
+$db['default']['stricton'] = false;
+$db['default']['failover'] = []; // [tl! ++]
+$db['default']['save_queries'] = true; // [tl! ++]
+```
+
 #### Update application files
 
 Under normal circumstances, we don't ask Game Masters to update any files in the `application` directory. However, the update to CodeIgniter 3 required that many of the files in the the `application` directory be updated.
 
 To start, rename the following directories:
 
+- `config` to `config_backup`
 - `controllers` to `controllers_backup`
 - `core` to `core_backup`
 - `libraries` to `libraries_backup`
@@ -83,6 +114,7 @@ To start, rename the following directories:
 
 With the directories renamed, you can upload the new copies of the following directories from the `application` directory in the Nova zip archive:
 
+- `config`
 - `controllers`
 - `core`
 - `libraries`
@@ -113,6 +145,10 @@ $config['sess_regenerate_destroy'] = false;
 #### Update default skins (optional)
 
 We've given both the Pulsar and Titan skins a much needed visual refresh. If you're using either skin and are happy with them, you don't need to do this step. If you'd like to use the updated versions, you can simply delete the `default` and `titan` directories from `application/views` and replace them with the versions in the Nova zip archive.
+
+#### Remove backup copies of application directories
+
+Once you've verified that everything is working correctly and you've successfully re-applied any changes to files in the directories you had to backup, you can safely remove the backup directories in the `application` folder.
 
 ### v2.6 from v2.5.x
 
