@@ -73,6 +73,7 @@ While Nova 2.7 is an optional update, we do recommend doing the upgrade. This re
 #### Update the database config file
 
 ```php
+$active_group = 'default';
 $active_record = true; // [tl! --]
 $query_builder = true; // [tl! ++]
 
@@ -84,8 +85,8 @@ $db['default']['database'] = 'novadb';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = 'nova_'; // [tl! collapse:end]
 $db['default']['pconnect'] = true; // [tl! --]
-$db['default']['pconnect'] = false; // [tl! ++]
 $db['default']['db_debug'] = NOVA_DB_DEBUG; // [tl! --]
+$db['default']['pconnect'] = false; // [tl! ++]
 $db['default']['db_debug'] = (ENVIRONMENT !== 'production'); // [tl! ++]
 $db['default']['cache_on'] = false; // [tl! collapse:start]
 $db['default']['cachedir'] = '';
