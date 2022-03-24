@@ -4,7 +4,7 @@ Upgrading your site to Nova 2.7.
 
 ---
 
-The update process for moving to Nova 2.7 is a more involved and manual process. Unfortunately this couldn't be avoided due to upgrading CodeIgniter (the underlying framework Nova is built on) to version 3. The process explained below only needs to happen one time when you first upgrade to from any version prior to 2.7.0. After you've gone through this upgrade, any future updates will use the normal update process.
+The update process for moving to Nova 2.7 is a more involved and manual process than previous versions of Nova 2. Unfortunately this couldn't be avoided due to upgrading CodeIgniter (the underlying framework Nova is built on) to version 3. The process explained below only needs to happen one time when you first upgrade from any version prior to 2.7.0. After you've gone through this upgrade, any future updates will use the normal update process.
 
 :::note Before you start
 Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/2.7/backing-up-nova) on backing up Nova.
@@ -32,10 +32,6 @@ To start, rename the following directories:
 - `core` to `core_backup`
 - `libraries` to `libraries_backup`
 - `models` to `models_backup`
-
-:::tip
-We've given both the Pulsar and Titan skins a much needed visual refresh. If you're using either skin and are happy with them, you don't need to replace them, but if you'd like to use the updated versions, you can delete the `default` and `titan` directories from `application/views` and replace them with the versions in the Nova zip archive.
-:::
 
 With the directories renamed, you can upload the new copies of the following directories from the `application` directory in the Nova zip archive:
 
@@ -92,3 +88,7 @@ With the update complete and your site back up and running, you can now delete t
 :::note
 Of course it goes without saying, don't delete anything that you may need to access later. If you're not sure, you can always download the directories to your computer for safe keeping.
 :::
+
+### Step 7: Update default skins (optional)
+
+We've given both the Pulsar and Titan skins a much needed visual refresh. If you're using either skin and are happy with them, you don't need to replace them, but if you'd like to use the updated versions, you can delete the `default` and `titan` directories from `application/views` and replace them with the versions in the Nova zip archive.
