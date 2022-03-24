@@ -72,27 +72,33 @@ While Nova 2.7 is an optional update, we do recommend doing the upgrade. This re
 
 #### Update the database config file
 
+:::warning
+It's important that you do this step first to ensure you can copy the database config file back into the config directory after the next step!
+:::
+
+The database config file found at `application/config/database.php` requires some updates to continue connecting properly to your database.
+
 ```php
 $active_group = 'default';
 $active_record = true; // [tl! --]
 $query_builder = true; // [tl! ++]
 
 $db['default']['dsn'] = ''; // [tl! ++]
-$db['default']['hostname'] = 'localhost'; // [tl! collapse:start]
+$db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'novauser';
 $db['default']['password'] = 'novapass';
 $db['default']['database'] = 'novadb';
 $db['default']['dbdriver'] = 'mysqli';
-$db['default']['dbprefix'] = 'nova_'; // [tl! collapse:end]
+$db['default']['dbprefix'] = 'nova_';
 $db['default']['pconnect'] = true; // [tl! --]
 $db['default']['db_debug'] = NOVA_DB_DEBUG; // [tl! --]
 $db['default']['pconnect'] = false; // [tl! ++]
 $db['default']['db_debug'] = (ENVIRONMENT !== 'production'); // [tl! ++]
-$db['default']['cache_on'] = false; // [tl! collapse:start]
+$db['default']['cache_on'] = false;
 $db['default']['cachedir'] = '';
 $db['default']['char_set'] = 'utf8';
 $db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = ''; // [tl! collapse:end]
+$db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = true; // [tl! --]
 $db['default']['encrypt'] = false; // [tl! ++]
 $db['default']['compress'] = false; // [tl! ++]
@@ -100,6 +106,8 @@ $db['default']['stricton'] = false;
 $db['default']['failover'] = []; // [tl! ++]
 $db['default']['save_queries'] = true; // [tl! ++]
 ```
+
+If you receive an error that says **Call to undefined function mysql_connect()**, you will also need to update the `dbdriver` from `mysql` to `mysqli`.
 
 #### Update application files
 
@@ -120,6 +128,8 @@ With the directories renamed, you can upload the new copies of the following dir
 - `core`
 - `libraries`
 - `models`
+
+The final piece of this step is to copy the `database.php` file from `config_backup` into `config` to ensure you can still connect to your database.
 
 :::note
 If you have made any modifications to any of the files inside these directories, you will need to re-apply the changes to the new versions of the files. **Do not** simply copy the old file back into the new directory as it could break things.
