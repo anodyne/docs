@@ -76,7 +76,7 @@ While Nova 2.7 is an optional update, we do recommend doing the upgrade. This re
 It's important that you do this step first to ensure you can copy the database config file back into the config directory after the next step!
 :::
 
-The database config file found at `application/config/database.php` requires some updates to continue connecting properly to your database.
+The database config file found at `application/config/database.php` requires some updates to continue connecting properly to your database. **Note:** if a line is not marked in green or red in the code block below, you should leave it with its current value. (i.e. ensure you do not change the value on the username line).
 
 ```php
 $active_group = 'default';
