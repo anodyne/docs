@@ -92,6 +92,24 @@ With the directories renamed, you can upload the new copies of the following dir
 If you have made any modifications to any of the files inside these directories, you will need to re-apply the changes to the new versions of the files. **Do not** simply copy the old file back into the new directory as it could break things.
 :::
 
+#### Update the session driver
+
+The way that sessions (data about the current visitor) are handled was completely re-written in CodeIgniter 3. Due to these changes, Nova 2.7 has to ship with the session driver set to `files` instead of `database`. There is no way around this due to how pervasive sessions are in web applications. Doing this prevents unrecoverable errors from happening the moment a user hits the site.
+
+This change, however, prevents Nova from being able to easily pull who is currently online. In order to fix this issue, you will need to make a change to the main config file located at `application/config/config.php`. Around line 386, you'll need to make the following change:
+
+```php
+$config['sess_driver'] = 'files';  // [tl! -- **]
+$config['sess_driver'] = 'database';  // [tl! ++ **]
+$config['sess_cookie_name'] = 'ci_session';
+$config['sess_samesite'] = 'Lax';
+$config['sess_expiration'] = 7200;
+$config['sess_save_path'] = 'sessions';
+$config['sess_match_ip'] = false;
+$config['sess_time_to_update'] = 300;
+$config['sess_regenerate_destroy'] = false;
+```
+
 #### Update default skins (optional)
 
 We've given both the Pulsar and Titan skins a much needed visual refresh. If you're using either skin and are happy with them, you don't need to do this step. If you'd like to use the updated versions, you can simply delete the `default` and `titan` directories from `application/views` and replace them with the versions in the Nova zip archive.
