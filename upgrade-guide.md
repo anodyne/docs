@@ -18,6 +18,10 @@ Before you get started updating Nova, make sure you have the following things re
 
 ## Updating Nova
 
+:::note
+If you are upgrading from a version of Nova prior to 2.7.0, you will need to use the [Nova 2.7 Upgrade Guide](/docs/2.7/upgrade-guide-27). For all other future updates to Nova 2.7, you will be able to use the below process.
+:::
+
 ### Step 1: Rename the Nova directory
 
 Once you've finished backing up your site (because you already did that, right?), rename the `nova` directory to `nova_backup` on your server. (This ensures that if the update goes awry you still have a copy of the working Nova core from before you attempted the update.)
@@ -61,105 +65,6 @@ For example, a site running Nova version 2.7.0 would read:
 - `sys_version_major`: 2
 - `sys_version_minor`: 7
 - `sys_version_update`: 0
-
-### v2.7 from v2.6.x
-
-Nova 2.7 adds much improved PHP 7 and PHP 8 compatibility, but in order to do so, we've had to upgrade the underlying CodeIgniter framework from version 2 to version 3. This leads to an upgrade process with a couple of additional steps.
-
-:::note
-While Nova 2.7 is an optional update, we do recommend doing the upgrade. This release includes several database changes that will be required for any future migrations to Nova 3. Additionally, if your host is running PHP 7 or is planning to force upgrades to PHP 8, you will need to upgrade to Nova 2.7 for your site to continue working.
-:::
-
-#### Update the database config file
-
-:::warning
-It's important that you do this step first to ensure you can copy the database config file back into the config directory after the next step!
-:::
-
-The database config file found at `application/config/database.php` requires some updates to continue connecting properly to your database. **Note:** if a line is not marked in green or red in the code block below, you should leave it with its current value. (i.e. ensure you do not change the value on the username line).
-
-```php
-$active_group = 'default';
-$active_record = true; // [tl! --]
-$query_builder = true; // [tl! ++]
-
-$db['default']['dsn'] = ''; // [tl! ++]
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'novauser';
-$db['default']['password'] = 'novapass';
-$db['default']['database'] = 'novadb';
-$db['default']['dbdriver'] = 'mysqli';
-$db['default']['dbprefix'] = 'nova_';
-$db['default']['pconnect'] = true; // [tl! --]
-$db['default']['db_debug'] = NOVA_DB_DEBUG; // [tl! --]
-$db['default']['pconnect'] = false; // [tl! ++]
-$db['default']['db_debug'] = (ENVIRONMENT !== 'production'); // [tl! ++]
-$db['default']['cache_on'] = false;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = true; // [tl! --]
-$db['default']['encrypt'] = false; // [tl! ++]
-$db['default']['compress'] = false; // [tl! ++]
-$db['default']['stricton'] = false;
-$db['default']['failover'] = []; // [tl! ++]
-$db['default']['save_queries'] = true; // [tl! ++]
-```
-
-If you receive an error that says **Call to undefined function mysql_connect()**, you will also need to update the `dbdriver` from `mysql` to `mysqli`.
-
-#### Update application files
-
-Under normal circumstances, we don't ask Game Masters to update any files in the `application` directory. However, the update to CodeIgniter 3 required that many of the files in the the `application` directory be updated.
-
-To start, rename the following directories:
-
-- `config` to `config_backup`
-- `controllers` to `controllers_backup`
-- `core` to `core_backup`
-- `libraries` to `libraries_backup`
-- `models` to `models_backup`
-
-With the directories renamed, you can upload the new copies of the following directories from the `application` directory in the Nova zip archive:
-
-- `config`
-- `controllers`
-- `core`
-- `libraries`
-- `models`
-
-The final piece of this step is to copy the `database.php` file from `config_backup` into `config` to ensure you can still connect to your database.
-
-:::note
-If you have made any modifications to any of the files inside these directories, you will need to re-apply the changes to the new versions of the files. **Do not** simply copy the old file back into the new directory as it could break things.
-:::
-
-#### Update the session driver
-
-The way that sessions (data about the current visitor) are handled was completely re-written in CodeIgniter 3. Due to these changes, Nova 2.7 has to ship with the session driver set to `files` instead of `database`. There is no way around this due to how pervasive sessions are in web applications. Doing this prevents unrecoverable errors from happening the moment a user hits the site.
-
-This change, however, prevents Nova from being able to easily pull who is currently online. In order to fix this issue, you will need to make a change to the main config file located at `application/config/config.php`. Around line 386, you'll need to make the following change:
-
-```php
-$config['sess_driver'] = 'files';  // [tl! -- **]
-$config['sess_driver'] = 'database';  // [tl! ++ **]
-$config['sess_cookie_name'] = 'ci_session';
-$config['sess_samesite'] = 'Lax';
-$config['sess_expiration'] = 7200;
-$config['sess_save_path'] = 'sessions';
-$config['sess_match_ip'] = false;
-$config['sess_time_to_update'] = 300;
-$config['sess_regenerate_destroy'] = false;
-```
-
-#### Update default skins (optional)
-
-We've given both the Pulsar and Titan skins a much needed visual refresh. If you're using either skin and are happy with them, you don't need to do this step. If you'd like to use the updated versions, you can simply delete the `default` and `titan` directories from `application/views` and replace them with the versions in the Nova zip archive.
-
-#### Remove backup copies of application directories
-
-Once you've verified that everything is working correctly and you've successfully re-applied any changes to files in the directories you had to backup, you can safely remove the backup directories in the `application` folder.
 
 ### v2.6 from v2.5.x
 
