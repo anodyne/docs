@@ -43,8 +43,10 @@ With the directories renamed, you can upload the new copies of the following dir
 
 :::note
 If you have made any modifications to any of the files inside these directories, you will need to re-apply the changes to the new versions of the files. **Do not** simply copy the old file back into the new directory as it could break things.
+:::
 
-Also, **do not** copy the `database.php` file back into the config directory. The update process will prompt you to enter your database credentials and create the database config file for you.
+:::warning
+**Do not** copy the `database.php` file back into the config directory. Going through this guide will prompt you to enter your database credentials and re-create the database config file.
 :::
 
 ### Step 2: Rename the Nova directory
