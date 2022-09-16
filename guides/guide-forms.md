@@ -22,13 +22,13 @@ If you wish to learn how to submit a new character to a game, please review [Usi
 ## Creating and editing fields
 
 Each existing and new field is fully customizable to suit the needs of the form and/or imputable item. To add a field to any form, access Nova's control panel and locate any one of the four forms under the *Site Management* subheading.
-![Form pages](/docs/2.6/images/using-forms/forms-location.png)
+![Form pages](/images/docs/2.6/using-forms/forms-location.png)
 
 To add a field, click on *Add `{form}` Field*, where `{form}` equals the name of the form you are editing.
-![Add a field](/docs/2.6/images/using-forms/field-addfield.png)
+![Add a field](/images/docs/2.6/using-forms/field-addfield.png)
 
 To edit an existing field, click on the Edit icon to the far right of the field. To delete a field, select the delete icon.
-![Edit or delete a field](/docs/2.6/images/using-forms/edit-delete.png)
+![Edit or delete a field](/images/docs/2.6/using-forms/edit-delete.png)
 
 Whenever you wish to add or edit a field, the following options will always be available:
 
@@ -62,21 +62,21 @@ When all edits are complete, select **Submit**.
 ## Creating and editing sections
 
 Some forms, such as Bios and Specs, utilize sections to compartmentalize the inputable information. Such examples include Physical Appearance, Character Background, and Dimensions. To manage these sections, access the appropriate form editor, and then select **Manage Sections**.
-![Section form](/docs/2.6/images/using-forms/sections.jpg)
+![Section form](/images/docs/2.6/using-forms/sections.jpg)
 
 You will be taken to a new page where you can add new sections or edit existing ones. To add a section, click on *Add `{form}` Section*, where `{form}` equals the name of the form you are editing.
-![Section management](/docs/2.6/images/using-forms/sections-add.jpg)
+![Section management](/images/docs/2.6/using-forms/sections-add.jpg)
 
 To edit an existing section, click on the Edit icon to the far right of the section. To delete a section, select the delete icon.
-![Edit or delete a field](/docs/2.6/images/using-forms/edit-delete.png)
+![Edit or delete a field](/images/docs/2.6/using-forms/edit-delete.png)
 
 ## Creating and editing tabs
 
 The Bio form utilizes tabs that allow players to move to particular sections of a character's bio. This is extremely helpful as many quality bios can be quite lengthy, or perhaps the management team would prefer quicker access to certain information. To manage this section, access the Bio Form page through Nova's control panel and click on **Manage Bio Tabs**.
-![Tab management](/docs/2.6/images/using-forms/tabs-location.png)
+![Tab management](/images/docs/2.6/using-forms/tabs-location.png)
 
 To add a add, click on *Add Bio Tab*.
-![Add a tab](/docs/2.6/images/using-forms/tabs-add.png)
+![Add a tab](/images/docs/2.6/using-forms/tabs-add.png)
 
 To edit an existing section, click on the Edit icon to the far right of the tab. To delete a tab, select the delete icon.
-![Edit or delete a field](/docs/2.6/images/using-forms/edit-delete.png)
+![Edit or delete a field](/images/docs/2.6/using-forms/edit-delete.png)
