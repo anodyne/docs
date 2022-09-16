@@ -14,11 +14,11 @@ To make it easier to choose a web host for your site, we've compiled a list of w
 
 Nova is built on two core technologies: PHP and MySQL. When picking a web host it's critical that they have PHP and MySQL available as part of their hosting plans. If you use the list linked above, all those hosts have the necessary requirements to run Nova 3. For any web host you find that's not on that list, it's important to know that Nova 3 has a couple of server requirements:
 
-- PHP 8.0 or higher
+- PHP 8.1 or higher
 - MySQL 8.0 or higher
 
 :::question What if my host doesn't offer PHP 8?
-We've chosen PHP 8.0 as a requirement to ensure that Nova is built on the latest versions of software for the longest level of support. If your web host doesn't offer PHP 8, you will need to stick with Nova 2 until they offer PHP 8 as an option.
+We've chosen PHP 8.1 as a requirement to ensure that Nova is built on the latest versions of software for the longest level of support. If your web host doesn't offer PHP 8, you will need to stick with Nova 2 until they offer PHP 8 as an option.
 :::
 
 ## Custom domain name

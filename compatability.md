@@ -12,5 +12,5 @@ If you need to support IE 11 or older versions of Edge, we recommend using Nova 
 
 ## Server
 
-- PHP 8.0 or higher
+- PHP 8.1 or higher
 - MySQL 8.0 or higher
