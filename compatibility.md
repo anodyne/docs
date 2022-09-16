@@ -4,7 +4,7 @@ description: Nova 2 has several requirements for servers and browsers.
 layout: docs
 ---
 
-Nova 2 has several requirements for servers and browsers. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 
