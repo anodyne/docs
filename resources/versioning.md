@@ -12,8 +12,6 @@ Nova releases are guided by a principle known as [semantic versioning](http://se
 
 There are 3 components to a version number:
 
-{% image src="/docs/2.6/images/versioning/version-number.png" alt="version numbers" /%}
-
 ![Version numbers](/docs/2.6/images/versioning/version-number.png)
 
 ## Major version
