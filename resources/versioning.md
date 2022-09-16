@@ -12,7 +12,7 @@ Nova releases are guided by a principle known as [semantic versioning](http://se
 
 There are 3 components to a version number:
 
-![Version numbers](/docs/2.6/images/versioning/version-number.png)
+![Version numbers](/images/docs/2.6/versioning/version-number.png)
 
 ## Major version
 
@@ -42,4 +42,4 @@ If you're curious what version of Nova your site is running, you can find out by
 
 In that page, you'll be shown what version of Nova your files are running, what version your database is running, and what version of CodeIgniter is being used.
 
-![System versions](/docs/2.6/images/upgrade-guide/versions.png)
+![System versions](/images/docs/2.6/upgrade-guide/versions.png)
