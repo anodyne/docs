@@ -4,7 +4,7 @@ description: Learn about Nova's most powerful tools: libraries.
 layout: docs
 ---
 
-Learn about Nova's most powerful tools: libraries. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

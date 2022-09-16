@@ -4,7 +4,7 @@ description: Learn about all of the files included in a Nova skin.
 layout: docs
 ---
 
-Learn about all of the files included in a Nova skin. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

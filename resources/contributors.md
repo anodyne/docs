@@ -4,7 +4,7 @@ description: It takes a village. Meet ours.
 layout: docs
 ---
 
-It takes a village. Meet ours. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

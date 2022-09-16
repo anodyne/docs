@@ -4,7 +4,7 @@ description: Nova provides a robust extensions system for MODs.
 layout: docs
 ---
 
-Nova provides a robust extensions system for MODs. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

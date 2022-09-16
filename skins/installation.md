@@ -4,7 +4,7 @@ description: Learn how to upload and install Nova skins.
 layout: docs
 ---
 
-Learn how to upload and install Nova skins. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

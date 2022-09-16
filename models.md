@@ -4,7 +4,7 @@ description: Learn Nova's language of talking to the database.
 layout: docs
 ---
 
-Learn Nova's language of talking to the database. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

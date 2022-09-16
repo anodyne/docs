@@ -4,7 +4,7 @@ description: Learn about how you can tell Nova to use a different version of a f
 layout: docs
 ---
 
-Learn about how you can tell Nova to use a different version of a file instead of what's in the Nova core. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

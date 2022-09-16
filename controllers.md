@@ -4,7 +4,7 @@ description: Get to know the heart and soul of Nova: controllers.
 layout: docs
 ---
 
-Get to know the heart and soul of Nova: controllers. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

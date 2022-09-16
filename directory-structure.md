@@ -4,7 +4,7 @@ description: A quick look at each of Nova's directories and root files.
 layout: docs
 ---
 
-A quick look at each of Nova's directories and root files. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

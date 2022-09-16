@@ -4,7 +4,7 @@ description: Learn how to skin Nova to match the style and spirit of your game.
 layout: docs
 ---
 
-Learn how to skin Nova to match the style and spirit of your game. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

@@ -4,7 +4,7 @@ description: Understand how Nova handles email.
 layout: docs
 ---
 
-Understand how Nova handles email. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

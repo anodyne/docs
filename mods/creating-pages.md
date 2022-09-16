@@ -4,7 +4,7 @@ description: Sometimes, the built-in pages in Nova won't be enough and you need 
 layout: docs
 ---
 
-Sometimes, the built-in pages in Nova won't be enough and you need to create a new page for you sim to hold new information. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

@@ -4,7 +4,7 @@ description: A primer on how Nova templates structure your skin.
 layout: docs
 ---
 
-A primer on how Nova templates structure your skin. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

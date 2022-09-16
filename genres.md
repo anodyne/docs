@@ -4,7 +4,7 @@ description: Learn more about genres, the foundational element of Nova's charact
 layout: docs
 ---
 
-Learn more about genres, the foundational element of Nova's character management system. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

@@ -4,7 +4,7 @@ description: A primer on how Nova skin CSS files are organized.
 layout: docs
 ---
 
-A primer on how Nova skin CSS files are organized. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

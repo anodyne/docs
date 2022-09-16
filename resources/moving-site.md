@@ -4,7 +4,7 @@ description: Learn how to move your site and its data to another server.
 layout: docs
 ---
 
-Learn how to move your site and its data to another server. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

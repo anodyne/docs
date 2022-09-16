@@ -4,7 +4,7 @@ description: Here are a few things you should know about using Nova 2.
 layout: docs
 ---
 
-Here are a few things you should know about using Nova 2. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

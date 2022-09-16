@@ -4,7 +4,7 @@ description: Upgrading Nova to the latest version.
 layout: docs
 ---
 
-Upgrading Nova to the latest version. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

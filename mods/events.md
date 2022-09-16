@@ -4,7 +4,7 @@ description: Nova provides a robust events system for MODs to listen as actions 
 layout: docs
 ---
 
-Nova provides a robust events system for MODs to listen as actions happen throughout the system. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

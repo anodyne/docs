@@ -4,7 +4,7 @@ description: Learn how to get a good backup of your site.
 layout: docs
 ---
 
-Learn how to get a good backup of your site. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

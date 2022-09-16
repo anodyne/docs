@@ -4,7 +4,7 @@ description: Learn what Nova's version numbers mean for your site.
 layout: docs
 ---
 
-Learn what Nova's version numbers mean for your site. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

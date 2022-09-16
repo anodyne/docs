@@ -4,7 +4,7 @@ description: These tips and tricks will help you skin Nova faster and easier.
 layout: docs
 ---
 
-These tips and tricks will help you skin Nova faster and easier. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

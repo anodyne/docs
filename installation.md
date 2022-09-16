@@ -4,7 +4,7 @@ description: Learn how to get up and running with Nova 2.
 layout: docs
 ---
 
-Learn how to get up and running with Nova 2. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

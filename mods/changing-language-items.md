@@ -4,7 +4,7 @@ description: Learn how to change the default language items.
 layout: docs
 ---
 
-Learn how to change the default language items. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 
