@@ -1,6 +1,10 @@
-# Controllers
+---
+title: Controllers
+description: Get to know the heart and soul of Nova: controllers.
+layout: docs
+---
 
-Get to know the heart and soul of Nova: controllers.
+Get to know the heart and soul of Nova: controllers. {% .lead %}
 
 ---
 
@@ -20,9 +24,9 @@ In the above example, the `main` controller will be loaded and the `contact` met
 
 In this example, the `characters` controller will be loaded and the `bio` method will be called. Additionally, you'll be able to add an argument to your controller method to access the `77` in the URI. (This is what allows Nova to have access to the necessary data to show a specific character bio without having to hard-code everything.)
 
-:::tip Deep Dive
+{% callout title="Deep dive" %}
 You can read more about how CodeIgniter's controllers work in their [documentation](https://codeigniter.com/userguide2/general/controllers.html).
-:::
+{% /callout %}
 
 ## Extending controllers
 
@@ -60,9 +64,9 @@ Nova starts by pulling in the core controller. This allows us to use the PHP cla
 
 Because of PHP's inheritance and how CodeIgniter treats controller, this means you can add any new methods you want to this class and you'll be able to access those controller method as pages of the same name (i.e. a method named `foo` will map to a page with the URI of `/main/foo`). This also means is that you can *override* any existing method with one of your own by adding a method of the same name in your application controller.
 
-:::tip
+{% callout title="Overriding controller methods" %}
 When it comes to overriding a controller method, the recommended way of doing that is to copy the method from the core controller and paste it into the application controller. You then have a working copy of the page from which to modify whatever you want.
-:::
+{% /callout %}
 
 ## Understanding controllers
 
@@ -72,9 +76,9 @@ Now that you understand *how* to extend one of Nova's controllers, let's dig dee
 
 Any data that will be sent to the view is stored inside of an array in the controller method called `$data`. This array stores things like language items, form fields and controls, raw information out of the database, and much more. The odds are that anything you want to do or change is stored in the `$data` array.
 
-:::tip
+{% callout title="Debugging" %}
 If you're trying to debug and see what data Nova is sending to the browser, before the `Template::render()` call, you can write `die(var_dump($data));` to stop executing the code and see what's in the `$data` variable.
-:::
+{% /callout %}
 
 Since `$data` is sent to the view in its entirety, this also means that if you want to add *additional* data to a view, you can simply assign it to a key on the `$data` array and you'll have access to it in the view files using the key name as the variable.
 
@@ -90,17 +94,17 @@ echo $foo; // will print out "bar"
 
 Nova takes a similar approach to passing data from PHP to Javascript as well, but with an aptly named `$js_data` array. Everything mentioned above applies to Javascript data.
 
-:::warning
+{% callout title="Be careful!" type="warning" %}
 Passing data from PHP to Javascript can lead to some unexpected results if you're not careful. You should reference how Nova handles passing data to Javascript before attempting to do so yourself.
-:::
+{% /callout %}
 
 ### Templates
 
 Nova uses a simple template library to render the entire page to the user's browser. Each individual piece of the template is called a region. As Nova is executing its code, it will assign data to specific regions. The library will take all of the regions and render them to the screen.
 
-:::tip Deep Dive
+{% callout title="Deep dive" %}
 Interested in learning more about the template library Nova uses? Dig in to the `nova/modules/core/libraries/Nova_template.php` file in your Nova installation to learn more.
-:::
+{% /callout %}
 
 Nova defines the following regions for templates:
 
@@ -113,9 +117,9 @@ Nova defines the following regions for templates:
 - `content` - The content of the page
 - `ajax` - Secondary content for the page in the way of modal pop-ups
 
-:::note
+{% callout title="Commonly used regions" %}
 In most cases, the regions that most Nova pages deal with are `content`, `javascript`, and `title`.
-:::
+{% /callout %}
 
 Nova's controllers are responsible for assigning the regions to the template and then instructing the template to render itself to the browser. In most controllers, you'll see code like this near the bottom of each method:
 

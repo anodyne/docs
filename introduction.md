@@ -1,8 +1,23 @@
-# Meet Nova
-
-An open-source content management system designed for managing and playing online text-based role-playing games.
-
 ---
+title: Meet Nova
+pageTitle: CacheAdvance - Never miss the cache again.
+description: Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.
+layout: docs
+---
+
+An open-source content management system designed for managing and playing online text-based role-playing games. {% .lead %}
+
+{% quick-links %}
+
+{% quick-link title="Installation" icon="installation" href="/" description="Step-by-step guides to setting up your system and installing the library." /%}
+
+{% quick-link title="Architecture guide" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
+
+{% quick-link title="Plugins" icon="plugins" href="/" description="Extend the library with third-party plugins or write your own." /%}
+
+{% quick-link title="API reference" icon="theming" href="/" description="Learn to easily customize and modify your app's visual design to fit your brand." /%}
+
+{% /quick-links %}
 
 Nova is a custom content management system that was designed from the ground up to help you manage and play online text-based role-playing games. It comes with all of the tools you need to manage your game and the flexibility to add to it as you need.
 
@@ -13,6 +28,8 @@ When it comes to building a website, there's no shortage of options.
 - Reach for an online site builder like Wix or Squarespace
 
 While these approaches are all valid and offer a lot of tools for building your game's website, we believe Nova is the best choice because it was designed from the ground up for the things you'll need to manage and play your game.
+
+---
 
 ## All the tools you need
 
@@ -63,14 +80,10 @@ This documentation is a labor of love. At the start of 2021 [we](/docs/2.6/contr
 
 ## The community
 
-### Discord
+{% quick-links %}
 
-We have moved to use Discord for interacting with the community, including asking questions, getting help, sharing tips, and more.
+{% quick-link title="Discord" icon="support" href="https://discord.gg/7WmKUks" description="Get help, share tips, and interact with the community of creators and writers." /%}
 
-[Join our Discord](https://discord.gg/7WmKUks)
+{% quick-link title="Github" icon="github" href="https://github.com/anodyne/nova" description="File issues, request features, and contribute to Nova." /%}
 
-### GitHub
-
-To file issues, request features, and contribute to Nova, check out our GitHub.
-
-[GitHub repo](https://github.com/anodyne/nova)
+{% /quick-links %}

@@ -1,6 +1,10 @@
-# Configuration
+---
+title: Configuration
+description: Learn how to configure Nova 2 from the simple to the advanced.
+layout: docs
+---
 
-Learn how to configure Nova 2 from the simple to the advanced.
+Learn how to configure Nova 2 from the simple to the advanced. {% .lead %}
 
 ---
 

@@ -1,12 +1,16 @@
-# Upgrade Guide
+---
+title: Upgrade guide
+description: Upgrading Nova to the latest version.
+layout: docs
+---
 
-Upgrading Nova to the latest version.
+Upgrading Nova to the latest version. {% .lead %}
 
 ---
 
-:::note Before you start
+{% callout title="Before you start" %}
 Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/2.6/backing-up-nova) on backing up Nova.
-:::
+{% /callout %}
 
 ## What you'll need
 
@@ -22,9 +26,9 @@ Before you get started updating Nova, make sure you have the following things re
 
 Once you've finished backing up your site (because you already did that, right?), rename the `nova` directory to `nova_old` on your server. (This ensures that if the update goes awry you still have a copy of the working Nova core from before you attempted the update.)
 
-:::warning
+{% callout title="Rename first" type="warning" %}
 Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to rename the directory and upload a new copy.
-:::
+{% /callout %}
 
 ### Step 2: Upload Nova
 
@@ -48,7 +52,7 @@ If you are upgrading from a version of Nova prior to 2.3.2, please reach out to 
 
 If, when starting to update, your installer won't work, this may be because your database is not registering the correct version of your Nova install (or any version whatsoever). You can verify your version by logging into your Nova site, accessing Nova's control panel, and selecting **System & Versions** from the bottom of the page.
 
-![System Versions](/images/docs/2.6/upgrade-guide/versions.png)
+![System Versions](/docs/2.6/images/upgrade-guide/versions.png)
 
 If your database version is `0.0.0` or otherwise doesn't match your Files Version, you may need to update your database to match the version of Nova you are upgrading from. In order to update that, you’ll need to login to your database with phpMyAdmin (via your web host's control panel).
 
@@ -103,9 +107,9 @@ If you have made changes to those skins or have your own skins that need to be u
 <?php echo anchor('main/policies', 'Privacy Policy');?>
 ```
 
-:::note
+{% callout title="Note" %}
 You'll need to make this change in every skin and every template on your site.
-:::
+{% /callout %}
 
 #### PHP 7 Update
 

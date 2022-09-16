@@ -1,6 +1,10 @@
-# Installation
+---
+title: Installation
+description: Learn how to get up and running with Nova 2.
+layout: docs
+---
 
-Learn how to get up and running with Nova 2.
+Learn how to get up and running with Nova 2. {% .lead %}
 
 ---
 
@@ -18,9 +22,9 @@ Remember when [we mentioned](/docs/2.6/before-getting-started#ftp-client) grabbi
 
 To get the installation process started you'll first need to make sure all of Nova's files have been uploaded to the server. If you're not sure how to do that, you can either reference your FTP client's documentation or reach out to your web host for help with this step.
 
-:::tip
+{% callout title="Avoiding long URLs" %}
 We recommend unzipping the Nova archive on your computer and then uploading the contents to the root of your site. This prevents situations where you have something like `nova-2.6.1` in the URL of your site.
-:::
+{% /callout %}
 
 ## Fresh install
 
@@ -30,9 +34,9 @@ With Nova's files uploaded to the server, all you need to do now is fire up your
 
 The first step in the install process is going to be setting up a connection to the database that will hold all of the data you put into your site. You can simply enter the information that your host gave you about your database and move on to the next step. Nova will verify it can connect to the database and then create a file on the server that securely holds your database credentials so it can continue to connect whenever it needs to.
 
-:::note
+{% callout title="Missing server features" %}
 Every once in a while, a server won't have everything turned on that Nova needs to create the database credentials file. That's okay. If Nova can't create the database connection file, you'll be shown a screen that will give you instructions on how to manually create the file, where to upload it to, and what to put in the file.
-:::
+{% /callout %}
 
 ### Installing Nova
 

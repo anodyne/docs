@@ -1,6 +1,10 @@
-# Directory Structure
+---
+title: Directory structure
+description: A quick look at each of Nova's directories and root files.
+layout: docs
+---
 
-A quick look at each of Nova's directories and root files.
+A quick look at each of Nova's directories and root files. {% .lead %}
 
 ---
 
@@ -32,9 +36,9 @@ A quick look at each of Nova's directories and root files.
 
 ## Nova directory
 
-:::warning
+{% callout title="Exercise caution" type="warning" %}
 We've provided tools to prevent you from having to edit core files, but if a situation comes up where it's unavoidable, you should be **very** careful when modifying core files. Errant changes to these files can result in major problems and in some cases cause your site to stop working altogether!
-:::
+{% /callout %}
 
 - `ci`
     - `core`: This is the heart of CodeIgniter. Once the index file is executed, the last thing it does is to pull in the main CodeIgniter file from this directory.

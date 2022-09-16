@@ -1,6 +1,10 @@
-# Emails
+---
+title: Emails
+description: Understand how Nova handles email.
+layout: docs
+---
 
-Understand how Nova handles email.
+Understand how Nova handles email. {% .lead %}
 
 ---
 
@@ -51,21 +55,21 @@ When Nova needs to send an email, the controller where that page lives will have
 
 Nova and CodeIgniter provide a wealth of configuration options for how email is handled. You'll find all of the available configuration options in either Nova's *System/Email* tab of Site Settings or in the email config file found in the `application/config` directory. We've provided sensible defaults for emails, but your specific server and situation may dictate changes.
 
-:::note
+{% callout title="Be sure to test" %}
 After making any changes to configuration, you should send a test email through Nova to ensure that all your players are properly receiving email with the changes.
-:::
+{% /callout %}
 
-:::tip Deep Dive
+{% callout title="Deep dive" %}
 You can read more about CodeIgniter's email configuration options in their [documentation](https://codeigniter.com/userguide2/libraries/email.html).
-:::
+{% /callout %}
 
 ## Changing the files used for emails
 
 You might be surprised to find out that Nova treats emails almost identically to how it treats pages in the system. That means there's a view file that's used to structure and lay out the emails that are sent to players. This also means you can use seamless substitution to change the structure and layout of the emails.
 
-:::note
+{% callout title="Learn more" %}
 For a complete explanation of seamless substitution, please refer to its [documentation](/docs/2.6/seamless-substitution).
-:::
+{% /callout %}
 
 ## Email issues
 
@@ -101,9 +105,9 @@ It can be a little daunting to step into the world of third-party email service 
 - [SendinBlue SMTP](https://www.sendinblue.com/)
 - [ElasticEmail](https://elasticemail.com/)
 
-:::note
+{% callout title="Some assembly required" %}
 It's important to understand that there may be additional work that has to be done for some of these services. For example, Mailgun requires domain verification before you can send emails. While it's a technical process, Mailgun has documentation that will walk you through updating the DNS records. In other cases, these are relatively new services that we don't have much information on. We encourage people to look at the different options and make decisions based on what they think their needs will be.
-:::
+{% /callout %}
 
 Any of the above SMTP services will work in Nova. If you're having issues today with emails not being delivered, you can get up and running in short order by signing up for one of the above services and plugging in the details in your email config file in Nova.
 

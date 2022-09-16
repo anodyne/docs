@@ -1,6 +1,10 @@
-# Seamless Substitution
+---
+title: Seamless substitution
+description: Learn about how you can tell Nova to use a different version of a file instead of what's in the Nova core.
+layout: docs
+---
 
-Learn about how you can tell Nova to use a different version of a file instead of what's in the Nova core.
+Learn about how you can tell Nova to use a different version of a file instead of what's in the Nova core. {% .lead %}
 
 ---
 
@@ -33,9 +37,9 @@ For each type of file below, Nova will try to find that type of file in the spec
 - `application/views/_base_override/emails/{type}`
 - `nova/modules/core/views/_base/emails/{type}`
 
-:::note
+{% callout title="A note about emails" %}
 Emails are available in both `html` and `text` form. If you are modifying an email, you will need to make any changes in both the HTML and text files. Check out the [email documentation](/docs/2.6/emails) for more information about Nova's emails.
-:::
+{% /callout %}
 
 ### Images
 
