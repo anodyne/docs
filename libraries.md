@@ -1,6 +1,6 @@
 ---
 title: Libraries
-description: Learn about Nova's most powerful tools: libraries.
+description: Learn about Nova's most powerful tools - libraries.
 layout: docs
 ---
 
