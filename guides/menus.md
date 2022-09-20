@@ -1,6 +1,10 @@
-# Using Menus
+---
+title: Using menus
+description: Learn more about how to configure and customize navigation menus in Nova.
+layout: docs
+---
 
-Learn more about how to configure and customize navigation menus in Nova.
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 
@@ -62,9 +66,9 @@ A modal will appear in the center of the page, allowing you to enter all appropr
 
 When all edits are complete, select **Submit.**
 
-:::Note
+{% callout title="Note" %}
 When a new category is added, it is not added to the available category dropdown. The values in this dropdown cannot be changed, and are tied to the already created sections of the site (main, personnel, sim, etc.)
-:::
+{% /callout %}
 
 ## Menu items
 

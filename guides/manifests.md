@@ -1,6 +1,10 @@
-# Using Manifests
+---
+title: Using manifests
+description: Learn more about Nova's powerful manifest structure, including how its structured with departments and positions.
+layout: docs
+---
 
-Learn more about Nova's powerful manifest structure, including how its structured with departments and positions.
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 
@@ -61,9 +65,9 @@ If a manifest has metadata enabled, such as species and gender, the metadata wil
 
 Departments act as dividers within a manifest, organizing a particular group of characters. Typical departments within a *Star Trek* game would be Command, Security, or Science. A game set in the *Battlestar Galatica* universe would have departments for the Viper and Raptor Wings, as well as the Hangar Deck Staff.
 
-:::Note
+{% callout title="Note" %}
 In order to display properly, each manifest must have at least one department enabled.
-:::
+{% /callout %}
 
 ### Creating and editing
 
@@ -79,15 +83,15 @@ To add a department, select the *Add Department* option.
 
 To edit a department, click on the Edit icon to the far right of the department you wish to edit. To delete a department, select the appropriate delete icon.
 
-:::Warning
+{% callout title="Warning" type="warning" %}
 Deleting and updating departments could negatively affect other departments, positions, and characters. Proceed with caution.
-:::
+{% /callout %}
 
 If you would like to copy a department and its positions for use in another manifest, such as duplicating Departments across a starbase's attached starships, you can use the duplicate button.
 
-:::Tip
+{% callout title="Quick tip" %}
 Once you've duplicated a department, you should change the description to make it clear which manifest it's associated with.
-:::
+{% /callout %}
 
 Whenever you select the Add or Edit Deparment options, the following options will appear:
 
@@ -124,9 +128,9 @@ Many games can only support a certain amount of a character type. For example, a
 To access any of the positions available on Nova, access Nova's control panel and locate *Positions* under the subheading *Management*.
 ![Departments location](/images/docs/2.6/using-manifests/positions-location.png)
 
-:::Warning
+{% callout title="Warning" type="warning" %}
 Deleting and updating positions could negatively affect characters. Proceed with caution.
-:::
+{% /callout %}
 
 Whereas manifests and departments provide the structural containers for character organization, positions are the true building blocks of Nova's character system. Nova immediately displays for you the most used elements: the *name* and *open slots*. If additional editing is required, you can click on the **More** button to see the remainder of the editable options. Once all updates within a department is complete, scroll to the bottom of the positions list and click **Update**.
 
@@ -138,9 +142,9 @@ To edit a position, navigate to the department in which the position is located,
 
 To delete a position, locate the position you wish to delete. Click on the *Delete?* checkbox. Once you have selected all positions within a department you wish to delete, click on the **Update** button.
 
-:::Tip
+{% callout title="Quick tip" %}
 For best results, you will want to make your changes one department at a time. If you navigate between departments without submitting your changes, Nova will not save your work.
-:::
+{% /callout %}
 
 Whether you are adding or editing a position, the following options are always available:
 
@@ -153,8 +157,8 @@ Whether you are adding or editing a position, the following options are always a
 - *Display*: determine if you want this position to appear for you or your players on the Personnel or Join pages. Be aware, if a position is set to not display, then any character attributed to this department will not appear on the Personnel page.
 - *Description*: enter a description of what the positions's purpose is or a job description to help your players understand how the position is to be used in the game.
 
-:::Question
-**Display or Delete?** Many games change over time, and so do the available position options. If you think there is a possibility you may use a department or position in the future, your best option may be to set the Display option to off. This way, you can reenable the option later on in the game to make the position(s) available to your players and retain the information. The space these positions utilize in Nova's database is minimal at best, so you will not feel a performance impact by removing this information.
+{% callout title="Display or delete?" %}
+Many games change over time, and so do the available position options. If you think there is a possibility you may use a department or position in the future, your best option may be to set the Display option to off. This way, you can reenable the option later on in the game to make the position(s) available to your players and retain the information. The space these positions utilize in Nova's database is minimal at best, so you will not feel a performance impact by removing this information.
 
 If you are certain you will never use a position or department in the future, then it may be best to proceed with deleting that option entirely. Remember that these actions cannot be undone or recovered, so proceed with caution!
-:::
+{% /callout %}

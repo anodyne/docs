@@ -1,6 +1,10 @@
-# Forms
+---
+title: Forms
+description: Learn about Nova's dynamic forms and how to get the most out of them.
+layout: docs
+---
 
-Learn about Nova's dynamic forms and how to get the most out of them.
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 
@@ -47,7 +51,7 @@ Whenever you wish to add or edit a field, the following options will always be a
   - *Class*: a specific class to be rendered according to functions added to the skin's CSS.
   - *Textarea Rows*: determine how many rows should be available to the user using the form.
 
-:::note For dropdown menus only
+{% callout title="For dropdown menus only" %}
 For dropdown menus, please provide the values to be used by the menu. Each item should be on a separate line and have a comma-separated set of values, like: `male,Male`. In that example, the menu item's value would be male and the label seen in the menu would be Male. Your final output should look like:
 
 ```php
@@ -55,7 +59,7 @@ male,Male
 female,Female
 neuter,Neuter
 ```
-:::
+{% /callout %}
 
 When all edits are complete, select **Submit**.
 

@@ -1,6 +1,10 @@
-# Posting
+---
+title: Posting
+description: Learn about Nova's posting system.
+layout: docs
+---
 
-Learn about Nova's posting system.
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

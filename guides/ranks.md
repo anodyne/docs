@@ -1,6 +1,10 @@
-# Ranks
+---
+title: Ranks
+description: Learn about Nova's rank system and how to customize them.
+layout: docs
+---
 
-Learn about Nova's rank system and how to customize them.
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 
