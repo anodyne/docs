@@ -56,7 +56,7 @@ You will also be able to select your preferred rank set images by selecting the 
 
 When all changes are complete, select **Update.** To see the preferred rank set, navigate to the personnel page to see the ranks in use.
 
-### Determining custom Links
+### Determining custom links
 
 If there are portions of the website you wish to have quick access to, such as the Enterprise's deck listing, you can set up a link to that section under the **My Links** tab. Once saved, this quick link will be available on your dashboard.
 

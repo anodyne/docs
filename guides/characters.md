@@ -1,6 +1,6 @@
 ---
 title: Characters
-description: Learn about how character creation works in Nova.
+description: Learn how character creation works in Nova.
 layout: docs
 ---
 
