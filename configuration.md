@@ -12,9 +12,9 @@ layout: docs
 
 In most cases, Nova's configuration happens from within the system itself. For everything else, configuration is handled through config files found in the `application/config` directory. (All references on this page to specific config files will be for files found in this directory.)
 
-:::warning
+{% callout title="Warning" type="warning" %}
 Be **very** careful when modifying config files. Errant changes to these files can result in major problems and in some cases cause your site to stop working altogether!
-:::
+{% /callout %}
 
 ### Genre
 
@@ -54,14 +54,14 @@ Nova ships with the following defaults for all RSS feeds:
 
 Nova's integrated mini-wiki, [Thresher](/docs/2.6/using-wiki), has its own config file that allows admins to change the way content is stored and parsed. By default, Thresher will store and parse wiki page content as HTML, but you can also use BBCode and Textile for storing and parsing. You can change the parse type in the Thresher config file found at `application/config/thresher.php`.
 
-:::warning
+{% callout title="Warning" type="warning" %}
 Once you have selected a parse type, you shouldn't change it. If you change the parse type, your wiki pages will not display correctly.
-:::
+{% /callout %}
 
 ## CodeIgniter
 
 CodeIgniter is the underlying framework used to power Nova. In most cases, you won't need to change any configuration for CodeIgniter. If you do, you can find all of those config files in the `application/config` directory.
 
-:::warning
+{% callout title="Warning" type="warning" %}
 It's worth repeating again... be **very** careful when modifying config files. Errant changes to these files, especially CodeIgniter config files, can result in major problems and in some cases cause your site to stop working altogether!
-:::
+{% /callout %}
