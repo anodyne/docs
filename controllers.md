@@ -1,6 +1,6 @@
 ---
 title: Controllers
-description: Get to know the heart and soul of Nova: controllers.
+description: Get to know the heart and soul of Nova - controllers.
 layout: docs
 ---
 
