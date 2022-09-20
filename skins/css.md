@@ -24,7 +24,7 @@ When it comes to modifying the skin's CSS files, the easiest way to do so is wit
 
 {% callout title="Note" %}
 Unless the skin's CSS files are located in a global folder, you'll need to update each CSS file within each section for your changes to appear across the entire site. Keep in mind that each section may have specific styling that does not exist in another section's CSS files, so copy/pasting entire CSS files is not recommended.
-{% /callout }
+{% /callout %}
 
 {% callout title="Quick tip" %}
 If you updated a CSS file and do not see your changes on the site, make sure you updated the correct file and clear your browser's cache.
