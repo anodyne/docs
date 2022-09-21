@@ -1,11 +1,11 @@
 ---
 title: Meet Nova
-pageTitle: CacheAdvance - Never miss the cache again.
-description: Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.
+pageTitle: Nova 2.6 - Painless RPG Management
+description: An open-source content management system designed for managing and playing online text-based role-playing games.
 layout: docs
 ---
 
-An open-source content management system designed for managing and playing online text-based role-playing games. {% .lead %}
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 {% quick-links %}
 
