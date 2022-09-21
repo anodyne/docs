@@ -13,7 +13,7 @@ layout: docs
 If your server is running Apache (your web host will know if you don't), you can create a file named `.htaccess` on the server at the root of your site. The following configuration should work for most servers:
 
 
-```htaccess
+```apacheconf
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
