@@ -15,20 +15,6 @@ module.exports = {
             ],
         },
         {
-            title: 'Guides',
-            links: [
-                { title: 'Characters', href: `${urlPrefix}/guides/characters` },
-                { title: 'Dashboard', href: `${urlPrefix}/guides/dashboard` },
-                { title: 'Forms', href: `${urlPrefix}/guides/forms` },
-                { title: 'Manifests', href: `${urlPrefix}/guides/manifests` },
-                { title: 'Menus', href: `${urlPrefix}/guides/menus` },
-                { title: 'Permissions', href: `${urlPrefix}/guides/permissions` },
-                { title: 'Ranks', href: `${urlPrefix}/guides/ranks` },
-                { title: 'Site Settings', href: `${urlPrefix}/guides/site-settings` },
-                { title: 'Wiki', href: `${urlPrefix}/guides/wiki` },
-            ],
-        },
-        {
             title: 'Core concepts',
             links: [
                 { title: 'Directory structure', href: `${urlPrefix}/directory-structure` },
