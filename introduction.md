@@ -1,8 +1,11 @@
-# Meet Nova
-
-An open-source content management system designed for managing and playing online text-based role-playing games.
-
 ---
+title: Meet Nova
+pageTitle: Nova 3.0 - Painless RPG Management
+description: An open-source content management system designed for managing and playing online text-based role-playing games.
+layout: docs
+---
+
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 Nova is a custom content management system that was designed from the ground up to help you manage and play online text-based role-playing games. It comes with all of the tools you need to manage your game and the flexibility to add to it as you need.
 
