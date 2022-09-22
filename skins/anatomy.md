@@ -21,22 +21,22 @@ As a skin author, you're free to structure your skin however you see fit. Throug
 - `preview-login.jpg` – a preview image of the login section (only used when selecting a skin); this image must be in the root directory of your skin and cannot be renamed or Nova will not be able to show a preview of the skin section to users
 - `preview-main.jpg` – a preview image of the main section (only used when selecting a skin); this image must be in the root directory of your skin and cannot be renamed or Nova will not be able to show a preview of the skin section to users
 - `preview-wiki.jpg` – a preview image of the wiki section (only used when selecting a skin); this image must be in the root directory of your skin and cannot be renamed or Nova will not be able to show a preview of the skin section to users
-- `skin.yml` – the QuickInstall file used by Nova to [install the skin](/docs/2.6/skinning-install)
-- `template_admin.php` – the base HTML structure of the admin section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.6/skinning-templates) for more information about skin templates
-- `template_login.php` – the base HTML structure of the login section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.6/skinning-templates) for more information about skin templates
-- `template_main.php` – the base HTML structure of the main section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.6/skinning-templates) for more information about skin templates
-- `template_wiki.php` – the base HTML structure of the wiki section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.6/skinning-templates) for more information about skin templates
+- `skin.yml` – the QuickInstall file used by Nova to [install the skin](/docs/2.7/skinning-install)
+- `template_admin.php` – the base HTML structure of the admin section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.7/skinning-templates) for more information about skin templates
+- `template_login.php` – the base HTML structure of the login section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.7/skinning-templates) for more information about skin templates
+- `template_main.php` – the base HTML structure of the main section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.7/skinning-templates) for more information about skin templates
+- `template_wiki.php` – the base HTML structure of the wiki section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.7/skinning-templates) for more information about skin templates
 
 ## Section folders
 
-- `ajax` - files that should be used to replace system Ajax files for your skin only; this is part of the [seamless substitution](/docs/2.6/seamless-substitution) system
+- `ajax` - files that should be used to replace system Ajax files for your skin only; this is part of the [seamless substitution](/docs/2.7/seamless-substitution) system
 - `css` - CSS files used for the changing the look of the skin section
 - `images` - any images used for the skin section
-- `js` - files that should be used to replace system JavaScript files for your skin only; this is part of the [seamless substitution](/docs/2.6/seamless-substitution) system
-- `pages` - files that should be used to replace system view files for your skin only; this is part of the [seamless substitution](/docs/2.6/seamless-substitution) system
+- `js` - files that should be used to replace system JavaScript files for your skin only; this is part of the [seamless substitution](/docs/2.7/seamless-substitution) system
+- `pages` - files that should be used to replace system view files for your skin only; this is part of the [seamless substitution](/docs/2.7/seamless-substitution) system
 
 {% callout title="Overriding pages from a skin" %}
-While the best way to override a specific page is using the `_base_override` folder, you can also override pages from your skin as well. This is helpful if you want your skin to make specific changes to a page that are only unique to your skin. See the [seamless substitution documentation](/docs/2.6/seamless-substitution) for more information about this process.
+While the best way to override a specific page is using the `_base_override` folder, you can also override pages from your skin as well. This is helpful if you want your skin to make specific changes to a page that are only unique to your skin. See the [seamless substitution documentation](/docs/2.7/seamless-substitution) for more information about this process.
 {% /callout %}
 
 ## Images

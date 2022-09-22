@@ -1,4 +1,4 @@
-const urlPrefix = '/docs/2.6'
+const urlPrefix = '/docs/2.7'
 
 module.exports = {
     navigation: [

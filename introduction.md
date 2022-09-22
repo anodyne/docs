@@ -9,13 +9,13 @@ layout: docs
 
 {% quick-links %}
 
-{% quick-link title="Installation" icon="installation" href="/docs/2.6/installation" description="Step-by-step guide to installing Nova on your server." /%}
+{% quick-link title="Installation" icon="installation" href="/docs/2.7/installation" description="Step-by-step guide to installing Nova on your server." /%}
 
-{% quick-link title="Core concepts" icon="presets" href="/docs/2.6/directory-structure" description="Learn Nova's inner workings and how to work with it." /%}
+{% quick-link title="Core concepts" icon="presets" href="/docs/2.7/directory-structure" description="Learn Nova's inner workings and how to work with it." /%}
 
-{% quick-link title="MODs" icon="plugins" href="/docs/2.6/mods/extensions" description="Extend Nova with third-party MODs or write your own." /%}
+{% quick-link title="MODs" icon="plugins" href="/docs/2.7/mods/extensions" description="Extend Nova with third-party MODs or write your own." /%}
 
-{% quick-link title="Skinning" icon="theming" href="/docs/2.6/skins/overview" description="Learn to easily skin Nova's visual design to fit your game." /%}
+{% quick-link title="Skinning" icon="theming" href="/docs/2.7/skins/overview" description="Learn to easily skin Nova's visual design to fit your game." /%}
 
 {% /quick-links %}
 
@@ -71,7 +71,7 @@ On top of that, Nova is open-source software and built on top of CodeIgniter, a 
 
 ## Who is this documentation for?
 
-This documentation is a labor of love. At the start of 2021 [we](/docs/2.6/contributors) embarked on a mission to vastly improve Nova's documentation. Instead of trying to fix what existed already, we've started over and re-written it from scratch. In the process, we've focused on making sure there's something here for people of all experience and skill levels.
+This documentation is a labor of love. At the start of 2021 [we](/docs/2.7/contributors) embarked on a mission to vastly improve Nova's documentation. Instead of trying to fix what existed already, we've started over and re-written it from scratch. In the process, we've focused on making sure there's something here for people of all experience and skill levels.
 
 - **Writers** - basic users are at the core of any game and will find the *Guides* a fantastic resource for understanding how to use many of Nova's features.
 - **Game Masters** - players who are managing a game for the first time (or the 10th time) will find the *Getting Started* section invaluable. This provides a wealth of information about installing, configuring, and updating Nova. Additionally, some of the guides include valuable administration information as well about many of Nova's features.

@@ -9,7 +9,7 @@ layout: docs
 ---
 
 {% callout title="Before you start" %}
-Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/2.6/backing-up-nova) on backing up Nova.
+Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/2.7/backing-up-nova) on backing up Nova.
 {% /callout %}
 
 ## What you'll need
@@ -52,7 +52,7 @@ If you are upgrading from a version of Nova prior to 2.3.2, please reach out to 
 
 If, when starting to update, your installer won't work, this may be because your database is not registering the correct version of your Nova install (or any version whatsoever). You can verify your version by logging into your Nova site, accessing Nova's control panel, and selecting **System & Versions** from the bottom of the page.
 
-![System Versions](/images/docs/2.6/upgrade-guide/versions.png)
+![System Versions](/images/docs/2.7/upgrade-guide/versions.png)
 
 If your database version is `0.0.0` or otherwise doesn't match your Files Version, you may need to update your database to match the version of Nova you are upgrading from. In order to update that, you’ll need to login to your database with phpMyAdmin (via your web host's control panel).
 
@@ -68,7 +68,7 @@ For example, a site running Nova version 2.3.2 would read:
 
 ### v2.6 from v2.5.x
 
-Nova 2.6 introduced [Events](/docs/2.6/events) and [Extensions](/docs/2.6/extensions), two powerful features that unlock easier ways to modify a Nova site as well as several incredibly powerful ways to expand upon the base installation. In addition to following the normal update process, Nova 2.6 includes additional changes you’ll need to make for the new event and extension systems to work correctly.
+Nova 2.6 introduced [Events](/docs/2.7/events) and [Extensions](/docs/2.7/extensions), two powerful features that unlock easier ways to modify a Nova site as well as several incredibly powerful ways to expand upon the base installation. In addition to following the normal update process, Nova 2.6 includes additional changes you’ll need to make for the new event and extension systems to work correctly.
 
 #### Config file
 

@@ -141,5 +141,5 @@ And finally, Nova tells the template library to render everything it has and pus
 
 ## Further reading
 
-- [Learn how to interact with Nova models](/docs/2.6/models)
-- [Learn how to interact with Nova libraries](/docs/2.6/libraries)
+- [Learn how to interact with Nova models](/docs/2.7/models)
+- [Learn how to interact with Nova libraries](/docs/2.7/libraries)

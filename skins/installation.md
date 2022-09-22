@@ -10,7 +10,7 @@ layout: docs
 
 ## Uploading
 
-All of Nova's skins are stored in individual folders in the same location: `application/views`. If you have a skin you've downloaded from [AnodyneXtras](https://xtras.anodyne-productions.com) or created yourself, you can use your [FTP client](/docs/2.6/before-getting-started#tools-you-might-want) and upload the directory to your `application/views` folder.
+All of Nova's skins are stored in individual folders in the same location: `application/views`. If you have a skin you've downloaded from [AnodyneXtras](https://xtras.anodyne-productions.com) or created yourself, you can use your [FTP client](/docs/2.7/before-getting-started#tools-you-might-want) and upload the directory to your `application/views` folder.
 
 ## Installing
 
@@ -26,7 +26,7 @@ Once the page refreshes, you should see your skin listed in the Skin Catalogue.
 
 You can certainly go through the process above to install your skin, but Nova provides a simpler way to do this out-of-the box called **QuickInstall**. When Nova detects a skin in the `application/views` directory that isn't in its database that has a QuickInstall file, it'll provide you a button to click to automate the install process for you.
 
-![QuickInstall](/images/docs/2.6/skins/quickinstall.png)
+![QuickInstall](/images/docs/2.7/skins/quickinstall.png)
 
 In order to use QuickInstall in your own skins, all you need to do is include a `skin.yml` file at the root of your skin with the following contents:
 
