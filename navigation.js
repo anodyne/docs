@@ -10,7 +10,7 @@ module.exports = {
                 { title: 'Compatibility', href: `${urlPrefix}/compatibility` },
                 { title: 'Installation', href: `${urlPrefix}/installation` },
                 { title: 'Upgrade guide', href: `${urlPrefix}/upgrade-guide` },
-                { title: 'Migration guide', href: `${urlPrefix}/upgrade-guide` },
+                { title: 'Migration guide', href: `${urlPrefix}/migration-guide` },
             ],
         },
         {
