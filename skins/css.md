@@ -9,7 +9,7 @@ layout: docs
 ---
 
 {% callout title="Learning CSS" %}
-CSS is at the heart of making a skin look the way you want. Not sure what CSS is or how to write it? Don't worry, we have some [helpful links](/docs/2.6/helpful-links#learning-css) with resources for learning CSS to master customizing your skins in no time.
+CSS is at the heart of making a skin look the way you want. Not sure what CSS is or how to write it? Don't worry, we have some [helpful links](/docs/2.6/resources/helpful-links#learning-css) with resources for learning CSS to master customizing your skins in no time.
 {% /callout %}
 
 Stylesheets within skins can vary greatly between skin authors, but they can usually be found in a global folder or within one of the specific section folders. Each skin generally comes with five CSS files:
@@ -20,7 +20,7 @@ Stylesheets within skins can vary greatly between skin authors, but they can usu
 - `jquery.ui.tabs.css` – a stylesheet that contains styles for the skin's tabs (used in places like the home page and the writing dashboard among other places)
 - `jquery.ui.theme.css` – a stylesheet that provides support for jQuery UI themes
 
-When it comes to modifying the skin's CSS files, the easiest way to do so is with a [text editor](/docs/2.6/before-getting-started#text-editor). If you download your entire skin to a folder on your computer and then open the entire folder in the text editor, you'll be able to find what you're looking for a lot easier and even be able to do things like find and replace when you're changing colors or values.
+When it comes to modifying the skin's CSS files, the easiest way to do so is with a [text editor](/docs/2.6/getting-started#text-editor). If you download your entire skin to a folder on your computer and then open the entire folder in the text editor, you'll be able to find what you're looking for a lot easier and even be able to do things like find and replace when you're changing colors or values.
 
 {% callout title="Note" %}
 Unless the skin's CSS files are located in a global folder, you'll need to update each CSS file within each section for your changes to appear across the entire site. Keep in mind that each section may have specific styling that does not exist in another section's CSS files, so copy/pasting entire CSS files is not recommended.

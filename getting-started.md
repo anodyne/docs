@@ -26,7 +26,7 @@ While PHP 7 has been available for several years now, Nova 2 is built on a legac
 {% /callout %}
 
 {% callout title="What about PHP 8?" type="warning" %}
-Nova 2.6 has known compatability issues with PHP 8. If you're running a server that has PHP 8 or will not let you run PHP 7, you should upgrade to Nova 2.7.
+Nova 2.6 has known compatibility issues with PHP 8. If you're running a server that has PHP 8 or will not let you run PHP 7, you should upgrade to Nova 2.7.
 {% /callout %}
 
 ## Custom domain name

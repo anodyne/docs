@@ -16,7 +16,7 @@ Most browsers come with a tool called Inspect Element. This allows you to see th
 
 ## Text editors are your friend
 
-[Text editors](/docs/2.6/before-getting-started#text-editors) can be one of the most powerful tools at your fingertips when skinning Nova. We recommend using one a text editor that will allow you to open the entire skin's folder as a project. By doing this, you'll be able to leverage text editor features like search, find and replace, and other tools that will make the development process much simpler. This will also make it much easier to create folders and files as necessary and modify template files with proper syntax highlighting.
+[Text editors](/docs/2.6/getting-started#text-editors) can be one of the most powerful tools at your fingertips when skinning Nova. We recommend using one a text editor that will allow you to open the entire skin's folder as a project. By doing this, you'll be able to leverage text editor features like search, find and replace, and other tools that will make the development process much simpler. This will also make it much easier to create folders and files as necessary and modify template files with proper syntax highlighting.
 
 ## PHP's `var_dump`
 
