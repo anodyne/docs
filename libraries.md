@@ -13,7 +13,7 @@ layout: docs
 Libraries are simply PHP classes that can be used for whatever you need them to be used for.
 
 {% callout title="Deep dive" %}
-You can read more about CodeIgniter's libraries in their [documentation](https://codeigniter.com/userguide2/general/libraries.html).
+You can read more about CodeIgniter's libraries in their [documentation](https://codeigniter.com/userguide3/general/libraries.html).
 {% /callout %}
 
 By default, Nova autoloads several libraries that are used extensively throughout the core. Because of that, you'll always have access to the following libraries without having to load them:
@@ -74,4 +74,4 @@ When it comes to overriding a library method, the recommended way of doing that 
 
 ## Further reading
 
-- [Creating your own libraries](https://codeigniter.com/userguide2/general/creating_libraries.html)
+- [Creating your own libraries](https://codeigniter.com/userguide3/general/creating_libraries.html)

@@ -87,7 +87,7 @@ All menu items are organized into three groups.
 Locate the menu item you wish to edit and click on the pencil "edit" icon. A modal will appear in the middle of the screen with the following options:
 
 - *Name*: the visible name of the menu item or link.
-- *Link*: the location of the page you wish to link to. For example, if you are creating a page for the page we create in the [creating a page tutorial](/creating-pages.md) tutorial, we would enter `sim/all_awards`.
+- *Link*: the location of the page you wish to link to. For example, if you are creating a page for the page we create in the [creating a page tutorial](/docs/2.7/mods/creating-pages) tutorial, we would enter `sim/all_awards`.
 - *Link Type*: select whether or not the menu item will be linking to a page contained within your site or an external site.
 - *Grouping & Sorting*:
   - *Group*: if you wish to group various menu items together, assign it to a group number here.

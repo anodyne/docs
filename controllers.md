@@ -25,7 +25,7 @@ In the above example, the `main` controller will be loaded and the `contact` met
 In this example, the `characters` controller will be loaded and the `bio` method will be called. Additionally, you'll be able to add an argument to your controller method to access the `77` in the URI. (This is what allows Nova to have access to the necessary data to show a specific character bio without having to hard-code everything.)
 
 {% callout title="Deep dive" %}
-You can read more about how CodeIgniter's controllers work in their [documentation](https://codeigniter.com/userguide2/general/controllers.html).
+You can read more about how CodeIgniter's controllers work in their [documentation](https://codeigniter.com/userguide3/general/controllers.html).
 {% /callout %}
 
 ## Extending controllers

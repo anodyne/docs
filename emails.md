@@ -60,7 +60,7 @@ After making any changes to configuration, you should send a test email through 
 {% /callout %}
 
 {% callout title="Deep dive" %}
-You can read more about CodeIgniter's email configuration options in their [documentation](https://codeigniter.com/userguide2/libraries/email.html).
+You can read more about CodeIgniter's email configuration options in their [documentation](https://codeigniter.com/userguide3/libraries/email.html).
 {% /callout %}
 
 ## Changing the files used for emails

@@ -13,7 +13,7 @@ layout: docs
 Models are PHP classes designed to be the primary way of interacting with Nova's database. Each model has its own set of methods for different things it can pull out of the database, so if you're working with a model, it's important to look at what methods that model provides.
 
 {% callout title="Deep dive" %}
-You can read more about CodeIgniter's models in their [documentation](https://codeigniter.com/userguide2/general/models.html).
+You can read more about CodeIgniter's models in their [documentation](https://codeigniter.com/userguide3/general/models.html).
 {% /callout %}
 
 By default, Nova does not autoload any models at a the global level (meaning from the `autoload.php` config file). In some rare instances, Nova will pre-load models in the controller's constructor simply to reduce the amount of boilerplate code that needs to be written, but in most cases, models aren't loaded ahead of time. This means that before interacting with a model, you will need to load it:
@@ -80,4 +80,4 @@ When it comes to overriding a model method, the recommended way of doing that is
 
 ## Further reading
 
-- [Learn about CodeIgniter's Database library](https://codeigniter.com/userguide2/database/index.html)
+- [Learn about CodeIgniter's Database library](https://codeigniter.com/userguide3/database/index.html)

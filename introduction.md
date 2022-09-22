@@ -1,6 +1,6 @@
 ---
 title: Meet Nova
-pageTitle: Nova 2.6 - Painless RPG Management
+pageTitle: Nova 2.7 - Painless RPG Management
 description: An open-source content management system designed for managing and playing online text-based role-playing games.
 layout: docs
 ---
@@ -71,7 +71,7 @@ On top of that, Nova is open-source software and built on top of CodeIgniter, a 
 
 ## Who is this documentation for?
 
-This documentation is a labor of love. At the start of 2021 [we](/docs/2.7/contributors) embarked on a mission to vastly improve Nova's documentation. Instead of trying to fix what existed already, we've started over and re-written it from scratch. In the process, we've focused on making sure there's something here for people of all experience and skill levels.
+This documentation is a labor of love. At the start of 2021 [we](/docs/2.7/resources/contributors) embarked on a mission to vastly improve Nova's documentation. Instead of trying to fix what existed already, we've started over and re-written it from scratch. In the process, we've focused on making sure there's something here for people of all experience and skill levels.
 
 - **Writers** - basic users are at the core of any game and will find the *Guides* a fantastic resource for understanding how to use many of Nova's features.
 - **Game Masters** - players who are managing a game for the first time (or the 10th time) will find the *Getting Started* section invaluable. This provides a wealth of information about installing, configuring, and updating Nova. Additionally, some of the guides include valuable administration information as well about many of Nova's features.

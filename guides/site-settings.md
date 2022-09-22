@@ -58,7 +58,7 @@ Under the **System/Email** tab, the following options are available:
     - *All Updates*: be notified at any time when any new version is available.
     - *Major Updates Only*: be notified only when a new major version, such as *3.0*, is available.
     - *Minor Updates Only*: be notified only when a new minor version, such as *2.7*, *2.8*, etc., is available.
-    - *Incremental Updates Only*: be notified only when an incremental update is available for your current version, such as *2.6.2*, *2.6.3*, etc.
+    - *Incremental Updates Only*: be notified only when an incremental update is available for your current version, such as *2.7.2*, *2.7.3*, etc.
     - *No Updates*: this will disable all notifications that a new version is available.
   - *Date Format*: customize how you would like the current date and time (not the *Sim Year*) will appear throughout your site. You can select from prebuilt options or create your own.
   - *Timezone*: select the primary timezone under which the site will operate. This defaults to *Greenwich Mean Time*.
