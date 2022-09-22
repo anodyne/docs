@@ -7,7 +7,29 @@ layout: docs
 
 {% $markdoc.frontmatter.description %} {% .lead %}
 
+{% quick-links %}
+
+{% quick-link title="Installation" icon="installation" href="/docs/2.7/installation" description="Step-by-step guide to installing Nova on your server." /%}
+
+{% quick-link title="Core concepts" icon="presets" href="/docs/2.7/directory-structure" description="Learn Nova's inner workings and how to work with it." /%}
+
+{% quick-link title="MODs" icon="plugins" href="/docs/2.7/mods/extensions" description="Extend Nova with third-party MODs or write your own." /%}
+
+{% quick-link title="Skinning" icon="theming" href="/docs/2.7/skins/overview" description="Learn to easily skin Nova's visual design to fit your game." /%}
+
+{% /quick-links %}
+
 Nova is a custom content management system that was designed from the ground up to help you manage and play online text-based role-playing games. It comes with all of the tools you need to manage your game and the flexibility to add to it as you need.
+
+When it comes to building a website, there's no shortage of options.
+
+- Write your own HTML and CSS
+- Use a CMS or blogging platform like Wordpress or Drupal
+- Reach for an online site builder like Wix or Squarespace
+
+While these approaches are all valid and offer a lot of tools for building your game's website, we believe Nova is the best choice because it was designed from the ground up for the things you'll need to manage and play your game.
+
+---
 
 ## Vision
 
@@ -17,15 +39,15 @@ Nova is a custom content management system that was designed from the ground up 
 
 {WIP}(warning)
 
-## Community
+## The community
 
-### Discord
+{% quick-links %}
 
-We have moved to use Discord for interacting with the community, including asking questions, getting help, sharing tips, and more.
+{% quick-link title="Discord" icon="support" href="https://discord.gg/7WmKUks" description="Get help, share tips, and interact with the community of creators and writers." /%}
 
-[Join our Discord](https://discord.gg/7WmKUks)
+{% quick-link title="Github" icon="github" href="https://github.com/anodyne/nova3" description="File issues, request features, and contribute to Nova." /%}
 
-### GitHub
+{% /quick-links %}
 
 To file issues, request features, and contribute to Nova, check out our GitHub.
 
