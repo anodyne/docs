@@ -39,11 +39,13 @@ While these approaches are all valid and offer a lot of tools for building your 
 
 {WIP}(warning)
 
-## The community
+## Connect and contribute
+
+Whether you're a beginner or an advanced user, getting involved in the Nova community is a great way to connect with like-minded folks who are building awesome things with Nova.
 
 {% quick-links %}
 
-{% quick-link title="Discord" icon="support" href="https://discord.gg/7WmKUks" description="Get help, share tips, and interact with the community of creators and writers." /%}
+{% quick-link title="Discord" icon="discord" href="https://discord.gg/7WmKUks" description="Get help, share tips, and interact with the community of creators and writers." /%}
 
 {% quick-link title="Github" icon="github" href="https://github.com/anodyne/nova3" description="File issues, request features, and contribute to Nova." /%}
 
