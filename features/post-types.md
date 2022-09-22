@@ -1,6 +1,10 @@
-# Post Types
+---
+title: Features - post types
+description: Control the content users post into stories.
+layout: docs
+---
 
-Control the content users post into stories.
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 

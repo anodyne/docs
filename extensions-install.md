@@ -1,3 +1,0 @@
-# Extensions - Installing
-
-## Database Migrations

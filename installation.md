@@ -1,6 +1,10 @@
-# Installation
+---
+title: Installing Nova 3
+description: Learn how to get Nova 3 up and running.
+layout: docs
+---
 
-Learn how to get Nova 3 up and running.
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 
@@ -8,7 +12,7 @@ Learn how to get Nova 3 up and running.
 
 Nova 3 has a few requirements you should be aware of before installing:
 
-- PHP 8.0 or higher
+- PHP 8.1 or higher
 - MySQL 8.0 or higher
 - Fileinfo PHP extension
 - JSON PHP Extension
@@ -81,7 +85,7 @@ If your site is on a server running Apache, you'll need to check with your host 
 
 You can then create a file named `.htaccess` (the period at the beginning is important) and paste the following code in:
 
-```apache
+```apacheconf
 Options +FollowSymLinks -Indexes
 RewriteEngine On
 

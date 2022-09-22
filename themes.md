@@ -1,7 +1,0 @@
-# Themes
-
-## Introduction
-
-## Structure
-
-## Conventions

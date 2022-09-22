@@ -1,7 +1,0 @@
-# Extensions
-
-## Introduction
-
-## Structure
-
-## Conventions

@@ -1,12 +1,16 @@
-# Upgrade Guide
+---
+title: Upgrade guide
+description: Upgrading Nova to the latest version.
+layout: docs
+---
 
-Upgrading Nova to the latest version.
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 
-:::note Before you start
-Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/3.0/backing-up-nova) on backing up Nova.
-:::
+{% callout title="Before you start" %}
+Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/3.0/resources/backing-up-nova) on backing up Nova.
+{% /callout %}
 
 ## What you'll need
 

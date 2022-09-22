@@ -1,6 +1,10 @@
-# Where The $#@! Is It?
+---
+title: Where The $#@! Is It?
+description: Find out where everything moved to in Nova 3.
+layout: docs
+---
 
-Find out where everything moved to in Nova 3.
+{% $markdoc.frontmatter.description %} {% .lead %}
 
 ---
 
