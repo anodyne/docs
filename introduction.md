@@ -9,13 +9,13 @@ layout: docs
 
 {% quick-links %}
 
-{% quick-link title="Installation" icon="installation" href="/docs/2.7/installation" description="Step-by-step guide to installing Nova on your server." /%}
+{% quick-link title="Installation" icon="installation" href="/docs/3.0/installation" description="Step-by-step guide to installing Nova on your server." /%}
 
-{% quick-link title="Core concepts" icon="presets" href="/docs/2.7/directory-structure" description="Learn Nova's inner workings and how to work with it." /%}
+{% quick-link title="Core concepts" icon="presets" href="/docs/3.0/core-concpets/directory-structure" description="Learn Nova's inner workings and how to work with it." /%}
 
-{% quick-link title="MODs" icon="plugins" href="/docs/2.7/mods/extensions" description="Extend Nova with third-party MODs or write your own." /%}
+{% quick-link title="Extensions" icon="plugins" href="/docs/3.0/extensions/overview" description="Extend Nova with third-party extensions or write your own." /%}
 
-{% quick-link title="Skinning" icon="theming" href="/docs/2.7/skins/overview" description="Learn to easily skin Nova's visual design to fit your game." /%}
+{% quick-link title="Themeing" icon="theming" href="/docs/3.0/themes/overview" description="Learn to easily theme Nova's visual design to fit your game." /%}
 
 {% /quick-links %}
 
