@@ -22,6 +22,10 @@ Before you get started updating Nova, make sure you have the following things re
 
 ## Updating Nova
 
+{% callout title="Upgrading to Nova 2.7" %}
+If you are upgrading from a version of Nova prior to 2.7.0, you will need to use the [Nova 2.7 Upgrade Guide](/docs/2.7/upgrade-guide-27). For all other future updates to Nova 2.7, you will be able to use the below process.
+{% /callout %}
+
 ### Step 1: Rename the Nova directory
 
 Once you've finished backing up your site (because you already did that, right?), rename the `nova` directory to `nova_old` on your server. (This ensures that if the update goes awry you still have a copy of the working Nova core from before you attempted the update.)
@@ -65,6 +69,10 @@ For example, a site running Nova version 2.3.2 would read:
 - `sys_version_major`: 2
 - `sys_version_minor`: 3
 - `sys_version_update`: 2
+
+### v2.7 from v2.6.x
+
+If you are upgrading from a version of Nova prior to 2.7.0, you will need to use the [Nova 2.7 Upgrade Guide](/docs/2.7/upgrade-guide-27). For all other future updates to Nova 2.7, you will be able to use the above process.
 
 ### v2.6 from v2.5.x
 
