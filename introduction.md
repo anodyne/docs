@@ -11,7 +11,7 @@ layout: docs
 
 {% quick-link title="Installation" icon="installation" href="/docs/2.6/installation" description="Step-by-step guide to installing Nova on your server." /%}
 
-{% quick-link title="Architecture guide" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
+{% quick-link title="Core concepts" icon="presets" href="/docs/2.6/directory-structure" description="Learn Nova's inner workings and how to work with it." /%}
 
 {% quick-link title="MODs" icon="plugins" href="/docs/2.6/mods/extensions" description="Extend Nova with third-party MODs or write your own." /%}
 
