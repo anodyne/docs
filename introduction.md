@@ -3,6 +3,7 @@ title: Meet Nova
 pageTitle: Nova 3.0 - Painless RPG Management
 description: An open-source content management system designed for managing and playing online text-based role-playing games.
 layout: docs
+homePage: true
 ---
 
 {% $markdoc.frontmatter.description %} {% .lead %}
