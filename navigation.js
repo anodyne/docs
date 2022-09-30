@@ -69,6 +69,7 @@ module.exports = {
                 { title: 'Versioning', href: `${urlPrefix}/resources/versioning` },
                 { title: 'License agreement', href: `${urlPrefix}/resources/license-agreement` },
                 { title: 'Contributors', href: `${urlPrefix}/resources/contributors` },
+                { title: 'Contribution guide', href: `${urlPrefix}/resources/contribution-guide` },
             ],
         },
     ]
