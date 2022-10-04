@@ -20,11 +20,7 @@ For the purposes of this walkthrough, we are assuming the process is functioning
 
 ## Applying to a game
 
-To apply to the game, access the Join Application by navigating to the game's home or main page, and then selecting "Join" from the sidebar.
-![Joining from main page](/images/docs/2.7/using-characters/join-main.png)
-
-Alternatively, you can also access the Join Application by navigating to the game's personnel page, and then selecting "Join" from the sidebar.
-![Joining from manifest](/images/docs/2.7/using-characters/join-manifest.png)
+To apply to the game, access the Join Application by navigating to the game's home or main page, and then selecting "Join" from the sidebar. Alternatively, you can also access the Join Application by navigating to the game's personnel page, and then selecting "Join" from the sidebar.
 
 You will be taken to a preliminary screen, containing information and disclaimers that you will need to read and accept prior to joining. Nova's default disclaimer contains generic rules, regulations, and a COPPA disclaimer to comply with United States law. In order to apply to the game, you will need to accept the conditions by clicking the **Agree** button.
 
@@ -57,11 +53,7 @@ If you didn't receive an email from the website, there are three possible reason
 
 ## Editing your character bio
 
-As your time on the game progresses, you may desire to edit your character's bio in order to keep it up to date. To do so, you can access your bio via the game's Personnel page. If you are logged in, you will see a link on your bio to edit your character.
-![Edit bio](/images/docs/2.7/using-characters/edit-character.png)
-
-Alternatively, you can access any of your character bios from the Dashboard. Simply click the Dashboard icon at the top of the page.
-![Dashboard](/images/docs/2.7/using-characters/dashboard.png)
+As your time on the game progresses, you may desire to edit your character's bio in order to keep it up to date. To do so, you can access your bio via the game's Personnel page. If you are logged in, you will see a link on your bio to edit your character. Alternatively, you can access any of your character bios from the Dashboard. Simply click the Dashboard icon at the top of the page.
 
 Make any adjustments to your bio and click submit at the bottom of the page.
 
@@ -69,14 +61,14 @@ You can also add image(s) to your character, such as an avatar to give the other
 
 1. Select the **Images** tab.
 2. Click on **Upload Images**.
-    ![Upload Images](/images/docs/2.7/using-characters/image-upload.png)
+    {% screenshot src="/images/docs/2.7/using-characters/image-upload.png" alt="upload images" /%}
 3. Upload your image(s) one at a time, being sure to select **Mission Image** as the Image Type.
-    ![Upload Character Images](/images/docs/2.7/using-characters/image-choose.png)
+    {% screenshot src="/images/docs/2.7/using-characters/image-choose.png" alt="upload character images" /%}
 4. Return to your character bio and select "Edit Character".
 5. Select the **Images** tab.
 6. Select the **Available Images** tab.
 7. Locate your image(s) and click **Select Image**
-    ![Select Image](/images/docs/2.7/using-characters/image-use.png)
+    {% screenshot src="/images/docs/2.7/using-characters/image-use.png" alt="use uploaded character images" /%}
 8. Return to the **Character Images** tab and arrange your images in any order. Click **Update**.
 9. Click on the **Character** tab.
 10. Click **Submit** at the bottom of the form.
@@ -89,8 +81,7 @@ Unlike the application process, support characters are often immediately made av
 
 Some games will allow their players to add secondary characters. These characters, often known as Non-Player Characters *(NPC)* or Player-Controlled Non-Player Characters *(PNPC)* can allow players to "flesh out" departments or environments, especially if characters are available only in small numbers.
 
-Any player can create a secondary character by accessing Nova's control panel and locating **Create Character** under the *Characters* submenu.
-![Characters submenu](/images/docs/2.7/using-characters/create-location.png)
+Any player can create a secondary character by accessing Nova's control panel and locating **Create Character** under the *Characters* submenu in the sidebar navigation.
 
 Select whether or not the new character will be a Playing or Non-Playing Character. The default selection is Non-Playing Character as most gaming organizations have strict requirements regarding qualifications for player characters. Enter in all appropriate information for your new character, along with selecting an applicable rank and position, and hit **Submit**.
 
@@ -106,14 +97,16 @@ To assign a secondary character to a user, you must have at least the *Basic Adm
 If you do not have this access, you will have to contact a member of the game's management to have the secondary character assigned to you.
 {% /callout %}
 
-To assign a secondary character to a player, access Nova's control panel and locate the **Link Characters** option under the *User* subheader.
-![Link Characters](/images/docs/2.7/using-characters/link-location.png)
+To assign a secondary character to a player, access Nova's control panel and locate the **Link Characters** option under the *User* subheader in the navigation sidebar.
 
-Select the username from the provided list.
-![User List](/images/docs/2.7/using-characters/link-selectuser.png)
+Select the user from the provided list.
+
+{% screenshot src="/images/docs/2.7/using-characters/link-selectuser.png" alt="select user list" /%}
 
 Click on the *Non-playing Characters* tab and locate the character you wish to add to the user's account. Press the green `+` button to add the character.
-![Add Character](/images/docs/2.7/using-characters/link-assign.png)
+
+{% screenshot src="/images/docs/2.7/using-characters/link-assign.png" alt="add charcter" /%}
 
 The character is now connected to the appropriate user. In order for the user to see the character within their account, they must log out and log back into the site.
-![Secondary Character connected](/images/docs/2.7/using-characters/link-finished.png)
+
+{% screenshot src="/images/docs/2.7/using-characters/link-finished.png" alt="secondary character connected" /%}
