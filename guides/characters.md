@@ -62,7 +62,7 @@ You can also add image(s) to your character, such as an avatar to give the other
 1. Select the **Images** tab.
 2. Click on **Upload Images**.
     {% screenshot src="/images/docs/2.7/using-characters/image-upload.png" alt="upload images" /%}
-3. Upload your image(s) one at a time, being sure to select **Mission Image** as the Image Type.
+3. Upload your image(s) one at a time, being sure to select **Character Image** as the Image Type.
     {% screenshot src="/images/docs/2.7/using-characters/image-choose.png" alt="upload character images" /%}
 4. Return to your character bio and select "Edit Character".
 5. Select the **Images** tab.
