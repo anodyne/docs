@@ -9,7 +9,7 @@ layout: docs
 ---
 
 {% callout title="Before you start" %}
-Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/2.6/resources/backing-up-nova) on backing up Nova.
+Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/2.7/resources/backing-up-nova) on backing up Nova.
 {% /callout %}
 
 ## What you'll need
@@ -21,6 +21,10 @@ Before you get started updating Nova, make sure you have the following things re
 - A solid, recent backup of your site
 
 ## Updating Nova
+
+{% callout title="Upgrading to Nova 2.7" %}
+If you are upgrading from a version of Nova prior to 2.7.0, you will need to use the [Nova 2.7 Upgrade Guide](/docs/2.7/upgrade-guide-27). For all other future updates to Nova 2.7, you will be able to use the below process.
+{% /callout %}
 
 ### Step 1: Rename the Nova directory
 
@@ -52,7 +56,7 @@ If you are upgrading from a version of Nova prior to 2.3.2, please reach out to 
 
 If, when starting to update, your installer won't work, this may be because your database is not registering the correct version of your Nova install (or any version whatsoever). You can verify your version by logging into your Nova site, accessing Nova's control panel, and selecting **System & Versions** from the bottom of the page.
 
-![System Versions](/images/docs/2.6/upgrade-guide/versions.png)
+![System Versions](/images/docs/2.7/upgrade-guide/versions.png)
 
 If your database version is `0.0.0` or otherwise doesn't match your Files Version, you may need to update your database to match the version of Nova you are upgrading from. In order to update that, you’ll need to login to your database with phpMyAdmin (via your web host's control panel).
 
@@ -66,23 +70,27 @@ For example, a site running Nova version 2.3.2 would read:
 - `sys_version_minor`: 3
 - `sys_version_update`: 2
 
+### v2.7 from v2.6.x
+
+If you are upgrading from a version of Nova prior to 2.7.0, you will need to use the [Nova 2.7 Upgrade Guide](/docs/2.7/upgrade-guide-27). For all other future updates to Nova 2.7, you will be able to use the above process.
+
 ### v2.6 from v2.5.x
 
-Nova 2.6 introduced [Events](/docs/2.6/mods/events) and [Extensions](/docs/2.6/mods/extensions), two powerful features that unlock easier ways to modify a Nova site as well as several incredibly powerful ways to expand upon the base installation. In addition to following the normal update process, Nova 2.6 includes additional changes you’ll need to make for the new event and extension systems to work correctly.
+Nova 2.6 introduced [Events](/docs/2.7/mods/events) and [Extensions](/docs/2.7/mods/extensions), two powerful features that unlock easier ways to modify a Nova site as well as several incredibly powerful ways to expand upon the base installation. In addition to following the normal update process, Nova 2.6 includes additional changes you’ll need to make for the new event and extension systems to work correctly.
 
 #### Config file
 
-Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/config/extensions.php) into a new file called `extensions.php` and place it in the `application/config` directory on your server.
+Copy the contents of [this file](https://github.com/anodyne/nova/blob/2.6/application/config/extensions.php) into a new file called `extensions.php` and place it in the `application/config` directory on your server.
 
 #### Helper
 
-Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/helpers/extension_helper.php) into a new file called `extension_helper.php` and place it in the `application/helpers` directory on your server.
+Copy the contents of [this file](https://github.com/anodyne/nova/blob/2.6/application/helpers/extension_helper.php) into a new file called `extension_helper.php` and place it in the `application/helpers` directory on your server.
 
 #### Libraries
 
-Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/libraries/Extension.php) into a new file called `Extension.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
+Copy the contents of [this file](https://github.com/anodyne/nova/blob/2.6/application/libraries/Extension.php) into a new file called `Extension.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
 
-Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/libraries/Event.php) into a new file called `Event.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
+Copy the contents of [this file](https://github.com/anodyne/nova/blob/2.6/application/libraries/Event.php) into a new file called `Event.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
 
 ### v2.5 from v2.4.x
 
