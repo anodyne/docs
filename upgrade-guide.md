@@ -56,7 +56,7 @@ If you are upgrading from a version of Nova prior to 2.3.2, please reach out to 
 
 If, when starting to update, your installer won't work, this may be because your database is not registering the correct version of your Nova install (or any version whatsoever). You can verify your version by logging into your Nova site, accessing Nova's control panel, and selecting **System & Versions** from the bottom of the page.
 
-![System Versions](/images/docs/2.7/upgrade-guide/versions.png)
+{% screenshot src="/images/docs/2.7/upgrade-guide/versions.png" alt="system versions" /%}
 
 If your database version is `0.0.0` or otherwise doesn't match your Files Version, you may need to update your database to match the version of Nova you are upgrading from. In order to update that, you’ll need to login to your database with phpMyAdmin (via your web host's control panel).
 
