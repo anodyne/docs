@@ -21,11 +21,11 @@ Before you start contributing to Nova's documentation, there are a few things yo
 
 The first thing you'll need to do to get started contributing documentation to Nova is get a copy of the documentation on your personal Github account. This is known as forking a repository. To fork the documentation, navigate to the [documentation repo](https://github.com/anodyne/docs) and use the **Fork** button on the right side of the repository header.
 
-![Starting to fork](/images/docs/2.7/contribution-guide/fork-start.png)
+{% screenshot src="/images/docs/2.7/contribution-guide/fork-start.png" alt="starting to fork" /%}
 
 You'll be presented with a screen where you can enter some details for forking the repository to your own account. You should uncheck the option to only copy the `master` branch as you'll need access to additional branches in the repo.
 
-![Fork details](/images/docs/2.7/contribution-guide/fork-screen.png)
+{% screenshot src="/images/docs/2.7/contribution-guide/fork-screen.png" alt="fork details screen" /%}
 
 Once you've forked the repository, you'll have a copy of it in your own account. This allows you to make changes without the need for any access or permissions to the Anodyne version of the repository. When you want to contribute changes, you'll be able to submit a pull request back to the Anodyne repository.
 
@@ -41,7 +41,7 @@ By far the easiest way to work with your forked repository is through [Github's 
 
 To get started with Github's web-based editor, simply navigate to your forked version of the repository and press the `.` key (making sure you've selected the correct branch in your repo). After a few moments, you'll be presented with the web-based editor where you can navigate all the files, make your changes, and save them.
 
-![Web-based editor](/images/docs/2.7/contribution-guide/web-based-editor.png)
+{% screenshot src="/images/docs/2.7/contribution-guide/web-based-editor.png" alt="github web-based editor" /%}
 
 ## Making your changes
 
