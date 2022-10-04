@@ -80,17 +80,17 @@ Nova 2.6 introduced [Events](/docs/2.7/mods/events) and [Extensions](/docs/2.7/m
 
 #### Config file
 
-Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/config/extensions.php) into a new file called `extensions.php` and place it in the `application/config` directory on your server.
+Copy the contents of [this file](https://github.com/anodyne/nova/blob/2.6/application/config/extensions.php) into a new file called `extensions.php` and place it in the `application/config` directory on your server.
 
 #### Helper
 
-Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/helpers/extension_helper.php) into a new file called `extension_helper.php` and place it in the `application/helpers` directory on your server.
+Copy the contents of [this file](https://github.com/anodyne/nova/blob/2.6/application/helpers/extension_helper.php) into a new file called `extension_helper.php` and place it in the `application/helpers` directory on your server.
 
 #### Libraries
 
-Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/libraries/Extension.php) into a new file called `Extension.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
+Copy the contents of [this file](https://github.com/anodyne/nova/blob/2.6/application/libraries/Extension.php) into a new file called `Extension.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
 
-Copy the contents of [this file](https://raw.githubusercontent.com/anodyne/nova/2.6/master/application/libraries/Event.php) into a new file called `Event.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
+Copy the contents of [this file](https://github.com/anodyne/nova/blob/2.6/application/libraries/Event.php) into a new file called `Event.php` and place it in the `application/libraries` directory on your server. (Note: this filename is case-sensitive.)
 
 ### v2.5 from v2.4.x
 
