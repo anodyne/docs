@@ -23,9 +23,6 @@ This is, most likely, one of your first forays into Nova's [controllers](/docs/2
 To start, we're going to open `application/controllers/Sim.php`. This is the controller that handles all of the pages in the sim section. When you first open the file, you'll notice that it's almost empty. The core sim pages are actually stored in a file tucked away in Nova's core. Since we're not interested in modifying those, we're going to add a new method to this class right after the comment about adding your own methods.
 
 ```php
-/**
- * Put your own methods below this...
- */
 public function allawards()
 {
   $this->_regions['content'] = Location::view('sim_allawards', $this->skin, 'main', false);
