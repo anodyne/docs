@@ -48,6 +48,7 @@ module.exports = {
                 { title: 'Templates', href: `${urlPrefix}/skins/templates` },
                 { title: 'CSS', href: `${urlPrefix}/skins/css` },
                 { title: 'Tips and tricks', href: `${urlPrefix}/skins/tips` },
+                { title: 'Customization', href: `${urlPrefix}/skins/customization` },
             ],
         },
         {
