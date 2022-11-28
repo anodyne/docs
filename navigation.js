@@ -49,6 +49,7 @@ module.exports = {
                 { title: 'CSS', href: `${urlPrefix}/skins/css` },
                 { title: 'Tips and tricks', href: `${urlPrefix}/skins/tips` },
                 { title: 'Customization', href: `${urlPrefix}/skins/customization` },
+                { title: 'Using Tailwind CSS', href: `${urlPrefix}/skins/tailwind` },
             ],
         },
         {

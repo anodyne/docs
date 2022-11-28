@@ -98,3 +98,7 @@ Of course it goes without saying, don't delete anything that you may need to acc
 ### Step 7: Update default skins (optional)
 
 We've given both the Pulsar and Titan skins a much needed visual refresh. If you're using either skin and are happy with them, you don't need to replace them, but if you'd like to use the updated versions, you can delete the `default` and `titan` directories from `application/views` and replace them with the versions in the Nova zip archive.
+
+{% callout title="A note about existing skins" %}
+We've done everything we can to limit any impact to existing skins with this release. Even still, there have been changes to core files that could cause small spacing issues on some pages.
+{% /callout %}

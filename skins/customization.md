@@ -1,6 +1,6 @@
 ---
 title: Skinning Nova - Customizing
-description: Several of Anodyne's Nova skins allow for personalization.
+description: Nova's bundled skins now allow for more personalization.
 layout: docs
 ---
 
@@ -16,7 +16,7 @@ If you want to change the logo used in the header of the skin or at the top of t
 
 ## Changing the skin colors
 
-Sometimes you don't need to make wholesale changes to a skin and just want to update the colors. The Pulsar and Titan skins leverage CSS variables to make it simple to change the different colors used throughout the skins.
+Sometimes you don't need to make wholesale changes to a skin and just want to update the colors. The Pulsar and Titan skins leverage CSS variables to make it simpler to change the colors used throughout the skins.
 
 ### Generating a new color palette
 
@@ -49,10 +49,10 @@ Once you have a color palette, you'll need to [convert](https://www.rapidtables.
 The skin will not display correctly if you skip this step!
 {% /callout %}
 
-- Copy the `50` hex value
+- Copy the `50` hex value (`#f0f4fe` in the example above)
 - Paste into the converter
 - Convert to RGB
-- Take the 3 values and put them next to the hex value, separated by commas, for easy copying later
+- Take the 3 values and put them next to the hex value, separated by commas, for easy copying later in the text document you created
 
 ```json
 'royal-blue': {
@@ -63,9 +63,9 @@ The skin will not display correctly if you skip this step!
 
 ### Update the CSS variables
 
-Open `dist/css/colors.css` of the Pulsar or Titan skins. In there, you'll see a complete list of the CSS color variables. We use a primary color and then colors for different states (success, danger, warning, and info). Do not change the name of the CSS variable as that will break the skins.
+Open `dist/css/colors.css` of the Pulsar or Titan skins. In there, you'll see a complete list of the CSS color variables. We use a primary color and then colors for different states (success, danger, warning, and info). Do not change the name of the CSS variables as that will break the skins.
 
-To finish the process, simply go down the list and replace the values with the comma-separate RGB values. For example, you'll take the RGB value for the `50` item and paste it into the `100` value. After you've done the first value, it should look something like this:
+To finish the process, go down the list and replace the values with the comma-separate RGB values. For example, you'll take the RGB value for the `50` item and paste it into the `100` value. After you've done the first value, it should look something like this:
 
 ```css
 :root {
