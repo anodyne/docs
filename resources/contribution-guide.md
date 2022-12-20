@@ -4,10 +4,6 @@ description: So you want to contribute to Nova?
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 There are plenty of people in the community who are eager to contribute to Nova in some way, but don't feel they have the PHP chops to do anything with Nova proper. Never fear, there's plenty of chances to help out through maintaining this documentation. We want this documentation to grow and evolve over time and the community can help with that goal. If you're interested in helping make the documentation the best it can be, this is your chance to contribute.
 
 ## What you'll need

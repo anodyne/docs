@@ -4,10 +4,6 @@ description: Nova provides a robust extensions system for MODs.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 {% callout title="Experimental feature" type="warning" %}
 This is an experimental feature, so there could be unexpected issues when using this feature.
 {% /callout %}

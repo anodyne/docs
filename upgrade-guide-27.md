@@ -4,10 +4,6 @@ description: Upgrading your site to Nova 2.7.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 The update process for moving to Nova 2.7 is a more involved and manual process than previous versions of Nova 2. Unfortunately this couldn't be avoided due to upgrading CodeIgniter (the underlying framework Nova is built on) to version 3. The process explained below only needs to happen one time when you first upgrade from any version prior to 2.7.0. After you've gone through this upgrade, any future updates will use the normal update process.
 
 {% callout title="Before you start" %}
@@ -29,7 +25,7 @@ Before you get started updating Nova, make sure you have the following things re
 
 Under normal circumstances, we don't ask Game Masters to update any files in the `application` directory. However, the update to CodeIgniter 3 required that many of the files in the the `application` directory be updated.
 
-To start, rename the following directories:
+To start, rename the following directories in the `application` directory:
 
 - `config` to `config_backup`
 - `controllers` to `controllers_backup`
@@ -37,13 +33,23 @@ To start, rename the following directories:
 - `libraries` to `libraries_backup`
 - `models` to `models_backup`
 
-With the directories renamed, you can upload the new copies of the following directories from the `application` directory in the Nova zip archive:
+Next, rename the following files at the root directory:
+
+- `index.php` to `index_backup.php`
+- `message.php` to `message_backup.php`
+
+With the directories and files renamed, you can now upload the new copies of the following directories from the `application` directory in the Nova zip archive to your own `application` directory:
 
 - `config`
 - `controllers`
 - `core`
 - `libraries`
 - `models`
+
+Next, you can upload the following files from the Nova zip archive to your own root directory:
+
+- `index.php`
+- `message.php`
 
 {% callout title="A note about previous modifications" %}
 If you have made any modifications to any of the files inside these directories, you will need to re-apply the changes to the new versions of the files. **Do not** simply copy the old file back into the new directory as it could break things.
@@ -65,29 +71,37 @@ Over the years we've seen countless problems with simply trying to overwrite the
 
 With the `nova` directory renamed to `nova_backup`, you can now upload the `nova` directory from the zip archive you downloaded from the Anodyne site. (This will give you the code for the latest version.)
 
+{% callout title="You may be redirected" %}
+**Note:** if you navigate to your main site after uploading the new files, you will be redirected to the URL: `message.php?type=nova27`. This page will tell you that an update is required. We've done this to avoid Nova throwing an error due to some of the changes that were made. This is expected behavior. Clicking the button on that page will take you to the update process.
+{% /callout %}
+
 ### Step 4: Run the update
 
-Navigate to `{your-site}/index.php/install` in your browser and you'll be guided through the update process. For this update, you'll be prompted to configure your database connection again. Once the update process is complete, you'll be directed  back to your site and will be ready to use Nova again.
+Navigate to `{your-site}/index.php/install` in your browser and you'll be guided through the update process. For this update, you'll be prompted to configure your database connection again. After completing the database config file wizard, you'll be able to run the update. Once the update process is complete, you'll be directed back to your site and will be ready to use Nova again.
 
-### Step 5: Update the session driver
+### Step 5: Update the Sendmail path
 
 The way that sessions (data about the current visitor) are handled was completely re-written in CodeIgniter 3. Due to these changes, Nova 2.7 has to ship with the session driver set to `files` instead of `database`. There is no way around this due to how pervasive sessions are in web applications. Doing this prevents unrecoverable errors from happening the moment a user hits the site.
 
-This change, however, prevents Nova from being able to easily pull who is currently online. In order to fix this issue, you will need to make a change to the main config file located at `application/config/config.php`. Around line 386, you'll need to make the following change:
+This change, however, prevents Nova from being able to easily pull who is currently online. In order to fix this issue, you will need to make a change to the main config file located at `application/config/config.php`. Add the below line at the end of the file to change the session driver from files to database:
 
 ```php
-$config['sess_driver'] = 'files';  // [tl! -- **]
 $config['sess_driver'] = 'database';  // [tl! ++ **]
-$config['sess_cookie_name'] = 'ci_session';
-$config['sess_samesite'] = 'Lax';
-$config['sess_expiration'] = 7200;
-$config['sess_save_path'] = 'sessions';
-$config['sess_match_ip'] = false;
-$config['sess_time_to_update'] = 300;
-$config['sess_regenerate_destroy'] = false;
+$config['mailpath'] = '/usr/sbin/sendmail';
+$config['mailpath'] = '/usr/sbin/sendmail -t -i';
 ```
 
-### Step 6: Remove the backup directories
+### Step 6: Update the session driver
+
+The way that sessions (data about the current visitor) are handled was completely re-written in CodeIgniter 3. Due to these changes, Nova 2.7 has to ship with the session driver set to `files` instead of `database`. There is no way around this due to how pervasive sessions are in web applications. Doing this prevents unrecoverable errors from happening the moment a user hits the site.
+
+This change, however, prevents Nova from being able to easily pull who is currently online. In order to fix this issue, you will need to make a change to the main config file located at `application/config/config.php`. Add the below line at the end of the file to change the session driver from files to database:
+
+```php
+$config['sess_driver'] = 'database';  // [tl! ++ **]
+```
+
+### Step 7: Remove the backup directories
 
 With the update complete and your site back up and running, you can now delete the `nova_backup` directory from your server as well as all of the backup directories in your `application` folder.
 
@@ -95,7 +109,7 @@ With the update complete and your site back up and running, you can now delete t
 Of course it goes without saying, don't delete anything that you may need to access later. If you're not sure, you can always download the directories to your computer for safe keeping.
 {% /callout %}
 
-### Step 7: Update default skins (optional)
+### Step 8: Update default skins (optional)
 
 We've given both the Pulsar and Titan skins a much needed visual refresh. If you're using either skin and are happy with them, you don't need to replace them, but if you'd like to use the updated versions, you can delete the `default` and `titan` directories from `application/views` and replace them with the versions in the Nova zip archive.
 

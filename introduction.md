@@ -6,17 +6,15 @@ layout: docs
 homePage: true
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
 {% quick-links %}
 
 {% quick-link title="Installation" icon="installation" href="/docs/2.7/installation" description="Step-by-step guide to installing Nova on your server." /%}
 
-{% quick-link title="Core concepts" icon="presets" href="/docs/2.7/directory-structure" description="Learn Nova's inner workings and how to work with it." /%}
+{% quick-link title="Core concepts" icon="presets" href="/docs/2.7/directory-structure" description="Learn about Nova and how to work with it." /%}
 
-{% quick-link title="MODs" icon="plugins" href="/docs/2.7/mods/extensions" description="Extend Nova with third-party MODs or write your own." /%}
+{% quick-link title="MODs" icon="plugins" href="/docs/2.7/mods/extensions" description="Extend Nova with third-party or your own MODs." /%}
 
-{% quick-link title="Skinning" icon="theming" href="/docs/2.7/skins/overview" description="Learn to easily skin Nova's visual design to fit your game." /%}
+{% quick-link title="Skinning" icon="theming" href="/docs/2.7/skins/overview" description="Learn to skin Nova's design to fit your game." /%}
 
 {% /quick-links %}
 
@@ -29,8 +27,6 @@ When it comes to building a website, there's no shortage of options.
 - Reach for an online site builder like Wix or Squarespace
 
 While these approaches are all valid and offer a lot of tools for building your game's website, we believe Nova is the best choice because it was designed from the ground up for the things you'll need to manage and play your game.
-
----
 
 ## All the tools you need
 
@@ -70,7 +66,7 @@ Today Nova is trusted by hundreds of games across the simming community. Players
 
 On top of that, Nova is open-source software and built on top of CodeIgniter, a trusted framework for building dynamic websites. Due to its open-source nature developers have been able to create custom MODs, skins, and other features that many in the community rely on as much as the core system. Further, [AnodyneXtras](https://xtras.anodyne-productions.com) has provided a streamlined avenue for discovering and downloading MODs and skins to customize sites to match the spirit and style of the game.
 
-## Who is this documentation for?
+## Who's this documentation for?
 
 This documentation is a labor of love. At the start of 2021 [we](/docs/2.7/resources/contributors) embarked on a mission to vastly improve Nova's documentation. Instead of trying to fix what existed already, we've started over and re-written it from scratch. In the process, we've focused on making sure there's something here for people of all experience and skill levels.
 

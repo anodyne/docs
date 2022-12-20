@@ -4,10 +4,6 @@ description: A primer on how Nova skin CSS files are organized.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 {% callout title="Learning CSS" %}
 CSS is at the heart of making a skin look the way you want. Not sure what CSS is or how to write it? Don't worry, we have some [helpful links](/docs/2.7/resources/helpful-links#learning-css) with resources for learning CSS to master customizing your skins in no time.
 {% /callout %}

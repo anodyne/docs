@@ -4,10 +4,6 @@ description: Sometimes, the built-in pages in Nova won't be enough and you need 
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 Creating pages can be as simple or as complex as you would like for it to be. No matter the level of difficulty, each sim always wishes to convey a different set of information for its players. For example, you may wish to share a page that displays the full rank hierarchy for an organization, or a set of uniforms that characters would wear.
 
 For the purposes of this example, we want to proudly share some awards that have been bestowed upon our game from our community.

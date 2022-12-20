@@ -4,10 +4,6 @@ description: Learn how character creation works in Nova.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 If the core of any role playing game is the storytelling, then the supports for that core are the character featured within. This guide will not tell you how to create engaging characters, as that function is unique to each game and its management style. What we will do is instruct you on how to use Nova's dynamic forms by:
 
 1. Applying to a game

@@ -4,10 +4,6 @@ description: Learn about Nova's most powerful tools - libraries.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 ## What is a library?
 
 Libraries are simply PHP classes that can be used for whatever you need them to be used for.

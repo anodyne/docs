@@ -4,10 +4,6 @@ description: Learn how to configure Nova 2 from the simple to the advanced.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 ## Nova
 
 In most cases, Nova's configuration happens from within the system itself. For everything else, configuration is handled through config files found in the `application/config` directory. (All references on this page to specific config files will be for files found in this directory.)

@@ -4,10 +4,6 @@ description: A primer on how Nova templates structure your skin.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 Template files provide the basic HTML structure of any skin. If your skin requires the DOM to be in a specific order or you need things moved around for your styles, this is where those changes would happen. Content and code used within template files appear throughout a given Nova section and are not specific to any one page of that section.
 
 ## Location

@@ -4,10 +4,6 @@ description: Understand how Nova handles email.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 ## How Nova sends emails
 
 Unlike many areas in Nova where we leverage built-in CodeIgniter libraries, for email we use a custom library implementing [SwiftMailer](https://swiftmailer.symfony.com/docs/introduction.html) for sending all emails from Nova. We've built this in such a way that it should mirror the way that CodeIgniter handles email.

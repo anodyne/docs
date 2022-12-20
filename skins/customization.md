@@ -4,10 +4,6 @@ description: Nova's bundled skins now allow for more personalization.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 The included Pulsar and Titan skins released with Nova 2.7 were given a much-needed visual refresh. In addition, there are some customization options that make it easier to personalize your site.
 
 ## Changing the header logo
