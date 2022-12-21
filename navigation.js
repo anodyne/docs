@@ -46,7 +46,7 @@ module.exports = {
             links: [
                 { title: "What's new in Nova 3?", href: `${urlPrefix}/resources/whats-new` },
                 { title: 'Where is it?', href: `${urlPrefix}/resources/where-is-it` },
-                { title: 'Versioning', href: `${urlPrefix}/resources/versioning` },
+                { title: 'Version numbers', href: `${urlPrefix}/resources/version-numbers` },
                 { title: 'License agreement', href: `${urlPrefix}/resources/license-agreement` },
                 { title: 'Contributors', href: `${urlPrefix}/resources/contributors` },
             ],
