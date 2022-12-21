@@ -66,7 +66,7 @@ module.exports = {
                 { title: 'Helpful links', href: `${urlPrefix}/resources/helpful-links` },
                 { title: 'Backing up Nova', href: `${urlPrefix}/resources/backing-up-nova` },
                 { title: 'Moving your site', href: `${urlPrefix}/resources/moving-site` },
-                { title: 'Versioning', href: `${urlPrefix}/resources/versioning` },
+                { title: 'Version numbers', href: `${urlPrefix}/resources/version-numbers` },
                 { title: 'License agreement', href: `${urlPrefix}/resources/license-agreement` },
                 { title: 'Contributors', href: `${urlPrefix}/resources/contributors` },
             ],
