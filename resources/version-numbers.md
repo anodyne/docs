@@ -36,6 +36,6 @@ As with all of our updates, we aim to include scripts to migrate data to the new
 
 If you're curious what version of Nova your site is running, you can find out by navigating to the **System & Versions** page which can be found at the bottom of the admin control panel navigation sidebar.
 
-In that page, you'll be shown what version of Nova your files are running, what version your database is running, and what version of CodeIgniter is being used.
+In that page, you'll be shown what version of Nova your files are running, what version your database is running, what version of CodeIgniter is being used, and what version of PHP your server is running.
 
 {% screenshot src="/images/docs/2.7/upgrade-guide/versions.png" alt="system versions" /%}
