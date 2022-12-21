@@ -4,10 +4,6 @@ description: Learn about Nova's posting system.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 ## What is a post?
 
 At the core of any online role-playing game are the myriad of stories the players want to explore. These stories (also called *Missions*) are told via a collection of posts. Unlike play-by-email or play-by-forum platforms which force users to write their portions alone, Nova's unique posting system allows multiple writers to collaborate with their storytelling.

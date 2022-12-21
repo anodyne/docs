@@ -4,10 +4,6 @@ description: Learn what Nova's version numbers mean for your site.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 Nova releases are guided by a principle known as [semantic versioning](http://semver.org). The goal of semantic versioning is to ensure that users know what to expect when a new version of software is released based solely on the version number itself.
 
 There are 3 components to a version number:

@@ -4,10 +4,6 @@ description: Learn about Nova's dynamic forms and how to get the most out of the
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 Nova's forms are an extremely powerful tool in Nova's arsenal, powering the templates used in the character creation process to providing information about the ship, station, or even cities that the game is set in. These customizable forms enable anyone to easily standardize what information should and shouldn't be collected and displayed to the game's players.
 
 There are four major forms currently provided in Nova:

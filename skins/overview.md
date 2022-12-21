@@ -4,10 +4,6 @@ description: Learn how to skin Nova to match the style and spirit of your game.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 A skin is the HTML, CSS, and JavaScript behind every Nova page. It provides the site with its basic structure and style. Skins can be found in the `application/views` directory.
 
 ## Where can I find skins?

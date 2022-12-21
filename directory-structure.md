@@ -4,10 +4,6 @@ description: A quick look at each of Nova's directories and root files.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 ## Root directory
 
 - `application`: This folder contains all of the configuration and customization files that Nova uses. If you want to make changes to Nova, this is where you'll end up doing most of your work to avoid situations with your changes being wiped out during an update.

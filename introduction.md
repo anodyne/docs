@@ -6,8 +6,6 @@ layout: docs
 homePage: true
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
 {% quick-links %}
 
 {% quick-link title="Installation" icon="installation" href="/docs/2.6/installation" description="Step-by-step guide to installing Nova on your server." /%}
@@ -29,8 +27,6 @@ When it comes to building a website, there's no shortage of options.
 - Reach for an online site builder like Wix or Squarespace
 
 While these approaches are all valid and offer a lot of tools for building your game's website, we believe Nova is the best choice because it was designed from the ground up for the things you'll need to manage and play your game.
-
----
 
 ## All the tools you need
 

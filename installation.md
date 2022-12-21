@@ -4,10 +4,6 @@ description: Learn how to get up and running with Nova 2.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 ## What you'll need
 
 Before you start with the installation process, there are a few things you'll want to make sure you have handy to expedite the installation process:

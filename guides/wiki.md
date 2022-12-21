@@ -4,10 +4,6 @@ description: Learn about Nova's built-in wiki and how to leverage it for your ga
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 No matter the genre, no matter the complexity or depth, every game has its own world to build. Some games may simply desire to have a place to showcase custom uniforms or share some brief information about the current mission settings. Others may create broad universes with volumes of information to aid the game's players with capturing the full scope of the world in which they are exploring.
 
 Nova's Wiki, powered by Thresher, enables any set of players to easily create, collaborate, and deploy the information they wish to share without having to possess any programming knowledge. Robust pages can be easily created and styled with a simple WYSIWYG (What You See Is What You Get) editor.

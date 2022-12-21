@@ -4,10 +4,6 @@ description: Learn about Nova's rank system and how to customize them.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 ## What are ranks?
 
 Many online RPGs attach a rank to characters to denote a certain status/hierarchy in-character. For example, a character in *Star Trek* could be a Lieutenant while a character in *Star Wars* might be a Jedi Knight and a character in *Firefly* could be a Civilian.

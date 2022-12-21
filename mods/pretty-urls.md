@@ -4,10 +4,6 @@ description: Out of the box, Nova includes a filename in the URL. Learn how to g
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 ## Apache
 
 If your server is running Apache (your web host will know if you don't), you can create a file named `.htaccess` on the server at the root of your site. The following configuration should work for most servers:

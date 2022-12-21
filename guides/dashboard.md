@@ -4,10 +4,6 @@ description: Learn more about how registered users can have quick access to thei
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 Each registered user, including site administrators, will have access to a dashboard when logged into Nova. The dashboard can be accessed by clicking on the Dashboard icon in the upper-most Nova menu, next to the Private Messages and Writing Control panel icons.
 ![Dashboard location](/images/docs/2.6/using-dashboard/dashboard-location.png)
 

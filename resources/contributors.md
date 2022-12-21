@@ -4,10 +4,6 @@ description: It takes a village. Meet ours.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 Significant effort has gone into the writing of these docs and the following individuals have contributed in various ways to their writing:
 
 - **greenfelt** - he seems to be in about every Discord server you're in and has helped write huge chunks of the documentation about using Nova

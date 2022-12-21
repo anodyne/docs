@@ -4,10 +4,6 @@ description: Get to know the heart and soul of Nova - controllers.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 ## What is a controller?
 
 Controllers are the heart of your application as they determine how requests from the browser are handled by Nova. A controller is simply a PHP class that is named in a way that can be associated with a URI. In fact, Nova's URI can provide some insightful information about what controller and method are being used for the page being viewed:

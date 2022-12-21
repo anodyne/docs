@@ -4,10 +4,6 @@ description: Learn more about genres, the foundational element of Nova's charact
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 One of Nova's defining features is the ability to craft any game according to any genre, including ones that we don't naturally provide installer packages for. So what goes in to a genre? There are a lot of pieces, but once you understand those pieces, you'll be well on your way to using genres to their full potential and maybe even creating your own genre installations!
 
 ## What genre is my site is using?
