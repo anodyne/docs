@@ -6,9 +6,9 @@ layout: docs
 
 The update process for moving to Nova 2.7 is a more involved and manual process than previous versions of Nova 2. Unfortunately this couldn't be avoided due to upgrading CodeIgniter (the underlying framework Nova is built on) to version 3. The process explained below only needs to happen one time when you first upgrade from any version prior to 2.7.0. After you've gone through this upgrade, any future updates will use the normal update process.
 
-{% callout title="Before you start" %}
+{% note title="Before you start" %}
 Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/2.7/resources/backing-up-nova) on backing up Nova.
-{% /callout %}
+{% /note %}
 
 ## What you'll need
 
@@ -51,29 +51,29 @@ Next, you can upload the following files from the Nova zip archive to your own r
 - `index.php`
 - `message.php`
 
-{% callout title="A note about previous modifications" %}
+{% note title="A note about previous modifications" %}
 If you have made any modifications to any of the files inside these directories, you will need to re-apply the changes to the new versions of the files. **Do not** simply copy the old file back into the new directory as it could break things.
-{% /callout %}
+{% /note %}
 
-{% callout title="Warning" type="warning" %}
+{% warning title="Warning" %}
 **Do not** copy the `database.php` file back into the config directory. Going through this guide will prompt you to enter your database credentials and re-create the database config file.
-{% /callout %}
+{% /warning %}
 
 ### Step 2: Rename the Nova directory
 
 Once you've finished backing up your site (because you already did that, right?), rename the `nova` directory to `nova_backup` on your server. (This ensures that if the update goes awry you still have a copy of the working Nova core from before you attempted the update.)
 
-{% callout title="Rename, don't overwrite" type="warning" %}
+{% warning title="Rename, don't overwrite" %}
 Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to rename the directory and upload a new copy.
-{% /callout %}
+{% /warning %}
 
 ### Step 3: Upload Nova
 
 With the `nova` directory renamed to `nova_backup`, you can now upload the `nova` directory from the zip archive you downloaded from the Anodyne site. (This will give you the code for the latest version.)
 
-{% callout title="You may be redirected" %}
+{% note title="You may be redirected" %}
 **Note:** if you navigate to your main site after uploading the new files, you will be redirected to the URL: `message.php?type=nova27`. This page will tell you that an update is required. We've done this to avoid Nova throwing an error due to some of the changes that were made. This is expected behavior. Clicking the button on that page will take you to the update process.
-{% /callout %}
+{% /note %}
 
 ### Step 4: Run the update
 
@@ -105,14 +105,14 @@ $config['sess_driver'] = 'database';  // [tl! ++ **]
 
 With the update complete and your site back up and running, you can now delete the `nova_backup` directory from your server as well as all of the backup directories in your `application` folder.
 
-{% callout title="Note" %}
+{% note title="Note" %}
 Of course it goes without saying, don't delete anything that you may need to access later. If you're not sure, you can always download the directories to your computer for safe keeping.
-{% /callout %}
+{% /note %}
 
 ### Step 8: Update default skins (optional)
 
 We've given both the Pulsar and Titan skins a much needed visual refresh. If you're using either skin and are happy with them, you don't need to replace them, but if you'd like to use the updated versions, you can delete the `default` and `titan` directories from `application/views` and replace them with the versions in the Nova zip archive.
 
-{% callout title="A note about existing skins" %}
+{% note title="A note about existing skins" %}
 We've done everything we can to limit any impact to existing skins with this release. Even still, there have been changes to core files that could cause small spacing issues on some pages.
-{% /callout %}
+{% /note %}

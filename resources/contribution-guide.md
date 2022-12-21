@@ -47,9 +47,9 @@ If you are adding a new page to the documentation, you can create a new file, wr
 
 ## Adding / updating images
 
-{% callout title="Default skin only" %}
+{% note title="Default skin only" %}
 When submitting screenshots for the documentation, please only use the Pulsar skin. This is the easiest skin to use as it's something everyone is familiar with.
-{% /callout %}
+{% /note %}
 
 ## Submitting your changes for review
 

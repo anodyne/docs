@@ -54,6 +54,6 @@ This basic information allows Nova to create the necessary database records that
 - The `version` attribute is a value for keeping track of the version of the skin. In some cases, you may need to reference this when helping users of your skin to know which version of the skin they have uploaded.
 - The `sections` attribute is an array of the sections your skin includes. Most skin developers include all sections, but in some cases a skin might only include one or two sections. This tells Nova which sections it should display your skin as an option for.
 
-{% callout title="Order of operations" type="warning" %}
+{% warning title="Order of operations" %}
 Before you delete a skin, make sure that you've changed your default skin for the site to something else. If you don't, this can sometimes result in a white screen with an error about not being able to find a template.
-{% /callout %}
+{% /warning %}

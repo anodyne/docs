@@ -22,9 +22,9 @@ Genre codes can only have 3 characters. For example, the Deep Space Nine genre c
 
 While the database structure can allow for a nearly infinite number of genres to be installed, only one genre can be active at a time on a Nova instance. To change the active genre, you will need to locate `nova.php` in the `application/config` directory. On Line 15, change the existing 3-letter genre code to the desired code. For instance, if you wish to switch from *Deep Space Nine* to *The Original Series*, you would change from `ds9` to `tos`.
 
-{% callout title="Only one genre allowed" type="warning" %}
+{% warning title="Only one genre allowed" %}
 Nova 2.7 removes the ability to install additional genres into an existing site. If you want to change the genres of your site, you will need to backup your database, do a fresh install, and manually migrate your data into the new database.
-{% /callout %}
+{% /warning %}
 
 ## Files
 
@@ -58,9 +58,9 @@ Nova stores the genre install files in `nova/modules/assets/install/genres`. The
 
 If you're interested in creating a genre file, we recommend that you duplicate one of the existing genre data files and start from there. In order to create a genre file, you have to have departments, positions and ranks. If one of those components is missing, parts of the system will break without major modifications.
 
-{% callout title="Note" %}
+{% note title="Note" %}
 It's important that you understand PHP handling of single and double quotes and escaping quotes as necessary, otherwise you'll run in to a long series of errors that will be maddening trying to fix. In a nutshell, if you have a string surrounded by single quotes, you can only use another single quote in that string after escaping with the backslash (`\`). Here's how you would handle a few different types of strings:
-{% /callout %}
+{% /note %}
 
 ```php
 'This is a string that does not need escaping.'

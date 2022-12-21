@@ -41,9 +41,9 @@ You can delete the `900` record as we will not use that one.
 
 Once you have a color palette, you'll need to [convert](https://www.rapidtables.com/convert/color/index.html) the hex colors to RGB values. This is done so that we can use background opacity on the colors properly.
 
-{% callout type="warning" title="Don't skip this step!" %}
+{% warning title="Don't skip this step!" %}
 The skin will not display correctly if you skip this step!
-{% /callout %}
+{% /warning %}
 
 - Copy the `50` hex value (`#f0f4fe` in the example above)
 - Paste into the converter

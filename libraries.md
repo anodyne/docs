@@ -8,9 +8,9 @@ layout: docs
 
 Libraries are simply PHP classes that can be used for whatever you need them to be used for.
 
-{% callout title="Deep dive" %}
+{% note title="Deep dive" %}
 You can read more about CodeIgniter's libraries in their [documentation](https://codeigniter.com/userguide3/general/libraries.html).
-{% /callout %}
+{% /note %}
 
 By default, Nova autoloads several libraries that are used extensively throughout the core. Because of that, you'll always have access to the following libraries without having to load them:
 
@@ -32,9 +32,9 @@ $this->load->library('mail');
 $this->mail->send();
 ```
 
-{% callout title="Note" %}
+{% note title="Note" %}
 All of Nova's available libraries can be found in the `nova/modules/core/libraries` directory.
-{% /callout %}
+{% /note %}
 
 ## Extending libraries
 
@@ -64,9 +64,9 @@ class Auth extends Nova_auth {}
 
 Nova starts by pulling in the core library. This allows us to use the PHP class that we defined in the core. Once that file is loaded, we can extend the application library with the core library. Because of PHP's inheritance, this means you can add any new methods you want to this class and you'll be able to use those library methods in Nova. This also means is that you can *override* any existing method with one of your own by adding a method of the same name in your application library.
 
-{% callout title="Quick tip" %}
+{% note title="Quick tip" %}
 When it comes to overriding a library method, the recommended way of doing that is to copy the method from the core library and paste it into the application library. You then have a working copy of the method from which to modify whatever you want.
-{% /callout %}
+{% /note %}
 
 ## Further reading
 

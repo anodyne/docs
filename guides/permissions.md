@@ -14,9 +14,9 @@ Nova ships with five different access roles, designed to accomodate the most com
 
 *System administrators* can take any action within the Nova system, including removing other  administrators. System administrators have full access to Nova's control panel and features, but they will not have direct access to Nova's database or file structure as both of these items exist outside of Nova and reside only with your website's hosting company.
 
-{% callout title="Warning" type="warning" %}
+{% warning title="Warning" %}
 Please exercise caution when granting this role to another user, as that user could disable your account with these permissions.
-{% /callout %}
+{% /warning %}
 
 ### Basic administrator
 
@@ -99,20 +99,20 @@ To add a role, click on the **Add Role** option at the top of the page. Enter a 
 
 To duplicate an existing role to use as a template for a custom role, select the **Duplicate Role** from the top of the page. Select the role you wish to duplicate from the dropdown menu, then enter a *Name* and *Description* for the role. When you finished, click the **Submit** button.
 
-{% callout title="Quick tip" %}
+{% note title="Quick tip" %}
 Don't know what a particular permission setting will do? The Edit Role page will provide you with a brief description of what each setting will grant the user assigned to the group. To see this description, place your cursor over the appropriate question mark icon and the information will appear in a popup.
 
 For example, if you wanted to see what the *Menus* permission setting would enable, hover your cursor over the question mark beside the function.
 ![Role description](/images/docs/2.7/using-permissions/access-role-description.png)
-{% /callout %}
+{% /note %}
 
 ## Role pages
 
 Nova provides robost access control that includes not only all pages that come with the system by default, but can include pages that you create. For example, if you added a page, or series of pages, to Nova, you could restrict the ability to view those pages to select access roles. Each role page is tied to a specific set of permissions assigned to existing user roles.
 
-{% callout title="Caution" type="warning" %}
+{% warning title="Caution" %}
 Editing role pages could affect existing access roles and your players' ability to participate in the game. Proceed with caution.
-{% /callout %}
+{% /warning %}
 
 To access the *Role Pages Manager*, access Nova's control panel and locate *Access Roles* under the subheading *Site Management*. Then, under the *Roles* heading, select *Manage Role Pages*.
 ![Role pages location](/images/docs/2.7/using-permissions/role-page-location.png)
@@ -138,9 +138,9 @@ To manage the role page groups, access the *Manage Role Page Group* link at the 
 
 From here, you will be able to edit or delete any group that already exists within Nova. Should you wish to delete a group, you will have to select a new role page group for the permission sets to be added to.
 
-{% callout title="Warning" type="warning" %}
+{% warning title="Warning" %}
 Deleting role page groups could negatively affect permission sets, the existing access roles, and your player's ability to use the Nova system and play the game. Proceed with caution.
-{% /callout %}
+{% /warning %}
 
 To add a new group, select the **Add Role Page Group** option. Assign a name for the group, and provide a number for the listing order (ranging from `0` (top of the list) to `99` (bottom of the list)). When you are finished, click **Submit**.
 
@@ -156,9 +156,9 @@ Two types of ban levels are available within Nova:
 - *Level 1*: can be executed by either an IP address or email address. Using this level will prevent a user from applying to the game or accessing their old account.
 - *Level 2*: can only be executed by IP address. Using this level will prevent a user from accessing any portion of the site, even as a regular visitor.
 
-{% callout title="Caution" type="warning" %}
+{% warning title="Caution" %}
 Use level 2 bans sparingly as doing so can have a detrimental affect on site performance. If Nova is actively watching for multiple IPs, it could continually slow down the site's operations and performance for the users actively playing the game.
-{% /callout %}
+{% /warning %}
 
 To add a ban, select the **Add Ban** option and fill out the appropriate fields:
 
@@ -169,9 +169,9 @@ To add a ban, select the **Add Ban** option and fill out the appropriate fields:
 
 When all information is entered, click on the **Add* button.
 
-{% callout title="Quick tip" %}
+{% note title="Quick tip" %}
 If a user is known to have multiple IP addresses, you will have to place a ban for each one of those IP addresses.
-{% /callout %}
+{% /note %}
 
 You can review all existing bans under the Level 1 or Level 2 tabs available on the Site Bans page. To remove a ban, simply click on the Delete icon next to the appropriate ban.
 ![Reviewing bans](/images/docs/2.7/using-permissions/bans-review.png)

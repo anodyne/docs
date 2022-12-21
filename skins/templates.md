@@ -44,9 +44,9 @@ Nova uses two different navigation menus: the main navigation (`$main_nav`) and 
 
 Navigation elements are rendered as an unordered list (`<ul>`) with each navigation element being a list item (`<li>`) containing an anchor (`<a>`) tag. Both navigations are contained within `div`s that can be targeted to style each list individually (`.nav-main` and `.nav-sub` respectively).
 
-{% callout title="Heads up" %}
+{% note title="Heads up" %}
 Certain secondary navigation elements may have a space between sections. This can  provide additional challenges if improperly formatted.
-{% /callout %}
+{% /note %}
 
 ### Page content
 

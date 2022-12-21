@@ -4,9 +4,9 @@ description: A primer on how Nova skin CSS files are organized.
 layout: docs
 ---
 
-{% callout title="Learning CSS" %}
+{% note title="Learning CSS" %}
 CSS is at the heart of making a skin look the way you want. Not sure what CSS is or how to write it? Don't worry, we have some [helpful links](/docs/2.7/resources/helpful-links#learning-css) with resources for learning CSS to master customizing your skins in no time.
-{% /callout %}
+{% /note %}
 
 Stylesheets within skins can vary greatly between skin authors, but they can usually be found in a global folder or within one of the specific section folders. Each skin generally comes with five CSS files:
 
@@ -18,10 +18,10 @@ Stylesheets within skins can vary greatly between skin authors, but they can usu
 
 When it comes to modifying the skin's CSS files, the easiest way to do so is with a [text editor](/docs/2.7/getting-started#text-editor). If you download your entire skin to a folder on your computer and then open the entire folder in the text editor, you'll be able to find what you're looking for a lot easier and even be able to do things like find and replace when you're changing colors or values.
 
-{% callout title="Note" %}
+{% note title="Note" %}
 Unless the skin's CSS files are located in a global folder, you'll need to update each CSS file within each section for your changes to appear across the entire site. Keep in mind that each section may have specific styling that does not exist in another section's CSS files, so copy/pasting entire CSS files is not recommended.
-{% /callout %}
+{% /note %}
 
-{% callout title="Quick tip" %}
+{% note title="Quick tip" %}
 If you updated a CSS file and do not see your changes on the site, make sure you updated the correct file and clear your browser's cache.
-{% /callout %}
+{% /note %}

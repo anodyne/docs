@@ -91,9 +91,9 @@ The Dashboard enables all players to have easy access to your **character bio(s)
 
 ## Deleting your account
 
-{% callout title="Be careful!" type="warning" %}
+{% warning title="Be careful!" %}
 The actions taken in this section cannot be reversed or recovered. Please use caution when proceeding.
-{% /callout %}
+{% /warning %}
 
 When you decide that you wish to leave a game, you have the option of deleting your user account. When you choose to do this, the following information will be instantly deleted from Nova:
 
@@ -112,10 +112,10 @@ To delete your account, access the Dashboard and click on the **Edit Account** l
 
 You will be asked by Nova if you truly do wish to delete your account. Once you are certain you wish to proceed, click on the **Delete My Account** button. Nova will instantly remove all your personal information from the system.
 
-{% callout title="Note" %}
+{% note title="Note" %}
 **Users with system administrator privileges cannot delete their accounts.** If you are a system administrator and you wish to delete your account, another user with system administrator access must first remove your system administrator access.
 
 If you are the only system administrator, you will have to give another player system administrator access, and have them remove system administrator access from your account.
 
 Once the access has been removed, you will be able to delete your account.
-{% /callout %}
+{% /note %}

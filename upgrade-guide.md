@@ -4,9 +4,9 @@ description: Upgrading your site to Nova 2.7 from 2.6.
 layout: docs
 ---
 
-{% callout title="Upgrading multiple versions" %}
+{% note title="Upgrading multiple versions" %}
 This upgrade guide only covers the upgrade process from 2.6 to 2.7. If you are upgrading from a version prior to 2.6, please follow all previous upgrade instructions before starting this guide.
-{% /callout %}
+{% /note %}
 
 The update process for moving to Nova 2.7 is a more involved and manual process than previous versions of Nova 2. Unfortunately this couldn't be avoided due to upgrading CodeIgniter (the underlying framework Nova is built on) to version 3. The process explained below only needs to happen one time when you first upgrade from any version prior to 2.7.0. After you've gone through this upgrade, any future updates will use the normal update process.
 

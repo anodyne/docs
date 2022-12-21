@@ -31,9 +31,9 @@ As a skin author, you're free to structure your skin however you see fit. Throug
 - `js` - files that should be used to replace system JavaScript files for your skin only; this is part of the [seamless substitution](/docs/2.7/seamless-substitution) system
 - `pages` - files that should be used to replace system view files for your skin only; this is part of the [seamless substitution](/docs/2.7/seamless-substitution) system
 
-{% callout title="Overriding pages from a skin" %}
+{% note title="Overriding pages from a skin" %}
 While the best way to override a specific page is using the `_base_override` folder, you can also override pages from your skin as well. This is helpful if you want your skin to make specific changes to a page that are only unique to your skin. See the [seamless substitution documentation](/docs/2.7/seamless-substitution) for more information about this process.
-{% /callout %}
+{% /note %}
 
 ## Images
 
@@ -41,6 +41,6 @@ The best practice to follow when adding images to your skin will depend on how y
 
 Generally speaking, if the image is going to be accessed by multiple sections of the skin, we recommend using the `_global` directory. This can include a skin's header image, a logo, or any other asset(s) you'll use throughout the user interface. If you'll only use the image in a specific section of the skin, it's probably best to place it in the relevant section's `images` directory.
 
-{% callout title="A tip about images" %}
+{% note title="A tip about images" %}
 Images can take up a lot of space on your web host's server, using up resources and slowing down a page's load time. To provide a better experience for your users and to save resources on your hosting plan, consider resizing images to fit your skin and optimizing them for use on the web.
-{% /callout %}
+{% /note %}

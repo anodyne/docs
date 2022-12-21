@@ -14,9 +14,9 @@ The first number is going to refer to which MAJOR version the software is on. Th
 
 The goal with any major update to Nova is to ensure we're able to migrate as much of your data from one version to the next. However, with major versions, some data may not be able to be migrated due to the nature of the changes that are being introduced.
 
-{% callout title="You should know!" %}
+{% note title="You should know!" %}
 The next major version of Nova will be Nova 3.0 as it includes an architectural re-write. You can find out more about Nova 3 in the [Nova 3 user guide](/docs/3.0/introduction).
-{% /callout %}
+{% /note %}
 
 ## Second Number - 2.7.14 (Minor Updates)
 

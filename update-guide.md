@@ -4,9 +4,9 @@ description: Upgrading Nova to the latest version.
 layout: docs
 ---
 
-{% callout title="Before you start" %}
+{% note title="Before you start" %}
 Make sure you backup both your files and database. While we don't anticipate any problems, if something does happen you'll be glad you have a recent backup of your site to restore from. Not sure how to do that? Check out our [guide](/docs/2.7/resources/backing-up-nova) on backing up Nova.
-{% /callout %}
+{% /note %}
 
 ## What you'll need
 
@@ -18,17 +18,17 @@ Before you get started updating Nova, make sure you have the following things re
 
 ## Updating Nova
 
-{% callout title="Upgrading to Nova 2.7" %}
+{% note title="Upgrading to Nova 2.7" %}
 If you are upgrading from a version of Nova prior to 2.7.0, you will need to use the [Nova 2.7 Upgrade Guide](/docs/2.7/upgrade-guide-27). For all other future updates to Nova 2.7, you will be able to use the below process.
-{% /callout %}
+{% /note %}
 
 ### Step 1: Rename the Nova directory
 
 Once you've finished backing up your site (because you already did that, right?), rename the `nova` directory to `nova_old` on your server. (This ensures that if the update goes awry you still have a copy of the working Nova core from before you attempted the update.)
 
-{% callout title="Rename first" type="warning" %}
+{% warning title="Rename first" %}
 Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to rename the directory and upload a new copy.
-{% /callout %}
+{% /warning %}
 
 ### Step 2: Upload Nova
 
@@ -111,9 +111,9 @@ If you have made changes to those skins or have your own skins that need to be u
 <?php echo anchor('main/policies', 'Privacy Policy');?>
 ```
 
-{% callout title="Note" %}
+{% note title="Note" %}
 You'll need to make this change in every skin and every template on your site.
-{% /callout %}
+{% /note %}
 
 #### PHP 7 Update
 
