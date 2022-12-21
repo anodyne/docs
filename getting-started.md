@@ -4,10 +4,6 @@ description: Here are a few things you should know before using Nova 3.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 ## Web host
 
 Nova is web-based software which means that you'll need to have a server to store your files on so players can access your game's site. There are lots of web hosts available that range everywhere from free to a few bucks a month to very expensive (these will generally be overkill, but do cover any possible need you could have with Nova or anything else). Generally free web hosts will work fine, but if you have the budget to spend a few bucks a month, you'll get far better support and stability.

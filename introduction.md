@@ -6,8 +6,6 @@ layout: docs
 homePage: true
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
 {% quick-links %}
 
 {% quick-link title="Installation" icon="installation" href="/docs/3.0/installation" description="Step-by-step guide to installing Nova on your server." /%}
@@ -32,11 +30,11 @@ While these approaches are all valid and offer a lot of tools for building your 
 
 ---
 
-## Vision
+## Vision{% tag="WIP" label="Updates coming soon" %}
 
 {WIP}(warning)
 
-## Key features
+## Key features{% tag="WIP" label="Updates coming soon" %}
 
 {WIP}(warning)
 

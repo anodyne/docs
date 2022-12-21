@@ -4,10 +4,6 @@ description: Learn how to get Nova 3 up and running.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 ## Requirements
 
 Nova 3 has a few requirements you should be aware of before installing:

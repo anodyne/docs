@@ -4,10 +4,6 @@ description: Nova 3 has several requirements for servers and browsers.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 ## Browser
 
 As of v3.0, Nova is designed for and tested on the latest stable versions of Chrome, Firefox, Edge, and Safari. Nova 3 does not support any version of IE, including IE 11.

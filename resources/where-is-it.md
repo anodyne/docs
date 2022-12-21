@@ -4,10 +4,6 @@ description: Find out where everything moved to in Nova 3.
 layout: docs
 ---
 
-{% $markdoc.frontmatter.description %} {% .lead %}
-
----
-
 We know you're incredibly excited to get started using Nova 3, but once you get in to the code you'll inevitably find yourself repeatedly asking: "where the hell did X go?!?!"
 
 Never fear, below is your handy guide for where to find all of the _things_ in Nova that you've gotten accustomed to where they live in Nova 2.
