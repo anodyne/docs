@@ -18,10 +18,10 @@ Stylesheets within skins can vary greatly between skin authors, but they can usu
 
 When it comes to modifying the skin's CSS files, the easiest way to do so is with a [text editor](/docs/2.7/before-getting-started#text-editor). If you download your entire skin to a folder on your computer and then open the entire folder in the text editor, you'll be able to find what you're looking for a lot easier and even be able to do things like find and replace when you're changing colors or values.
 
-{% note title="Note" %}
+{% note %}
 Unless the skin's CSS files are located in a global folder, you'll need to update each CSS file within each section for your changes to appear across the entire site. Keep in mind that each section may have specific styling that does not exist in another section's CSS files, so copy/pasting entire CSS files is not recommended.
 {% /note %}
 
-{% note title="Quick tip" %}
+{% tip %}
 If you updated a CSS file and do not see your changes on the site, make sure you updated the correct file and clear your browser's cache.
-{% /note %}
+{% /tip %}

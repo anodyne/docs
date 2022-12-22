@@ -55,7 +55,7 @@ Next, you can upload the following files from the Nova zip archive to your own r
 If you have made any modifications to any of the files inside these directories, you will need to re-apply the changes to the new versions of the files. **Do not** simply copy the old file back into the new directory as it could break things.
 {% /note %}
 
-{% warning title="Warning" %}
+{% warning %}
 **Do not** copy the `database.php` file back into the config directory. Going through this guide will prompt you to enter your database credentials and re-create the database config file.
 {% /warning %}
 
@@ -105,7 +105,7 @@ $config['sess_driver'] = 'database';  // [tl! ++ **]
 
 With the update complete and your site back up and running, you can now delete the `nova_backup` directory from your server as well as all of the backup directories in your `application` folder.
 
-{% note title="Note" %}
+{% note %}
 Of course it goes without saying, don't delete anything that you may need to access later. If you're not sure, you can always download the directories to your computer for safe keeping.
 {% /note %}
 

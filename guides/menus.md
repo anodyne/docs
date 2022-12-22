@@ -62,7 +62,7 @@ A modal will appear in the center of the page, allowing you to enter all appropr
 
 When all edits are complete, select **Submit.**
 
-{% note title="Note" %}
+{% note %}
 When a new category is added, it is not added to the available category dropdown. The values in this dropdown cannot be changed, and are tied to the already created sections of the site (main, personnel, sim, etc.)
 {% /note %}
 

@@ -32,7 +32,7 @@ $this->load->library('mail');
 $this->mail->send();
 ```
 
-{% note title="Note" %}
+{% note %}
 All of Nova's available libraries can be found in the `nova/modules/core/libraries` directory.
 {% /note %}
 
@@ -64,9 +64,9 @@ class Auth extends Nova_auth {}
 
 Nova starts by pulling in the core library. This allows us to use the PHP class that we defined in the core. Once that file is loaded, we can extend the application library with the core library. Because of PHP's inheritance, this means you can add any new methods you want to this class and you'll be able to use those library methods in Nova. This also means is that you can *override* any existing method with one of your own by adding a method of the same name in your application library.
 
-{% note title="Quick tip" %}
+{% tip %}
 When it comes to overriding a library method, the recommended way of doing that is to copy the method from the core library and paste it into the application library. You then have a working copy of the method from which to modify whatever you want.
-{% /note %}
+{% /tip %}
 
 ## Further reading
 

@@ -111,7 +111,7 @@ If you have made changes to those skins or have your own skins that need to be u
 <?php echo anchor('main/policies', 'Privacy Policy');?>
 ```
 
-{% note title="Note" %}
+{% note %}
 You'll need to make this change in every skin and every template on your site.
 {% /note %}
 

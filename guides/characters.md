@@ -10,7 +10,7 @@ If the core of any role playing game is the storytelling, then the supports for 
 2. Editing your bio once approved
 3. Creating secondary characters
 
-{% note title="Note" %}
+{% note %}
 For the purposes of this walkthrough, we are assuming the process is functioning exactly as intended by Nova's unaltered installation. Depending on the game you are trying to join, there may be additional fields, sections, and/or processes unique to that game. If that is the case, please make efforts to contact that game's administrator.
 {% /note %}
 
@@ -29,7 +29,7 @@ Once you agree to the conditions, you will be able to fill out the join applicat
 
 You can navigate to each section by clicking the tab, or by selecting the **Next Step** button at the bottom of the section. Once all sections are complete, click **Submit**.
 
-{% note title="Note" %}
+{% note %}
 **It is not possible to save a partially completed application.** Only completed applications will be stored in the game's database. The Nova system can also time out a user who spends a significant amount of time crafting the application while on this page. Therefore, we recommend visiting the application page first, copying down the required fields, and crafting the application in a separate editor such as Microsoft Word or Google Docs. Once the application is finished, return to the application form, copy/paste the information into the appropriate fields, and then hit **Submit**.
 {% /note %}
 
@@ -71,7 +71,7 @@ You can also add image(s) to your character, such as an avatar to give the other
 
 ## Adding a secondary character
 
-{% note title="Note" %}
+{% note %}
 Unlike the application process, support characters are often immediately made available for use. If you wish to create a secondary character, please first consult with the game's management staff to see if there are any special requirements or nuances to how these types of characters are used in the game. Often times, if these characters are created without the permission or blessing from the management staff, the support character will likely be deleted.
 {% /note %}
 
@@ -81,13 +81,13 @@ Any player can create a secondary character by accessing Nova's control panel an
 
 Select whether or not the new character will be a Playing or Non-Playing Character. The default selection is Non-Playing Character as most gaming organizations have strict requirements regarding qualifications for player characters. Enter in all appropriate information for your new character, along with selecting an applicable rank and position, and hit **Submit**.
 
-{% note title="Note" %}
+{% note %}
 All secondary characters are created without being attached to an owner. Some of these characters are intended to be that way so that they can be used by multiple players. Other characters might need to have restricted access or ownership as to prevent them from being used by other players.
 {% /note %}
 
 ## Assigning secondary character(s) to a player
 
-{% note title="Note" %}
+{% note %}
 To assign a secondary character to a user, you must have at least the *Basic Administration* access role, or your access role needs to have *NPC Management Level 2* or *3* feature(s) enabled. Typically, this feature is reserved for those who are managing the game.
 
 If you do not have this access, you will have to contact a member of the game's management to have the secondary character assigned to you.
