@@ -22,9 +22,9 @@ Before you get started updating Nova, make sure you have the following things re
 
 Once you've finished backing up your site (because you already did that, right?), delete the `nova` directory in its entirety from your server.
 
-:::warning
+{% warning title="Warning" %}
 Over the years we've seen countless problems with simply trying to overwrite the directory. The surest way to avoid those issues is to delete the directory and upload a new copy.
-:::
+{% /warning %}
 
 ### Step 2: Upload Nova
 

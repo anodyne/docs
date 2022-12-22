@@ -17,10 +17,6 @@ Nova is built on two core technologies: PHP and MySQL. When picking a web host i
 - PHP 8.1 or higher
 - MySQL 8.0 or higher
 
-{% callout title="What if my host doesn't offer PHP 8?" %}
-We've chosen PHP 8.1 as a requirement to ensure that Nova is built on the latest versions of software for the longest level of support. If your web host doesn't offer PHP 8, you will need to stick with Nova 2 until they offer PHP 8 as an option. Don't worry though, most hosts offer PHP 8 as an option at this point.
-{% /callout %}
-
 ## Custom domain name
 
 One avenue that some games choose to go down is purchasing a custom domain name. This can be a great way to give your game even more personality instead of using a domain name or subdomain given to you by your web host.

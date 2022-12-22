@@ -7,7 +7,7 @@ module.exports = {
             links: [
                 { title: 'Meet Nova', href: `${urlPrefix}/introduction` },
                 { title: 'Getting started', href: `${urlPrefix}/getting-started` },
-                { title: 'Compatibility', href: `${urlPrefix}/compatibility` },
+                { title: 'Requirements', href: `${urlPrefix}/requirements` },
                 { title: 'Installation', href: `${urlPrefix}/installation` },
                 { title: 'Upgrade guide', href: `${urlPrefix}/upgrade-guide` },
                 { title: 'Migration guide', href: `${urlPrefix}/migration-guide` },
