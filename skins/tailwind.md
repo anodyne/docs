@@ -11,5 +11,5 @@ When we refreshed Pulsar and Titan for the Nova 2.7 release, we chose to lean on
 Before you get started using Tailwind CSS for your own skins, there are a few things you'll want to make sure you have handy to expedite the installation process:
 
 - [Install Node and NPM](https://nodejs.org/en/)
-- Have a [text editor](/docs/2.7/getting-started#text-editor) installed and ready to go
+- Have a [text editor](/docs/2.7/before-getting-started#text-editor) installed and ready to go
 - Have a terminal installed and ready to go

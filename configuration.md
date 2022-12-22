@@ -51,7 +51,7 @@ Nova ships with the following defaults for all RSS feeds:
 Nova's integrated mini-wiki, [Thresher](/docs/2.7/using-wiki), has its own config file that allows admins to change the way content is stored and parsed. By default, Thresher will store and parse wiki page content as HTML, but you can also use BBCode and Textile for storing and parsing. You can change the parse type in the Thresher config file found at `application/config/thresher.php`.
 
 {% warning title="Warning" %}
-Once you have selected a parse type, you shouldn't change it. If you change the parse type, your wiki pages will not display correctly.
+Once you have selected a parse type, you shouldn't change it. If you change the parse type, your existing wiki pages will not display correctly and have to be re-created.
 {% /warning %}
 
 ## CodeIgniter

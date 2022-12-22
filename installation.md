@@ -14,7 +14,7 @@ Before you start with the installation process, there are a few things you'll wa
 
 ## Upload Nova
 
-Remember when [we mentioned](/docs/2.7/getting-started#ftp-client) grabbing an FTP client? Well here's your chance to put it to good use!
+Remember when [we mentioned](/docs/2.7/before-getting-started#ftp-client) grabbing an FTP client? Well here's your chance to put it to good use!
 
 To get the installation process started you'll first need to make sure all of Nova's files have been uploaded to the server. If you're not sure how to do that, you can either reference your FTP client's documentation or reach out to your web host for help with this step.
 
@@ -24,7 +24,7 @@ We recommend unzipping the Nova archive on your computer and then uploading the 
 
 ## Fresh install
 
-With Nova's files uploaded to the server, all you need to do now is fire up your [favorite browser](/docs/2.7/compatibility#browser) and navigate to your website (let's call it `https://nova.space` for the sake of this guide). You should see the Install Center and an option to do a Fresh Install. If you click on that option, Nova will walk you through the installation process.
+With Nova's files uploaded to the server, all you need to do now is fire up your [favorite browser](/docs/2.7/requirements#browser) and navigate to your website (let's call it `https://nova.space` for the sake of this guide). You should see the Install Center and an option to do a Fresh Install. If you click on that option, Nova will walk you through the installation process.
 
 ### Database connection
 

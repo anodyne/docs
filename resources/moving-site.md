@@ -20,7 +20,7 @@ The first step is to take a [full backup](/docs/2.7/resources/backing-up-nova) o
 
 ## Upload your site files to the new server
 
-While the specific order isn't important, we like to start with uploading the files to the new server through your [FTP client](/docs/2.7/getting-started#ftp-client).
+While the specific order isn't important, we like to start with uploading the files to the new server through your [FTP client](/docs/2.7/before-getting-started#ftp-client).
 
 ## Import the database on the new server
 

@@ -28,7 +28,7 @@ When it comes to building a website, there's no shortage of options.
 
 While these approaches are all valid and offer a lot of tools for building your game's website, we believe Nova is the best choice because it was designed from the ground up for the things you'll need to manage and play your game.
 
-## All the tools you need
+## The features you need
 
 Immediately after you've finished Nova's install you'll find a wealth of features at your fingertips that put the management and enjoyment of your game front and center.
 
@@ -60,7 +60,7 @@ These things can certainly be built with other options, but they'll require a lo
 - No longer were GMs limited to only the fields that we said they had to use. Instead, Nova introduced dynamic forms that gave precise control to GMs for the information they wanted to collect for character bios, specifications, and tour pages.
 - No longer did GMs have to install a separate wiki for their game. Instead, Nova included a lightweight wiki to allow GMs and players to create a database of information specific to their game.
 
-## Extensive community familiarity
+## Community familiarity
 
 Today Nova is trusted by hundreds of games across the simming community. Players from around the world are familiar with how Nova works. No matter what modifications have been made on an individual game site, Nova is universal. This has created an environment where players can quickly get into a game and start contributing with little to no training or help.
 
