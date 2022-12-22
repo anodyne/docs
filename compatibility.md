@@ -14,9 +14,9 @@ Since Nova is web-based software, you'll need a browser in order to use it. Thes
 - Internet Explorer 7 or higher
 - Microsoft Edge 12 or higher
 
-{% callout title="A note about Internet Explorer" %}
+{% note title="A note about Internet Explorer" %}
 There are known visual issues with Nova in IE 7. We've decided not to address these presentation issues and encourage you to use a standards-compliant browser such as Firefox, Google Chrome, Safari, or Microsoft Edge. These visual issues do not affect IE 8 and higher.
-{% /callout %}
+{% /note %}
 
 ## Server
 

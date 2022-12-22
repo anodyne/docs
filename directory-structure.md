@@ -32,9 +32,9 @@ layout: docs
 
 ## Nova directory
 
-{% callout title="Exercise caution" type="warning" %}
+{% warning title="Exercise caution" %}
 We've provided tools to prevent you from having to edit core files, but if a situation comes up where it's unavoidable, you should be **very** careful when modifying core files. Errant changes to these files can result in major problems and in some cases cause your site to stop working altogether!
-{% /callout %}
+{% /warning %}
 
 - `ci`
     - `core`: This is the heart of CodeIgniter. Once the index file is executed, the last thing it does is to pull in the main CodeIgniter file from this directory.

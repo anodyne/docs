@@ -30,6 +30,6 @@ It may take a few minutes, but phpMyAdmin will offer you a download of the entir
 
 Now that you have your complete backup, you can create a zip archive of your backup to save space on your device. Make sure to save the zip file in a safe place that you'll remember!
 
-{% callout title="For some additional peace of mind" %}
+{% note title="For some additional peace of mind" %}
 Consider copying the zip archive of your backup to the cloud or a backup hard drive to ensure that even if something happens to your device, you still have your site backups available.
-{% /callout %}
+{% /note %}

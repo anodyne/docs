@@ -27,6 +27,6 @@ location / {
 }
 ```
 
-{% callout title="Know what you're doing" type="warning" %}
+{% warning title="Know what you're doing" %}
 Before attempt to make this change, talk to your web host. They may have different ways of handling URL re-writing that are easier and potentially less disruptive to your server.
-{% /callout %}
+{% /warning %}

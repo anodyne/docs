@@ -5,9 +5,9 @@ tag: EXPERIMENTAL
 layout: docs
 ---
 
-{% callout title="Experimental feature" type="warning" %}
+{% warning title="Experimental feature" %}
 This is an experimental feature, so there could be unexpected issues when using this feature.
-{% /callout %}
+{% /warning %}
 
 Nova provides an Events library that allows a sim or mod to define callbacks that are run when an event occurs. While accessible throughout Nova, Events are most useful in the context of building Extensions, as Events allow Extensions to hook into existing Nova functionality.
 

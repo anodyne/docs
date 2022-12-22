@@ -33,9 +33,9 @@ For each type of file below, Nova will try to find that type of file in the spec
 - `application/views/_base_override/emails/{type}`
 - `nova/modules/core/views/_base/emails/{type}`
 
-{% callout title="A note about emails" %}
+{% note title="A note about emails" %}
 Emails are available in both `html` and `text` form. If you are modifying an email, you will need to make any changes in both the HTML and text files. Check out the [email documentation](/docs/2.6/emails) for more information about Nova's emails.
-{% /callout %}
+{% /note %}
 
 ### Images
 

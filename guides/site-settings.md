@@ -6,9 +6,9 @@ layout: docs
 
 Very often, the requirements and style of each game differ from one another. Nova provides powerful administrative tools right out of the box to allow a game's management team to customize various settings and basic pages for their game.
 
-{% callout title="Note" %}
+{% note title="Note" %}
 For the purposes of this walkthrough, we are assuming that the process is functioning exactly as intended by Nova's unaltered installation.
-{% /callout %}
+{% /note %}
 
 ## Permissions
 
@@ -70,9 +70,9 @@ Under the **System/Email** tab, the following options are available:
   - *Default Email Name*: enter the name that you would like Nova to deliver email as, such as *USS Enterprise Sim*. If you do not enter a name, email will be delivered under the player's character name that is sending the notification.
   - *Default Email Address*: enter the default email address that you would like Nova to send out all email notifications as. If you do not enter an address, Nova will use the default structure as installed.
 
-{% callout title="Note" %}
+{% note title="Note" %}
 Nova's email structure may be affected by your hosting company's requirements and can experience issues from time to time. For a better look at how Nova handles emails and how you can adjust it, please review [Core Concepts: Email](/emails.md).
-{% /callout %}
+{% /note %}
 
 When all edits are complete, select **Submit**.
 
@@ -85,16 +85,16 @@ Under the **Appearance** tab, the following options are available:
   - The *Log In Page*, where all players will log in and out.
   - The *Wiki*, where information critical to gameplay is stored.
 
-{% callout title="Note" %}
+{% note title="Note" %}
 To install new skins, please review the [skinning documentation](/docs/2.6/skinning-overview).
-{% /callout %}
+{% /note %}
 
 - **Display Options**:
   - *Rank Set*: Select what you want the default rank set to be by using the dropdown menu. A preview image of the selected rank set will appear under the dropdown.
 
-{% callout title="Note" %}
+{% note title="Note" %}
 To install new rank sets, please review [Using Ranks](/using-ranks.md).
-{% /callout %}
+{% /note %}
 
 - **Display Options (continued)**:
   - *Mission Posts per Page*: determine the maximum number of published missions posts will appear in a list.

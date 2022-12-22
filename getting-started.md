@@ -17,13 +17,13 @@ Nova is built on two core technologies: PHP and MySQL. When picking a web host i
 - PHP 5.3 or higher (*PHP 5.6 recommended*)
 - MySQL 5.0 or higher (*MySQL 5.7 recommended*)
 
-{% callout title="What about PHP 7?" %}
-While PHP 7 has been available for several years now, Nova 2 is built on a legacy framework that was created long before PHP 7. That means that while Nova 2 will work on PHP 7, there are potentially many errors that could pop up that you would have to work through. Depending on your level of comfort with these kinds of things, it may be better to select a web host that allows you to use PHP 5.6 for your game's site.
-{% /callout %}
+{% note title="What about PHP 7?" %}
+While PHP 7 has been available for several years now, Nova 2 is built on a legacy framework that was created long before PHP 7. That means that while Nova 2.6 will work on PHP 7, there are potentially many errors that could pop up that you would have to work through. Depending on your level of comfort with these kinds of things, it may be better to select a web host that allows you to use PHP 5.6 for your game's site.
+{% /note %}
 
-{% callout title="What about PHP 8?" type="warning" %}
+{% warning title="What about PHP 8?" %}
 Nova 2.6 has known compatibility issues with PHP 8. If you're running a server that has PHP 8 or will not let you run PHP 7, you should upgrade to Nova 2.7.
-{% /callout %}
+{% /warning %}
 
 ## Custom domain name
 

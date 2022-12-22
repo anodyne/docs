@@ -16,9 +16,9 @@ A major version is only released when there have been major architectural or API
 
 As with all our updates, we aim to include scripts to migrate data to the new version, but with major releases, some data may not be able to be migrated due to the nature of the changes a major version would introduce.
 
-{% callout title="You should know!" %}
+{% note title="You should know!" %}
 The next major version of Nova will be Nova 3.0 as it includes an architectural re-write. You can find out more about Nova 3 in the [Nova 3 user guide](/docs/3.0/introduction).
-{% /callout %}
+{% /note %}
 
 ## Minor version
 

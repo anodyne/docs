@@ -54,9 +54,9 @@ Nova stores the genre install files in `nova/modules/assets/install/genres`. The
 
 If you're interested in creating a genre file, we recommend that you duplicate one of the existing genre data files and start from there. In order to create a genre file, you have to have departments, positions and ranks. If one of those components is missing, parts of the system will break without major modifications.
 
-{% callout title="Note" %}
+{% note title="Note" %}
 It's important that you understand PHP handling of single and double quotes and escaping quotes as necessary, otherwise you'll run in to a long series of errors that will be maddening trying to fix. In a nutshell, if you have a string surrounded by single quotes, you can only use another single quote in that string after escaping with the backslash (`\`). Here's how you would handle a few different types of strings:
-{% /callout %}
+{% /note %}
 
 ```php
 'This is a string that does not need escaping.'

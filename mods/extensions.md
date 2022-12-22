@@ -5,9 +5,9 @@ tag: EXPERIMENTAL
 layout: docs
 ---
 
-{% callout title="Experimental feature" type="warning" %}
+{% warning title="Experimental feature" %}
 This is an experimental feature, so there could be unexpected issues when using this feature.
-{% /callout %}
+{% /warning %}
 
 Extensions are a type of Nova mod that are placed within the `application/extensions` folder and enabled in `application/config/extensions.php`. As opposed to other types of Nova mods, extensions do not require modifying any Nova code files. This simplifies installation and maintenance.
 

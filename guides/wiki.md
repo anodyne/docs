@@ -8,9 +8,9 @@ No matter the genre, no matter the complexity or depth, every game has its own w
 
 Nova's Wiki, powered by Thresher, enables any set of players to easily create, collaborate, and deploy the information they wish to share without having to possess any programming knowledge. Robust pages can be easily created and styled with a simple WYSIWYG (What You See Is What You Get) editor.
 
-{% callout title="Quick note" %}
+{% note title="Quick note" %}
 For the purposes of this guide, we are assuming that you are using a fresh Nova install, with no pages, categories, or other editing yet performed on your wiki.
-{% /callout %}
+{% /note %}
 
 ## Quick Tour
 
@@ -38,9 +38,9 @@ The *Wiki Categories* page provides quick access to all of the categories availa
 
 From this page, you will also be able to edit any of the categories in the system, or add new categories of your own.
 
-{% callout title="Quick tip" %}
+{% note title="Quick tip" %}
 Pages can have more than one category assigned to them. If you have multiple options available, don't be pressured to choose only one category. Add all categories that may apply so that your fellow players can find the page more quickly in the future.
-{% /callout %}
+{% /note %}
 
 ### Manage pages
 
@@ -75,9 +75,9 @@ From Left to Right, these options are:
 
 ![Manage categories page](/images/docs/2.6/using-wiki/wiki-manage-categories.png)
 
-{% callout title="Note" %}
+{% note title="Note" %}
 This page is available only to users with the *Basic* or *System administrator* access role.
-{% /callout %}
+{% /note %}
 
 From this page, you will be able to add, edit, and delete any wiki category. When categories are available, you will be able to see the name of the category, as well as a description that will let users know what the general purpose of that category is for.
 
@@ -112,9 +112,9 @@ Let's start building our page on the Borg. Navigate to the *Create New Page* on 
 - *Categories*: a selection of categories already available within the Wiki. Note that the category for *Alien Species* is already here and ready for use. You can also add categories directly from this box.
 - *Comments*: determine whether you will allow others to leave comments on your page, or if you want to restrict discussion.
 
-{% callout title="Quick tip" %}
+{% note title="Quick tip" %}
 Thresher does not store images, nor does it have the ability for any user to upload pictures to it. If you wish to add images, you will need to upload them to a desired location, such as to a folder on your webhost using an FTP program, or use Nova's image uploader and store the image(s) in a section such as the Specifications or Tour categories. You will need the URL of the image and its location to enter into your wiki page.
-{% /callout %}
+{% /note %}
 
 Let's work on creating our page. Add a title and a summary. As you work in the content box, you'll notice that this is not a normal text box.
 ![Content box](/images/docs/2.6/using-wiki/wiki-content-box.png)
@@ -135,11 +135,11 @@ Once added, the category will not be automatically selected. You will need to cl
 
 When all information is added, and you are satisfied with how your page looks, click the **Create** (or **Update** if you are editing a page) button at the bottom of the page.
 
-{% callout title="Quick tip" %}
+{% note title="Quick tip" %}
 **Don't be afraid to save your work!** Many of us like to wait until our page is perfect before publishing, but many unfortunate things can happen in our pursuit of perfection. If your connection to Nova's Wiki is interrupted, there is a possibility that you can lose your work. The wiki does not have an auto-save feature, so please be prepared to save your work as you proceed.
 
 Whenever you save your article, you are publishing an update to the Wiki. The benefit of this is that you can walk away from your computer if you need to and pick right back up where you left off, or you can pass the article off to someone else to continue building.
-{% /callout %}
+{% /note %}
 
 Congratulations! Your page on the Borg is now available for anyone who visits your site to read!
 
@@ -152,9 +152,9 @@ To edit the main page, you will have to first navigate to *Manage Wiki Pages*. L
 
 Once you have located the page, select the Edit icon. Make your edits, and then click **Update** at the bottom of the page. To see your edits, navigate to the *Main Page*.
 
-{% callout title="Note" %}
+{% note title="Note" %}
 You cannot delete any of the wiki's system pages as these pages are required for the wiki to remain functional. You can, however, change the title and description of these pages. If you do rename them, make sure to remember what you name them to so that you can find them more easily when future edits are required.
-{% /callout %}
+{% /note %}
 
 ## Helpful links
 

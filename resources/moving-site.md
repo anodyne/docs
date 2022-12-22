@@ -10,9 +10,9 @@ It doesn't happen *often*, but there are times where you want or need to move yo
 
 This is an important step because it ensures that no one is changing any data in the site while you're working on migrating to a new server. Once you've put the site into maintenance mode, it's a good idea to wait 15-30 minutes to ensure everyone who was in the site has finished what they're doing and are no longer able to access the site.
 
-{% callout title="Moving the domain name" %}
+{% note title="Moving the domain name" %}
 If you're also moving the domain from the old server to the new server, there can often be delays while the DNS records propagate where the domain will be pointing at the old server instead of the new server. Putting the site on the old server into maintenance mode gives you a good way of knowing immediately which server the domain is pointed at.
-{% /callout %}
+{% /note %}
 
 ## Backup your site from the old server
 
