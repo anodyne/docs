@@ -16,6 +16,6 @@ define('ENVIRONMENT', 'development');
 
 Change `development` to `production`, save the file, and upload it to your server. Once you refresh the page, you should start to see error messages on screen.
 
-{% note %}
-You can *generally* safely ignore anything that's marked as a warning by PHP. What you'll be most interested in are any of the errors.
-{% /note %}
+{% warning %}
+Make sure that you change the environment back to `production` when you're done troubleshooting!
+{% /warning %}
