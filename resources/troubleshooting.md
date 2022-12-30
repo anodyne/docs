@@ -30,3 +30,7 @@ Change `development` to `production`, save the file, and upload it to your serve
 {% warning %}
 Make sure that you change the environment back to `production` when you're done troubleshooting!
 {% /warning %}
+
+## Re-upload the Nova core
+
+There are times when things just aren't working and you can't figure out why. In those situations, we've found that there's a possibility of some of Nova's core files not working as expected. One simple troubleshooting tip is to download a fresh copy of Nova from the Anodyne site, delete the `nova` directory on your server, and upload a fresh copy to the server. In some cases, that alone is enough to fix issues you're seeing.
