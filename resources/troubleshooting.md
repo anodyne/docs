@@ -22,10 +22,10 @@ When you install Nova on your server, the environment is set to **production**. 
 To set your site's environment to development, edit the `index.php` file and find the section about the application environment:
 
 ```php
-define('ENVIRONMENT', 'development');
+define('ENVIRONMENT', 'production');
 ```
 
-Change `development` to `production`, save the file, and upload it to your server. Once you refresh the page, you should start to see error messages on screen.
+Change `production` to `development`, save the file, and upload it to your server. Once you refresh the page, you should start to see error messages on screen.
 
 {% warning %}
 Make sure that you change the environment back to `production` when you're done troubleshooting!
