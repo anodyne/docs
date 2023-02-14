@@ -2,74 +2,74 @@
   {
       "title": "Introduction",
       "links": [
-          { "title": "Meet Nova", "href": "docs/2.7/introduction" },
-          { "title": "Before getting started", "href": "docs/2.7/before-getting-started" },
-          { "title": "Requirements", "href": "docs/2.7/requirements" },
-          { "title": "Installation", "href": "docs/2.7/installation" },
-          { "title": "Configuration", "href": "docs/2.7/configuration" },
-          { "title": "Upgrade guide", "href": "docs/2.7/upgrade-guide" }
+          { "title": "Meet Nova", "href": "introduction" },
+          { "title": "Before getting started", "href": "before-getting-started" },
+          { "title": "Requirements", "href": "requirements" },
+          { "title": "Installation", "href": "installation" },
+          { "title": "Configuration", "href": "configuration" },
+          { "title": "Upgrade guide", "href": "upgrade-guide" }
       ]
   },
   {
       "title": "Guides",
       "links": [
-          { "title": "Characters", "href": "docs/2.7/guides/characters" },
-          { "title": "Dashboard", "href": "docs/2.7/guides/dashboard" },
-          { "title": "Forms", "href": "docs/2.7/guides/forms" },
-          { "title": "Manifests", "href": "docs/2.7/guides/manifests" },
-          { "title": "Menus", "href": "docs/2.7/guides/menus" },
-          { "title": "Permissions", "href": "docs/2.7/guides/permissions" },
-          { "title": "Ranks", "href": "docs/2.7/guides/ranks" },
-          { "title": "Site Settings", "href": "docs/2.7/guides/site-settings" },
-          { "title": "Wiki", "href": "docs/2.7/guides/wiki" }
+          { "title": "Characters", "href": "guides/characters" },
+          { "title": "Dashboard", "href": "guides/dashboard" },
+          { "title": "Forms", "href": "guides/forms" },
+          { "title": "Manifests", "href": "guides/manifests" },
+          { "title": "Menus", "href": "guides/menus" },
+          { "title": "Permissions", "href": "guides/permissions" },
+          { "title": "Ranks", "href": "guides/ranks" },
+          { "title": "Site Settings", "href": "guides/site-settings" },
+          { "title": "Wiki", "href": "guides/wiki" }
       ]
   },
   {
       "title": "Core concepts",
       "links": [
-          { "title": "Directory structure", "href": "docs/2.7/directory-structure" },
-          { "title": "Seamless substitution", "href": "docs/2.7/seamless-substitution" },
-          { "title": "Controllers", "href": "docs/2.7/controllers" },
-          { "title": "Models", "href": "docs/2.7/models" },
-          { "title": "Libraries", "href": "docs/2.7/libraries" },
-          { "title": "Emails", "href": "docs/2.7/emails" },
-          { "title": "Genres", "href": "docs/2.7/genres" }
+          { "title": "Directory structure", "href": "directory-structure" },
+          { "title": "Seamless substitution", "href": "seamless-substitution" },
+          { "title": "Controllers", "href": "controllers" },
+          { "title": "Models", "href": "models" },
+          { "title": "Libraries", "href": "libraries" },
+          { "title": "Emails", "href": "emails" },
+          { "title": "Genres", "href": "genres" }
       ]
   },
   {
       "title": "Skins",
       "links": [
-          { "title": "Overview", "href": "docs/2.7/skins/overview" },
-          { "title": "Installation", "href": "docs/2.7/skins/installation" },
-          { "title": "Anatomy of a skin", "href": "docs/2.7/skins/anatomy" },
-          { "title": "Templates", "href": "docs/2.7/skins/templates" },
-          { "title": "CSS", "href": "docs/2.7/skins/css" },
-          { "title": "Tips and tricks", "href": "docs/2.7/skins/tips" },
-          { "title": "Customization", "href": "docs/2.7/skins/customization" },
-          { "title": "Using Tailwind CSS", "href": "docs/2.7/skins/tailwind" }
+          { "title": "Overview", "href": "skins/overview" },
+          { "title": "Installation", "href": "skins/installation" },
+          { "title": "Anatomy of a skin", "href": "skins/anatomy" },
+          { "title": "Templates", "href": "skins/templates" },
+          { "title": "CSS", "href": "skins/css" },
+          { "title": "Tips and tricks", "href": "skins/tips" },
+          { "title": "Customization", "href": "skins/customization" },
+          { "title": "Using Tailwind CSS", "href": "skins/tailwind" }
       ]
   },
   {
       "title": "MODs",
       "links": [
-          { "title": "Creating a page", "href": "docs/2.7/mods/creating-pages" },
-          { "title": "Language items", "href": "docs/2.7/mods/changing-language-items" },
-          { "title": "Extensions", "href": "docs/2.7/mods/extensions" },
-          { "title": "Events", "href": "docs/2.7/mods/events" },
-          { "title": "Pretty URLs", "href": "docs/2.7/mods/pretty-urls" }
+          { "title": "Creating a page", "href": "mods/creating-pages" },
+          { "title": "Language items", "href": "mods/changing-language-items" },
+          { "title": "Extensions", "href": "mods/extensions" },
+          { "title": "Events", "href": "mods/events" },
+          { "title": "Pretty URLs", "href": "mods/pretty-urls" }
       ]
   },
   {
       "title": "Resources",
       "links": [
-          { "title": "Helpful links", "href": "docs/2.7/resources/helpful-links" },
-          { "title": "Backing up Nova", "href": "docs/2.7/resources/backing-up-nova" },
-          { "title": "Troubleshooting", "href": "docs/2.7/resources/troubleshooting" },
-          { "title": "Moving your site", "href": "docs/2.7/resources/moving-site" },
-          { "title": "Version numbers", "href": "docs/2.7/resources/version-numbers" },
-          { "title": "License agreement", "href": "docs/2.7/resources/license-agreement" },
-          { "title": "Contributors", "href": "docs/2.7/resources/contributors" },
-          { "title": "Contribution guide", "href": "docs/2.7/resources/contribution-guide" }
+          { "title": "Helpful links", "href": "resources/helpful-links" },
+          { "title": "Backing up Nova", "href": "resources/backing-up-nova" },
+          { "title": "Troubleshooting", "href": "resources/troubleshooting" },
+          { "title": "Moving your site", "href": "resources/moving-site" },
+          { "title": "Version numbers", "href": "resources/version-numbers" },
+          { "title": "License agreement", "href": "resources/license-agreement" },
+          { "title": "Contributors", "href": "resources/contributors" },
+          { "title": "Contribution guide", "href": "resources/contribution-guide" }
       ]
   }
 ]
