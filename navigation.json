@@ -7,8 +7,8 @@
           { "title": "Requirements", "href": "/requirements" },
           { "title": "Installation", "href": "/installation" },
           { "title": "Configuration", "href": "/configuration" },
-          { "title": "Upgrade guide", "href": "/upgrade-guide" },
-      ],
+          { "title": "Upgrade guide", "href": "/upgrade-guide" }
+      ]
   },
   {
       "title": "Guides",
@@ -21,8 +21,8 @@
           { "title": "Permissions", "href": "/guides/permissions" },
           { "title": "Ranks", "href": "/guides/ranks" },
           { "title": "Site Settings", "href": "/guides/site-settings" },
-          { "title": "Wiki", "href": "/guides/wiki" },
-      ],
+          { "title": "Wiki", "href": "/guides/wiki" }
+      ]
   },
   {
       "title": "Core concepts",
@@ -33,8 +33,8 @@
           { "title": "Models", "href": "/models" },
           { "title": "Libraries", "href": "/libraries" },
           { "title": "Emails", "href": "/emails" },
-          { "title": "Genres", "href": "/genres" },
-      ],
+          { "title": "Genres", "href": "/genres" }
+      ]
   },
   {
       "title": "Skins",
@@ -46,8 +46,8 @@
           { "title": "CSS", "href": "/skins/css" },
           { "title": "Tips and tricks", "href": "/skins/tips" },
           { "title": "Customization", "href": "/skins/customization" },
-          { "title": "Using Tailwind CSS", "href": "/skins/tailwind" },
-      ],
+          { "title": "Using Tailwind CSS", "href": "/skins/tailwind" }
+      ]
   },
   {
       "title": "MODs",
@@ -56,8 +56,8 @@
           { "title": "Language items", "href": "/mods/changing-language-items" },
           { "title": "Extensions", "href": "/mods/extensions" },
           { "title": "Events", "href": "/mods/events" },
-          { "title": "Pretty URLs", "href": "/mods/pretty-urls" },
-      ],
+          { "title": "Pretty URLs", "href": "/mods/pretty-urls" }
+      ]
   },
   {
       "title": "Resources",
@@ -69,7 +69,7 @@
           { "title": "Version numbers", "href": "/resources/version-numbers" },
           { "title": "License agreement", "href": "/resources/license-agreement" },
           { "title": "Contributors", "href": "/resources/contributors" },
-          { "title": "Contribution guide", "href": "/resources/contribution-guide" },
-      ],
-  },
+          { "title": "Contribution guide", "href": "/resources/contribution-guide" }
+      ]
+  }
 ]
