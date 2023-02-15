@@ -33,7 +33,7 @@ If the work you're submitting also applies to previous versions as well, you can
 
 ## Working with Github's web-based editor
 
-By far the easiest way to work with your forked repository is through [Github's web-based editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor). This gives you a lightweight text editor that runs entirely in your browser where you can make your edits without needing to worry about Git mechanics like cloning, pulling and fetching, commiting changes, and pushing back to the repository.
+By far the easiest way to work with your forked repository is through [Github's web-based editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor). This gives you a lightweight text editor that runs entirely in your browser where you can make your edits without needing to worry about Git mechanics like cloning, pulling and fetching, committing changes, and pushing back to the repository.
 
 To get started with Github's web-based editor, simply navigate to your forked version of the repository and press the `.` key (making sure you've selected the correct branch in your repo). After a few moments, you'll be presented with the web-based editor where you can navigate all the files, make your changes, and save them.
 
@@ -41,9 +41,9 @@ To get started with Github's web-based editor, simply navigate to your forked ve
 
 ## Making your changes
 
-If you are editing an existing page (for example, fixing a typo or adding clarifying content), you can simply open the file, make your changes, and save it locally. Once your changes have been made, you can submit them back to the Anodyne respository for review.
+If you are editing an existing page (for example, fixing a typo or adding clarifying content), you can simply open the file, make your changes, and save it locally. Once your changes have been made, you can submit them back to the Anodyne repository for review.
 
-If you are adding a new page to the documentation, you can create a new file, write your content, and save it locally. You will also need to update the `navigation.js` file to include that new page in the documentation sidebar.
+If you are adding a new page to the documentation, you can create a new file, write your content, and save it locally. You will also need to update the `navigation.json` file to include that new page in the documentation sidebar.
 
 ## Adding / updating images
 
