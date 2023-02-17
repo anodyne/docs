@@ -31,11 +31,11 @@ While these approaches are all valid and offer a lot of tools for building your 
 
 ---
 
-## Vision{% tag="WIP" label="Updates coming soon" %}
+## Vision
 
 {WIP}(warning)
 
-## Key features{% tag="WIP" label="Updates coming soon" %}
+## Key features
 
 {WIP}(warning)
 
