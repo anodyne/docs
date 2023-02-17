@@ -2,7 +2,7 @@
 title: Upgrading to Nova 2.7 from 2.6
 description: Upgrading your site to Nova 2.7 from 2.6.
 layout: docs
-section: Introduction
+section: Getting Started
 ---
 
 {% note title="Upgrading multiple versions" %}

@@ -2,7 +2,7 @@
 title: Requirements
 description: Nova 2 has several requirements for servers and browsers.
 layout: docs
-section: Introduction
+section: Getting Started
 ---
 
 ## Browser

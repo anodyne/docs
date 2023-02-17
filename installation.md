@@ -2,7 +2,7 @@
 title: Installation
 description: Learn how to get up and running with Nova 2.
 layout: docs
-section: Introduction
+section: Getting Started
 ---
 
 ## What you'll need

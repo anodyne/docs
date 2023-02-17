@@ -2,7 +2,7 @@
 title: Before getting started
 description: Here are a few things you should know about using Nova 2 before you start.
 layout: docs
-section: Introduction
+section: Getting Started
 ---
 
 ## Web host

@@ -2,7 +2,7 @@
 title: Upgrading to Nova 2.7
 description: Upgrading your site to Nova 2.7.
 layout: docs
-section: Introduction
+section: Getting Started
 ---
 
 The update process for moving to Nova 2.7 is a more involved and manual process than previous versions of Nova 2. Unfortunately this couldn't be avoided due to upgrading CodeIgniter (the underlying framework Nova is built on) to version 3. The process explained below only needs to happen one time when you first upgrade from any version prior to 2.7.0. After you've gone through this upgrade, any future updates will use the normal update process.
