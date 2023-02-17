@@ -2,6 +2,7 @@
 title: Contributors
 description: It takes a village. Meet ours.
 layout: docs
+section: Resources
 ---
 
 Significant effort has gone into the writing of these docs and the following individuals have contributed in various ways to their writing:

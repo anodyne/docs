@@ -2,6 +2,7 @@
 title: Models
 description: Learn Nova's language of talking to the database.
 layout: docs
+section: Core Concepts
 ---
 
 ## What is a model?

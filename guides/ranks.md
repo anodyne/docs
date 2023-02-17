@@ -2,6 +2,7 @@
 title: Ranks
 description: Learn about Nova's rank system and how to customize them.
 layout: docs
+section: Guides
 ---
 
 ## What are ranks?

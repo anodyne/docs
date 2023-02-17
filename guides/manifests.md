@@ -2,6 +2,7 @@
 title: Using manifests
 description: Learn more about Nova's powerful manifest structure, including how its structured with departments and positions.
 layout: docs
+section: Guides
 ---
 
 Young or old, every game will feature a wide variety of characters. Each character brings a unique flavor and skill-set to that environment. Nova's manifest structure provides a way to list those characters in an easy-to-organize manner to allow for any player or user to freely locate and access information for any of the characters used in a Nova game.

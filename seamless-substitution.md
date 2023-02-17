@@ -2,6 +2,7 @@
 title: Seamless substitution
 description: Learn about how you can tell Nova to use a different version of a file instead of what's in the Nova core.
 layout: docs
+section: Core Concepts
 ---
 
 The term "seamless substitution" sounds scarier than it actually is. In a nutshell, this is *how* Nova looks for files. Instead of always pulling files out of the Nova core, Nova looks in a few different locations *before* looking in the core for a file. If Nova finds a file named the same as the one it's looking for somewhere other than the Nova core, it'll use the first file it finds.

@@ -2,6 +2,7 @@
 title: Creating a page
 description: Sometimes, the built-in pages in Nova won't be enough and you need to create a new page for you sim to hold new information.
 layout: docs
+section: MODs
 ---
 
 Creating pages can be as simple or as complex as you would like for it to be. No matter the level of difficulty, each sim always wishes to convey a different set of information for its players. For example, you may wish to share a page that displays the full rank hierarchy for an organization, or a set of uniforms that characters would wear.

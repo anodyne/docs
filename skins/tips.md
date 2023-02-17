@@ -2,6 +2,7 @@
 title: Skinning Nova - Tips & tricks
 description: These tips and tricks will help you skin Nova faster and easier.
 layout: docs
+section: Skins
 ---
 
 With a basic understanding of how a Nova skin works, you can now jump into creating or customizing one for your Nova game. Before you get started, here are a few tips that can help you developing your skin.

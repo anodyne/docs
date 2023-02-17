@@ -2,6 +2,7 @@
 title: Directory structure
 description: A quick look at each of Nova's directories and root files.
 layout: docs
+section: Core Concepts
 ---
 
 ## Root directory

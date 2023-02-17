@@ -2,6 +2,7 @@
 title: Skinning Nova - Uploading & installing
 description: Learn how to upload and install Nova skins.
 layout: docs
+section: Skins
 ---
 
 ## Uploading

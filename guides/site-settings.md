@@ -2,6 +2,7 @@
 title: Site settings
 description: Learn more about how to perform basic customizations for standard pages and operations on your Nova site.
 layout: docs
+section: Guides
 ---
 
 Very often, the requirements and style of each game differ from one another. Nova provides powerful administrative tools right out of the box to allow a game's management team to customize various settings and basic pages for their game.

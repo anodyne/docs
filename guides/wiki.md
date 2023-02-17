@@ -2,6 +2,7 @@
 title: Wiki
 description: Learn about Nova's built-in wiki and how to leverage it for your game.
 layout: docs
+section: Guides
 ---
 
 No matter the genre, no matter the complexity or depth, every game has its own world to build. Some games may simply desire to have a place to showcase custom uniforms or share some brief information about the current mission settings. Others may create broad universes with volumes of information to aid the game's players with capturing the full scope of the world in which they are exploring.
