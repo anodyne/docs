@@ -2,6 +2,7 @@
 title: Moving your site
 description: Learn how to move your site and its data to another server.
 layout: docs
+section: Resources
 ---
 
 It doesn't happen *often*, but there are times where you want or need to move your site from one server to another. It can seem like a pretty daunting task, but in reality it's pretty straightforward.

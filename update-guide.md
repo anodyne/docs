@@ -2,6 +2,7 @@
 title: Upgrade guide
 description: Upgrading Nova to the latest version.
 layout: docs
+section: Introduction
 ---
 
 {% note title="Before you start" %}

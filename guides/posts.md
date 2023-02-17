@@ -2,6 +2,7 @@
 title: Posting
 description: Learn about Nova's posting system.
 layout: docs
+section: Guides
 ---
 
 ## What is a post?

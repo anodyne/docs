@@ -2,6 +2,7 @@
 title: Permissions
 description: Learn how to control what users can do in Nova 2.
 layout: docs
+section: Guides
 ---
 
 Nova's robust access control system allows a game's management team to assign specific roles and permissions based on that player's in-character and out-of-character involvement in the game. These functions are all maintained through the *Access Roles* system.

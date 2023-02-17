@@ -2,6 +2,7 @@
 title: Libraries
 description: Learn about Nova's most powerful tools - libraries.
 layout: docs
+section: Core Concepts
 ---
 
 ## What is a library?

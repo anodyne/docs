@@ -2,6 +2,7 @@
 title: Emails
 description: Understand how Nova handles email.
 layout: docs
+section: Core Concepts
 ---
 
 ## How Nova sends emails

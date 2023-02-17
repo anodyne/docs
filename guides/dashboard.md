@@ -2,6 +2,7 @@
 title: User dashboard
 description: Learn more about how registered users can have quick access to their characters, site preferences, and other features.
 layout: docs
+section: Guides
 ---
 
 Each registered user, including site administrators, will have access to a dashboard when logged into Nova. The dashboard can be accessed by clicking on the Dashboard icon in the upper-most Nova menu, next to the Private Messages and Writing Control panel icons.

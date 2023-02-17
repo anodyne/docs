@@ -2,6 +2,7 @@
 title: Using menus
 description: Learn more about how to configure and customize navigation menus in Nova.
 layout: docs
+section: Guides
 ---
 
 Nova's robust structure is strategically divided throughout multiple sections of the site, all of which accessible through a carefully crafted navigational structure. This structure is built upon even the most basic installation, and is easily modifiable to meet the needs of every game.

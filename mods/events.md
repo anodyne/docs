@@ -3,6 +3,7 @@ title: Events
 description: Nova provides a robust events system for MODs to listen as actions happen throughout the system.
 tag: EXPERIMENTAL
 layout: docs
+section: MODs
 ---
 
 {% warning title="Experimental feature" %}

@@ -2,6 +2,7 @@
 title: Anatomy of a Nova skin
 description: Learn about all of the files included in a Nova skin.
 layout: docs
+section: Skins
 ---
 
 As a skin author, you're free to structure your skin however you see fit. Through much trial and error though, we've found a structure like the one described below to be the most flexible way to approach building a Nova skin.

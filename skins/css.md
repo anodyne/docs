@@ -2,6 +2,7 @@
 title: Skinning Nova - CSS
 description: A primer on how Nova skin CSS files are organized.
 layout: docs
+section: Skins
 ---
 
 {% note title="Learning CSS" %}

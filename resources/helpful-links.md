@@ -1,6 +1,7 @@
 ---
 title: Helpful links
 layout: docs
+section: Resources
 ---
 
 As with most things, the [Anodyne Discord server](https://discord.gg/7WmKUks) is a great resource for help with anything related to Nova. In addition to asking questions there, another great resource is the [CodeIgniter documentation](https://codeigniter.com/userguide3/index.html) itself since that's the framework everything in Nova is built on top of.

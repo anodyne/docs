@@ -2,6 +2,7 @@
 title: Skinning Nova - Using Tailwind CSS
 description: Learn how to leverage Tailwind CSS when building your own skins.
 layout: docs
+section: Skins
 ---
 
 When we refreshed Pulsar and Titan for the Nova 2.7 release, we chose to lean on [Tailwind CSS](https://tailwindcss.com) for much of the underlying code. This provided a consistent design system to use that could be easily modified and extended to move quickly through significant changes to the skins.

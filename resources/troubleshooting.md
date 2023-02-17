@@ -2,6 +2,7 @@
 title: Troubleshooting
 description: Learn about different ways to troubleshoot issues with your Nova site.
 layout: docs
+section: Resources
 ---
 
 ## Use the Pulsar skin

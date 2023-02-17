@@ -2,6 +2,7 @@
 title: Changing language items
 description: Learn how to change the default language items.
 layout: docs
+section: MODs
 ---
 
 When setting up your game, you realize that some of the terms don't line up with how your game wants to do things. You want to change some terms so that they're more consistent with what you call them. In this case, you want to change the term **mission** to **quest** and **mission group** to **saga**.

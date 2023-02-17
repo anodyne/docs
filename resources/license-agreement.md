@@ -1,6 +1,7 @@
 ---
 title: Nova license agreement
 layout: docs
+section: Resources
 ---
 
 This license is a legal agreement between you and the Anodyne Productions for the use of Nova (the "Software"). By obtaining the Software you agree to comply with the terms and conditions of this license.

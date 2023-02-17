@@ -3,6 +3,7 @@ title: Extensions
 description: Nova provides a robust extensions system for MODs.
 tag: EXPERIMENTAL
 layout: docs
+section: MODs
 ---
 
 {% warning title="Experimental feature" %}
