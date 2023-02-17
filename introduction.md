@@ -4,17 +4,18 @@ pageTitle: Nova 2.6 - Painless RPG Management
 description: An open-source content management system designed for managing and playing online text-based role-playing games.
 layout: docs
 homePage: true
+section: Getting Started
 ---
 
 {% quick-links %}
 
-{% quick-link title="Installation" icon="installation" href="/docs/2.6/installation" description="Step-by-step guide to installing Nova on your server." /%}
+{% quick-link title="Installation" icon="flex-rocket" href="/docs/2.7/installation" description="Step-by-step guide to installing Nova on your server." /%}
 
-{% quick-link title="Core concepts" icon="presets" href="/docs/2.6/directory-structure" description="Learn Nova's inner workings and how to work with it." /%}
+{% quick-link title="Core concepts" icon="flex-database" href="/docs/2.7/directory-structure" description="Learn about Nova and how to work with it." /%}
 
-{% quick-link title="MODs" icon="plugins" href="/docs/2.6/mods/extensions" description="Extend Nova with third-party MODs or write your own." /%}
+{% quick-link title="MODs" icon="flex-puzzle" href="/docs/2.7/mods/extensions" description="Extend Nova with third-party or your own MODs." /%}
 
-{% quick-link title="Skinning" icon="theming" href="/docs/2.6/skins/overview" description="Learn to easily skin Nova's visual design to fit your game." /%}
+{% quick-link title="Skinning" icon="flex-paint-brush" href="/docs/2.7/skins/overview" description="Learn to skin Nova's design to fit your game." /%}
 
 {% /quick-links %}
 
@@ -79,8 +80,8 @@ This documentation is a labor of love. At the start of 2021 [we](/docs/2.6/resou
 
 {% quick-links %}
 
-{% quick-link title="Discord" icon="discord" href="https://discord.gg/7WmKUks" description="Get help, share tips, and interact with the community of creators and writers." /%}
+{% quick-link title="Discord" icon="flex-discord" href="https://discord.gg/7WmKUks" description="Get help, share tips, and interact with the community of creators and writers." /%}
 
-{% quick-link title="Github" icon="github" href="https://github.com/anodyne/nova" description="File issues, request features, and contribute to Nova." /%}
+{% quick-link title="Github" icon="flex-git" href="https://github.com/anodyne/nova" description="File issues, request features, and contribute to Nova." /%}
 
 {% /quick-links %}

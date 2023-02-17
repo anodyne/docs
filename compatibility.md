@@ -2,6 +2,7 @@
 title: Compatibility
 description: Nova 2 has several requirements for servers and browsers.
 layout: docs
+section: Getting Started
 ---
 
 ## Browser
