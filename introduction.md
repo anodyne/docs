@@ -4,6 +4,7 @@ pageTitle: Nova 2.7 - Painless RPG Management
 description: An open-source content management system designed for managing and playing online text-based role-playing games.
 layout: docs
 homePage: true
+section: Introduction
 ---
 
 {% quick-links %}
