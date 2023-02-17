@@ -2,6 +2,7 @@
 title: Installing Nova 3
 description: Learn how to get Nova 3 up and running.
 layout: docs
+section: Getting Started
 ---
 
 ## Requirements

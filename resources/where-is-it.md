@@ -2,6 +2,7 @@
 title: Where The $#@! Is It?
 description: Find out where everything moved to in Nova 3.
 layout: docs
+section: Resources
 ---
 
 We know you're incredibly excited to get started using Nova 3, but once you get in to the code you'll inevitably find yourself repeatedly asking: "where the hell did X go?!?!"

@@ -4,17 +4,18 @@ pageTitle: Nova 3.0 - Painless RPG Management
 description: An open-source content management system designed for managing and playing online text-based role-playing games.
 layout: docs
 homePage: true
+section: Getting Started
 ---
 
 {% quick-links %}
 
-{% quick-link title="Installation" icon="installation" href="/docs/3.0/installation" description="Step-by-step guide to installing Nova on your server." /%}
+{% quick-link title="Installation" icon="flex-rocket" href="/docs/3.0/installation" description="Step-by-step guide to installing Nova on your server." /%}
 
-{% quick-link title="Core concepts" icon="presets" href="/docs/3.0/core-concpets/directory-structure" description="Learn Nova's inner workings and how to work with it." /%}
+{% quick-link title="Core concepts" icon="flex-database" href="/docs/3.0/core-concpets/directory-structure" description="Learn Nova's inner workings and how to work with it." /%}
 
-{% quick-link title="Extensions" icon="plugins" href="/docs/3.0/extensions/overview" description="Extend Nova with third-party extensions or write your own." /%}
+{% quick-link title="Extensions" icon="flex-puzzle" href="/docs/3.0/extensions/overview" description="Extend Nova with third-party extensions or write your own." /%}
 
-{% quick-link title="Themeing" icon="theming" href="/docs/3.0/themes/overview" description="Learn to easily theme Nova's visual design to fit your game." /%}
+{% quick-link title="Themeing" icon="flex-paint-brush" href="/docs/3.0/themes/overview" description="Learn to easily theme Nova's visual design to fit your game." /%}
 
 {% /quick-links %}
 
@@ -44,9 +45,9 @@ Whether you're a beginner or an advanced user, getting involved in the Nova comm
 
 {% quick-links %}
 
-{% quick-link title="Discord" icon="discord" href="https://discord.gg/7WmKUks" description="Get help, share tips, and interact with the community of creators and writers." /%}
+{% quick-link title="Discord" icon="flex-discord" href="https://discord.gg/7WmKUks" description="Get help, share tips, and interact with the community of creators and writers." /%}
 
-{% quick-link title="Github" icon="github" href="https://github.com/anodyne/nova3" description="File issues, request features, and contribute to Nova." /%}
+{% quick-link title="Github" icon="flex-git" href="https://github.com/anodyne/nova3" description="File issues, request features, and contribute to Nova." /%}
 
 {% /quick-links %}
 

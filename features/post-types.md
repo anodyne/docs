@@ -2,6 +2,7 @@
 title: Features - post types
 description: Control the content users post into stories.
 layout: docs
+section: Features
 ---
 
 Up until now, Nova has hard-coded the different kinds of posts users can make. For many years that's been mission posts, personal logs, and news items. GMs and users have wanted to have more control over these things and Nova 3 delivers that with a powerful new feature: post types.
