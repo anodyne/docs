@@ -6,10 +6,12 @@ section: Guides
 ---
 
 Each registered user, including site administrators, will have access to a dashboard when logged into Nova. The dashboard can be accessed by clicking on the Dashboard icon in the upper-most Nova menu, next to the Private Messages and Writing Control panel icons.
-![Dashboard location](/images/docs/2.7/using-dashboard/dashboard-location.png)
+
+{% screenshot src="/images/docs/2.7/using-dashboard/dashboard-location.png" alt="dashboard trigger location" /%}
 
 A typical dashboard will appear like this:
-![Dashboard location](/images/docs/2.7/using-dashboard/dashboard.png)
+
+{% screenshot src="/images/docs/2.7/using-dashboard/dashboard.png" alt="dashboard example" /%}
 
 Through the dashboard, each user will have access to:
 - Their **User Account**
@@ -32,6 +34,7 @@ When all changes are complete, select **Update.**
 To access your site preferences, access the Dashboard and click on the **Edit Site Preferences** link.
 
 The available tabs will include:
+
 - *My Skins*
 - *My Ranks*
 - *My Links*
@@ -41,6 +44,7 @@ The available tabs will include:
 You will be able to select what skins you will be able to see throughout the site when you are logged in. All users will be restricted to the skins that are installed and activated by site administrators. You can customize these preferences under the **My Skins** tab.
 
 The sections of the site that the user can customize the view of are:
+
 - *Main Site*
 - *Admin Site*
 - *Wiki*
@@ -59,8 +63,7 @@ If there are portions of the website you wish to have quick access to, such as t
 
 Under your link options, click on the dropdown for *My Link #2* and locate **Deck Listing**.
 
-When all changes are complete, select **Update.** To see the new link in your dashboard, navigate to a new page and access the dashboard.
-![Custom links](/images/docs/2.7/using-dashboard/dashboard-mylinks.png)
+When all changes are complete, select **Update.** To see the new link in your dashboard, navigate to a new page and access the dashboard. You will see your custom links at the bottom of the dashboard panel.
 
 ## Requesting a leave of absence (LOA)
 
@@ -105,11 +108,12 @@ When you decide that you wish to leave a game, you have the option of deleting y
 
 The following **WILL NOT** be deleted from Nova:
 
-- Your **Character(s)** and related bios.
+- Your **character(s)** and related bios.
 - Any **contributions** to saved and published posts, logs, wiki articles and news items.
 
 To delete your account, access the Dashboard and click on the **Edit Account** link. Select the *Delete Your Account* option.
-![Delete your account](/images/docs/2.7/using-dashboard/dashboard-delete.png)
+
+{% screenshot src="/images/docs/2.7/using-dashboard/dashboard-delete.png" alt="delete your account" /%}
 
 You will be asked by Nova if you truly do wish to delete your account. Once you are certain you wish to proceed, click on the **Delete My Account** button. Nova will instantly remove all your personal information from the system.
 
