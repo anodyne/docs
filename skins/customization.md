@@ -72,3 +72,26 @@ To finish the process, go down the list and replace the values with the comma-se
 ```
 
 Continue working through the variables (being careful to pay attention to which colors you're updating) and update all 9 shades of the color palette. Save the document and make sure it's uploaded to the server. Refresh your site and you should see the new colors. You can do this for any or all of the available color variables to customize the look of your site.
+
+### Update SVG icons
+
+If you've gone through the process above and refreshed your skin, you probably noticed that the icons in the upper right hand corner when logged in (known as the workflow panel) don't match your skin.
+
+Pulsar and Titan have switched to using SVG icons instead of PNGs for those icons. While this provides a cleaner, more modern look, colors had to be hard-coded into the SVGs files to avoid breaking changes to all skins. Fortunately, updating the colors is a relatively easy change.
+
+SVGs are different from other image formats due to the fact that they're actually code. That provides a lot of flexibility with how they get styled. In order to change the colors of your workflow icons, you can simply open them in the text editor of your choice.
+
+The icons that you'll need to edit are:
+
+- `dist/images/panel-dashboard.svg`
+- `dist/images/panel-inbox.svg`
+- `dist/images/panel-writing.svg`
+
+Once you've opened the images in your text editor, you'll want to find one the hex color that matches the skin you're modifying.
+
+- Pulsar uses a fill color of `#82937b`
+- Titan uses a fill color of `#22d0ee`
+
+These hex colors only appear one time in each of the 3 SVGs files, so you can find the first instance and swap the hex color with whatever hex color you'd like to use for those icons.
+
+Save the file and make sure it's uploaded to your server and you're good to go.
