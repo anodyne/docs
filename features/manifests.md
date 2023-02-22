@@ -2,8 +2,30 @@
 title: Manifests
 description: Learn more about Nova's powerful manifest structure, including how it interacts with departments and positions.
 layout: docs
-section: Guides
+section: Features
 ---
+
+## Site manifests
+
+### Assigning departments to a manifest
+
+### Default view for a manifest
+
+### Manifest metadata
+
+## Departments
+
+### Nested departments
+
+### Department types
+
+## Positions
+
+### Available slots
+
+### Top open positions
+
+### Position types
 
 Young or old, every game will feature a wide variety of characters. Each character brings a unique flavor and skill-set to that environment. Nova's manifest structure provides a way to list those characters in an easy-to-organize manner to allow for any player or user to freely locate and access information for any of the characters used in a Nova game.
 

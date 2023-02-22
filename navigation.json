@@ -11,6 +11,23 @@
       ]
   },
   {
+      "title": "Features",
+      "links": [
+          { "title": "Characters", "href": "features/characters" },
+          { "title": "Users", "href": "features/users" },
+          { "title": "Writing", "href": "features/writing" },
+          { "title": "Forms", "href": "features/forms" },
+          { "title": "Site manifests", "href": "features/manifests" },
+          { "title": "Messages & titles", "href": "features/messages" },
+          { "title": "Menus", "href": "features/menus" },
+          { "title": "Permissions", "href": "features/permissions" },
+          { "title": "Ranks", "href": "features/ranks" },
+          { "title": "Site Settings", "href": "features/site-settings" },
+          { "title": "Reporting", "href": "features/reporting" },
+          { "title": "Wiki", "href": "features/wiki" }
+      ]
+  },
+  {
       "title": "Guides",
       "links": [
           { "title": "Characters", "href": "guides/characters" },
