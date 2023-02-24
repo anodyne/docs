@@ -13,11 +13,17 @@ section: Features
 
 ### Character statuses
 
-### Converting a playing character to an NPC
-
 ### Linking characters to a user account
 
+### Converting a playing character to an NPC
+
 ## Managing NPCs
+
+A non-playable characters is any character in the game not assigned to a user account. Every game handles NPCs in slightly different ways, so Nova doesn't impose strict guidelines on how these types of characters should be used.
+
+{% note title="Protected NPCs" %}
+Nova 2 doesn't have the concept of "protected" NPCs. The only workaround to his would be to allow users to have more than one played character and assign any PNPCs to their user account.
+{% /note %}
 
 ### How do NPCs impact open positions?
 
