@@ -22,6 +22,10 @@ Before you get started updating Nova, make sure you have the following things re
 
 ## Updating Nova
 
+{% warning title="A word about PHP versions" %}
+Nova 2.7 provides support for PHP 8, but previous versions of Nova will not work on PHP 8. In order to update to Nova 2.7, you will need to make sure your site is running on PHP 7.4. After the update is complete and your site is running Nova 2.7, you can freely upgrade to whatever version of PHP 8 you would like to.
+{% /warning %}
+
 ### Step 1: Update application files
 
 Under normal circumstances, we don't ask Game Masters to update any files in the `application` directory. However, the update to CodeIgniter 3 required that many of the files in the the `application` directory be updated.
