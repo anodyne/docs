@@ -61,4 +61,4 @@ We've provided tools to prevent you from having to edit core files, but if a sit
       - `libraries`: The base libraries used by Nova are stored here. If you need to modify an existing library, copy it (or the method(s) you need) to the application's libraries folder and edit from there.
       - `models`: The base models used by Nova are stored here. If you need to modify an existing model, copy it (or the method(s) you need) to the `application/models` directory and edit from there.
       - `views`: The base views used by Nova are stored here. If you need to modify an existing view, copy it to the specific skin you want it to apply to or the `application/view/_base_override` folder and edit from there.
-- `swiftmailer`: This folder contains additional operational files for Nova's default email system.
+- `vendor`: Some of the dependencies for different packages used throughout Nova.
