@@ -33,10 +33,11 @@ Enter the color you want to use as the base for your color palette and it will c
     '700': '#273fce',
     '800': '#2634a7',
     '900': '#243184',
+    '950': '#1a2051',
 },
 ```
 
-You can delete the `900` record as we will not use that one.
+You can delete the `900` and `950` records as we will not use them.
 
 ### Convert the colors to RGB
 
@@ -81,7 +82,7 @@ Pulsar and Titan have switched to using SVG icons instead of PNGs for those icon
 
 SVGs are different from other image formats due to the fact that they're actually code. That provides a lot of flexibility with how they get styled. In order to change the colors of your workflow icons, you can simply open them in the text editor of your choice.
 
-The icons that you'll need to edit are:
+The icons that you'll need to edit within the skin are:
 
 - `dist/images/panel-dashboard.svg`
 - `dist/images/panel-inbox.svg`
