@@ -65,7 +65,7 @@ These things can certainly be built with other options, but they'll require a lo
 
 Today Nova is trusted by hundreds of games across the simming community. Players from around the world are familiar with how Nova works. No matter what modifications have been made on an individual game site, Nova is universal. This has created an environment where players can quickly get into a game and start contributing with little to no training or help.
 
-On top of that, Nova is open-source software and built on top of CodeIgniter, a trusted framework for building dynamic websites. Due to its open-source nature developers have been able to create custom MODs, skins, and other features that many in the community rely on as much as the core system. Further, [AnodyneXtras](https://xtras.anodyne-productions.com) has provided a streamlined avenue for discovering and downloading MODs and skins to customize sites to match the spirit and style of the game.
+On top of that, Nova is open-source software and built on top of CodeIgniter, a trusted framework for building dynamic websites. Due to its open-source nature developers have been able to create custom MODs, skins, and other features that many in the community rely on as much as the core system. Further, the [Nova Add-ons Exchange](https://anodyne-productions.com/addons) has provided a streamlined avenue for discovering and downloading MODs and skins to customize sites to match the spirit and style of the game.
 
 ## Who's this documentation for?
 

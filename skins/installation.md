@@ -7,7 +7,7 @@ section: Skins
 
 ## Uploading
 
-All of Nova's skins are stored in individual folders in the same location: `application/views`. If you have a skin you've downloaded from [AnodyneXtras](https://xtras.anodyne-productions.com) or created yourself, you can use your [FTP client](/docs/2.7/before-getting-started#helpful-tools) and upload the directory to your `application/views` folder.
+All of Nova's skins are stored in individual folders in the same location: `application/views`. If you have a skin you've downloaded from the [Nova Add-ons Exchange](https://anodyne-productions.com/addons) or created yourself, you can use your [FTP client](/docs/2.7/before-getting-started#helpful-tools) and upload the directory to your `application/views` folder.
 
 ## Installing
 

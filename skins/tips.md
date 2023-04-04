@@ -42,5 +42,5 @@ array(3) {
 In this case, the `var_dump` function revealed that the variable `$panel` contains an array with three items: `inbox`, `writing`, and `dashboard`. Further, each of those items contains another array with a link to the image attached to each panel item. This can help you determine how to use a given variable. For example, if you wanted get the image for the private messages inbox, you now know you can reference it by using `$panel['inbox']['src']`.
 
 {% warning title="Remove your debug code" %}
-Make sure that you've removed all debugging code before submitting your skin to [AnodyneXtras](https://xtras.anodyne-productions.com). The last thing you want to do is have your masterpiece ruined with a bunch of PHP debugging code!
+Make sure that you've removed all debugging code before submitting your skin to the [Nova Add-ons Exchange](https://anodyne-productions.com/addons). The last thing you want to do is have your masterpiece ruined with a bunch of PHP debugging code!
 {% /warning %}

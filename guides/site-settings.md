@@ -19,12 +19,9 @@ To edit any setting in Nova, you must have at least the *System Administration* 
 
 In this section, we will focus on establishing the basic parameters for your game's functionality, including your game's name, email settings, timezone, and appearance.
 
-To access your site's settings, access Nova's control panel and locate *Settings* under the subheading *Site Management*.
-![Settings location](/images/docs/2.7/using-settings/settings-location.png)
+To access your site's settings, access Nova's control panel and locate *Settings* under the subheading *Site Management*. From this screen you will have access to:
 
-From this screen you will have access to:
-
-![Settings options](/images/docs/2.7/using-settings/settings-options.png)
+{% screenshot src="/images/docs/2.7/using-settings/settings-tabs.png" alt="settings tabs" /%}
 
 - **Manage User Created Settings**: an advanced feature that enables you to create settings for various extensions and alterations to Nova's structure.
 - **General**: basic settings for your game such as its name.
@@ -72,7 +69,7 @@ Under the **System/Email** tab, the following options are available:
   - *Default Email Address*: enter the default email address that you would like Nova to send out all email notifications as. If you do not enter an address, Nova will use the default structure as installed.
 
 {% note %}
-Nova's email structure may be affected by your hosting company's requirements and can experience issues from time to time. For a better look at how Nova handles emails and how you can adjust it, please review [Core Concepts: Email](/emails.md).
+Nova's email structure may be affected by your hosting company's requirements and can experience issues from time to time. For a better look at how Nova handles emails and how you can adjust it, please review [Core Concepts: Email](/docs/2.7/emails).
 {% /note %}
 
 When all edits are complete, select **Submit**.
@@ -94,7 +91,7 @@ To install new skins, please review the [skinning documentation](/docs/2.7/skinn
   - *Rank Set*: Select what you want the default rank set to be by using the dropdown menu. A preview image of the selected rank set will appear under the dropdown.
 
 {% note %}
-To install new rank sets, please review [Using Ranks](/using-ranks.md).
+To install new rank sets, please review [Using Ranks](/docs/2.7/guides/ranks).
 {% /note %}
 
 - **Display Options (continued)**:
@@ -115,11 +112,9 @@ When all edits are complete, select **Submit**.
 
 Nova gives administrators the ability to create their own settings to be used throughout the system. Once a setting is created, it can be added to user-created pages or extended core pages and changed through the Site Settings page. At this time, user-created settings can only be edited through a simple text field and you will not have the ability to create a setting that uses a radio button, textarea, or dropdown menu.
 
-To add a setting, click first on *Manage User-Created Settings* from the Site Settings page.
-![Manage user settings location](/images/docs/2.7/using-settings/usersettings-managelocation.png)
+To add a setting, click on *Manage User-Created Settings* from the Site Settings page, then select *Add User-Created Setting*.
 
-Then select *Add User-Created Setting*.
-![Add setting location](/images/docs/2.7/using-settings/usersettings-addlocation.png)
+{% screenshot src="/images/docs/2.7/using-settings/usersettings-add.png" alt="add user-created setting" /%}
 
 Enter the following information:
 - *Label*: enter a label that will be easy for you to recognize what it is.
@@ -128,11 +123,9 @@ Enter the following information:
 
 When all edits are complete, select **Submit.**
 
-To edit an existing User-Created Setting, navigate to Site Settings and a 4th tab will be available.
-![Four tabs](/images/docs/2.7/using-settings/settings-4tabs.png)
+To edit an existing User-Created Setting, navigate to Site Settings and a 4th tab will be available. Select the **User-created Settings** tab to view all available user-created settings and edit any existing values.
 
-Select the **User-created Settings** tab to view all available user-created settings and edit any existing values.
-![All user-created settings](/images/docs/2.7/using-settings/usersettings-viewall.png)
+{% screenshot src="/images/docs/2.7/using-settings/settings-4tabs.png" alt="four tabs" /%}
 
 When all edits are complete, select **Submit.**
 
@@ -140,12 +133,9 @@ When all edits are complete, select **Submit.**
 
 Nova's basic installation provides each game with common and easily editable pages to help the management team convey to current and potential players important information about the game and story. These features are all contained within Nova's powerful *Messages and Titles* system.
 
-To access your site's Messages and Titles, access Nova's control panel and locate *Messages & Titles* under the subheading *Site Management*.
-![Messages location](/images/docs/2.7/using-settings/messages-location.png)
+To access your site's Messages and Titles, access Nova's control panel and locate *Messages & Titles* under the subheading *Site Management*. From this screen you will have access to:
 
-From this screen you will have access to:
-
-![Messages options](/images/docs/2.7/using-settings/messages-options.png)
+{% screenshot src="/images/docs/2.7/using-settings/messages-tabs.png" alt="messages and content tabs" /%}
 
 - **Add New Message**: an advanced feature that enables you to create messages for various pages, extensions and alterations to Nova's structure.
 - **Page Tiles**: titles for key pages throughout Nova.
@@ -171,7 +161,7 @@ Under the **Messages** tab, the following messages are available:
 - *Welcome Page Message*: enter what will displayed under the heading of your site's *main* page.
 - *Rules Message*: enter any rules you wish for your players to abide by. These will be displayed on your site's *main* page.
 - *Sim Message*: enter any information about your game. This will be displayed on your site's *sim* page.
-- *Wiki Main Page Message*: this message has been depreciated thanks to the Thresher Wiki system. To learn more, please review [Using the Wiki](/using-wiki.md)
+- *Wiki Main Page Message*: this message has been depreciated thanks to the Thresher Wiki system. To learn more, please review [Using the Wiki](/docs/2.7/guides/wiki)
 - *Credits*: enter any credits for other copyrighted material used on your site, including images, as well as any copyright disclaimers you may have. This message will be displayed on your site's *credits* page.
 - *Join Instructions*: enter any instructions you may have for players who are filling out an application to join your game. This message will be displayed throughout the application process.
 - *Contact Instructions*: enter any instructions, or a message, you may have for users contacting the management staff through the *contact form* on the front of the site.
@@ -196,8 +186,7 @@ Under the **Other** tab, the following options are available:
 
 Nova gives administrators the ability to create their own messages to be used throughout the system, especially when creating their own pages and extensions. Once a message or title is created, it can be edited through the selected tab on the Messages & Titles page.
 
-To add a setting, click first on *Add New Message* from the Site Settings page.
-![Add new message](/images/docs/2.7/using-settings/messages-addnew.png)
+To add a message, click first on *Add New Message* from the Site Messages page.
 
 Enter the following information:
 - *Message Label*: enter a label that will be easy for you to recognize what it is.

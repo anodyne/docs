@@ -13,7 +13,7 @@ Nova is designed to handle both complex and simple rank structures. To understan
 
 - A **rank** is the name of a particular level in a rank hierarchy. For example, Captain, Ensign, Colonel, Glinn, Procounsel, Civilian, etc.
 - A **rank class** is a collection of ranks, usually used to organize ranks by a department and/or division. For example, in Star Trek the Command Department uses red backgrounds and all ranks that use that color background will have the same rank class.
-- A **rank set** is a complete collection of stylized rank images. Most Nova installers come with a full set of these images customized for that genre, such as *DS9*, *TOS Movie Era*, *seaQuest*, etc. Additional rank sets are available at [AnodyneXtras](https://xtras.anodyne-productions.com) or [Kuro-RPG](http://kuro-rpg.net/).
+- A **rank set** is a complete collection of stylized rank images. Most Nova installers come with a full set of these images customized for that genre, such as *DS9*, *TOS Movie Era*, *seaQuest*, etc. Additional rank sets are available at the [Nova Add-ons Exchange](https://anodyne-productions.com/addons) or [Kuro-RPG](https://kuro-rpg.net/).
 
 ## Permissions
 
@@ -25,21 +25,20 @@ Additionally, to add rank sets you will need to have direct access to your site'
 
 From the Rank Management page, you will be able to view all ranks. In Nova's Control Panel, locate **Ranks** under the *Management* subheader in the sidebar.
 
-![Ranks Management](/images/docs/2.7/using-ranks/management-ranks.png)
-
 All available rank sets and rank classes will be displayed at the top of the page. Individual rank sets will be denoted by a single preview image and rank classes within a rank set will be displayed by a preview image of each color. You can click on the desired class image to display all ranks in that rank class.
 
-![Rank Sets and Classes](/images/docs/2.7/using-ranks/ranks-sets-classes.png)
+{% screenshot src="/images/docs/2.7/using-ranks/ranks-sets-classes.png" alt="rank sets and classes" /%}
 
 ## Adding a rank
 
 Let's walk through the process of creating a new rank.
 
-Adding a rank is simple. Let's create a Lieutenant in a *Star Trek* Science Division. In Nova's Control Panel, locate **Ranks** under the *Management* subheader on the sidebar.
+Let's create a Lieutenant in a *Star Trek* Science Division. In Nova's Control Panel, locate **Ranks** under the *Management* subheader on the sidebar.
+
+{% screenshot src="/images/docs/2.7/using-ranks/ranks-add.png" alt="add rank modal" /%}
 
 1. From the Control Panel, locate **Ranks** under the *Management* subheader in the sidebar.
 2. Click **Add A Rank**. A dialog box (also called a modal) will appear.
-    ![Add Rank](/images/docs/2.7/using-ranks/rank-addrank.png)
 3. Fill out the information in the dialog box:
   - *Name*: the name of the rank (e.g. *Lieutenant*).
   - *Short Name*: an abbreviation of the rank (e.g. *LT*).
@@ -55,7 +54,7 @@ Adding a rank is simple. Let's create a Lieutenant in a *Star Trek* Science Divi
 
 To modify any existing rank that is available in Nova, access Nova's Control Panel, and locate **Ranks** under the *Management* subheader on the sidebar.
 
-![Modifying a rank](/images/docs/2.7/using-ranks/rank-modify.png)
+{% screenshot src="/images/docs/2.7/using-ranks/ranks-edit.png" alt="edit rank" /%}
 
 Select the appropriate **rank class**, and then scroll until you find the Rank you wish to edit. The Rank name and image are readily available, and more options are accessible via the `More` button. You can edit as many ranks as you need in the selected Class at a time, but you will lose your changes if you select a different Class. Be sure to hit the **Update** button at the bottom of the page before navigating to a new class.
 
@@ -65,7 +64,7 @@ If you are operating a game that does not wish to use ranks, or would have rank-
 
 To remove a Rank's name and/or abbreviation, follow the instructions above for Modifying existing Ranks. When you select the Rank you wish to edit, simply erase the name and/or the abbreviation, then select **Update** at the bottom of the page.
 
-![Blank rank](/images/docs/2.7/using-ranks/rank-blankrank.png)
+{% screenshot src="/images/docs/2.7/using-ranks/ranks-blank.png" alt="blank rank" /%}
 
 ## Removing a rank and/or rank class
 
@@ -86,7 +85,7 @@ To delete a rank, click on the *Delete?* checkbox, then scroll to the bottom and
 
 ## Adding a rank set
 
-All fresh Nova installations (except for the *Blank Installer*), come with only one rank set. New rank sets are available at Anodyne Xtras or [Kuro-RPG](http://kuro-rpg.net/).
+All fresh Nova installations (except for the *Blank Installer*), come with only one rank set. New rank sets are available at the [Nova Add-ons Exchange](https://anodyne-productions.com/addons) or [Kuro-RPG](https://kuro-rpg.net/).
 
 Once you have downloaded (or created) your new rank set, you will need to access your Site via FTP software, or your webhost's cPanel (or equivalent) software. Please refer to the instructions you received from your webhost when first creating your account with them.
 
@@ -104,22 +103,20 @@ Open the new directory and ensure that you see image files, and not additional d
 
 To install your new rank set, access Nova's Control Panel, and locate **Rank Catalogue** under the *Site Management* subheader on the sidebar.
 
-![Accessing Rank Catalogue](/images/docs/2.7/using-ranks/controlpanel-rankcatalogue.png)
-
 Some downloadable rank sets contain a `rank.yml` file. Nova will automatically detect this file and will provide a button at the top of the **Rank Catalogue** page to easily install the rank set.
 
-![Install Rankset](/images/docs/2.7/using-ranks/rankcatalogue-install.png)
+{% screenshot src="/images/docs/2.7/using-ranks/catalog-install.png" alt="rank catalog install rank set" /%}
 
-If you are installing a customized rank set, especially one of your own unique design, you can create a `rank.yml` file to upload with the set to streamline installation. A typical file, such as one for [Kuro-RPG's DS9 Dress Uniform](http://kuro-rpg.net/?direct=kuro_ranks_viewer&id=218) set, looks like this:
+If you are installing a customized rank set, especially one of your own unique design, you can create a `rank.yml` file to upload with the set to streamline installation. A typical file looks like this:
 
 ```yaml
 rank: Dress Ranks
 location: dress
-credits: The rank sets used in Nova were created by Kuro-chan of Kuro-RPG. The ranksets can be found at <a href='http://www.kuro-rpg.net' target='_blank'>Kuro-RPG</a>. Please do not copy or modify the images.
+credits: The rank sets used in Nova were created by Kuro-chan of Kuro-RPG. The ranksets can be found at <a href='https://www.kuro-rpg.net' target='_blank'>Kuro-RPG</a>. Please do not copy or modify the images.
 preview: preview.png
 blank: blank.png
 extension: .png
-url: http://www.kuro-rpg.net/
+url: https://www.kuro-rpg.net/
 ```
 
 If the rank set does contain the `rank.yml` file, but Nova does not detect it, please check your File Manager to ensure that the rank set was uploaded to the right location and that the files are visible.
@@ -146,20 +143,17 @@ Once you have more than one rank set installed, you can freely change between th
 
 To change the rank set that appears for all users, specifically for those who are logged out, access Nova's Control Panel, and locate **Settings** under the *Site Management* subheader on the sidebar.
 
-![Site Settings](/images/docs/2.7/using-ranks/sitemanagement-settings.png)
-
 Select the **Appearance** tab, and locate rank set under Display Options. Once you have selected your rank set, scroll down and select the **Submit** button.
 
-![Display Options](/images/docs/2.7/using-ranks/sitesettings-displayoptions.png)
+{% screenshot src="/images/docs/2.7/using-ranks/settings-display-options.png" alt="settings display options" /%}
 
 Now that the rank set has been changed for most users, you will need to change your own account's display preferences in order to see the new set.
 
 1. At the top of the page, find the **Dashboard** icon.
-    ![Dashboard](/images/docs/2.7/using-ranks/dashboard.png)
 2. A popup (modal) will appear in the center of the screen. Select **Edit Site Preferences**.
-    ![Dashboard Modal](/images/docs/2.7/using-ranks/dashboard-sitepreferences.png)
 3. Select the **My Ranks** tab.
-    ![Select Your Rank](/images/docs/2.7/using-ranks/siteoptions-myranks.png)
 4. Select your desired rankset, then click **Update**.
+
+{% screenshot src="/images/docs/2.7/using-ranks/site-options-ranks.png" alt="my rank preferences" /%}
 
 You will now be able to see your preferred rankset no matter where you are on the site!

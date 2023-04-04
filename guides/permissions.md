@@ -88,23 +88,23 @@ Any user with this role will **NOT** be able to:
 To edit any access role in Nova, you must have at least the *System Administration* access role, or your access role needs to have the appropriate setting management (such as *Role Access* etc.) feature(s) enabled. Typically, this feature is reserved for those who are managing the game.
 
 To access any of the access roles available on Nova, access Nova's control panel and locate *Access Roles* under the subheading *Site Management*.
-![Access Roles location](/images/docs/2.7/using-permissions/access-role-location.png)
 
 To edit existing access roles, click on the Edit icon to the far right of the role you wish to edit. To delete a role, select the appropriate Delete icon. To view a list of all users who possess each role, click the View icon.
-![Edit, delete, or view](/images/docs/2.7/using-permissions/edit-delete-view.png)
+
+{% screenshot src="/images/docs/2.7/using-permissions/role-edit-delete-view.png" alt="edit, delete, or view a role" /%}
 
 When editing a role, check or uncheck the permissions you wish to give or remove from that particular group of users. Once you are finished, click on the **Submit** button at the bottom of the page.
 
 To add a role, click on the **Add Role** option at the top of the page. Enter a name and a description of the role, select the appropriate permissions throughout the page, and then click the **Submit** button when finished.
-![Adding a role](/images/docs/2.7/using-permissions/access-role-add.png)
+
+{% screenshot src="/images/docs/2.7/using-permissions/role-add.png" alt="add a role" /%}
 
 To duplicate an existing role to use as a template for a custom role, select the **Duplicate Role** from the top of the page. Select the role you wish to duplicate from the dropdown menu, then enter a *Name* and *Description* for the role. When you finished, click the **Submit** button.
 
+{% screenshot src="/images/docs/2.7/using-permissions/role-duplicate.png" alt="duplicate a role" /%}
+
 {% tip %}
 Don't know what a particular permission setting will do? The Edit Role page will provide you with a brief description of what each setting will grant the user assigned to the group. To see this description, place your cursor over the appropriate question mark icon and the information will appear in a popup.
-
-For example, if you wanted to see what the *Menus* permission setting would enable, hover your cursor over the question mark beside the function.
-![Role description](/images/docs/2.7/using-permissions/access-role-description.png)
 {% /tip %}
 
 ## Role pages
@@ -116,7 +116,8 @@ Editing role pages could affect existing access roles and your players' ability 
 {% /warning %}
 
 To access the *Role Pages Manager*, access Nova's control panel and locate *Access Roles* under the subheading *Site Management*. Then, under the *Roles* heading, select *Manage Role Pages*.
-![Role pages location](/images/docs/2.7/using-permissions/role-page-location.png)
+
+{% screenshot src="/images/docs/2.7/using-permissions/pages-manage.png" alt="manage role pages link" /%}
 
 All role pages are organized in groups, and arranged according to the presentation of permission settings on the *Edit Role* page.
 
@@ -135,7 +136,8 @@ When your edits are complete, select the **Submit** button.
 ## Role page groups
 
 To manage the role page groups, access the *Manage Role Page Group* link at the top of the *Role Pages* page.
-![Role groups location](/images/docs/2.7/using-permissions/role-group-location.png)
+
+{% screenshot src="/images/docs/2.7/using-permissions/groups-manage.png" alt="manage role page groups link" /%}
 
 From here, you will be able to edit or delete any group that already exists within Nova. Should you wish to delete a group, you will have to select a new role page group for the permission sets to be added to.
 
@@ -150,7 +152,6 @@ To add a new group, select the **Add Role Page Group** option. Assign a name for
 On rare occasions, you may encounter a user who causes trouble or strife within your game or is a sore point for the management team. Nova provides system administrators with the ability to keep these users from applying to the game, or even accessing their old accounts.
 
 To access the *Site Bans* management system, access Nova's control panel and locate *Ban Controls* under the subheading *Site Management*.
-![Ban Controls location](/images/docs/2.7/using-permissions/bans-location.png)
 
 Two types of ban levels are available within Nova:
 
@@ -158,7 +159,7 @@ Two types of ban levels are available within Nova:
 - *Level 2*: can only be executed by IP address. Using this level will prevent a user from accessing any portion of the site, even as a regular visitor.
 
 {% warning title="Caution" %}
-Use level 2 bans sparingly as doing so can have a detrimental affect on site performance. If Nova is actively watching for multiple IPs, it could continually slow down the site's operations and performance for the users actively playing the game.
+Use level 2 bans sparingly as doing so can have an impact on site performance. If Nova is actively watching for multiple IPs, it could continually slow down the site's operations and performance for the users actively playing the game.
 {% /warning %}
 
 To add a ban, select the **Add Ban** option and fill out the appropriate fields:
@@ -175,4 +176,5 @@ If a user is known to have multiple IP addresses, you will have to place a ban f
 {% /tip %}
 
 You can review all existing bans under the Level 1 or Level 2 tabs available on the Site Bans page. To remove a ban, simply click on the Delete icon next to the appropriate ban.
-![Reviewing bans](/images/docs/2.7/using-permissions/bans-review.png)
+
+{% screenshot src="/images/docs/2.7/using-permissions/bans.png" alt="manage bans" /%}

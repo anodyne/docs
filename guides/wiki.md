@@ -15,7 +15,7 @@ For the purposes of this guide, we are assuming that you are using a fresh Nova 
 
 ## Quick Tour
 
-![Start page](/images/docs/2.7/using-wiki/wiki-start-page.png)
+{% screenshot src="/images/docs/2.7/using-wiki/start-page.png" alt="wiki start page" /%}
 
 Upon a fresh installation of Nova, the wiki's basic structure will appear very sterile. Everything you need, however, is available for the game's users to start creating.
 
@@ -23,7 +23,7 @@ The main page appears with a simple header and paragraph, immediately informing 
 
 ### Recent changes
 
-![Recent changes page](/images/docs/2.7/using-wiki/wiki-recent-changes.png)
+{% screenshot src="/images/docs/2.7/using-wiki/recent-changes.png" alt="wiki recent changes page" /%}
 
 As wikis grow, it can be difficult for anyone, especially the game's players, to keep track of changes, whether they be new articles or updates to existing pages. Thresher's *Recent Changes* system simplifies this herculean task and allows anyone to see any new changes at a glance.
 
@@ -33,7 +33,7 @@ Each entry will also feature an update summary, provided the last user entered a
 
 ### Categories
 
-![Categories page](/images/docs/2.7/using-wiki/wiki-categories-page.png)
+{% screenshot src="/images/docs/2.7/using-wiki/categories-page.png" alt="wiki categories page" /%}
 
 The *Wiki Categories* page provides quick access to all of the categories available in the wiki. If a page is not added to a category, it will automatically be added to the *Uncategorized* listing. By clicking on a category, Nova will show you all pages attached to that category.
 
@@ -45,7 +45,7 @@ Pages can have more than one category assigned to them. If you have multiple opt
 
 ### Manage pages
 
-![Start page](/images/docs/2.7/using-wiki/wiki-manage-page.png)
+{% screenshot src="/images/docs/2.7/using-wiki/manage-pages.png" alt="wiki manage pages screen" /%}
 
 The *Manage Wiki Pages* page is available to all players, allowing everyone to see a full list of pages that are saved in the wiki.
 
@@ -61,7 +61,8 @@ From this page, any active user can:
 - Clean up drafts of existing pages
 
 Each page in the listing will have a set of options available to you.
-![Manage page options](/images/docs/2.7/using-wiki/wiki-manage-page-options.png)
+
+{% screenshot src="/images/docs/2.7/using-wiki/manage-pages-options.png" alt="wiki manage page options" /%}
 
 From Left to Right, these options are:
 
@@ -74,7 +75,7 @@ From Left to Right, these options are:
 
 ### Manage categories
 
-![Manage categories page](/images/docs/2.7/using-wiki/wiki-manage-categories.png)
+{% screenshot src="/images/docs/2.7/using-wiki/manage-categories.png" alt="wiki manage categories page" /%}
 
 {% note %}
 This page is available only to users with the *Basic* or *System administrator* access role.
@@ -118,21 +119,26 @@ Thresher does not store images, nor does it have the ability for any user to upl
 {% /tip %}
 
 Let's work on creating our page. Add a title and a summary. As you work in the content box, you'll notice that this is not a normal text box.
-![Content box](/images/docs/2.7/using-wiki/wiki-content-box.png)
+
+{% screenshot src="/images/docs/2.7/using-wiki/content-field.png" alt="wiki page content field" /%}
 
 Enter the content of the page, being sure to use the paragraph icon in the toolbar whenever you add a new paragraph, or one of the H1-H6 icons to establish your headings and subheadings throughout the page. Headings for a page on the Borg might include *Physiology*, *History*, and *Technology*. Subheadings under *History* might include *Origins*, *Encounters*, and *Battles*.
 
 Now that our content has been added, let's add our categories.
-![Category box](/images/docs/2.7/using-wiki/wiki-category-box.png)
+
+{% screenshot src="/images/docs/2.7/using-wiki/category-panel.png" alt="wiki category panel" /%}
 
 Since we made *Alien Species* earlier in this guide, it is already listed in the box, but it is unselected. To add this page to that category, click on *Alien Species*.
-![Selected category](/images/docs/2.7/using-wiki/wiki-category-box-selected.png)
+
+{% screenshot src="/images/docs/2.7/using-wiki/category-panel-selected.png" alt="wiki category panel with selected category" /%}
 
 The Borg are also an enemy of the Federation, and therefore an enemy of the crew of the *Enterprise*. Let's add an *Enemies* category. In the *Add Categories...* field, type "Enemies" and click on the plus icon.
-![Adding a category](/images/docs/2.7/using-wiki/wiki-category-box-adding.png)
+
+{% screenshot src="/images/docs/2.7/using-wiki/category-panel-new.png" alt="wiki category panel add new category" /%}
 
 Once added, the category will not be automatically selected. You will need to click on the new category in order to add this page to it.
-![Adding a new category](/images/docs/2.7/using-wiki/wiki-category-box-new.png)
+
+{% screenshot src="/images/docs/2.7/using-wiki/category-panel-unselected.png" alt="wiki category panel with unselected category" /%}
 
 When all information is added, and you are satisfied with how your page looks, click the **Create** (or **Update** if you are editing a page) button at the bottom of the page.
 
