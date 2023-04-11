@@ -15,7 +15,15 @@ If you want to change the logo used in the header of the skin or at the top of t
 
 Sometimes you don't need to make wholesale changes to a skin and just want to update the colors. The Pulsar and Titan skins leverage CSS variables to make it simpler to change the colors used throughout the skins.
 
-### Generating a new color palette
+### Automate generating a new color palette
+
+Nova 2.7.5 includes a page that will allow you to generate a color palette from a list of pre-defined colors or by using a custom hex color. You can access the page at the `site/skincolors`. You have the ability to generate colors for primary, success, danger, warning, and info colors from the page.
+
+Once you have selected a color or entered a custom color and generated the colors, you can copy/paste the CSS variables into the skin's `dist/css/colors.css` file.
+
+### Manually generating a new color palette
+
+While automating the process can be handy, sometimes it won't give you the results you're looking. You can manually generate your color palette and do the process manually.
 
 There are a lot of websites that allow you to create color palettes. We recommend using [UIColors.app](https://uicolors.app/create) since it's simple to use and will output colors in a way that is compatible with Tailwind CSS.
 
@@ -39,7 +47,7 @@ Enter the color you want to use as the base for your color palette and it will c
 
 You can delete the `900` and `950` records as we will not use them.
 
-### Convert the colors to RGB
+#### Convert the colors to RGB
 
 Once you have a color palette, you'll need to [convert](https://www.rapidtables.com/convert/color/index.html) the hex colors to RGB values. This is done so that we can use background opacity on the colors properly.
 
@@ -59,7 +67,7 @@ The skin will not display correctly if you skip this step!
 },
 ```
 
-### Update the CSS variables
+#### Update the CSS variables
 
 Open `dist/css/colors.css` of the Pulsar or Titan skins. In there, you'll see a complete list of the CSS color variables. We use a primary color and then colors for different states (success, danger, warning, and info). Do not change the name of the CSS variables as that will break the skins.
 
