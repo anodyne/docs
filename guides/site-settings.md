@@ -84,7 +84,7 @@ Under the **Appearance** tab, the following options are available:
   - The *Wiki*, where information critical to gameplay is stored.
 
 {% note %}
-To install new skins, please review the [skinning documentation](/docs/2.7/skinning-overview).
+To install new skins, please review the [skinning documentation](/docs/2.7/skins/overview).
 {% /note %}
 
 - **Display Options**:

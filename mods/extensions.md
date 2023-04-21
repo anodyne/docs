@@ -120,20 +120,20 @@ application/extensions/my_extension/controllers/my_controller
 
 To avoid a class name collision, the controller class must also be named in a special way:
 
-- Start the class name with `**extensions`
-- Next, place two more underscores `**`
+- Start the class name with `__extensions`
+- Next, place two more underscores `__`
 - Next, place the extension name, such as `my_extension`
-- Next, place two more underscores `**`
+- Next, place two more underscores `__`
 - Next, place the controller name
 
-So for the above example, the class would be `**extensions**my_extension**my_controller`:
+So for the above example, the class would be `__extensions__my_extension__my_controller`:
 
 ```php
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 require_once MODPATH.'core/libraries/Nova_controller_main.php';
 
-class **extensions**my_extension**my_controller extends Nova_controller_main
+class __extensions__my_extension__my_controller extends Nova_controller_main
 {
 	public function __construct()
 	{
@@ -188,7 +188,7 @@ Putting it all together, one might end up with a controller like:
 
 require_once MODPATH.'core/libraries/Nova_controller_main.php';
 
-class **extensions**my_extension**my_controller extends Nova_controller_main
+class __extensions__my_extension__my_controller extends Nova_controller_main
 {
 	public function __construct()
 	{
@@ -223,7 +223,7 @@ In this file, define the controller with the same name as the extension controll
 
 require_once APPPATH.'extensions/my_extension/controllers/my_controller.php';
 
-class extensions**my_extension**my_controller extends **extensions**my_extension**my_controller
+class __extensions__my_extension__my_controller extends __extensions__my_extension__my_controller
 {
     public function my_method()
     {

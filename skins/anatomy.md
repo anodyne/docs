@@ -18,11 +18,11 @@ As a skin author, you're free to structure your skin however you see fit. Throug
 - `preview-login.jpg` – a preview image of the login section (only used when selecting a skin); this image must be in the root directory of your skin and cannot be renamed or Nova will not be able to show a preview of the skin section to users
 - `preview-main.jpg` – a preview image of the main section (only used when selecting a skin); this image must be in the root directory of your skin and cannot be renamed or Nova will not be able to show a preview of the skin section to users
 - `preview-wiki.jpg` – a preview image of the wiki section (only used when selecting a skin); this image must be in the root directory of your skin and cannot be renamed or Nova will not be able to show a preview of the skin section to users
-- `skin.yml` – the QuickInstall file used by Nova to [install the skin](/docs/2.7/skinning-install)
-- `template_admin.php` – the base HTML structure of the admin section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.7/skinning-templates) for more information about skin templates
-- `template_login.php` – the base HTML structure of the login section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.7/skinning-templates) for more information about skin templates
-- `template_main.php` – the base HTML structure of the main section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.7/skinning-templates) for more information about skin templates
-- `template_wiki.php` – the base HTML structure of the wiki section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.7/skinning-templates) for more information about skin templates
+- `skin.yml` – the QuickInstall file used by Nova to [install the skin](/docs/2.7/skins/installation)
+- `template_admin.php` – the base HTML structure of the admin section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.7/skins/templates) for more information about skin templates
+- `template_login.php` – the base HTML structure of the login section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.7/skins/templates) for more information about skin templates
+- `template_main.php` – the base HTML structure of the main section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.7/skins/templates) for more information about skin templates
+- `template_wiki.php` – the base HTML structure of the wiki section (this file must be in the root directory of your skin and cannot be renamed or your skin will not work); see [here](/docs/2.7/skins/templates) for more information about skin templates
 
 ## Section folders
 
