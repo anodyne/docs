@@ -103,26 +103,37 @@ It can be a little daunting to step into the world of third-party email service 
 - [ElasticEmail](https://elasticemail.com/)
 
 {% note title="Some assembly required" %}
-It's important to understand that there may be additional work that has to be done for some of these services. For example, Mailgun requires domain verification before you can send emails. While it's a technical process, Mailgun has documentation that will walk you through updating the DNS records. In other cases, these are relatively new services that we don't have much information on. We encourage people to look at the different options and make decisions based on what they think their needs will be.
+It's important to understand that there may be additional work that has to be done for some of these services. For example, some services requires domain verification before you can send emails. While it's a technical process, they generally have documentation that will walk you through updating the DNS records. In other cases, these are relatively new services that we don't have much information on. We encourage people to look at the different options and make decisions based on what they think their needs will be.
 {% /note %}
 
-Any of the above SMTP services will work in Nova. If you're having issues today with emails not being delivered, you can get up and running in short order by signing up for one of the above services and plugging in the details in your email config file in Nova.
+If you're having issues today with emails not being delivered, you can get up and running in relatively short order by signing up for one of the above services and plugging in the details in your email config file in Nova.
 
 ### Using SMTP in Nova
 
-In order to get Nova working with your SMTP service of choice, you simply need to update the `application/config/email.php` config file with the information you got from the service when you signed up:
+In order to get Nova working with your SMTP service of choice, you will need to update the `application/config/email.php` config file with the information you got from the service when you signed up:
 
 ```php
 $config['protocol'] = 'smtp';
-$config['smtp_host'] = 'http://smtp.example.com';
+$config['smtp_host'] = 'https://smtp.example.com';
 $config['smtp_user'] = 'username';
 $config['smtp_pass'] = 'password';
 $config['smtp_port'] = 25;
 ```
 
+If your email service uses SSL, there are likely some additional options that will need to be set, but you should verify these settings with your provider:
+
+```php
+$config['smtp_port'] = 587;
+$config['smtp_crypto'] = 'tls';
+```
+
 Save the file and upload it back to your server and you should be all set!
 
-You can run a test by using the contact form to send something to yourself. If everything is working, you should get the contact page email like normal. If you don't get the email, you may need to use the SMTP service's dashboard to figure out if the email got to the service. (This goes back to what we talked about earlier about some services requiring additional setup in order to get it working properly.)
+You can run a test by using the contact form to send something to yourself. If everything is working, you should get the contact page email like normal.
+
+#### Troubleshooting
+
+If you don't get an email, the first step is to look at the error logs. Sometimes if there's a problem you'll be able to tell from any entries in the error logs. You can also use the SMTP service's dashboard to figure out if the email got to the service. (This goes back to what we talked about earlier about some services requiring additional setup in order to get it working properly.)
 
 ### Not interested in third-party email service providers?
 
