@@ -1,6 +1,6 @@
 ---
-title: Upgrade guide
-description: Upgrading Nova to the latest version.
+title: Update guide
+description: Updating Nova to the latest version.
 layout: docs
 section: Getting Started
 ---
@@ -20,7 +20,7 @@ Before you get started updating Nova, make sure you have the following things re
 ## Updating Nova
 
 {% note title="Upgrading to Nova 2.7" %}
-If you are upgrading from a version of Nova prior to 2.7.0, you will need to use the [Nova 2.7 Upgrade Guide](/docs/2.7/upgrade-guide-27). For all other future updates to Nova 2.7, you will be able to use the below process.
+If you are upgrading from a version of Nova prior to 2.7.0, you will need to use the [upgrade guide](/docs/2.7/upgrade-guide). For all other future updates to Nova 2.7, you will be able to use the below process.
 {% /note %}
 
 ### Step 1: Rename the Nova directory
@@ -45,7 +45,7 @@ With the update complete and your site back up and running, you can now delete t
 
 ## Updating from previous versions
 
-Nova currently offers two stable releases for download, the latest current version and v2.3.2 for legacy systems. If you are updating from version 2.3.2 or higher to any version above, please follow all steps in **each** of the below upgrade guides. All files are provided for you in the latest current version download, but you will still need to walk through each version one at a time.
+Nova currently offers three stable releases for download, the latest current version, v2.6.2 for legacy systems using PHP 7, and v2.3.2 for legacy systems using PHP 5. If you are updating from version 2.3.2 or higher to any version above, please follow all steps in **each** of the upgrade guides. All files are provided for you in the latest current version download, but you will still need to walk through each version one at a time.
 
 If you are upgrading from a version of Nova prior to 2.3.2, please reach out to our support team on [Discord](https://discord.gg/7WmKUks).
 
@@ -69,7 +69,7 @@ For example, a site running Nova version 2.3.2 would read:
 
 ### v2.7 from v2.6.x
 
-If you are upgrading from a version of Nova prior to 2.7.0, you will need to use the [Nova 2.7 Upgrade Guide](/docs/2.7/upgrade-guide-27). For all other future updates to Nova 2.7, you will be able to use the above process.
+If you are upgrading from a version of Nova prior to 2.7.0, you will need to use the [upgrade guide](/docs/2.7/upgrade-guide). For all other future updates to Nova 2.7, you will be able to use the above process.
 
 ### v2.6 from v2.5.x
 
