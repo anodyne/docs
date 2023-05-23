@@ -104,3 +104,31 @@ Once you've opened the images in your text editor, you'll want to find one the h
 These hex colors only appear one time in each of the 3 SVGs files, so you can find the first instance and swap the hex color with whatever hex color you'd like to use for those icons.
 
 Save the file and make sure it's uploaded to your server and you're good to go.
+
+## Add Tailwind utility classes to existing skins
+
+Tailwind CSS is a utility-first CSS framework that allows composing classes together to build a design directly in HTML markup. While this may seem counterintuitive, it's actually a really powerful way to approach writing presentation code. Also known as atomic CSS, this approach to CSS architecture favors small, single-purpose classes with names based on visual function.
+
+We have begun using Tailwind CSS extensively and the new versions of Pulsar and Titan leverage Tailwind in major ways. Some people may be interested in adding these same utilities to their own skins to take advantage of markup that's been added to Nova recently or to use the classes themselves.
+
+In order to add Tailwind CSS to your skin, you will need to update each template file in your skin. First, you should add the following PHP code somewhere before the open `html` tag. There are several similar looking blocks of code in each template, so adding it near there is probably the easiest approach.
+
+```php
+$utilities = [
+    'href' => MODFOLDER.'/tailwind/utilities.css',
+    'rel' => 'stylesheet',
+    'type' => 'text/css',
+    'media' => 'screen',
+    'charset' => 'utf-8'
+];
+```
+
+With the information defined about the utilities stylesheet, you can add a new tag for the utilities stylesheet between the main stylesheet and the colors stylesheet.
+
+```html
+<?php echo link_tag($stylesheet);?>
+<?php echo link_tag($utilities);?>  // [tl! ++ focus]
+<?php echo link_tag($colors);?>
+```
+
+We encourage you to look through the [Tailwind CSS](https://tailwindcss.com) documentation for all of the utility classes that are available.
