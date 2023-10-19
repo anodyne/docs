@@ -7,23 +7,23 @@ section: Guides
 
 ## What are ranks?
 
-Many online RPGs attach a rank to characters to denote a certain status/hierarchy in-character. For example, a character in *Star Trek* could be a Lieutenant while a character in *Star Wars* might be a Jedi Knight and a character in *Firefly* could be a Civilian.
+Many online RPGs attach a rank to characters to denote a certain status/hierarchy in-character. For example, a character in _Star Trek_ could be a Lieutenant while a character in _Star Wars_ might be a Jedi Knight and a character in _Firefly_ could be a Civilian.
 
 Nova is designed to handle both complex and simple rank structures. To understand how best to use this structure, it helps to understand the terms Nova uses for organzing ranks:
 
 - A **rank** is the name of a particular level in a rank hierarchy. For example, Captain, Ensign, Colonel, Glinn, Procounsel, Civilian, etc.
 - A **rank class** is a collection of ranks, usually used to organize ranks by a department and/or division. For example, in Star Trek the Command Department uses red backgrounds and all ranks that use that color background will have the same rank class.
-- A **rank set** is a complete collection of stylized rank images. Most Nova installers come with a full set of these images customized for that genre, such as *DS9*, *TOS Movie Era*, *seaQuest*, etc. Additional rank sets are available at the [Nova Add-ons Exchange](https://anodyne-productions.com/addons) or [Kuro-RPG](https://kuro-rpg.net/).
+- A **rank set** is a complete collection of stylized rank images. Most Nova installers come with a full set of these images customized for that genre, such as _DS9_, _TOS Movie Era_, _seaQuest_, etc. Additional rank sets are available at the [Nova Add-ons Exchange](https://anodyne-productions.com/addons) or [Kuro-RPG](https://kuro-rpg.net/).
 
 ## Permissions
 
-To view and edit Ranks, rank classes, and rank sets, you must have at least the *Basic Administration* access role, or your access role needs to have the *Manage Ranks* feature enabled. Typically, this feature is reserved for those who are managing the game.
+To view and edit Ranks, rank classes, and rank sets, you must have at least the _Basic Administration_ access role, or your access role needs to have the _Manage Ranks_ feature enabled. Typically, this feature is reserved for those who are managing the game.
 
 Additionally, to add rank sets you will need to have direct access to your site's files either through an FTP client or through cPanel/Plesk's File Manager.
 
 ## Viewing ranks
 
-From the Rank Management page, you will be able to view all ranks. In Nova's Control Panel, locate **Ranks** under the *Management* subheader in the sidebar.
+From the Rank Management page, you will be able to view all ranks. In Nova's Control Panel, locate **Ranks** under the _Management_ subheader in the sidebar.
 
 All available rank sets and rank classes will be displayed at the top of the page. Individual rank sets will be denoted by a single preview image and rank classes within a rank set will be displayed by a preview image of each color. You can click on the desired class image to display all ranks in that rank class.
 
@@ -33,26 +33,28 @@ All available rank sets and rank classes will be displayed at the top of the pag
 
 Let's walk through the process of creating a new rank.
 
-Let's create a Lieutenant in a *Star Trek* Science Division. In Nova's Control Panel, locate **Ranks** under the *Management* subheader on the sidebar.
+Let's create a Lieutenant in a _Star Trek_ Science Division. In Nova's Control Panel, locate **Ranks** under the _Management_ subheader on the sidebar.
 
 {% screenshot src="/images/docs/2.7/using-ranks/ranks-add.png" alt="add rank modal" /%}
 
-1. From the Control Panel, locate **Ranks** under the *Management* subheader in the sidebar.
+1. From the Control Panel, locate **Ranks** under the _Management_ subheader in the sidebar.
 2. Click **Add A Rank**. A dialog box (also called a modal) will appear.
 3. Fill out the information in the dialog box:
-  - *Name*: the name of the rank (e.g. *Lieutenant*).
-  - *Short Name*: an abbreviation of the rank (e.g. *LT*).
-  - *Order*: the position that the new rank will hold within the specific rank class. Enter a number ranging from `0` (top of the list) to `99` (bottom of the list).
-  - *Rank Class*: the particular image class this rank will belong to.
-      - If you are adding this rank to existing rank class, the easiest way to determine the rank class is to navigate to that particular rank class in Rank Management and see what value is being used in the rank class field and use that same value.
-      - You can also create a completely new grouping of ranks by using a number that isn't used for any othe rank class. If you do this, it's important to note that without an *order* of `0`, a link to that newly created rank class will not appear in the navigation at the top of the page.
-  - *Display*: determine if you want this rank to be a selectable option for you or your players.
-  - *Image*: the filename of the rank image (not its location). Nova will automatically look for the image within a specified rank set based on whatever the site/user's active rankset is. **Do not include the file extension** as the system will only look for the extension assigned to the rankset in the Rank Catalouge.
+
+- _Name_: the name of the rank (e.g. _Lieutenant_).
+- _Short Name_: an abbreviation of the rank (e.g. _LT_).
+- _Order_: the position that the new rank will hold within the specific rank class. Enter a number ranging from `0` (top of the list) to `99` (bottom of the list).
+- _Rank Class_: the particular image class this rank will belong to.
+  - If you are adding this rank to existing rank class, the easiest way to determine the rank class is to navigate to that particular rank class in Rank Management and see what value is being used in the rank class field and use that same value.
+  - You can also create a completely new grouping of ranks by using a number that isn't used for any othe rank class. If you do this, it's important to note that without an _order_ of `0`, a link to that newly created rank class will not appear in the navigation at the top of the page.
+- _Display_: determine if you want this rank to be a selectable option for you or your players.
+- _Image_: the filename of the rank image (not its location). Nova will automatically look for the image within a specified rank set based on whatever the site/user's active rankset is. **Do not include the file extension** as the system will only look for the extension assigned to the rankset in the Rank Catalouge.
+
 4. Click **Submit** and the rank will be added to the system.
 
 ## Modifying a rank
 
-To modify any existing rank that is available in Nova, access Nova's Control Panel, and locate **Ranks** under the *Management* subheader on the sidebar.
+To modify any existing rank that is available in Nova, access Nova's Control Panel, and locate **Ranks** under the _Management_ subheader on the sidebar.
 
 {% screenshot src="/images/docs/2.7/using-ranks/ranks-edit.png" alt="edit rank" /%}
 
@@ -66,26 +68,37 @@ To remove a Rank's name and/or abbreviation, follow the instructions above for M
 
 {% screenshot src="/images/docs/2.7/using-ranks/ranks-blank.png" alt="blank rank" /%}
 
+## Adding a rank class
+
+While most _Star Trek_ Nova installs provide plenty of rank classes to use in the game, sometimes you'll want to add a new rank class (color/design) to all of your rank sets.
+
+1. Create a new rank item
+2. Set the rank order to 0. This ensures that the new rank color/design appears in the rank classes at the top of the page.
+3. Set the rank class to a number 1 higher than the highest rank class in use. (You can find this by going to the last rank preview image and seeing what number is used for that rank class.)
+4. Finish creating your rank item
+
+When you've created your new rank item and the page refreshes, you should see your new color/design in the group of rank preview images at the top of the page. From there, you can continue to fill out your rank class with the different ranks you want.
+
 ## Removing a rank and/or rank class
 
-Most *Star Trek* Nova installs provide up to 13 different rank classes for use in the game. These Classes are also automatically visible, making them available for use by Players creating NPCs, or Game Management assigning ranks to new characters.
+Most _Star Trek_ Nova installs provide up to 13 different rank classes for use in the game. These classes are also automatically visible, making them available for use by players creating NPCs, or Game Masters assigning ranks to new characters.
 
-If you would like to disable one or more Ranks or Classes, access Nova's Control Panel, and locate **Ranks** under the *Management* subheader on the sidebar.
+If you would like to disable one or more Ranks or Classes, access Nova's Control Panel, and locate **Ranks** under the _Management_ subheader on the sidebar.
 
 1. Select the Class for the Rank(s) you wish to remove, and then locate the desired Rank(s).
 2. Select the **More** button to reveal the advanced options.
-3. Change `Display` from *Yes* to **No**.
+3. Change `Display` from _Yes_ to **No**.
 4. Scroll to the bottom of the page and click **Update**.
 
 The rank has now been removed as a selectable option for you and your Players, but can still be restored any time in the future.
 
 To remove an entire rank class, follow the same steps as above for every Rank listed in that Class. You will be able to edit only one Class at a time.
 
-To delete a rank, click on the *Delete?* checkbox, then scroll to the bottom and click **Update**.
+To delete a rank, click on the _Delete?_ checkbox, then scroll to the bottom and click **Update**.
 
 ## Adding a rank set
 
-All fresh Nova installations (except for the *Blank Installer*), come with only one rank set. New rank sets are available at the [Nova Add-ons Exchange](https://anodyne-productions.com/addons) or [Kuro-RPG](https://kuro-rpg.net/).
+All fresh Nova installations (except for the _Blank Installer_), come with only one rank set. New rank sets are available at the [Nova Add-ons Exchange](https://anodyne-productions.com/addons) or [Kuro-RPG](https://kuro-rpg.net/).
 
 Once you have downloaded (or created) your new rank set, you will need to access your Site via FTP software, or your webhost's cPanel (or equivalent) software. Please refer to the instructions you received from your webhost when first creating your account with them.
 
@@ -101,7 +114,7 @@ Open the new directory and ensure that you see image files, and not additional d
 
 ### Installing the rank set
 
-To install your new rank set, access Nova's Control Panel, and locate **Rank Catalogue** under the *Site Management* subheader on the sidebar.
+To install your new rank set, access Nova's Control Panel, and locate **Rank Catalogue** under the _Site Management_ subheader on the sidebar.
 
 Some downloadable rank sets contain a `rank.yml` file. Nova will automatically detect this file and will provide a button at the top of the **Rank Catalogue** page to easily install the rank set.
 
@@ -125,23 +138,23 @@ If your rank set does not contain a `rank.yml` file, and is uploaded to the corr
 
 The available options are:
 
-1. *Name*: the name of your rank set.
-2. *Genre*: the genre your set belongs to. For best results, this needs to match the genre which you used to install the Nova Software.
-3. *Server Directory*: the name of the directory containing the rank set. **Do not include** the full `application\assets\common\{genre}\ranks` directory again, only the name of the new directory.
-4. *Preview Image*: the filename of an image that can be used to preview the entire set.
-5. *Blank Image*: the filename of an image background that is representative of the set.
-6. *Image Extension*: the file extension of all rank images in the directory, such as `.png` or `.jpg`.
-7. *Status*: the stage in which the rankset exists.
-8. *Credits*: any artistic or intellectual property credits associated with the rank.
-9. *Default rank set*: Select whether or not you would like this rank set to be active for New Players.
+1. _Name_: the name of your rank set.
+2. _Genre_: the genre your set belongs to. For best results, this needs to match the genre which you used to install the Nova Software.
+3. _Server Directory_: the name of the directory containing the rank set. **Do not include** the full `application\assets\common\{genre}\ranks` directory again, only the name of the new directory.
+4. _Preview Image_: the filename of an image that can be used to preview the entire set.
+5. _Blank Image_: the filename of an image background that is representative of the set.
+6. _Image Extension_: the file extension of all rank images in the directory, such as `.png` or `.jpg`.
+7. _Status_: the stage in which the rankset exists.
+8. _Credits_: any artistic or intellectual property credits associated with the rank.
+9. _Default rank set_: Select whether or not you would like this rank set to be active for New Players.
 
-When you are finished, click **Submit**. The rank set is now installed. To see the images belonging to your new rank set, locate **Ranks** under the *Management* subheader on the Nova Control Panel sidebar.
+When you are finished, click **Submit**. The rank set is now installed. To see the images belonging to your new rank set, locate **Ranks** under the _Management_ subheader on the Nova Control Panel sidebar.
 
 ### Changing rank sets
 
 Once you have more than one rank set installed, you can freely change between them at any time.
 
-To change the rank set that appears for all users, specifically for those who are logged out, access Nova's Control Panel, and locate **Settings** under the *Site Management* subheader on the sidebar.
+To change the rank set that appears for all users, specifically for those who are logged out, access Nova's Control Panel, and locate **Settings** under the _Site Management_ subheader on the sidebar.
 
 Select the **Appearance** tab, and locate rank set under Display Options. Once you have selected your rank set, scroll down and select the **Submit** button.
 
