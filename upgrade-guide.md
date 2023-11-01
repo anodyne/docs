@@ -95,7 +95,7 @@ The way that sessions (data about the current visitor) are handled was completel
 This change, however, prevents Nova from being able to easily pull who is currently online. In order to fix this issue, you will need to make a change to the main config file located at `application/config/config.php`. Add the below line at the end of the file to change the session driver from files to database:
 
 ```php
-$config['sess_driver'] = 'database';  // [tl! ++ **]
+$config['sess_driver'] = 'database';
 ```
 
 ### Step 6: Remove the backup directories
