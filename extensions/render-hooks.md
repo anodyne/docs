@@ -41,6 +41,12 @@ NovaView::registerRenderHook(
 - `admin::content.end` - After the admin page content, inside `<main>`
 - `admin::footer.start` - Before the admin page footer, inside `<footer>`
 - `admin::footer.end` - After the admin page footer, inside `<footer>`
+- `admin::scripts.before` - Before the admin scripts are called at the end of the `<body>` tag
+- `admin::scripts.after` - After the admin scripts are called at the end of the `<body>` tag
+- `admin::head-scripts.before` - Before the admin scripts are called in the `<head>` tag
+- `admin::head-scripts.after` - After the admin scripts are called in the `<head>` tag
+- `admin::styles.before` - Before the admin styles are called in the `<head>` tag
+- `admin::styles.after` - After the admin styles are called in the `<head>` tag
 - `auth::login.form.before` - Before the login form
 - `auth::login.form.after` - After the login form
 - `public::body.start` - After the opening `<body>` tag of the public pages
