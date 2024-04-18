@@ -51,6 +51,15 @@
         ]
     },
     {
+        "title": "Digging Deeper",
+        "links": [
+            {
+                "title": "Notifications",
+                "href": "guides/notifications"
+            }
+        ]
+    },
+    {
         "title": "Themes",
         "links": [
             {
