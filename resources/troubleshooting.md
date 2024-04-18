@@ -9,6 +9,14 @@ section: Resources
 
 As simple as it sounds, checking if your issues happens in the Pulsar skin can help figure out if the issue is related to your particular skin or to Nova in general. If you can't reproduce the issue with the Pulsar skin, then you can reach out to the skin developer about the issue.
 
+## Check your browser's developer tools console
+
+If you're using a browser like Chrome or Firefox, you can use the developer tools console to see if there are any JavaScript errors that might be causing issues with your site. Oftentimes this can help the support staff point you in the right direction of getting an issue resolved.
+
+If you're using Chrome (also applies for Arc and Brave), you can open the developer tools by using the View > Developer > View Developer Tools menu. Once they've opened, you can click on the Console tab to see any errors or warnings.
+
+If you're using Firefox, you can open the developer tools by using the Tools > Browser Tools > Web Developer Tools. Once they've opened, you can click on the Console tab to see any errors or warnings.
+
 ## Check the error logs
 
 Nova logs a lot of information in its error logs that can be helpful when troubleshooting issues. Nova's error logs can be found in the `application/logs` directory. Each day has its own log which makes it easier to find the errors from a particular day. Here are a few tips for working with the error logs:
