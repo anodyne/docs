@@ -17,7 +17,7 @@ Sometimes you don't need to make wholesale changes to a skin and just want to up
 
 ### Automate generating a new color palette
 
-Nova 2.7.5 includes a page that will allow you to generate a color palette from a list of pre-defined colors or by using a custom hex color. You can access the page at the `site/skincolors`. You have the ability to generate colors for primary, success, danger, warning, and info colors from the page.
+Nova 2.7.5 includes a page that will allow you to generate a color palette from a list of pre-defined colors or by using a custom hex color. You can access the page from the Appearance tab of the Site Settings page. You have the ability to generate colors for primary, success, danger, warning, and info colors from the page.
 
 Once you have selected a color or entered a custom color and generated the colors, you can copy/paste the CSS variables into the skin's `dist/css/colors.css` file.
 
