@@ -77,6 +77,27 @@
         ]
     },
     {
+        "title": "Forms",
+        "links": [
+            {
+                "title": "Overview",
+                "href": "forms/overview"
+            },
+            {
+                "title": "Basic forms",
+                "href": "forms/basic"
+            },
+            {
+                "title": "Advanced forms",
+                "href": "forms/advanced"
+            },
+            {
+                "title": "Form submissions",
+                "href": "forms/submissions"
+            }
+        ]
+    },
+    {
         "title": "Extensions",
         "links": [
             {
