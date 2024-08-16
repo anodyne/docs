@@ -32,6 +32,10 @@
         "title": "Features",
         "links": [
             {
+                "title": "Applications",
+                "href": "features/applications"
+            },
+            {
                 "title": "Post types",
                 "href": "features/post-types"
             }
