@@ -47,7 +47,7 @@ Whether you're a beginner or an advanced user, getting involved in the Nova comm
 
 {% quick-link title="Discord" icon="flex-discord" href="https://discord.gg/7WmKUks" description="Get help, share tips, and interact with the community of creators and writers." /%}
 
-{% quick-link title="Github" icon="flex-git" href="https://github.com/anodyne/nova3" description="File issues, request features, and contribute to Nova." /%}
+{% quick-link title="Github" icon="flex-github" href="https://github.com/anodyne/nova3" description="File issues, request features, and contribute to Nova." /%}
 
 {% /quick-links %}
 

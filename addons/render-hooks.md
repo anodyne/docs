@@ -2,14 +2,14 @@
 title: Render hooks
 description: Learn how to inject HTML into Nova pages
 layout: docs
-section: Extensions
+section: Add-ons
 ---
 
-Nova allows you to render Blade content at various points in the framework's views. It's useful for extensions to be able to inject HTML into the framework.
+Nova allows you to render Blade content at various points in the framework's views. It's useful for add-ons to be able to inject HTML into the framework.
 
 ## Registering render hooks
 
-To register render hooks, you can call `NovaView::registerRenderHook()` from a service provider or middleware. The first argument is the name of the render hook, and the second argument is a callback that returns the content to be rendered:
+To register render hooks, you can call `NovaView::registerRenderHook()` from a service provider or middleware. The first argument is the name of the render hook and the second argument is a callback that returns the content to be rendered:
 
 ```php
 use NovaView;

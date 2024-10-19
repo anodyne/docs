@@ -1,146 +1,150 @@
 [
-    {
-        "title": "Getting Started",
-        "links": [
-            {
-                "title": "Meet Nova",
-                "href": "introduction"
-            },
-            {
-                "title": "Getting started",
-                "href": "getting-started"
-            },
-            {
-                "title": "Requirements",
-                "href": "requirements"
-            },
-            {
-                "title": "Installation",
-                "href": "installation"
-            },
-            {
-                "title": "Upgrade guide",
-                "href": "upgrade-guide"
-            },
-            {
-                "title": "Migration guide",
-                "href": "migration-guide"
-            }
-        ]
-    },
-    {
-        "title": "Features",
-        "links": [
-            {
-                "title": "Applications",
-                "href": "features/applications"
-            },
-            {
-                "title": "Post types",
-                "href": "features/post-types"
-            }
-        ]
-    },
-    {
-        "title": "Core Concepts",
-        "links": [
-            {
-                "title": "Directory structure",
-                "href": "core-concepts/directory-structure"
-            },
-            {
-                "title": "Configuration",
-                "href": "core-concepts/configuration"
-            }
-        ]
-    },
-    {
-        "title": "Digging Deeper",
-        "links": [
-            {
-                "title": "Notifications",
-                "href": "guides/notifications"
-            }
-        ]
-    },
-    {
-        "title": "Themes",
-        "links": [
-            {
-                "title": "Overview",
-                "href": "themes/overview"
-            },
-            {
-                "title": "Installation",
-                "href": "themes/installation"
-            },
-            {
-                "title": "Using Tailwind CSS",
-                "href": "themes/tailwind"
-            }
-        ]
-    },
-    {
-        "title": "Forms",
-        "links": [
-            {
-                "title": "Overview",
-                "href": "forms/overview"
-            },
-            {
-                "title": "Basic forms",
-                "href": "forms/basic"
-            },
-            {
-                "title": "Advanced forms",
-                "href": "forms/advanced"
-            },
-            {
-                "title": "Form submissions",
-                "href": "forms/submissions"
-            }
-        ]
-    },
-    {
-        "title": "Extensions",
-        "links": [
-            {
-                "title": "Overview",
-                "href": "extensions/overview"
-            },
-            {
-                "title": "Installation",
-                "href": "extensions/installation"
-            },
-            {
-                "title": "Render hooks",
-                "href": "extensions/render-hooks"
-            }
-        ]
-    },
-    {
-        "title": "Resources",
-        "links": [
-            {
-                "title": "What's new in Nova 3",
-                "href": "resources/whats-new"
-            },
-            {
-                "title": "Backing up Nova",
-                "href": "resources/where-is-it"
-            },
-            {
-                "title": "Version numbers",
-                "href": "resources/version-numbers"
-            },
-            {
-                "title": "License agreement",
-                "href": "resources/license-agreement"
-            },
-            {
-                "title": "Contributors",
-                "href": "resources/contributors"
-            }
-        ]
-    }
+  {
+    "title": "Getting Started",
+    "links": [
+      {
+        "title": "Meet Nova",
+        "href": "introduction"
+      },
+      {
+        "title": "Getting started",
+        "href": "getting-started"
+      },
+      {
+        "title": "Requirements",
+        "href": "requirements"
+      },
+      {
+        "title": "Installation",
+        "href": "installation"
+      },
+      {
+        "title": "Upgrade guide",
+        "href": "upgrade-guide"
+      },
+      {
+        "title": "Migration guide",
+        "href": "migration-guide"
+      }
+    ]
+  },
+  {
+    "title": "Features",
+    "links": [
+      {
+        "title": "Applications",
+        "href": "features/applications"
+      },
+      {
+        "title": "Post types",
+        "href": "features/post-types"
+      }
+    ]
+  },
+  {
+    "title": "Core Concepts",
+    "links": [
+      {
+        "title": "Directory structure",
+        "href": "core-concepts/directory-structure"
+      },
+      {
+        "title": "Configuration",
+        "href": "core-concepts/configuration"
+      }
+    ]
+  },
+  {
+    "title": "Digging Deeper",
+    "links": [
+      {
+        "title": "Notifications",
+        "href": "guides/notifications"
+      }
+    ]
+  },
+  {
+    "title": "Themes",
+    "links": [
+      {
+        "title": "Overview",
+        "href": "themes/overview"
+      },
+      {
+        "title": "Installation",
+        "href": "themes/installation"
+      },
+      {
+        "title": "Using Tailwind CSS",
+        "href": "themes/tailwind"
+      }
+    ]
+  },
+  {
+    "title": "Forms",
+    "links": [
+      {
+        "title": "Overview",
+        "href": "forms/overview"
+      },
+      {
+        "title": "Basic forms",
+        "href": "forms/basic"
+      },
+      {
+        "title": "Advanced forms",
+        "href": "forms/advanced"
+      },
+      {
+        "title": "Form submissions",
+        "href": "forms/submissions"
+      }
+    ]
+  },
+  {
+    "title": "Add-ons",
+    "links": [
+      {
+        "title": "Overview",
+        "href": "addons/overview"
+      },
+      {
+        "title": "Installation",
+        "href": "addons/installation"
+      },
+      {
+        "title": "Render hooks",
+        "href": "addons/render-hooks"
+      }
+    ]
+  },
+  {
+    "title": "Resources",
+    "links": [
+      {
+        "title": "What's new in Nova 3",
+        "href": "resources/whats-new"
+      },
+      {
+        "title": "Where is it?",
+        "href": "resources/where-is-it"
+      },
+      {
+        "title": "Backing up Nova",
+        "href": "resources/backing-up-nova"
+      },
+      {
+        "title": "Version numbers",
+        "href": "resources/version-numbers"
+      },
+      {
+        "title": "License agreement",
+        "href": "resources/license-agreement"
+      },
+      {
+        "title": "Contributors",
+        "href": "resources/contributors"
+      }
+    ]
+  }
 ]
