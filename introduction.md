@@ -82,6 +82,6 @@ This documentation is a labor of love. At the start of 2021 [we](/docs/2.7/resou
 
 {% quick-link title="Discord" icon="flex-discord" href="https://discord.gg/7WmKUks" description="Get help, share tips, and interact with the community of creators and writers." /%}
 
-{% quick-link title="Github" icon="flex-git" href="https://github.com/anodyne/nova" description="File issues, request features, and contribute to Nova." /%}
+{% quick-link title="Github" icon="flex-github" href="https://github.com/anodyne/nova" description="File issues, request features, and contribute to Nova." /%}
 
 {% /quick-links %}
