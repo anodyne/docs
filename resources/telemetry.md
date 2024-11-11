@@ -7,11 +7,11 @@ section: Resources
 
 Beginning with the release of Nova 2.7.3, Anodyne began collecting information from Nova games to help with support requests and tracking general usage.
 
-## What is collected and when?
+## What data is collected?
 
 |Data                                 |Install|Update|Daily |
 |-------------------------------------|-------|------|------|
-|Name of the game                     |{% checkmark %}|{% checkmark %}|      |
+|Name of the game                     |X      |X     |      |
 |URL of the site                      |X      |X     |      |
 |Configured genre                     |X      |X     |      |
 |Initial install date                 |X      |X     |      |
@@ -34,20 +34,24 @@ Beginning with the release of Nova 2.7.3, Anodyne began collecting information f
 Due to the sensitive nature of software versions running on the server, we do not collect those daily. Only a fresh install or system update triggers sending that information to Anodyne.
 {% /note %}
 
+## When is this data collected?
+
+There are 3 points at which we collect this game data:
+
 ### Fresh install and update syncs
 
-During the install and update processes, Nova makes a `POST` request to the Anodyne servers with the full set of information listed above. This process can only be initiated during the install and update processes and that set of information cannot be independently retrieved.
+During the install and update processes, Nova makes a `POST` request to the Anodyne servers with the full set of information listed above. This process can only be initiated during the install and update processes and the full set of information cannot be independently retrieved.
 
-### Daily heartbeats
+### Daily heartbeat checks
 
-Once a day, Anodyne reaches out to all active Nova games running Nova 2.7.10 or higher and polls for the latest content information indicated above by the Daily column. While the endpoint that Anodyne reaches out to is public, it only contains content-related information and no server or critical information is ever included.
+Once a day, Anodyne reaches out to all active Nova games running Nova 2.7.10 or higher and polls for the latest content information indicated above in the Daily column. While the endpoint that Anodyne reaches out to is public, it only contains content-related information and no server or critical information is ever included.
 
-## Why collect this data?
+## What do you do with this data?
 
-Collecting this information allows us to streamline the support process. For example, once we know the URL of your game, we're able to quickly see the versions of Nova, PHP, and MySQL that you're running. Sometimes that can provide some starting points for us to look at why an issue might be happening.
+First and foremost, it's important to say up front that Anodyne does not, and will never, collect any personal data from your game such as users names or email addresses.
+
+Second, and equally important as the first, any data that we collect will never be sold under any circumstances. It will always remain within Anodyne for our sole use.
+
+Collecting this information allows us to streamline the support process for our users. For example, once we know the URL of your game, we're able to quickly see the versions of Nova, PHP, and MySQL that you're running. Sometimes that can provide a starting point for us to look at why an issue might be happening.
 
 Beyond the information that we would collect for support purposes, the general usage of Nova across the world is something we've always been interested in understanding. Collecting counts of users, characters, stories, and posts gives us better insights into the global community that's using Nova.
-
-{% note title="No personal data" %}
-Anodyne does not, and will never, collect any personal data from your game such as users names or email addresses. The only thing we collect is counts of things and dates.
-{% /note %}
