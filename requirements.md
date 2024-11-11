@@ -18,6 +18,8 @@ Due to the use of the `:has` CSS selector, you will need to be using Firefox ver
 ## Server
 
 - PHP 8.3 or higher
-- MySQL 8.0 or higher
 
 ## Database
+
+- MySQL 8.0 or higher
+- MariaDB 10.0 or higher

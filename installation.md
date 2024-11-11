@@ -31,7 +31,7 @@ Nova supports reasonably recent versions of the following browsers:
 
 #### Upload Nova
 
-To begin installing Nova 3, you'll need to upload Nova's files to your server. If you're not sure how to upload files to your server, contact your host for help with this step of the process.
+To begin installing Nova 3, you'll need to upload Nova's files to your server. If you're not sure how to upload files to your server, contact your web host for help with this step of the process.
 
 #### Setup the Database Connection
 
@@ -78,7 +78,7 @@ location / {
 
 #### Apache
 
-If your site is on a server running Apache, you'll need to check with your host and ensure that the `mod_rewrite` module is enabled so the `.htaccess` file will be honored by the server.
+If your site is on a server running Apache, you'll need to check with your web host and ensure that the `mod_rewrite` module is enabled so the `.htaccess` file will be honored by the server.
 
 You can then create a file named `.htaccess` (the period at the beginning is important) and paste the following code in:
 

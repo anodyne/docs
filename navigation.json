@@ -109,12 +109,20 @@
         "href": "addons/overview"
       },
       {
-        "title": "Installation",
-        "href": "addons/installation"
+        "title": "Installing",
+        "href": "addons/installing"
+      },
+      {
+        "title": "Un-installing",
+        "href": "addons/uninstalling"
       },
       {
         "title": "Render hooks",
         "href": "addons/render-hooks"
+      },
+      {
+        "title": "Updates",
+        "href": "addons/updates"
       }
     ]
   },

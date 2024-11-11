@@ -42,4 +42,5 @@ For uploading files to your web host, you'll want to have an FTP client. Check w
 For updating files in Nova, you'll want to have a simple text editor. We've found the following text editors to work very well:
 
 - [VS Code](https://code.visualstudio.com)
+- [Zed](https://zed.dev)
 - [Atom](https://atom.io)
