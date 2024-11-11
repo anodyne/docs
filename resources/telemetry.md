@@ -11,7 +11,7 @@ Beginning with the release of Nova 2.7.3, Anodyne began collecting information f
 
 |Data                                 |Install|Update|Daily |
 |-------------------------------------|-------|------|------|
-|Name of the game                     |   X   |   X  |      |
+|Name of the game                     |X      |X     |      |
 |URL of the site                      |X      |X     |      |
 |Configured genre                     |X      |X     |      |
 |Initial install date                 |X      |X     |      |
@@ -33,6 +33,14 @@ Beginning with the release of Nova 2.7.3, Anodyne began collecting information f
 {% note title="Server information" %}
 Due to the sensitive nature of software versions running on the server, we do not collect those daily. Only a fresh install or system update triggers sending that information to Anodyne.
 {% /note %}
+
+### Fresh install and update syncs
+
+During the install and update processes, Nova makes a `POST` request to the Anodyne servers with the full set of information listed above. This process can only be initiated during the install and update processes and that set of information cannot be independently retrieved.
+
+### Daily heartbeats
+
+Once a day, Anodyne reaches out to all active Nova games running Nova 2.7.10 or higher and polls for the latest content information indicated above by the Daily column. While the endpoint that Anodyne reaches out to is public, it only contains content-related information and no server or critical information is ever included.
 
 ## Why collect this data?
 
