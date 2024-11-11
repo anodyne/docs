@@ -11,7 +11,7 @@ Beginning with the release of Nova 2.7.3, Anodyne began collecting information f
 
 |Data                                 |Install|Update|Daily |
 |-------------------------------------|-------|------|------|
-|Name of the game                     |X      |X     |      |
+|Name of the game                     |   X   |   X  |      |
 |URL of the site                      |X      |X     |      |
 |Configured genre                     |X      |X     |      |
 |Initial install date                 |X      |X     |      |
