@@ -194,6 +194,10 @@
       {
         "title": "Contributors",
         "href": "resources/contributors"
+      },
+      {
+        "title": "Telemetry",
+        "href": "resources/telemetry"
       }
     ]
   }
