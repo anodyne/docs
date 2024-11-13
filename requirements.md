@@ -17,5 +17,5 @@ Since Nova is web-based software, you'll need a browser in order to use it. Thes
 
 ## Server
 
-- PHP 7.4 or higher (*8.0+ recommended*)
+- PHP 7.4 or higher (*8.3+ recommended*)
 - MySQL 5.0 or higher (*5.7 recommended*)
