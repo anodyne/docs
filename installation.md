@@ -17,61 +17,30 @@ The first step of the install process is to verify that your server meets all of
 
 ### Connect to your database
 
-Nova comes with a web-based tool to setup your database connection. You'll be prompted to enter some information you should have received from your host when setting up your account and Nova will create the necessary configuration file for you.
+Nova comes with a web-based tool to setup your database connection. You'll be prompted to enter some information you should have received from your web host when setting up your account. Nova will use the credentials you provide to test the connection, and if successful, create the necessary configuration values for you.
 
-If for some reason your server doesn't support creating files from a web script, the setup process will show you the code to copy and paste into the database connection file.
+If for some reason your server doesn't support creating files from a web script, the setup process will show you instructions on how to get the database credentials into the right place.
 
 #### Explaining the Options
 
-- __Database Name__ - The name of the database you're trying to connect to and install Nova into. If you don't know the name of your database, contact your host.
 - __Username__ - The username used to connect to your database. This may or may not be the same as your FTP username, so if you don't know, contact your host.
 - __Password__ - The password used to connect to your database. This may or may not be the same as your FTP password, so if you don't know, contact your host.
-- __Database Host__ - This is where the database lives. 99% of the time, this will be `localhost` though if your host has a different setup, they may have sent you a different host name. If you aren't sure about this, contact your host.
-- __Table Prefix__ - This is the word or initials that will prefix all table names. This helps to keep Nova's tables together and allows you to install other things in to the database without causing conflicts. This is set to `nova_` by default.
+- __Database name__ - The name of the database you're trying to connect to and install Nova into. If you don't know the name of your database, contact your host.
+- __Database table prefix__ - This is the word or initials that will prefix all table names. This helps to keep Nova's tables together and allows you to install other things in to the database without causing conflicts. If you are not planning to install anything else in the database, you can leave this blank.
+- __Database host__ - This is where the database lives. 99% of the time, this will be `localhost` though if your host has a different setup, they may have sent you a different host name or an IP address to use. If you aren't sure about this, contact your host.
+- __Database port__ - This is the port the database connects through. This will almost always be `3306`, but check with your host to ensure they don't have a different setup.
+- __Database socket__ - This will most often be blank, but if your host requires a socket, you can provide that value here.
 
 ### Install Nova
 
-Once you've finished creating the database config file, you'll be sent over to the Install Center where you'll be given all your available options for installing Nova 3. Select __Fresh Install__ from the list and follow the prompts to install Nova 3.
+Once you've finished connecting to your database, you'll be able to start by doing a fresh install of Nova 3 after entering the name of your game and selecting the genre that you want installed.
 
-## Configuration
+{% note %}
+During the alpha and beta phases of Nova 3's development and testing, there will be an option for inserting demo data as part of the install process. This is a way to put some dummy data into Nova to help with playing around with it without needing to populate a bunch of information. If you choose to use demo data, you won't be prompted to create a user account and you'll log in to Nova using the email address `admin@admin.com` and the password `secret`.
+{% /note %}
 
-Either before beginning the installation or after finishing the installation, you can change any of Nova's configuration options in the config files located in the `application/config` directory.
+### Setup your account
 
-## Web Server Configuration
+The final step of installing Nova is to create your user account. Once you have entered your user account details, your account will be created, access roles will be assigned, and you will be signed in to Nova.
 
-### File Permissions
-
-At the end of the install process Nova will attempt to change several permissions in order to ensure all the backup and upload features work properly. It's possible that your host will have turned off the functions necessary to do this, so if you run in to any problems uploading to Nova, you'll need to change the file permissions on several directories to ensure they're writable (777). If you don't know how to change file permissions, contact your host. The following directories (and their sub-directories) need to be writable:
-
-- assets
-- storage
-
-### Pretty URLs
-
-#### Nginx
-
-If your site is on a server running Nginx, the following directive in your site configuration will direct all requests to the `index.php` front controller:
-
-```nginx
-location / {
-    try_files $uri $uri/ /index.php?$query_string;
-}
-```
-
-#### Apache
-
-If your site is on a server running Apache, you'll need to check with your web host and ensure that the `mod_rewrite` module is enabled so the `.htaccess` file will be honored by the server.
-
-You can then create a file named `.htaccess` (the period at the beginning is important) and paste the following code in:
-
-```apacheconf
-Options +FollowSymLinks -Indexes
-RewriteEngine On
-
-RewriteCond %{HTTP:Authorization} .
-RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.php [L]
-```
+Congrats! You've installed Nova 3 and are on your way.

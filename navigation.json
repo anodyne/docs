@@ -134,6 +134,10 @@
         "href": "resources/backing-up-nova"
       },
       {
+        "title": "Pretty URLs",
+        "href": "resources/pretty-urls"
+      },
+      {
         "title": "Version numbers",
         "href": "resources/version-numbers"
       },
