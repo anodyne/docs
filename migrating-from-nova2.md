@@ -17,16 +17,29 @@ If your Nova 2 data lives in a different database, you'll be prompted to provide
 
 ## What gets migrated from Nova 2?
 
-|Data|Migration status|
-|-|-|-|
-|Applications|Yes|
-|Awards|No|
-|Characters|Yes|
-|Departments and positions|Yes|
-|Missions (called stories in Nova 3)|Yes|
-|News items|No|
-|Personal logs|Yes|
-|Posts|Yes|
-|Ranks|No|
-|Users|Yes|
-|Wiki entries|No|
+|Data                                                   |Will be migrated|
+|-------------------------------------------------------|----------------|
+|Access roles                                           |No              |
+|Application history                                    |Yes             |
+|Awards (no longer a feature in Nova)                   |No              |
+|Bans                                                   |Yes             |
+|Chain of command (no longer a feature in Nova)         |No              |
+|Character form                                         |Yes             |
+|Characters                                             |Yes             |
+|Comments (no longer a feature in Nova)                 |No              |
+|Departments and positions                              |Yes             |
+|Docking (no longer a feature in Nova)                  |No              |
+|Manifests                                              |No              |
+|Menu items                                             |No              |
+|Mission groups (now part of stories in Nova 3)         |Yes             |
+|Missions (called stories in Nova 3)                    |Yes             |
+|News items (called announcements in Nova 3)            |Yes             |
+|Personal logs                                          |Yes             |
+|Posts                                                  |Yes             |
+|Private messages                                       |Yes             |
+|Ranks                                                  |No              |
+|Settings                                               |No              |
+|Specifications and tour (no longer a feature in Nova 3)|No              |
+|Skins (called themes in Nova 3)                        |No              |
+|Users                                                  |Yes             |
+|Wiki pages (no longer a feature in Nova 3)             |No              |
