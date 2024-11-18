@@ -39,6 +39,8 @@ Once you've finished connecting to your database, you'll be able to start by doi
 During the alpha and beta phases of Nova 3's development and testing, there will be an option for inserting demo data as part of the install process. This is a way to put some dummy data into Nova to help with playing around with it without needing to populate a bunch of information. If you choose to use demo data, you won't be prompted to create a user account and you'll log in to Nova using the email address `admin@admin.com` and the password `secret`.
 {% /note %}
 
+At this point, you can either choose to continue with a fresh install or migrate your existing Nova 2 data. If you want to migrate from Nova 2, you should follow the [Nova 2 migration guide](/docs/3.0/migrating-from-nova2). If you are installing Nova 3 fresh, there's one more step.
+
 ### Setup your account
 
 The final step of installing Nova is to create your user account. Once you have entered your user account details, your account will be created, access roles will be assigned, and you will be signed in to Nova.
