@@ -5,6 +5,10 @@ layout: docs
 section: Add-ons
 ---
 
+{% note title="Add-on limitions" %}
+As of the current version of Nova 3, add-ons do not have any mechanisms to replace view files like Nova 2. This was an intentional decision to simplify the add-on architecture at the start. Depending on interest level, we may introduce new tools and mechanisms in the future. If you are interested in injecting content into various view files, you can check out the documentation about [render hooks](/docs/3.0/addons/render-hooks).
+{% /note %}
+
 ## Directory structure
 
 - Migrations
@@ -32,3 +36,5 @@ class AddonServiceProvider extends BaseAddonServiceProvider
 The `boot()` method is called during each Nova request and is the place to ensure that anything you need done to make your add-on work is done.
 
 Note: in order to make add-on service providers as hands-off as possible, you will not be able to do any work in a `register()` method like you would in a normal Laravel application. Any work you want to do will have to be done in the `boot()` method.
+
+### Add-on class

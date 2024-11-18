@@ -9,17 +9,17 @@ section: Getting Started
 
 {% quick-links %}
 
-{% quick-link title="Installation" icon="flex-rocket" href="/docs/3.0/installation" description="Step-by-step guide to installing Nova on your server." /%}
+{% quick-link title="Installation" icon="flex-rocket" href="/docs/3.0/installation" description="Step-by-step guide to installing Nova" /%}
 
-{% quick-link title="Core concepts" icon="flex-database" href="/docs/3.0/core-concpets/directory-structure" description="Learn Nova's inner workings and how to work with it." /%}
+{% quick-link title="Core concepts" icon="flex-database" href="/docs/3.0/core-concpets/directory-structure" description="Learn about Nova's inner workings" /%}
 
-{% quick-link title="Extensions" icon="flex-puzzle" href="/docs/3.0/extensions/overview" description="Extend Nova with third-party extensions or write your own." /%}
+{% quick-link title="Add-ons" icon="flex-puzzle" href="/docs/3.0/addons/overview" description="Extend Nova with third-party add-ons or write your own" /%}
 
-{% quick-link title="Themeing" icon="flex-paint-brush" href="/docs/3.0/themes/overview" description="Learn to easily theme Nova's visual design to fit your game." /%}
+{% quick-link title="Themeing" icon="flex-paint-brush" href="/docs/3.0/themes/overview" description="Learn to easily theme Nova's public site to fit your game" /%}
 
 {% /quick-links %}
 
-Nova is a custom content management system that was designed from the ground up to help you manage and play online text-based role-playing games. It comes with all of the tools you need to manage your game and the flexibility to add to it as you need.
+Nova is a custom content management system that was designed from the ground up to help you manage and play online text-based role-playing games. It comes with all of the tools you need to manage your game and the flexibility to add to it as needed.
 
 When it comes to building a website, there's no shortage of options.
 
@@ -45,12 +45,8 @@ Whether you're a beginner or an advanced user, getting involved in the Nova comm
 
 {% quick-links %}
 
-{% quick-link title="Discord" icon="flex-discord" href="https://discord.gg/7WmKUks" description="Get help, share tips, and interact with the community of creators and writers." /%}
+{% quick-link title="Discord" icon="flex-discord" href="https://discord.gg/7WmKUks" description="Get help, share tips, and interact with the community of creators and writers" /%}
 
-{% quick-link title="Github" icon="flex-github" href="https://github.com/anodyne/nova3" description="File issues, request features, and contribute to Nova." /%}
+{% quick-link title="Github" icon="flex-github" href="https://github.com/anodyne/nova3" description="File issues, request features, and contribute to Nova" /%}
 
 {% /quick-links %}
-
-To file issues, request features, and contribute to Nova, check out our GitHub.
-
-[GitHub repo](https://github.com/anodyne/nova)

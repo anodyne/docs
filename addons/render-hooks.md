@@ -5,11 +5,11 @@ layout: docs
 section: Add-ons
 ---
 
-Nova allows you to render Blade content at various points in the framework's views. It's useful for add-ons to be able to inject HTML into the framework.
+Nova allows you to render content at various points in the framework's views. It's useful for add-ons to be able to inject HTML into the framework.
 
-## Registering render hooks
+## Using render hooks
 
-To register render hooks, you can call `NovaView::registerRenderHook()` from a service provider or middleware. The first argument is the name of the render hook and the second argument is a callback that returns the content to be rendered:
+To use a render hook, you can call `NovaView::registerRenderHook()` from a service provider or middleware. The first argument is the name of the render hook and the second argument is a callback that returns the content to be rendered:
 
 ```php
 use NovaView;
@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Blade;
 
 NovaView::registerRenderHook(
     'admin::content.end',
-    fn (): string => Blade::render('@livewire(\'livewire-ui-modal\')')
+    fn () => Blade::render('@livewire(\'livewire-ui-modal\')')
 );
 ```
 
@@ -29,7 +29,7 @@ use Illuminate\Contracts\View\View;
 
 NovaView::registerRenderHook(
     'admin::content.end',
-    fn (): View => view('impersonation-banner')
+    fn () => view('impersonation-banner')
 );
 ```
 
