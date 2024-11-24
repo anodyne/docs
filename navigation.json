@@ -51,6 +51,14 @@
       {
         "title": "Developer tools",
         "href": "addons/developer-tools"
+      },
+      {
+        "title": "Genres",
+        "href": "addons/genres"
+      },
+      {
+        "title": "Rank sets",
+        "href": "addons/rank-sets"
       }
     ]
   },
