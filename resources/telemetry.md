@@ -50,7 +50,7 @@ Once a day, Anodyne reaches out to all active Nova games running Nova 2.7.10 or 
 
 First and foremost, it's important to say up front that Anodyne does not, and will never, collect any personal data from your game such as users names or email addresses.
 
-Second, and equally important as the first, any data that we collect will never be sold under any circumstances. It will always remain within Anodyne for our sole use.
+Second, and equally important as the first, *any* data that we collect will never be shared or sold under any circumstances. It will always remain within Anodyne for our sole use and only accessible by Anodyne staff.
 
 Collecting this information allows us to streamline the support process for our users. For example, once we know the URL of your game, we're able to quickly see the versions of Nova, PHP, and MySQL that you're running. Sometimes that can provide a starting point for us to look at why an issue might be happening.
 
