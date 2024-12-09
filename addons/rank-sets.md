@@ -15,7 +15,7 @@ Nova 3 does not allow installing multiple rank sets and letting users choose whi
 
 A properly formatted rank set add-on should have the following:
 
-- An `assets` directory that contains all of the rank set images, organized exactly how you want them organized
+- An `ranks` directory that contains all of the rank set images, organized exactly how you want them organized
 - An `Addon.php` file that extends the `Nova\Addons\RankSet` class
 
 If you create a rank set add-on from Nova, it will create the proper folder structure for you.

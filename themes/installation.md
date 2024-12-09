@@ -4,3 +4,31 @@ description: Here are a few things you should know before using Nova 3.
 layout: docs
 section: Themes
 ---
+
+## QuickInstall file
+
+```json
+{
+  "name": "Pulsar",
+  "location": "pulsar",
+  "version": "3.0",
+  "preview": "preview.jpg",
+  "credits": "",
+  "settings": {
+    "fonts": {
+      "headerProvider": "local",
+      "headerFamily": "Geist",
+      "bodyProvider": "local",
+      "bodyFamily": "Inter"
+    },
+    "settings": {
+      "accentColor": "#08a37e",
+      "textAccentColor": "#ffffff"
+    }
+  },
+  "repository": {
+    "type": "anodyne",
+    "id": ""
+  }
+}
+```

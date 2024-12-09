@@ -5,6 +5,10 @@ layout: docs
 section: Getting Started
 ---
 
+{% note %}
+Looking to migrate your Nova 2 site to Nova 3? We've streamlined the process of migrating existing data, so once you've completed doing an install, you'll be prompted for whether you want to continue as a fresh install or migrate your data and you can continue reading the [migration guide](/docs/3.0/migrating-from-nova2).
+{% /note %}
+
 To begin, you'll first need to upload Nova's files to your server. This can be done through an FTP client (recommended) or through your host's web-based server management software like cPanel or something similar. If you're not sure how to connect to the server and upload files, contact your web host for help.
 
 ## Installing Nova

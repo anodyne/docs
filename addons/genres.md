@@ -11,7 +11,7 @@ A genre add-on is a type of add-on that allows authors to package up the departm
 
 A properly formatted genre add-on should have the following:
 
-- An `assets` directory that contains all of the rank set images, organized exactly how you want them organized
+- An `ranks` directory that contains all of the rank set images, organized exactly how you want them organized
 - An `Addon.php` file that extends the `Nova\Addons\Genre` class
 
 If you create a genre add-on from Nova, it will create the proper folder structure for you.
