@@ -77,3 +77,7 @@ In the short-term, you can create public-facing pages and add this content yours
 ### Wiki pages
 
 Games either loved the wiki and used it extensively, or they hated it and didn't engage with it at all. Given the focus on giving game masters an easier way to create new pages, we felt that the wiki had served its time and could be put out to pasture. There is no mechanism in place to convert wiki pages to Nova's new pages and no plans to create anything to do that. If you want to retain that content, you'll need to re-create it as pages in Nova 3.
+
+## Notes
+
+- There are several places where Nova is reporting on statistics that are based on word counts. Nova 2 has word counts for posts, but does not have word counts for individual contributors to a post. As such, many of those statistics will show 0 words after completing a migration. There is no way for us to build a historical record of individual contributors, so you may want to choose to change those statistics to be post-based instead.
