@@ -1,5 +1,5 @@
 ---
-title: Emails
+title: Email
 description: Understand how Nova handles email.
 layout: docs
 section: Core Concepts
@@ -107,6 +107,18 @@ It's important to understand that there may be additional work that has to be do
 {% /note %}
 
 If you're having issues today with emails not being delivered, you can get up and running in relatively short order by signing up for one of the above services and plugging in the details in your email config file in Nova.
+
+{% quick-links %}
+
+{% quick-link title="Installation" icon="flex-rocket" href="/docs/2.7/installation" description="Step-by-step guide to installing Nova on your server." /%}
+
+{% quick-link title="Core concepts" icon="flex-database" href="/docs/2.7/directory-structure" description="Learn about Nova and how to work with it." /%}
+
+{% quick-link title="MODs" icon="flex-puzzle" href="/docs/2.7/mods/extensions" description="Extend Nova with third-party or your own MODs." /%}
+
+{% quick-link title="Skinning" icon="flex-paint-brush" href="/docs/2.7/skins/overview" description="Learn to skin Nova's design to fit your game." /%}
+
+{% /quick-links %}
 
 ### Using SMTP in Nova
 
