@@ -23,7 +23,7 @@ After you've completed the above steps, you can update Nova's email configuratio
 $config['protocol'] = 'smtp';
 $config['smtp_host'] = 'smtp.resend.com';
 $config['smtp_user'] = 'resend';
-$config['smtp_pass'] = 're_SyFJgU2u_HJvnZVR9t1dbQCw5PqAw8vkH';
+$config['smtp_pass'] = '{YOUR_API_KEY}';
 $config['smtp_port'] = 465;
 $config['smtp_crypto'] = 'tls';
 ```

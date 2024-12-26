@@ -1,6 +1,6 @@
 ---
 title: Email
-description: Understand how Nova handles email.
+description: Understand email in Nova.
 layout: docs
 section: Core Concepts
 ---
@@ -77,11 +77,11 @@ Over the last couple of years, email has become a *significant* pain point for m
 - "Some emails from Nova take hours to arrive"
 - "I get an error when Nova tries to send emails"
 
-By default, Nova uses PHP's `mail()` function for sending all mail. When the system was originally built, this was a reliable way of handling email. Over time and with the drastic rise in spam, more and more email service providers are cracking down on the ways that email has been sent from PHP applications. As a result, people have started to see situations where email isn't being properly delivered. So how do we fix these issues?
+By default, Nova uses Sendmail for sending all mail. When the system was originally built, this was a reliable way of handling email. Over time and with the drastic rise in spam, more and more service providers are cracking down on the ways that email has been sent from PHP applications. As a result, people have started to see situations where email isn't being properly delivered. So how do we fix these issues?
 
 ### Third-party email service providers
 
-The answer we've begun advocating is using a third-party email service provider. These are companies that offer to handle the sending of emails (also known as transactional emails) from a system like Nova to whatever recipients are on the email. We **highly encourage** users to use a third-party email service provider, and here's why:
+The answer we've begun advocating is using a third-party email service provider. There are companies that offer to handle the sending of emails (also known as transactional emails) from a system like Nova to whatever recipients are on the email. We **highly encourage** users to use a third-party email service provider, and here's why:
 
 1. They specialize in sending emails
 2. They will increase your deliverability rate, often dramatically
@@ -91,57 +91,21 @@ The answer we've begun advocating is using a third-party email service provider.
 
 It can be a little daunting to step into the world of third-party email service providers, so here's a little primer on who's out there, ranging from completely free services to some that charge you monthly for the number of emails you send.
 
+- [Resend](https://resend.com/)
 - [SendGrid](https://sendgrid.com/)
 - [Mailgun](https://www.mailgun.com/)
 - [Postmark](https://postmarkapp.com/)
-- [SparkPost](https://www.sparkpost.com/)
-- [MailChimp](https://mailchimp.com/)
 - [Amazon SES](https://aws.amazon.com/ses/)
-- [SendPulse](https://sendpulse.com/)
-- [MailJet](https://www.mailjet.com/)
-- [SendinBlue SMTP](https://www.sendinblue.com/)
-- [ElasticEmail](https://elasticemail.com/)
-
-{% note title="Some assembly required" %}
-It's important to understand that there may be additional work that has to be done for some of these services. For example, some services requires domain verification before you can send emails. While it's a technical process, they generally have documentation that will walk you through updating the DNS records. In other cases, these are relatively new services that we don't have much information on. We encourage people to look at the different options and make decisions based on what they think their needs will be.
-{% /note %}
 
 If you're having issues today with emails not being delivered, you can get up and running in relatively short order by signing up for one of the above services and plugging in the details in your email config file in Nova.
 
-{% quick-links %}
+### Integration guides
 
-{% quick-link title="Installation" icon="flex-rocket" href="/docs/2.7/installation" description="Step-by-step guide to installing Nova on your server." /%}
+Below are the integration guides we've written that will walk you through the process of integrating these third-party email services into Nova.
 
-{% quick-link title="Core concepts" icon="flex-database" href="/docs/2.7/directory-structure" description="Learn about Nova and how to work with it." /%}
-
-{% quick-link title="MODs" icon="flex-puzzle" href="/docs/2.7/mods/extensions" description="Extend Nova with third-party or your own MODs." /%}
-
-{% quick-link title="Skinning" icon="flex-paint-brush" href="/docs/2.7/skins/overview" description="Learn to skin Nova's design to fit your game." /%}
-
-{% /quick-links %}
-
-### Using SMTP in Nova
-
-In order to get Nova working with your SMTP service of choice, you will need to update the `application/config/email.php` config file with the information you got from the service when you signed up:
-
-```php
-$config['protocol'] = 'smtp';
-$config['smtp_host'] = 'https://smtp.example.com';
-$config['smtp_user'] = 'username';
-$config['smtp_pass'] = 'password';
-$config['smtp_port'] = 25;
-```
-
-If your email service uses SSL, there are likely some additional options that will need to be set, but you should verify these settings with your provider:
-
-```php
-$config['smtp_port'] = 587;
-$config['smtp_crypto'] = 'tls';
-```
-
-Save the file and upload it back to your server and you should be all set!
-
-You can run a test by using the contact form to send something to yourself. If everything is working, you should get the contact page email like normal.
+- [Resend](/docs/2.7/email/integration-resend)
+- [Mailgun](/docs/2.7/email/integration-mailgun)
+- [SendGrid](/docs/2.7/email/integration-sendgrid)
 
 #### Troubleshooting
 
