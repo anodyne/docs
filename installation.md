@@ -13,13 +13,9 @@ To begin, you'll first need to upload Nova's files to your server. This can be d
 
 ## Updating the document root
 
-Nova 3 uses a more secure file structure to ensure visitors cannot access sensitive information or files and only what's necessary for serving the site to the browser. As a result of this change, your site's document root needs to be updated to point to the `public` folder. This process only needs to be done once when you first install Nova 3 or migrate from Nova 2.
+Nova 3 uses a more secure file structure to ensure visitors cannot access core files and that only what's necessary for serving the site is sent to / available in the browser. As a result of this change, your site's document root needs to be updated to point to the `public` folder that comes with Nova 3. This process only needs to be done once when you first install Nova 3 or migrate from Nova 2.
 
 ### cPanel
-
-{% note %}
-To view the latest information about managing domains with cPanel, you can view their [documentation page](https://docs.cpanel.net/cpanel/domains/domains/) about domains.
-{% /note %}
 
 If your host has provided cPanel to manage the server, you'll find the document root setting on the domains page.
 
@@ -27,13 +23,11 @@ If your host has provided cPanel to manage the server, you'll find the document 
 2. Update the document root and ensure that it ends with `/public` (there should be a single leading slash before "public")
 3. Click the update button
 
-Now, the server will only serve the `public` folder to the browser, securing your files outside of what users can access through the browser.
+{% note %}
+To view the latest information about managing domains with cPanel, you can view their [documentation page](https://docs.cpanel.net/cpanel/domains/domains/) about domains.
+{% /note %}
 
 ### Plesk
-
-{% note %}
-To view the latest information about managing domains with Plesk, you can view their [help page](https://support.plesk.com/hc/en-us/articles/12377087631255-How-to-change-the-document-root-for-a-single-domain-on-Plesk) about changing the document root for a single domain.
-{% /note %}
 
 If your host has provided Plesk to manage the server, you'll find the document root setting in the Hosting Settings on the domains page.
 
@@ -41,7 +35,9 @@ If your host has provided Plesk to manage the server, you'll find the document r
 2. Update the document root and ensure that it ends with `/public` (there should be a single leading slash before "public")
 3. Click the OK button
 
-Now, the server will only serve the `public` folder to the browser, securing your files outside of what users can access through the browser.
+{% note %}
+To view the latest information about managing domains with Plesk, you can view their [help page](https://support.plesk.com/hc/en-us/articles/12377087631255-How-to-change-the-document-root-for-a-single-domain-on-Plesk) about changing the document root for a single domain.
+{% /note %}
 
 ## Installing Nova
 
