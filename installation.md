@@ -22,7 +22,7 @@ If you’re unsure how to connect to your server or upload files, reach out to y
 
 ### What is a document root?
 
-The _document root_ is the main folder on a web server where it stores the files that visitors see when they access your website. For example, when someone visits https://example.com, the web server looks in the document root to find the file or page to display.
+The _document root_ is the main folder on a web server where it stores the files that visitors see when they access your website. For example, when someone visits `https://example.com`, the web server looks in the document root to find the file or page to display.
 
 On many shared hosting services, the document root is a folder named `public_html`. Any files you place inside `public_html` can be accessed through a web browser. Files outside of `public_html` are hidden from visitors, which is useful for keeping sensitive information secure.
 
@@ -40,7 +40,7 @@ This process only needs to be completed once, either when installing Nova 3 for 
 
 ### Updating the document root in cPanel
 
-If your host provides cPanel for managing your site, you can set the document root for your website to point to Nova's `/public` folder with the following steps:
+If your host provides cPanel for managing your site, you can set the document root for your website to point to Nova’s `/public` folder with the following steps:
 
 1. Log in to cPanel and find the Domains section
 2. Click on Domains or Addon Domains, depending on whether you are modifying the primary domain or an additional domain
@@ -56,13 +56,13 @@ To view the latest information about managing domains with cPanel, you can view 
 
 ### Updating the document root in Plesk
 
-If your host provides Plesk for managing your site, you can set the document root for your website to point to Nova's `/public` folder with the following steps:
+If your host provides Plesk for managing your site, you can set the document root for your website to point to Nova’s `/public` folder with the following steps:
 
 1. Log in to cPanel and find the Websites & Domains section
 2. Find the domain you want to update and click on the Hosting Settings option
 3. In the document root field, update the path to include the `/public` folder. For example:
     - If the current root is `/home/username/public_html`, change it to `/home/username/public_html/public`.
-    - For addon domains, it might look like `/home/username/addon_domain/public`.
+    - For subdomains, it might look like `/home/username/subdomain/public`.
 4. Save your changes
 
 {% note %}
