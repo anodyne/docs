@@ -6,7 +6,9 @@ section: Getting Started
 ---
 
 {% note title="Looking to migrate your Nova 2 site to Nova 3?" %}
-We’ve simplified the process of migrating from Nova 2, making it faster and easier than ever. After completing the Nova 3 installation, you’ll be prompted to choose between starting fresh or migrating your existing data. If you opt to migrate, follow the detailed steps in our [migration guide](/docs/3.0/migrating-from-nova2) to ensure a smooth transition.
+We’ve simplified the process of migrating from Nova 2, making it faster and easier than ever. After completing the Nova 3 installation, you’ll be prompted to choose between starting fresh or migrating your existing data.
+
+If you opt to migrate, follow the detailed steps in our [migration guide](/docs/3.0/migrating-from-nova2) to ensure a smooth transition.
 {% /note %}
 
 To get started, you’ll need to upload Nova's files to your server. You do this using:
