@@ -13,27 +13,50 @@ To begin, you'll first need to upload Nova's files to your server. This can be d
 
 ## Updating the document root
 
-Nova 3 uses a more secure file structure to ensure visitors cannot access core files and that only what's necessary for serving the site is sent to / available in the browser. As a result of this change, your site's document root needs to be updated to point to the `public` folder that comes with Nova 3. This process only needs to be done once when you first install Nova 3 or migrate from Nova 2.
+### What is a document root?
 
-### cPanel
+The _document root_ is the main folder on a web server where it stores the files that visitors see when they access your website. For example, when someone visits https://example.com, the web server looks in the document root to find the file or page to display.
 
-If your host has provided cPanel to manage the server, you'll find the document root setting on the domains page.
+On many shared hosting services, the document root is a folder named `public_html`. Any files you place inside `public_html` can be accessed through a web browser. Files outside of `public_html` are hidden from visitors, which is useful for keeping sensitive information secure.
 
-1. Find the domain that you are installing / migrating for on the domains page and click the manage button
-2. Update the document root and ensure that it ends with `/public` (there should be a single leading slash before "public")
-3. Click the update button
+### Why does this matter for Nova 3?
+
+Nova 3 has been designed with a secure file structure that separates the parts of your application that visitors can access from the parts they cannot. This structure ensures that sensitive files, such as configuration details or database settings, are stored safely out of reach from web browsers.
+
+To make this work, Nova 3 uses a public folder as the document root. This folder contains only the files that need to be visible to the public, like images, JavaScript, and the main entry point for the application (`index.php`).
+
+If you are installing Nova 3 or upgrading from Nova 2, you’ll need to update your web server’s document root to point to the `public` folder instead of the default document root (likely `public_html`). This small change helps protect your site and keeps sensitive files hidden from prying eyes.
+
+{% note %}
+The following process only needs to be done once when you first install Nova 3 or migrate from Nova 2.
+{% /note %}
+
+### Updating the document root in cPanel
+
+If your host provides cPanel for managing your site, you can set the document root for your website to point to Nova's `/public` folder with the following steps:
+
+1. Log in to cPanel and find the Domains section
+2. Click on Domains or Addon Domains, depending on whether you are modifying the primary domain or an additional domain
+3. Find the domain you want to update in the list of domains and click on the Manage option
+4. In the document root field, update the path to include the `/public` folder. For example:
+    - If the current root is `/home/username/public_html`, change it to `/home/username/public_html/public`.
+    - For addon domains, it might look like `/home/username/addon_domain/public`.
+5. Save your changes
 
 {% note %}
 To view the latest information about managing domains with cPanel, you can view their [documentation page](https://docs.cpanel.net/cpanel/domains/domains/) about domains.
 {% /note %}
 
-### Plesk
+### Updating the document root in Plesk
 
-If your host has provided Plesk to manage the server, you'll find the document root setting in the Hosting Settings on the domains page.
+If your host provides Plesk for managing your site, you can set the document root for your website to point to Nova's `/public` folder with the following steps:
 
-1. Find the domain that you are installing / migrating for from the Domains page and click the Hosting Settings button
-2. Update the document root and ensure that it ends with `/public` (there should be a single leading slash before "public")
-3. Click the OK button
+1. Log in to cPanel and find the Websites & Domains section
+2. Find the domain you want to update and click on the Hosting Settings option
+3. In the document root field, update the path to include the `/public` folder. For example:
+    - If the current root is `/home/username/public_html`, change it to `/home/username/public_html/public`.
+    - For addon domains, it might look like `/home/username/addon_domain/public`.
+4. Save your changes
 
 {% note %}
 To view the latest information about managing domains with Plesk, you can view their [help page](https://support.plesk.com/hc/en-us/articles/12377087631255-How-to-change-the-document-root-for-a-single-domain-on-Plesk) about changing the document root for a single domain.
