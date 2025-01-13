@@ -5,11 +5,16 @@ layout: docs
 section: Getting Started
 ---
 
-{% note %}
-Looking to migrate your Nova 2 site to Nova 3? We've streamlined the process of migrating existing data, so once you've completed doing an install, you'll be prompted for whether you want to continue as a fresh install or migrate your data and you can continue reading the [migration guide](/docs/3.0/migrating-from-nova2).
+{% note title="Looking to migrate your Nova 2 site to Nova 3?" %}
+We’ve simplified the process of migrating from Nova 2, making it faster and easier than ever. After completing the Nova 3 installation, you’ll be prompted to choose between starting fresh or migrating your existing data. If you opt to migrate, follow the detailed steps in our [migration guide](/docs/3.0/migrating-from-nova2) to ensure a smooth transition.
 {% /note %}
 
-To begin, you'll first need to upload Nova's files to your server. This can be done through an FTP client (recommended) or through your host's web-based server management software like cPanel or something similar. If you're not sure how to connect to the server and upload files, contact your web host for help.
+To get started, you’ll need to upload Nova's files to your server. You do this using:
+
+- An FTP client (recommended for speed and ease of use), or
+- Your hosting provider’s web-based server management tool, such as cPanel or Plesk.
+
+If you’re unsure how to connect to your server or upload files, reach out to your web hosting provider for assistance. They’ll be able to guide you through the process.
 
 ## Updating the document root
 
@@ -27,8 +32,8 @@ To make this work, Nova 3 uses a public folder as the document root. This folder
 
 If you are installing Nova 3 or upgrading from Nova 2, you’ll need to update your web server’s document root to point to the `public` folder instead of the default document root (likely `public_html`). This small change helps protect your site and keeps sensitive files hidden from prying eyes.
 
-{% note %}
-The following process only needs to be done once when you first install Nova 3 or migrate from Nova 2.
+{% note title="Note" %}
+This process only needs to be completed once, either when installing Nova 3 for the first time or when migrating from Nova 2.
 {% /note %}
 
 ### Updating the document root in cPanel
@@ -64,17 +69,19 @@ To view the latest information about managing domains with Plesk, you can view t
 
 ## Installing Nova
 
-To get started installing Nova, open your browser and navigate to your site. Nova should detect that it isn't installed and redirect you into the Setup Center.
+To start installing Nova, open your browser and navigate to your website. If Nova isn’t installed yet, it will automatically detect this and redirect you to the Setup Center to guide you through the installation process.
 
 ### Check that Nova can run on your server
 
-The first step of the install process is to verify that your server meets all of the [requirements](/docs/3.0/getting-started#prerequisites) to run Nova 3. If there's anything that does not pass, you'll be shown that information on the first screen of the setup process. If there are any failing checks, you'll need to work with your host to make the necessary changes and try again.
+The first step in the installation process is to ensure your server meets all the [requirements](/docs/3.0/getting-started#prerequisites) to run Nova 3. During setup, the system will perform a compatibility check and display the results on the first screen.
+
+If any checks fail, you’ll see detailed information about what needs to be fixed. Work with your hosting provider to address these issues before proceeding with the installation. Once everything meets the requirements, you can continue the setup process.
 
 ### Connect to your database
 
-Nova comes with a web-based tool to setup your database connection. You'll be prompted to enter some information you should have received from your web host when setting up your account. Nova will use the credentials you provide to test the connection, and if successful, create the necessary configuration values for you.
+Nova includes a user-friendly, web-based tool to help you set up your database connection. During the setup process, you’ll be prompted to enter the database credentials provided by your web host when you set up your account. Nova will use these credentials to test the connection. If the connection is successful, Nova will automatically configure the necessary settings for you.
 
-If for some reason your server doesn't support creating files from a web script, the setup process will show you instructions on how to get the database credentials into the right place.
+If your server doesn’t allow web scripts to create files, the setup process will guide you with clear instructions on how to manually add the database credentials to the appropriate configuration file.
 
 #### Explaining the Options
 
