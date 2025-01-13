@@ -11,6 +11,38 @@ Looking to migrate your Nova 2 site to Nova 3? We've streamlined the process of 
 
 To begin, you'll first need to upload Nova's files to your server. This can be done through an FTP client (recommended) or through your host's web-based server management software like cPanel or something similar. If you're not sure how to connect to the server and upload files, contact your web host for help.
 
+## Updating the document root
+
+Nova 3 uses a more secure file structure to ensure visitors cannot access sensitive information or files and only what's necessary for serving the site to the browser. As a result of this change, your site's document root needs to be updated to point to the `public` folder. This process only needs to be done once when you first install Nova 3 or migrate from Nova 2.
+
+### cPanel
+
+{% note %}
+To view the latest information about managing domains with cPanel, you can view their [documentation page](https://docs.cpanel.net/cpanel/domains/domains/) about domains.
+{% /note %}
+
+If your host has provided cPanel to manage the server, you'll find the document root setting on the domains page.
+
+1. Find the domain that you are installing / migrating for on the domains page and click the manage button
+2. Update the document root and ensure that it ends with `/public` (there should be a single leading slash before "public")
+3. Click the update button
+
+Now, the server will only serve the `public` folder to the browser, securing your files outside of what users can access through the browser.
+
+### Plesk
+
+{% note %}
+To view the latest information about managing domains with Plesk, you can view their [help page](https://support.plesk.com/hc/en-us/articles/12377087631255-How-to-change-the-document-root-for-a-single-domain-on-Plesk) about changing the document root for a single domain.
+{% /note %}
+
+If your host has provided Plesk to manage the server, you'll find the document root setting in the Hosting Settings on the domains page.
+
+1. Find the domain that you are installing / migrating for from the Domains page and click the Hosting Settings button
+2. Update the document root and ensure that it ends with `/public` (there should be a single leading slash before "public")
+3. Click the OK button
+
+Now, the server will only serve the `public` folder to the browser, securing your files outside of what users can access through the browser.
+
 ## Installing Nova
 
 To get started installing Nova, open your browser and navigate to your site. Nova should detect that it isn't installed and redirect you into the Setup Center.
