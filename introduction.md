@@ -19,15 +19,17 @@ section: Getting Started
 
 {% /quick-links %}
 
-Nova is a custom content management system that was designed from the ground up to help you manage and play online text-based role-playing games. It comes with all of the tools you need to manage your game and the flexibility to add to it as needed.
+Nova is a custom-built content management system (CMS) designed specifically to help you manage and play online text-based role-playing games. With Nova, you’ll have all the tools you need to run your game smoothly, plus the flexibility to expand and customize it as your needs evolve.
 
-When it comes to building a website, there's no shortage of options.
+When it comes to building a website, you have plenty of options:
 
-- Write your own HTML and CSS
-- Use a CMS or blogging platform like Wordpress or Drupal
-- Reach for an online site builder like Wix or Squarespace
+- Write your own HTML and CSS for complete control.
+- Use a general-purpose CMS like WordPress or Drupal.
+- Try an online site builder like Wix or Squarespace.
 
-While these approaches are all valid and offer a lot of tools for building your game's website, we believe Nova is the best choice because it was designed from the ground up for the things you'll need to manage and play your game.
+While these options offer useful features, they’re built for general-purpose websites — not for managing and playing text-based role-playing games. That’s where Nova shines.
+
+Nova was built from the ground up with role-playing games in mind, giving you tools tailored specifically for game management. Whether you’re tracking character details, managing storylines, or collaborating with players, Nova makes it easy.
 
 ---
 
@@ -41,7 +43,7 @@ While these approaches are all valid and offer a lot of tools for building your 
 
 ## Connect and contribute
 
-Whether you're a beginner or an advanced user, getting involved in the Nova community is a great way to connect with like-minded folks who are building awesome things with Nova.
+No matter your experience level, joining the Nova community is a fantastic way to connect with like-minded individuals and share ideas, tips, and inspiration as you create amazing things with Nova.
 
 {% quick-links %}
 
