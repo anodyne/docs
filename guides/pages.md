@@ -11,6 +11,8 @@ section: Digging Deeper
 
 The following admin pages cannot have their heading, subheading, and intro text updated:
 
+- View department
+- View position
 - View story
 - View theme
 - Write story post

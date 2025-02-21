@@ -19,7 +19,7 @@ section: Getting Started
 
 {% /quick-links %}
 
-Nova is a custom-built content management system (CMS) designed specifically to help you manage and play online text-based role-playing games. With Nova, you’ll have all the tools you need to run your game smoothly, plus the flexibility to expand and customize it as your needs evolve.
+Nova is a custom-built content management system (CMS) designed specifically to help you manage and play online text-based role-playing games. With Nova, you’ll have all the tools you need to run your game, plus the flexibility to expand and customize it as your needs evolve.
 
 When it comes to building a website, you have plenty of options:
 
