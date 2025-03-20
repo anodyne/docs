@@ -19,6 +19,8 @@ The following admin pages cannot have their heading, subheading, and intro text 
 - Edit story post
 - View story post
 - View application
+- Design page
+- Design form
 
 The following public pages cannot have their heading, subheading, and intro text updated:
 
