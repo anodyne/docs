@@ -179,7 +179,11 @@ In order to use asynchronous migrations, you will need to ensure that Laravel's 
 
 We've built the migration UI to handle both scenarios and if you use asynchronous migrations, we'll provide more immediate real-time feedback about the progress of how your migrations are running (by default, we poll for a status update every 3.5 seconds).
 
-## Set user access
+## Select system administrator
+
+After your data has been successfully migrated, you will be prompted to select a user as the System Administrator. For the migration process, Nova will set the proper access roles for the user you select. This allows you to sign in and take all of the necessary administrative actions, including adding more administrators if you so choose.
+
+You will also be prompted to update the password of the selected user account. This will allow you to sign in to Nova immediately rather than needing to reset your password. (This can potentially be problematic since email may not be properly configured at this point.)
 
 ## Notes
 
