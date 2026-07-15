@@ -168,7 +168,7 @@ This view would be located at `applications/extensions/my_extension/views/main/p
 The extension makes it possible to load CSS from the views folder within the extension folder:
 
 ```php
-$this->extension['my_extension']->inline_css('my_method_styles', $this->skin, 'main', $data);
+$this->extension['my_extension']->inline_css('my_method_styles', 'main', $data);
 ```
 
 This view would be located at `applications/extensions/my_extension/views/main/css/my_method_styles.css`, and the outcome will be returned as inline CSS within a `<style>` tag for maximum portability.
@@ -176,7 +176,7 @@ This view would be located at `applications/extensions/my_extension/views/main/c
 The extension makes it possible to load JavaScript from the views folder within the extension folder:
 
 ```php
-$this->extension['my_extension']->inline_js('my_method_scripts', $this->skin, 'main', $data);
+$this->extension['my_extension']->inline_js('my_method_scripts', 'main', $data);
 ```
 
 This view would be located at `applications/extensions/my_extension/views/main/js/my_method_scripts.js`, and the outcome will be returned as inline CSS within a `<script type="text/javascript">` tag for maximum portability.
@@ -200,8 +200,8 @@ class __extensions__my_extension__my_controller extends Nova_controller_main
     {
         $this->_regions['title'] = 'Hello World!';
         $this->_regions['content'] = $this->extension['my_extension']->view('my_method_view', $this->skin, 'main', $data);
-        $this->_regions['javascript'] .= $this->extension['my_extension']->inline_css('my_method_styles', $this->skin, 'main', $data);
-        $this->_regions['javascript'] .= $this->extension['my_extension']->inline_js('my_method_scripts', $this->skin, 'main', $data);
+        $this->_regions['javascript'] .= $this->extension['my_extension']->inline_css('my_method_styles', 'main', $data);
+        $this->_regions['javascript'] .= $this->extension['my_extension']->inline_js('my_method_scripts', 'main', $data);
         Template::assign($this->_regions);
         Template::render();
     }
@@ -229,8 +229,8 @@ class __extensions__my_extension__my_controller extends __extensions__my_extensi
     {
         $this->_regions['title'] = 'Hello Sky!';
         $this->_regions['content'] = $this->extension['my_extension']->view('my_method_view', $this->skin, 'main', $data);
-        $this->_regions['javascript'] .= $this->extension['my_extension']->inline_css('my_method_styles', $this->skin, 'main', $data);
-        $this->_regions['javascript'] .= $this->extension['my_extension']->inline_js('my_method_scripts', $this->skin, 'main', $data);
+        $this->_regions['javascript'] .= $this->extension['my_extension']->inline_css('my_method_styles', 'main', $data);
+        $this->_regions['javascript'] .= $this->extension['my_extension']->inline_js('my_method_scripts', 'main', $data);
         Template::assign($this->_regions);
         Template::render();
     }
